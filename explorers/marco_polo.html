@@ -1,0 +1,181 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>מרקו פולו | נוסע וחוקר | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">מרקו פולו</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1254 – 8 בינואר 1324 | <span class="text-darkAccent font-bold">שנות המסע למזרח:</span> 1271 – 1295
+            </div>
+        </header>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: מרקו (Marco)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם "מרקו" הוא גרסה איטלקית לשם הלטיני <strong>Marcus</strong> (מארקוס).
+                        <br><br>
+                        <strong>פירוש מילולי והיסטורי:</strong> מקור השם הלטיני נקשר לאל המלחמה הרומי, <strong>מארס (Mars)</strong>. לכן, משמעות השם היא "מוקדש למארס" או "לוחמני". זהו היה אחד השמות הנפוצים ביותר ברפובליקה ובאימפריה הרומית.
+                        <br><br>
+                        <strong>ההקשר הונציאני (הקדוש הפטרון):</strong> עבור משפחה בוונציה (Venice), השם "מרקו" נשא משמעות אדירה מעבר למקורו הרומי. מרקוס המבשר (St. Mark the Evangelist) הוא הקדוש הפטרון של העיר ונציה (שרידיו נגנבו ממצרים והובאו לעיר במאה ה-9). הבזיליקה המרכזית והכיכר המרכזית בעיר קרויות על שמו, והסמל של ונציה הוא "האריה של סן מרקו". קריאת ילד בשם זה הייתה הצהרת נאמנות עמוקה לרפובליקה של ונציה ולגאוותה.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה: פולו (Polo)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        מקור שם המשפחה "פולו" נעוץ במסורת השמות האיטלקית של ימי הביניים.
+                        <br><br>
+                        <strong>פירוש:</strong> השם גזור, ככל הנראה, מהשם הלטיני <strong>Paulus</strong> (פאולוס), שפירושו "קטן" או "עניו". עם התפתחות הניבים האיטלקיים (ובמיוחד הניב הונציאני), "פאולוס" הפך ל"פאולו" ולאחר מכן באזורים מסוימים ל"פולו".
+                        <br><br>
+                        <strong>משפחת סוחרים:</strong> משפחת פולו (משפחתו של אביו, ניקולו, ודודו מאפאו) הייתה משפחת סוחרים ונציאנית מוכרת ואמידה, שעסקה בסחר בינלאומי בים התיכון ובמזרח הקרוב, והקימה תחנות סחר בקונסטנטינופול (איסטנבול) ובקרים (בחצי האי קרים).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות ורקע מוקדם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                מרקו פולו נולד ב-1254, ברפובליקה של ונציה – באותה עת, אחת מהמעצמות הימיות והמסחריות החזקות ביותר בעולם, ששלטה בנתיבי הסחר בין אירופה למזרח. 
+                <br><br>
+                ילדותו של מרקו הייתה חריגה: הוא נולד חודשים ספורים לאחר שאביו (ניקולו) ודודו (מאפאו) יצאו למסע מסחר ארוך במזרח, שבו הגיעו עד לסין ונפגשו עם הקיסר המונגולי קובלאי חאן. כתוצאה מכך, מרקו גדל ללא אביו במשך 15 שנותיו הראשונות. אימו נפטרה כשהיה עדיין צעיר, והוא גודל על ידי דודתו וקרובי משפחה אחרים בוונציה.
+                <br><br>
+                חינוכו היה חינוך קלאסי של בן למשפחת סוחרים ונציאנית אמידה (Patrician). הוא למד קרוא וכתוב, מתמטיקה שימושית, הנהלת חשבונות, הערכת שווי של סחורות יקרות (כמו משי, תבלינים ואבני חן), ומטבע חוץ. הוא ספג את האווירה הקוסמופוליטית של רציפי ונציה, שם שמע שפות שונות וסיפורים על ארצות רחוקות – הכנה מושלמת למסע שישנה את חייו, שיחל מיד עם שובם של אביו ודודו ב-1269.
+            </p>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים ותפיסת עולם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                בניגוד לחוקרים מודרניים שהונעו מסקרנות מדעית טהורה, או קונקיסטאדורים שהונעו מכיבוש טריטוריאלי, המניע המקורי של מסעו של מרקו פולו הצעיר (שיצא לדרך בגיל 17) היה <strong>מסחרי ודיפלומטי כאחד</strong>.
+                <br><br>
+                <strong>המניע המסחרי:</strong> משפחת פולו זיהתה את הפוטנציאל הכלכלי האדיר שנוצר בעקבות ה"פאקס מונגוליקה" (Pax Mongolica - השלום המונגולי). האימפריה המונגולית העצומה, שהשתרעה מאירופה ועד סין, אבטחה לראשונה את "דרך המשי", ואפשרה מעבר בטוח יחסית לסוחרים אירופאים אל מקורות הסחורות היקרות ביותר בעולם. הפולו'ס רצו להקים מונופול סחר ישיר עם המזרח הרחוק, עוקף תווכים של סוחרים מוסלמים במזרח התיכון.
+                <br><br>
+                <strong>המניע הדיפלומטי/דתי:</strong> כאשר אביו ודודו עזבו את סין בפעם הראשונה, קובלאי חאן (הקיסר) ביקש מהם לחזור עם שמן קדוש מירושלים ועם 100 מלומדים נוצרים שיסבירו למונגולים על הנצרות והמדע האירופאי. האפיפיור סירב לשלוח 100 מלומדים (ושלח רק שני נזירים שפרשו מהר מאוד מהמסע מפחד), אך מרקו הצעיר, אביו ודודו המשיכו במסע כדי למלא את הבטחתם לקיסר האדיר ביותר בעולם. מרקו עצמו פיתח במהלך המסע תפיסת עולם של <strong>מתבונן אובייקטיבי</strong> – הוא הונע מסקרנות עמוקה כלפי תרבויות, שפות ומנהגים זרים, והפך ל"עיניים ולאוזניים" של הקיסר המונגולי ברחבי הקיסרות.
+            </p>
+        </section>
+
+        <!-- פירוט המסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסע האפי לאורך דרך המשי (1271-1274) ושהותו בסין</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                בשנת 1271, בגיל 17, מרקו יצא מוונציה יחד עם אביו ודודו למסע רגלי ורכוב שיימשך למעלה משלוש שנים, ויחצה את היבשת הגדולה בעולם, עד לחצרו של קובלאי חאן בחנאבליק (Khanbaliq - בייג'ינג של ימינו).
+            </p>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                <strong>מסלול ההתקדמות מזרחה:</strong>
+                <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-400">
+                    <li>הם הפליגו מעכו (אז בשליטת הצלבנים) כדי להביא את השמן הקדוש מירושלים.</li>
+                    <li>המשיכו דרך אנטוליה (טורקיה), ארמניה ואזרבייג'ן, שם מרקו תיעד לראשונה בעולם המערבי נביעות נפט ששימשו לרפואה ולהסקה (נפט שחור).</li>
+                    <li>הם ירדו למפרץ הפרסי (הורמוז) במטרה להפליג לסין, אך גילו שהספינות המקומיות רעועות, והחליטו להמשיך בדרך היבשה הקשה.</li>
+                    <li>הם חצו את איראן, חוו חודשים של מסע מפרך דרך הרי פמיר הגבוהים ("גג העולם") במרכז אסיה, וחצו את מדבר טקלמקאן ומדבר גובי האכזריים. מרקו סבל ממחלה במהלך המסע, שעיכבה אותם כשנה.</li>
+                </ul>
+            </p>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                <strong>שירות בחצר הקיסר (1274-1292):</strong>
+                עם הגעתם לבירת הקיץ שאנגדו (Xanadu) ואז לבייג'ינג, קובלאי חאן (נכדו של ג'ינגיס חאן ומייסד שושלת יואן בסין) התרשם מאוד מהאינטליגנציה ומיכולות הקליטה של מרקו הצעיר (שלמד מספר שפות מונגוליות ואסייתיות). קובלאי חאן מינה את מרקו לשליח מיוחד ולפקיד ממשל, ושלח אותו למשימות רשמיות ברחבי סין, דרום מזרח אסיה, וטיבט. מרקו שירת את הקיסר במשך 17 שנים, תוך שהוא מתעד באובססיביות את המנהגים, המסחר, הגיאוגרפיה והחידושים הטכנולוגיים של המזרח – דברים שאירופה של ימי הביניים אפילו לא דמיינה.
+            </p>
+        </section>
+
+        <!-- הגילוי וחשיבותו -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">הגילוי וחשיבותו ההיסטורית (הספר ששינה את העולם)</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    <strong>המהות של הגילוי שלו:</strong>
+                    מרקו פולו לא "גילה" את סין (היא הייתה שם, ואביו היה שם לפניו). הגילוי שלו לא היה גיאוגרפי נטו, אלא <strong>גילוי תרבותי ומידעני</strong>. הוא היה האירופאי הראשון שהביא למערב תיאור מקיף, שיטתי ומדויק של היבשת האסיאתית כולה. הוא חשף לאירופה מציאות שבה סין (קתי - Cathay) מתקדמת בהרבה מאירופה מבחינה מנהלית וטכנולוגית.
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">החידושים שהביא לאירופה:</strong>
+                    בספרו, מרקו תיאר תופעות שנשמעו לאירופאים כמו קסם או שקרים: 
+                    <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-400">
+                        <li>שימוש ב<strong>שטרות כסף מנייר</strong> (Paper money) המגובים על ידי הממשלה, בעוד באירופה סחרו רק במטבעות זהב וכסף.</li>
+                        <li>שריפת <strong>"אבנים שחורות" (פחם)</strong> להסקה במקום עץ.</li>
+                        <li>קיומה של מערכת דואר אימפריאלית עצומה ומסודרת עם תחנות רענון (ה"יאם").</li>
+                        <li>האי העצום שיפנגו (Cipangu) – התיעוד האירופאי הראשון של קיומה של <strong>יפן</strong> (למרות שלא ביקר בה בעצמו).</li>
+                    </ul>
+                </div>
+
+                <p>
+                    <strong>כתיבת הספר והחשיבות ההיסטורית:</strong>
+                    ב-1295 חזרו בני משפחת פולו לוונציה. ב-1298, מרקו נשבה על ידי כוחות של העיר היריבה, גנואה (Genoa). בכלא, הוא הכתיב את זיכרונותיו לסופר רומנסות בשם רוסטיצ'לו מפיזה. הספר נקרא במקור "תיאור העולם", אך נודע באיטליה בשם <strong>"Il Milione" (המיליון)</strong> – כנראה רמז לכינוי של מרקו, או לטענתם של המבקרים שהוא מגזים ומספר "מיליוני שקרים" על העושר של המזרח.
+                    <br><br>
+                    <strong>ההשפעה ארוכת הטווח:</strong> ספרו של מרקו פולו הפך לרב-מכר (עוד לפני המצאת הדפוס, הועתק ידנית). הוא עיצב את מפת העולם האירופאית (כמו ה"אטלס הקטאלאני" מ-1375). יתרה מכך, הספר הצית את הדמיון האירופאי בחיפוש אחר קיצור דרך ימי לעושר של הודו, קתי (סין) ושיפנגו (יפן). האדם שהושפע מכך יותר מכל היה ספן צעיר מגנואה, בשם <strong>כריסטופר קולומבוס</strong>, שלקח עותק של ספרו של מרקו פולו (מלא בהערות שוליים שכתב בכתב ידו) למסעו מערבה לחציית האוקיינוס האטלנטי בשנת 1492. במובן זה, מסעו היבשתי של מרקו פולו התניע ישירות את עידן התגליות הימי.
+                </p>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>"מסעותיו של מרקו פולו" (The Travels of Marco Polo):</strong> הטקסט המקורי שהכתיב מרקו לרוסטיצ'לו מפיזה (1298). הטקסט שרד בכ-150 כתבי יד עתיקים, שכל אחד מהם מכיל מעט שינויים, המהווים את בסיס המחקר ההיסטורי על חייו.
+                </li>
+                <li>
+                    <strong>מחקר היסטורי וגיאוגרפי:</strong> Larner, John (1999). <span class="italic text-gray-300">Marco Polo and the Discovery of the World.</span> Yale University Press. (ספר המנתח את השפעת הספר של פולו על הקרטוגרפיה ועל חוקרים כמו קולומבוס).
+                </li>
+                <li>
+                    <strong>היסטוריה מונגולית:</strong> התאמות בין תיאוריו של מרקו פולו לבין מקורות סיניים מ"שושלת יואן" (Yuan Shih), המאשרים קיומן של דמויות מסוימות ותופעות כלכליות כמו שימוש בכסף נייר ושירות דואר אימפריאלי במהלך תקופתו של קובלאי חאן.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> מרקו פולו | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+```
