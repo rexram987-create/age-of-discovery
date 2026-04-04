@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>אבן בטוטה | חוקר | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">אבן בטוטה</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 24 בפברואר 1304 – 1368/1369 | <span class="text-darkAccent font-bold">שנות המסע:</span> 1325 – 1354
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/images/ibn_battuta.jpg" alt="אבן בטוטה" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Ibn+Battuta'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי ושם אב: מוחמד אבן עבדאללה (Muhammad ibn Battuta)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        שמו המלא והרשמי בערבית הוא ארוך ומעיד רבות על ייחוסו ומוצאו: <strong>אַבּוּ עַבְּדַאללַּה מֻחַמַּד אִבְּן עַבְּדַאללַּה אַל-לַּוַּאתִי א-טַּנְגִ'י אִבְּן בַּטּוּטַה</strong> (أبو عبد الله محمد بن عبد الله اللواتي الطنجي بن بطوطة).
+                        <br><br>
+                        <strong>פירוש חלקי השם:</strong>
+                        <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-400">
+                            <li><strong>אבו עבדאללה:</strong> כינוי כבוד (קוניה - Kunya) שמשמעותו "אביו של עבדאללה". זה היה נהוג בתרבות הערבית גם אם לא היה לו עדיין בן בשם זה בעת שקיבל את השם.</li>
+                            <li><strong>מוחמד:</strong> שמו הפרטי, שמו של נביא האסלאם ("המהולל").</li>
+                            <li><strong>אבן עבדאללה:</strong> בנו של עבדאללה (שם אביו).</li>
+                            <li><strong>אל-לוואתי:</strong> מעיד על השתייכותו לשבט ה"לוואתה" הברברי, שבט גדול ומוכר בצפון אפריקה.</li>
+                            <li><strong>א-טנג'י:</strong> מעיד על עיר הולדתו, העיר טנג'יר (Tangier) שבמרוקו של ימינו.</li>
+                        </ul>
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם המשפחה/הכינוי: אבן בטוטה (Ibn Battuta)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        זהו השם בו הוא מוכר בעולם, אך מבחינה בלשנית מדובר בכינוי משפחתי (Laqab).
+                        <br><br>
+                        <strong>פירוש:</strong> הקידומת "אבן" פירושה "בן". המילה "בטוטה" היא ככל הנראה כינוי שדבק במשפחתו, ופירוש משוער אחד בלהגים צפון-אפריקאיים הוא "הברווזון" או מתייחס לאדם נמוך קומה ובעל מבנה גוף מעט עגלגל. עם זאת, בזכות מסעותיו, השם "אבן בטוטה" הפך במדינות ערב לשם נרדף ל"נוסע גדול" או הרפתקן, בדומה ל"מרקו פולו" במערב.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות ורקע מוקדם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                אבן בטוטה נולד בעיר טנג'יר (השוכנת לחופי מצר גיברלטר בצפון מרוקו של ימינו) למשפחה מכובדת ומשכילה, השייכת לשושלת של שופטים אסלאמיים (קאדים) ממוצא ברברי.
+                <br><br>
+                חינוכו היה דתי-משפטי מחמיר. מגיל צעיר הוא למד בבתי ספר מוסלמיים מסורתיים (מדרסות) בעיר הולדתו, שם התעמק בלימוד הקוראן, ההלכה האסלאמית (שריעה) ומשפט (לפי האסכולה המאלכית שהייתה נפוצה בצפון אפריקה). הייחוס המשפחתי שלו והכשרתו המשפטית העמוקה היו הנכסים החשובים ביותר שלו: הם אלה שאפשרו לו להתקבל בחצרות שליטים ולמצוא תעסוקה כקאדי (שופט) לאורך כל שנות מסעותיו ברחבי העולם האסלאמי.
+            </p>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים ותפיסת עולם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                המניע הראשוני למסעו של אבן בטוטה הצעיר (בגיל 21) היה דתי ורוחני לחלוטין. הוא לא יצא לגלות ארצות חדשות, לפתוח נתיבי סחר או לכבוש טריטוריות, אלא לקיים את <strong>מצוות החג' (Hajj)</strong> – העלייה לרגל לעיר מכה, שהיא אחת מחמשת עמודי האסלאם.
+                <br><br>
+                עם זאת, במהלך המסע מניעיו השתנו. העולם האסלאמי במאה ה-14 (דאר אל-אסלאם) היה עצום – הוא השתרע מספרד במערב ועד הודו במזרח. למרות הפיצול הפוליטי לישויות שונות, זו הייתה אימפריה תרבותית מאוחדת תחת דת אחת ושפה משותפת (ערבית).
+                <br><br>
+                תפיסת עולמו הפכה ל<strong>תשוקה חסרת מעצורים לנודד ולחקור (Rihla)</strong>. הוא הבטיח לעצמו "לעולם לא לנסוע באותה דרך פעמיים, במידת האפשר". הוא הונע מסקרנות עמוקה להכיר חכמי דת (עולמאא'), שליטים ותרבויות בתוך המרחב האסלאמי ומחוצה לו. המעמד ההלכתי שלו אפשר לו להשתלב באליטות המקומיות בכל מקום אליו הגיע, ולתפוס את המסע כמסע לימודי מתמשך של איש דת המכיר את העולם המגוון שברא האל.
+            </p>
+        </section>
+
+        <!-- נסיבות היסטוריות למסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">נסיבות היסטוריות למסע</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                המסע של אבן בטוטה התאפשר בזכות מצב היסטורי ופוליטי ייחודי במאה ה-14. זהו עידן ה"פאקס מונגוליקה" (השלום המונגולי) במזרח ובמרכז אסיה, אשר אבטח את דרכי הסחר ואפשר תנועה יחסית בטוחה על פני יבשות שלמות. במקביל, בעולם האסלאמי (דאר אל-אסלאם) התקיימה תשתית מוסדית אדירה של רשתות סחר, מדרסות (בתי מדרש), ח'אנים (אכסניות דרכים), ומסדרים סופיים, שהעניקו לנוסע מוסלמי מלומד כמו אבן בטוטה אירוח, ביטחון, ותעסוקה לאורך כל הדרך. ההגמוניה התרבותית של האסלאם מהודו ועד מרוקו, יחד עם הביקוש לשופטים (קאדים) ולמלומדים, היוו את הקרקע הפורייה שאפשרה למסע בסדר גודל כזה להתרחש.
+            </p>
+        </section>
+
+        <!-- פירוט המסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסע העצום (1325-1354): 120,000 קילומטרים</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                מסעו של אבן בטוטה הוא ללא ספק המסע היבשתי והימי הנרחב ביותר בהיסטוריה שלפני העידן המודרני, העולה משמעותית בהיקפו אפילו על זה של מרקו פולו. מסע שהחל כעלייה לרגל פשוטה למכה, הפך למסע נדודים של כ-29 שנים לאורך כמאה ועשרים אלף קילומטרים (לשם השוואה: הקפת כדור הארץ בקו המשווה היא כ-40,000 ק"מ).
+            </p>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                <strong>מסלולו כלל:</strong>
+                <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-400">
+                    <li><strong>צפון אפריקה והמזרח התיכון:</strong> יציאה ממרוקו דרך אלג'יריה, תוניסיה, אלכסנדריה וקהיר. ממצרים ניסה לרדת בים האדום, אך חזר לסוריה, ביקר בירושלים ודמשק, והגיע למכה כדי לקיים את מצוות החג'.</li>
+                    <li><strong>פרס, עיראק ומזרח אפריקה:</strong> לאחר החג', המשיך לעיראק ולפרס (תחת שלטון מונגולי אילח'אני). בהמשך סייר לאורך החוף המזרחי של אפריקה ("חוף הסוואהילי") עד מוגדישו וקילווה שבדרום מזרח אפריקה.</li>
+                    <li><strong>הודו והמלדיביים:</strong> הוא המשיך לאנטוליה, חצה את הים השחור ואת הערבות לחצרו של אוזבק חאן (מנהיג אורדת הזהב). משם, חצה את הרי ההינדו-כוש והגיע להודו. הוא שירת מספר שנים כקאדי בכיר (שופט) בחצרו של סולטאן דלהי האכזר והבלתי צפוי, מוחמד בן תוגלאק. כשחשש לחייו, ברח והפך לשופט בכיר באיים המלדיביים (שם גם התחתן עם בנות משפחת המלוכה המקומית).</li>
+                    <li><strong>סין והחזרה הביתה:</strong> מהמלדיביים המשיך לסרי לנקה, סומטרה (אינדונזיה של ימינו), ומשם, ככל הנראה, הגיע עד למחוז פוג'יין ולעיר גואנגג'ואו בסין של שושלת יואן המונגולית. לאחר מכן, החל במסע ארוך חזרה עד ששב למרוקו, רק כדי לגלות שאימו נפטרה במגפת הדבר (המוות השחור) ושמרבית בני משפחתו אינם. לבסוף, יצא לעוד שני מסעות קטנים יחסית: לאנדלוסיה (ספרד המוסלמית) ולאימפריית מאלי במערב אפריקה (מעבר לסהרה).</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- הגילוי וחשיבותו -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">גילויים מרכזיים והשפעותיהם ("הריחלה")</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    <strong>מהות הגילויים:</strong>
+                    בדומה למרקו פולו, אבן בטוטה לא גילה ארצות שהיו בלתי מיושבות או בלתי ידועות למקומיים. ה"גילוי" שלו היה ביצירת התמונה הפנורמית הגדולה והמפורטת ביותר של החיים, התרבות והגיאוגרפיה בימי הביניים. הוא גילה לעולם האסלאמי והמערבי את קיומן, עושרן ומורכבותן של אימפריות רחוקות – כמו אימפריית מאלי באפריקה וסולטנות דלהי בהודו. הוא חיבר בין קצוות עולם שללא התיעוד שלו נראו מנותקים לחלוטין. הוא תיעד מנהגים משפטיים, מסורות של קבוצות מיעוט, הליכי סחר, פוליטיקה של חצרות סולטאנים, וכמובן, את החיים היום-יומיים של אנשים פשוטים בעשרות מדינות.
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">כתיבת ה"ריחלה" (המסע) והשפעותיה המרכזיות:</strong>
+                    בשובו הסופי למרוקו ב-1354, בהוראת הסולטאן המריני של מרוקו, אבן בטוטה הכתיב את זיכרונותיו המדהימים למשכיל ומשורר צעיר בשם אבן ג'וזאי (Ibn Juzayy). הספר התפרסם ברחבי העולם בשם <strong>"הריחלה" (Ar-Rihla - המסע)</strong>.
+                    <br><br>
+                    <strong>השפעות מרכזיות:</strong>
+                    <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-400">
+                        <li><strong>שימור היסטורי וגיאוגרפי:</strong> הריחלה הפכה למקור הבלעדי כמעט להכרת ההיסטוריה של מזרח אפריקה (חוף הסוואהילי) ומערב אפריקה (אימפריית מאלי) במאה ה-14.</li>
+                        <li><strong>אנתרופולוגיה מוקדמת:</strong> התיעוד המדויק של מבני כוח, מעמד האישה בחברות השונות, ומנהגי פולחן, שימש דורות של חוקרים סוציולוגיים ואנתרופולוגים.</li>
+                        <li><strong>השפעה תרבותית:</strong> אבן בטוטה הפך לסמל של נדודים וסקרנות בעולם האסלאמי ובעולם כולו, והוכיח את כוחה של רשת סחר ותרבות גלובלית טרם העידן המודרני.</li>
+                    </ul>
+                </div>
+
+                <p>
+                    <strong>החשיבות ההיסטורית העצומה:</strong>
+                    הריחלה של אבן בטוטה נחשבת לאחד המסמכים החשובים והמקיפים ביותר ללימוד ההיסטוריה, הגיאוגרפיה והאנתרופולוגיה של המאה ה-14, ובפרט של העולם האסלאמי.
+                    <br><br>
+                    בעוד מרקו פולו כתב כסוחר חיצוני זר המדווח על "פלאים" עבור קהל אירופאי מסוקרן, אבן בטוטה כתב כגורם פנימי (Insider) – כשופט וכמלומד שחי, עבד, נישא והקים משפחות בחברות השונות שעליהן כתב (אף כי חלק מהביקורת כלפיו נובעת מחוסר סובלנותו כלפי מנהגים שלא תאמו במדויק את ההלכה האסלאמית). התיעוד שלו על אימפריית מאלי באפריקה ועל אימפריית הזהב באסיה הוא לעיתים התיעוד הכתוב הכמעט-יחיד ששרד מאותה תקופה מנקודת מבט אישית, דבר ההופך אותו לאוצר בלום עבור חוקרי היסטוריה מודרניים.
+                </p>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>"הריחלה" (Rihla):</strong> מקור הראשוני (Primary Source) שנכתב על ידי אבן ג'וזאי מפיו של אבן בטוטה. זהו הטקסט המכונן המספק את מרבית המידע הידוע לנו על חייו ומסלולו. התרגום המלא לאנגלית נערך על ידי פרופ' המילטון א.ר. גיב (H.A.R. Gibb) בהוצאת אגודת האקלוט (Hakluyt Society).
+                </li>
+                <li>
+                    <strong>מחקר מודרני מקיף:</strong> Dunn, Ross E. (1986). <span class="italic text-gray-300">The Adventures of Ibn Battuta: A Muslim Traveler of the 14th Century.</span> University of California Press. (ספר הנחשב למחקר המקיף ביותר המציב את סיפורו של אבן בטוטה בתוך ההקשר הגיאופוליטי המורכב של המאה ה-14).
+                </li>
+                <li>
+                    <strong>אמינות גיאוגרפית היסטורית:</strong> היסטוריונים וקרטוגרפים אימתו חלקים ניכרים מתיאוריו על סמך מקורות מקבילים, אם כי קיימת הסכמה במחקר כי בחלק מהאזורים (במיוחד נסיעתו לעומק סין ונהר הוולגה) אבן בטוטה ייתכן שהסתמך על עדויות שמיעה של סוחרים אחרים ולא ביקר בהם בעצמו.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> אבן בטוטה | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/images/ibn_battuta.jpg" alt="אבן בטוטה" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Ibn+Battuta'">
+        </div>
+    </div>
+
+    <script>
+        // פונקציות לשליטה בחלון הצף של התמונה
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        // סגירה בלחיצה מחוץ לתמונה
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
