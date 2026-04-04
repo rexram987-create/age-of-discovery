@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>לייף אייריקסון | חוקר | עידן התגליות</title>
+    <title>אבן בטוטה | חוקר | עידן התגליות</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,7 +23,7 @@
 </head>
 <body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
 
-    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-20 flex-grow w-full">
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
         
         <!-- כפתור חזרה לדף הבית -->
         <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
@@ -35,16 +35,16 @@
 
         <!-- כותרת ראשית ושנות חיים -->
         <header class="mb-12 border-b border-gray-700 pb-8">
-            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">לייף אייריקסון</h1>
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">אבן בטוטה</h1>
             <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
-                <span class="text-darkAccent font-bold">שנות חיים משוערות:</span> 970 לספירה – 1020 לספירה | <span class="text-darkAccent font-bold">שנת מסע מרכזי:</span> סביב 1000 לספירה
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 24 בפברואר 1304 – 1368/1369 | <span class="text-darkAccent font-bold">שנות המסע:</span> 1325 – 1354
             </div>
         </header>
 
-        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) עם הנתיב המעודכן -->
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
         <section class="mb-12 flex justify-center">
             <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
-                <img src="../assets/leif_erikson.jpg" alt="לייף אייריקסון" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Leif+Erikson'">
+                <img src="../assets/ibn_battuta.jpg" alt="אבן בטוטה" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Ibn+Battuta'">
                 <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
@@ -59,35 +59,27 @@
             <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
             <div class="space-y-8">
                 <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
-                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: לייף (Leif / Leifr)</h3>
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי ושם אב: מוחמד אבן עבדאללה</h3>
                     <p class="text-gray-300 leading-relaxed text-lg">
-                        השם "לייף" מגיע מהשפה הנורדית העתיקה (Old Norse) – השפה שדיברו הוויקינגים ותושבי סקנדינביה בימי הביניים. במקור נכתב השם כ-<strong>Leifr</strong>.
+                        שמו המלא והרשמי בערבית הוא ארוך ומעיד רבות על ייחוסו ומוצאו: <strong>אַבּוּ עַבְּדַאללַּה מֻחַמַּד אִבְּן עַבְּדַאללַּה אַל-לַּוַּאתִי א-טַּנְגִ'י אִבְּן בַּטּוּטַה</strong>.
                         <br><br>
-                        <strong>פירוש מילולי:</strong> משמעות המילה "Leifr" בנורדית עתיקה היא "יורש", "צאצא", "מורשת" או "זה שנשאר מאחור" (במובן של מי שממשיך את שושלת המשפחה).
-                        <br><br>
-                        <strong>ההקשר התרבותי:</strong> בחברה הוויקינגית, למורשת ולשושלת המשפחתית היה ערך עליון. הענקת שם שפירושו "היורש" מעידה על הציפיות הגדולות שהיו מהילד להמשיך את דרכם המפוארת של אבותיו.
+                        <strong>פירוש חלקי השם:</strong>
+                        <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-400">
+                            <li><strong>אבו עבדאללה:</strong> כינוי כבוד (קוניה - Kunya) שמשמעותו "אביו של עבדאללה". זה היה נהוג בתרבות הערבית גם אם לא היה לו עדיין בן בשם זה.</li>
+                            <li><strong>מוחמד:</strong> שמו הפרטי, שמו של נביא האסלאם.</li>
+                            <li><strong>אבן עבדאללה:</strong> בנו של עבדאללה (שם אביו).</li>
+                            <li><strong>אל-לוואתי:</strong> מעיד על השתייכותו לשבט ה"לוואתה" הברברי, שבט גדול בצפון אפריקה.</li>
+                            <li><strong>א-טנג'י:</strong> מעיד על עיר הולדתו, העיר טנג'יר (Tangier) שבמרוקו של ימינו.</li>
+                        </ul>
                     </p>
                 </div>
                 
                 <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
-                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם אב / משפחה: אייריקסון (Erikson / Eiríksson)</h3>
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם המשפחה/הכינוי: אבן בטוטה (Ibn Battuta)</h3>
                     <p class="text-gray-300 leading-relaxed text-lg">
-                        חשוב להבין שבנורווגיה ובאיסלנד באותה תקופה (וגם באיסלנד של ימינו), לא היו "שמות משפחה" במובן המודרני, אלא השתמשו בשיטה הפטרונימית – שם המעיד על שם האב.
+                        זהו השם בו הוא מוכר בעולם, אך מבחינה בלשנית מדובר בכינוי משפחתי (Laqab).
                         <br><br>
-                        השם מורכב משני חלקים:
-                        <br>
-                        <strong>חלק ראשון - Eiríks:</strong> שייכות לשם "אייריק" (אריק). אביו של לייף היה אריק תורוואלדסון, הידוע בהיסטוריה כ"אריק האדום" (Eiríkr inn rauði) – מקים ההתיישבות הנורדית בגרינלנד.
-                        <br>
-                        <strong>חלק שני - son:</strong> המילה הנורדית והאנגלית ל"בן".
-                        <br><br>
-                        <strong>משמעות כוללת:</strong> שמו המלא של לייף הוא פשוטו כמשמעו: "לייף, בנו של אריק". הוא נושא עליו את חותמו של אביו, אחד המנהיגים והחוקרים הנודעים ביותר של זמנו.
-                    </p>
-                </div>
-
-                <div class="bg-gray-800/50 p-6 rounded-xl border border-blue-900 shadow-md">
-                    <h3 class="text-xl font-semibold text-blue-300 mb-2">כינוי היסטורי: Leifr inn heppni</h3>
-                    <p class="text-gray-300 leading-relaxed text-lg">
-                        בסאגות האיסלנדיות הוא מופיע לעתים קרובות בכינוי "לייף בר-המזל" (Leif the Lucky). כינוי זה ניתן לו (לפי סאגת אריק האדום) לאחר שהציל צוות של ספינה ויקינגית טרופה בדרכו חזרה מוינלנד.
+                        <strong>פירוש:</strong> הקידומת "אבן" פירושה "בן". המילה "בטוטה" היא ככל הנראה כינוי שדבק במשפחתו, ופירוש משוער אחד בלהגים צפון-אפריקאיים הוא "הברווזון". עם זאת, בזכות מסעותיו, השם "אבן בטוטה" הפך במדינות ערב לשם נרדף ל"נוסע גדול" או הרפתקן.
                     </p>
                 </div>
             </div>
@@ -97,9 +89,9 @@
         <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
             <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות ורקע מוקדם</h2>
             <p class="text-gray-300 leading-relaxed text-lg">
-                לייף אייריקסון נולד, ככל הנראה, באיסלנד סביב שנת 970 לספירה. הוא גדל בצל דמותו הדומיננטית של אביו, "אריק האדום" – אדם כריזמטי אך סוער ואלים, שהוגלה מנורווגיה לאיסלנד בשל מעורבותו ברצח, ובהמשך הוגלה גם מאיסלנד מאותה סיבה בדיוק. בעקבות הגלייתו מאיסלנד (סביב שנת 982), אריק האדום הפליג מערבה וגילה את גרינלנד. 
+                אבן בטוטה נולד בעיר טנג'יר (צפון מרוקו של ימינו) למשפחה מכובדת ומשכילה, השייכת לשושלת של שופטים אסלאמיים (קאדים) ממוצא ברברי.
                 <br><br>
-                לייף הצעיר עקר עם משפחתו להתיישבות החדשה שייסד אביו בגרינלנד. גדילה בסְפָר (Frontier) הקפוא והאכזר של גרינלנד עיצבה אותו. הוא חונך על ברכי התרבות הוויקינגית: הוא למד לנווט בים סוער, לבנות ולתחזק ספינות "דראקאר" (ספינות ארוכות ויקינגיות), לשרוד בתנאים קיצוניים, ולהיות מנהיג גברים. לעומת אביו הפגאני האדוק, לייף נחשף גם להשפעות נוצריות, עובדה שתעצב את דרכו בהמשך.
+                חינוכו היה דתי-משפטי מחמיר. מגיל צעיר הוא למד בבתי ספר מוסלמיים מסורתיים (מדרסות) בעיר הולדתו, שם התעמק בלימוד הקוראן, ההלכה האסלאמית (שריעה) ומשפט. הייחוס המשפחתי שלו והכשרתו המשפטית העמוקה היו הנכסים החשובים ביותר שלו: הם אלה שאפשרו לו להתקבל בחצרות שליטים ולמצוא תעסוקה כקאדי (שופט) לאורך כל שנות מסעותיו.
             </p>
         </section>
 
@@ -107,11 +99,9 @@
         <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
             <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים ותפיסת עולם</h2>
             <p class="text-gray-300 leading-relaxed text-lg">
-                בניגוד לחוקרים המאוחרים יותר של "עידן התגליות" (כמו קולומבוס או קורטס) שהונעו על ידי חיפוש אחר זהב והקמת אימפריות כלכליות גלובליות, מניעיו של לייף אייריקסון נבעו מתרבות ההישרדות של ימי הביניים המוקדמים והמסורת הוויקינגית של התפשטות (Expansionism).
+                המניע הראשוני למסעו של אבן בטוטה הצעיר (בגיל 21) היה דתי ורוחני לחלוטין. הוא לא יצא לגלות ארצות חדשות, אלא לקיים את <strong>מצוות החג' (Hajj)</strong> – העלייה לרגל לעיר מכה.
                 <br><br>
-                ההתיישבות בגרינלנד הייתה ענייה במשאבים קריטיים, ובראשם <strong>עץ</strong> (הדרוש לבניית בתים וספינות) ושטחי מרעה פוריים. על פי הסאגות, לייף שמע מספן בשם ביארני הריולפסון (שספינתו נסחפה מערבה בטעות) על אדמות מיוערות הנמצאות הרחק ממערב לגרינלנד. המניע העיקרי של לייף ליציאה למסע היה <strong>מעשי וכלכלי:</strong> מציאת משאבי עץ ואדמה טובה עבור המושבה בגרינלנד.
-                <br><br>
-                לצד זאת, היה גם מניע <strong>דתי.</strong> בסביבות שנת 999, לייף הפליג לנורווגיה ושימש כשומר ראשו של המלך אולאף טריגבאסון. המלך המיר את דתו של לייף לנצרות והטיל עליו משימה אידאולוגית: לשוב לגרינלנד ולהמיר את דתם של המתיישבים הנורדים. מסעו מערבה שילב אפוא את רוח ההרפתקנות הוויקינגית, הצורך החומרי בעץ, והרצון לבסס את מעמדו כמנהיג בחסות נורווגית-נוצרית.
+                עם זאת, במהלך המסע מניעיו השתנו. הוא הונע מתשוקה חסרת מעצורים לנודד ולחקור, וגזר על עצמו "לעולם לא לנסוע באותה דרך פעמיים, במידת האפשר". הוא תפס את המסע כמסע לימודי מתמשך של איש דת המכיר את העולם המגוון שברא האל, תוך שהוא משתלב באליטות המקומיות בכל מקום.
             </p>
         </section>
 
@@ -119,46 +109,36 @@
         <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
             <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">נסיבות היסטוריות למסע</h2>
             <p class="text-gray-300 leading-relaxed text-lg">
-                המסע של לייף אייריקסון יצא לפועל בתקופה המכונה "תור הזהב של הוויקינגים" (Viking Age). באותן שנים, טכנולוגיית בניית ספינות הדראקאר (Drakkar) – ספינות ארוכות, חזקות וגמישות – הגיעה לשיאה ואפשרה ניווט באוקיינוס הפתוח. תנאי האקלים סביב שנת 1000 לספירה (תקופה הידועה כ"התחממות של ימי הביניים" - Medieval Warm Period) הפכו את הים הצפוני והאוקיינוס האטלנטי לפחות קפואים ומסוכנים להפלגה. במקביל, הגירושים של אביו, אריק האדום, דחפו את המשפחה לקצה העולם המוכר (גרינלנד), מקום דל במשאבים, מה שחייב אותם לחפש באופן אקטיבי עתודות עץ ואדמות מרעה במערב הרחוק.
+                המסע של אבן בטוטה התאפשר בזכות מצב היסטורי ופוליטי ייחודי במאה ה-14. זהו עידן ה"פאקס מונגוליקה" (השלום המונגולי) באסיה שאבטח את דרכי הסחר. במקביל, בעולם האסלאמי (דאר אל-אסלאם) התקיימה תשתית מוסדית אדירה של רשתות סחר, מדרסות וח'אנים, שהעניקו לנוסע מוסלמי מלומד אירוח וביטחון. ההגמוניה התרבותית של האסלאם מהודו ועד מרוקו היוותה את הקרקע הפורייה למסע בסדר גודל כזה.
             </p>
         </section>
 
         <!-- פירוט המסע -->
         <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
-            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסע ההיסטורי לאמריקה (סביב 1000 לספירה)</h2>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסע העצום (1325-1354): 120,000 קילומטרים</h2>
             <p class="text-gray-300 leading-relaxed text-lg mb-4">
-                המסע של לייף אייריקסון מערבה לא היה הפלגה עיוורת אל הלא נודע. הוא התבסס על מידע קונקרטי. לייף קנה את ספינתו של ביארני הריולפסון (הספן שראה אדמות ממערב לגרינלנד אך לא ירד לחוף), וגייס צוות של 35 ספנים ולוחמים ויקינגים קשוחים. התכנון שלו היה לשחזר את נתיבו של ביארני, אך בסדר הפוך. 
-            </p>
-            <p class="text-gray-300 leading-relaxed text-lg mb-4">
-                <strong>שלבי המסע:</strong>
-                הוא הפליג מגרינלנד צפונה ומערבה. התחנה הראשונה אליה הגיע הייתה ארץ צחיחה ומלאה בקרחונים וסלעים שטוחים. הוא קרא לה <strong>"הלולנד" (Helluland - ארץ האבנים השטוחות)</strong>. חוקרים מודרניים מזהים אותה כאי באפין (Baffin Island) שבצפון קנדה. 
-                <br><br>
-                מכיוון שהלולנד לא הציעה דבר למתיישבים, לייף וצוותו הפליגו דרומה. לאחר ימים של הפלגה, הם הגיעו לארץ שטוחה, בעלת חופים לבנים, המכוסה ביערות עבותים. זו הייתה בדיוק האדמה שחיפשו. הוא קרא לה <strong>"מארקלנד" (Markland - ארץ היערות)</strong> – המזוהה כיום עם חופי חצי האי לברדור בקנדה. היערות היו חיוניים לאספקת העץ עבור המתיישבים בגרינלנד נטולת העצים.
-            </p>
-            <p class="text-gray-300 leading-relaxed text-lg">
-                הצוות המשיך דרומה, הגיע למצר ים ונחת באזור עשיר ופורה באופן יוצא דופן עבור ויקינגים הרגילים לקרח. הם מצאו שם נהרות מלאים בדגי סלמון ענקיים, אדמות מרעה שבהן לא היה כפור בחורף, ולפי הסאגות – גם גפני בר ופירות יער (מהם ניתן לייצר יין). לייף העניק לאזור את השם המפורסם מכל: <strong>"וינלנד" (Vinland - ארץ היין/הגפנים)</strong>. הם החליטו להקים במקום מחנה לחורף וקראו לו "לייפסבודיר" (הבתים של לייף). בתום החורף, הם חזרו לגרינלנד עם ספינה עמוסה בעץ ובענבים.
+                מסלולו של אבן בטוטה (הנרחב ביותר טרם העידן המודרני) כלל:
+                <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-400">
+                    <li><strong>צפון אפריקה והמזרח התיכון:</strong> יציאה ממרוקו, הגעה למצרים, סוריה, ירושלים, ומכה.</li>
+                    <li><strong>פרס, עיראק ומזרח אפריקה:</strong> סיור לאורך "חוף הסוואהילי" עד מוגדישו וקילווה.</li>
+                    <li><strong>הודו והמלדיביים:</strong> שירות כקאדי בכיר (שופט) בחצרו של סולטאן דלהי. כשחשש לחייו, ברח והפך לשופט בכיר באיים המלדיביים.</li>
+                    <li><strong>סין והחזרה:</strong> הגעה לסרי לנקה, סומטרה, ועד לגואנגג'ואו בסין של שושלת יואן, ולבסוף מסעות חזרה ומסע לאימפריית מאלי במערב אפריקה.</li>
+                </ul>
             </p>
         </section>
 
-        <!-- הגילוי וחשיבותו -->
+        <!-- הגילויים והשפעותיהם -->
         <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
-            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">גילויים מרכזיים והשפעותיהם</h2>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">גילויים מרכזיים והשפעותיהם ("הריחלה")</h2>
             <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
                 <p>
-                    <strong>מהות הגילויים:</strong>
-                    במשך מאות שנים, סיפורי המסע של לייף אייריקסון נחשבו למיתוסים או אגדות עם ויקינגיות המופיעות בסאגות האיסלנדיות. הגילוי האמיתי של וינלנד היה הוכחה לכך שאירופאים חצו את האוקיינוס האטלנטי ויצרו קשר עם יבשת צפון אמריקה כחמש מאות שנה לפני כריסטופר קולומבוס. זו הייתה הפלגה טרנס-אוקיינית פנומנלית שהעידה על היכולות הטכנולוגיות המדהימות של ספינות הדראקאר הוויקינגיות ועל יכולות הניווט (בעזרת כוכבים, זרמים ומעוף ציפורים) של הימאים הנורדים.
+                    <strong>מהות הגילויים:</strong> אבן בטוטה סיפק את התמונה הפנורמית הגדולה והמפורטת ביותר של התרבות והגיאוגרפיה בימי הביניים. הוא תיעד מנהגים משפטיים, חצרות סולטאנים, ואת החיים היום-יומיים, וחיבר בין קצוות עולם.
                 </p>
-
                 <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
-                    <strong class="text-white text-xl block mb-2">האישור הארכיאולוגי והשפעותיו:</strong>
-                    החשיבות ההיסטורית קיבלה תוקף מדעי מוחלט רק בשנת 1960. חוקר נורווגי בשם הֶלְגֶה אִינְגְסְטַד (Helge Ingstad) ואשתו הארכיאולוגית אן סְטִינֶה (Anne Stine) גילו שרידים של כפר ויקינגי בקצה הצפוני של האי ניופאונדלנד (Newfoundland) בקנדה, באתר שנקרא ל'אנס או מדוז (L'Anse aux Meadows). הממצאים באתר הוכיחו מעבר לכל ספק את אמיתות מסעותיו של לייף ושינו את ההיסטוריוגרפיה העולמית של גילוי אמריקה.
+                    <strong class="text-white text-xl block mb-2">כתיבת ה"ריחלה" (המסע) והשפעותיה המרכזיות:</strong>
+                    בשובו למרוקו, הכתיב את זיכרונותיו לספר שהתפרסם כ<strong>"הריחלה" (Ar-Rihla)</strong>. הספר משמש כשימור היסטורי בלעדי להכרת חוף הסוואהילי ואימפריית מאלי באותה תקופה, ומהווה טקסט אנתרופולוגי מכונן.
                 </div>
-
-                <p>
-                    <strong>השפעות ארוכות טווח ומדוע הגילוי "נעצר":</strong>
-                    למרות שבירת הנרטיב ההיסטורי שיחס לקולומבוס את הבכורה, לגילוי של לייף לא הייתה השפעה גלובלית ארוכת טווח. בניגוד לקולומבוס, לא היה לו את הגיבוי הכלכלי והאימפריאלי (כמו מספרד). המושבות בגרינלנד היו קטנות ומבודדות מכדי לתחזק אימפריה מעבר לים. בנוסף, הוויקינגים נתקלו בהתנגדות אלימה ועזה מצד הילידים האינדיאנים באמריקה (אותם כינו "סְקְרֶלִינְגִים"). לאחר ניסיונות התיישבות מדממים, ההתיישבות ננטשה ווינלנד נותרה זיכרון היסטורי מתוק בלבד.
-                </p>
             </div>
         </section>
 
@@ -166,33 +146,26 @@
         <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
             <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
             <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
-                <li>
-                    <strong>"הסאגות של האיסלנדים" (Sagas of Icelanders):</strong> המקורות הכתובים המרכזיים המספרים את סיפורו של לייף אייריקסון הם שני טקסטים מימי הביניים: <span class="italic text-gray-300">"סאגת הגרינלנדים" (Grænlendinga saga)</span> ו-<span class="italic text-gray-300">"סאגת אריק האדום" (Eiríks saga rauða)</span>. סאגות אלו נכתבו במאות ה-13 וה-14 ומבוססות על מסורות שבעל-פה.
-                </li>
-                <li>
-                    <strong>מחקר ארכיאולוגי:</strong> Ingstad, Helge; Ingstad, Anne Stine (2000). <span class="italic text-gray-300">The Viking Discovery of America: The Excavation of a Norse Settlement in L'Anse Aux Meadows, Newfoundland.</span> (הספר המסכם את גילוי אתר ההתיישבות הוויקינגי בקנדה שהוכיח את נכונות הסאגות).
-                </li>
-                <li>
-                    <strong>מוסד הסמית'סוניאן (Smithsonian Institution):</strong> אוספים ומאמרים רשמיים של המוזיאון הלאומי להיסטוריה של הטבע בארה"ב בנושא התפשטות הוויקינגים בצפון האוקיינוס האטלנטי.
-                </li>
+                <li><strong>"הריחלה" (Rihla):</strong> מקור הראשוני (Primary Source) שנכתב על ידי אבן ג'וזאי מפיו של אבן בטוטה.</li>
+                <li><strong>מחקר מודרני מקיף:</strong> Dunn, Ross E. (1986). <span class="italic text-gray-300">The Adventures of Ibn Battuta: A Muslim Traveler of the 14th Century.</span></li>
             </ul>
         </section>
 
     </main>
 
-    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <!-- פוטר מעוצב -->
     <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
         <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
             <p class="text-gray-400 text-lg font-bold">
                 האתר נבנה על ידי ג'מיני ורם &copy; 2026
             </p>
             <p class="text-gray-500 text-sm">
-                <strong>נושא מחקר:</strong> לייף אייריקסון | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+                <strong>נושא מחקר:</strong> אבן בטוטה | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
             </p>
         </div>
     </footer>
 
-    <!-- חלון צף לתמונה (Modal) עם הנתיב המעודכן -->
+    <!-- חלון צף לתמונה (Modal) -->
     <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
         <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
             <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
@@ -200,30 +173,15 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-            <img src="../assets/leif_erikson.jpg" alt="לייף אייריקסון" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Leif+Erikson'">
+            <img src="../assets/ibn_battuta.jpg" alt="אבן בטוטה" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Ibn+Battuta'">
         </div>
     </div>
 
     <script>
-        // פונקציות לשליטה בחלון הצף של התמונה
         const imageModal = document.getElementById('imageModal');
-        
-        function showImageModal() {
-            imageModal.classList.remove('hidden');
-            imageModal.classList.add('flex');
-        }
-        
-        function hideImageModal() {
-            imageModal.classList.add('hidden');
-            imageModal.classList.remove('flex');
-        }
-        
-        // סגירה בלחיצה מחוץ לתמונה
-        window.addEventListener('click', (e) => {
-            if (e.target === imageModal) {
-                hideImageModal();
-            }
-        });
+        function showImageModal() { imageModal.classList.remove('hidden'); imageModal.classList.add('flex'); }
+        function hideImageModal() { imageModal.classList.add('hidden'); imageModal.classList.remove('flex'); }
+        window.addEventListener('click', (e) => { if (e.target === imageModal) { hideImageModal(); } });
     </script>
 </body>
 </html>
