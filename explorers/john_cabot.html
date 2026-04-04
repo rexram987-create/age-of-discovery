@@ -1,0 +1,225 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ג'ון קבוט | חוקר | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">ג'ון קבוט</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים משוערות:</span> 1450 – 1498/1500 | <span class="text-darkAccent font-bold">שנת הגילוי של צפון אמריקה:</span> 1497
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/john_cabot.jpg" alt="ג'ון קבוט" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=John+Cabot'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם הלידה האיטלקי: ז'ואן/ג'ובאני קבוטו (Giovanni Caboto)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        קבוט מעולם לא נולד כ"ג'ון קבוט". זהו האנגלוז של שמו האיטלקי המקורי.
+                        <br><br>
+                        <strong>שם פרטי (ג'ובאני):</strong> השם האיטלקי המקביל ל"יוחנן" העברי או "ג'ון" האנגלי, שפירושו "יהוה חנן" (האל חנן/ריחם). 
+                        <br>
+                        <strong>שם משפחה (קבוטו - Caboto):</strong> מקור שם המשפחה אינו ודאי לחלוטין. התיאוריה הרווחת ביותר במחקר היא שמקור השם הוא במילה האיטלקית <em>Cabotaggio</em> (קבוטאז' - ניווט חופים), מה שמצביע על כך שמשפחתו עסקה במשך דורות בסחר ימי לאורך חופי הים התיכון.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">השם האנגלי: ג'ון קבוט (John Cabot)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        כאשר ג'ובאני קבוטו הגיע לאנגליה בסביבות שנת 1495 כדי לחפש מימון למסעותיו, הוא נאלץ להתאים את עצמו לסביבה החדשה (בדומה לקולומבוס ששינה את שמו ל"קולון" בספרד). 
+                        <br><br>
+                        הפטרונים האנגלים שלו, ובמיוחד המלך הנרי השביעי, תרגמו וקראו לו "ג'ון קבוט" (John Cabot) – כתיב והגייה שהפכו אותו לנגיש ומקומי עבור הכתר האנגלי והסוחרים מבריסטול, וכך הוא נרשם בספרי ההיסטוריה המערבית.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות, אזרחות ונציאנית ובריחה מחובות</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                ג'ובאני קבוטו נולד סביב שנת 1450, ככל הנראה בעיר גנואה או בנאפולי (יש מחלוקת היסטורית לגבי עיר הולדתו המדויקת), אך כשהיה ילד, משפחתו עברה לרפובליקה של ונציה – מעצמת המסחר הימי הגדולה של ימי הביניים. ב-1476 הוא קיבל אזרחות ונציאנית מלאה (תנאי הכרחי לסחר בינלאומי מטעם הרפובליקה).
+                <br><br>
+                קבוטו הצעיר הפך לסוחר תבלינים, ובדומה למרקו פולו לפניו, הוא נסע מזרחה לחופי הלבנט (ככל הנראה הגיע עד מכה) כדי לקנות סחורות יקרות ערך מסוחרים ערבים. המסעות הללו עוררו בו את השאלה: מאיפה מגיעים התבלינים במקור?
+                <br><br>
+                למרות ניסיונו בסחר, קבוטו נקלע לקשיים כלכליים כבדים. בשנת 1488, הוא ברח מונציה יחד עם משפחתו עקב חובות כבדים (ככל הנראה בעקבות השקעות כושלות בפיתוח קרקעות). הוא נדד לספרד ולפורטוגל, בניסיון למכור את כישורי הניווט שלו לשליטים המקומיים (בדיוק במקביל למאמציו של קולומבוס). לאחר שנדחה שם, חצה את התעלה והגיע לאנגליה. הוא בחר להשתקע בעיר הנמל <strong>בריסטול (Bristol)</strong>, מתוך ידיעה שזו העיר האנגלית המתקדמת ביותר בתחום חקר האוקיינוס האטלנטי, שסוחריה כבר שלחו ספינות לחפש איים אבודים בים.
+            </p>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים ותפיסת עולם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                האידאולוגיה והמניעים של קבוט התבססו על שילוב של קריאה נכונה של מפות, אסטרטגיה גיאוגרפית, וצורך כלכלי נואש (לאור חובותיו מהעבר).
+                <br><br>
+                <strong>המניע הגיאוגרפי ("המעבר הצפון-מערבי"):</strong> קבוט האמין (ובצדק, מבחינה מתמטית על כדור הארץ) שהדרך המהירה ביותר מאסיה לאירופה אינה חציית קו המשווה או שייט למרכז אמריקה (הנתיב של קולומבוס), אלא <strong>הפלגה בקווי רוחב צפוניים</strong>. מכיוון שכדור הארץ צר יותר בקטבים, הקפת כדור הארץ בצפון תהיה קצרה משמעותית. הוא רצה למצוא את מה שלימים ייקרא "המעבר הצפון-מערבי" לאסיה (Northwest Passage) כדי להגיע ישירות לאיי התבלינים.
+                <br><br>
+                <strong>המניע הכלכלי (פטרונות אנגלית):</strong> קבוט ידע שסוחרי העיר בריסטול כבר שנים שולחים ספינות מערבה כדי למצוא את אי הרפאים האגדי "היי-ברזיל" באוקיינוס האטלנטי כדי למצוא אזורי דיג חדשים. הוא מכר להם, ולמלך הנרי השביעי, תוכנית שאפתנית: אנגליה תממן אותו, והוא ימצא להם נתיב ישיר לשוקי אסיה, נתיב שיעקוף לחלוטין את המונופול הספרדי (דרום אמריקה) והפורטוגלי (אפריקה).
+            </p>
+        </section>
+
+        <!-- נסיבות היסטוריות למסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">הדרך למלך הנרי השביעי וקבלת האישור למסע</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                המסע של קבוט ב-1497 היה תגובה ישירה ואגרסיבית של אנגליה לתגלית של קולומבוס מ-1492. אנגליה, מדינה קטנה יחסית בשולי אירופה בראשות המלך <strong>הנרי השביעי</strong> (מייסד שושלת טיודור), רצתה נואשות נתח מהעושר החדש ולא הייתה מוכנה להכיר במונופול הספרדי-פורטוגלי שהאפיפיור קבע ב"חוזה טורדסיאס".
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-4">
+                <strong class="text-white text-xl block mb-2">הלובי של סוחרי בריסטול והפגישה עם המלך:</strong>
+                איך פליט איטלקי בחובות מגיע למלך אנגליה? קבוט השתמש בחושיו המסחריים כדי לרכוש את אמונם של סוחרי בריסטול העשירים. הוא הציע להם עסקה: הם יממנו אותו, והוא ימצא נתיב צפוני וקצר יותר לאסיה שלא יעבור דרך הצי הספרדי. הסוחרים המקומיים, שרצו גישה לשווקים חדשים ולדגה, הפעילו את קשריהם הפוליטיים בחצר המלוכה בלונדון וסידרו לקבוט פגישה פנים-אל-פנים עם המלך הנרי השביעי.
+            </div>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                <strong>מכתבי ההרשאה (Letters Patent):</strong> המלך הנרי השביעי היה מלך מחושב וחסכן. הוא התלהב מהרעיון של קבוט, אך לא רצה לממן אותו מכיסו או לפתוח במלחמה ישירה עם ספרד. ב-5 במרץ 1496, המלך העניק לקבוט "מכתבי הרשאה" המסמיכים אותו (ואת בניו) להפליג תחת דגל אנגליה לכל ים מזרחי, מערבי או צפוני, ולכבוש כל "עיר, טירה או אי של עובדי אלילים" שטרם התגלו לנוצרים. האישור כלל מונופול מסחרי לקבוט, אך <strong>התנאי היה קשוח:</strong> קבוט וסוחרי בריסטול נאלצו לשאת בכל עלויות וסיכוני המסע בעצמם, בעוד המלך יקבל חמישית מכל הרווחים נטו, מבלי לסכן אפילו מטבע אחד.
+            </p>
+        </section>
+
+        <!-- פירוט המסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסע והגילוי של אמריקה הצפונית (1497)</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                לאחר ניסיון נפל ראשון ב-1496 (שבו נאלץ לחזור עקב מזג אוויר וסכסוכים עם הצוות), יצא ג'ון קבוט למסעו השני וההיסטורי בחודש מאי 1497 מנמל בריסטול. למרבה הפלא, מסע כה משמעותי נעשה עם ספינה קטנה אחת בלבד: קרוולה בשם <strong>ה"מתיו" (Matthew)</strong>, עם צוות של כ-18 מלחים אנגלים בלבד.
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">נחיתה בעולם החדש (24 ביוני 1497):</strong>
+                לאחר 35 ימים בים הסוער של צפון האוקיינוס האטלנטי, ה"מתיו" נחתה בחוף. המיקום המדויק נתון לוויכוח בין היסטוריונים עד היום (האפשרויות המובילות הן האי ניופאונדלנד, או האי קייפ ברטון שבנובה סקוטיה, קנדה). קבוט ירד לחוף, הציב צלב, והניף את דגלי האפיפיור והמלך הנרי השביעי ותבע בעלות על האדמה ("ניו-פאונד-לנד" - ארץ חדשה שנמצאה) עבור אנגליה. 
+                <br><br>
+                בניגוד לקולומבוס (שפגש ילידים ביום הראשון), קבוט לא פגש אף אדם מקומי, אך מצא עדויות לנוכחותם: שרידי מדורה, כלי אבן פשוטים ומחטים עשויות עצם.
+            </div>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                <strong>החזרה לאנגליה (ה"אדמירל הגדול"):</strong>
+                קבוט הפליג בחזרה (לאחר שזיהה את להקות דגי הבקלה העצומות של ה"גרנד בנקס", שיעשירו את סוחרי בריסטול לדורות). הוא חזר לאנגליה באוגוסט 1497 והתקבל כגיבור. המלך הנרי השביעי תגמל אותו, והוא כונה ברחובות "האדמירל הגדול". בדומה לקולומבוס, קבוט היה משוכנע שהגיע לקצה הצפון-מזרחי של אסיה.
+            </p>
+        </section>
+
+        <!-- הגילוי וחשיבותו -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">הגילוי, חשיבותו ותעלומת ההיעלמות</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    <strong>התעלומה – מסע 1498 וההיעלמות:</strong>
+                    מעודד מההצלחה, המלך הנרי מימן לקבוט צי של חמש ספינות באביב 1498. המטרה: להפליג דרומה מהמקום שגילה ב-1497, עד שיפגוש את "ממלכת קתי" (סין של מרקו פולו) ואת איי התבלינים העשירים. ספינה אחת נאלצה לחזור לאירלנד עקב נזקי סערה. השאר המשיכו... וזהו. קבוט וצוותו נעלמו ללא עקבות, ולא נשמע מהם שוב לעולם. ייתכן שטבעו בסערה צפון אטלנטית, או שגוועו מקור ורעב בחופי קנדה.
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">חשיבות היסטורית – בסיס האימפריה הבריטית:</strong>
+                    למרות סופו הטרגי והמסתורי של קבוט, השפעתו על ההיסטוריה העולמית עצומה. המסע של קבוט מ-1497 היווה את <strong>הבסיס המשפטי וההיסטורי לכל תביעותיה של אנגליה (ולאחר מכן בריטניה) על יבשת אמריקה הצפונית.</strong>
+                    <br><br>
+                    בעוד שספרד ופורטוגל חילקו את הדרום והמרכז (ובזזו זהב וכסף), האנגלים, בהסתמך על תגליתו של קבוט, יחזרו מאוחר יותר לאמריקה הצפונית וייסדו את המושבות (כמו ג'יימסטאון ופלימות') שיהפכו בסופו של דבר לארצות הברית של אמריקה ולקנדה המודרנית. ללא קבוט וה"מתיו", סביר להניח שצפון אמריקה הייתה דוברת ספרדית או צרפתית.
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>מכתבי ג'ון דיי וריימונדו דה סונצ'ינו:</strong> התיעוד על קבוט הוא דל מאוד (אין יומני מסע שלו). המקורות העיקריים הם מכתבים ששלחו סוחרים ודיפלומטים שחיו באנגליה לאיטליה וספרד בשנת 1497, בהם דיווחו בפירוט על חזרתו של קבוט ועל טענותיו שמצא אדמות במערב (John Day letter, Soncino dispatches).
+                </li>
+                <li>
+                    <strong>מחקר ארכיוני בריסטול (The Cabot Project):</strong> פרויקט מחקר מודרני של אוניברסיטת בריסטול, שחשף מסמכי מס ותעודות הלוואה המוכיחים שסוחרי העיר מימנו באופן משמעותי את קבוט, ואת הקשר האפשרי שלו למסעות קודמים לאטלנטי.
+                </li>
+                <li>
+                    <strong>מחקר אקדמי קלאסי:</strong> Quinn, David B. (1974). <span class="italic text-gray-300">England and the Discovery of America, 1481-1620.</span> (ספר יסוד על התפתחות המאמץ הימי האנגלי ביבשת, המבוסס על "זכות הראשונים" של ג'ון קבוט).
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> ג'ון קבוט | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/john_cabot.jpg" alt="ג'ון קבוט" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=John+Cabot'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+```
