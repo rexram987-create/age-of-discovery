@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ברתולומיאו דיאש | חוקר | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">ברתולומיאו דיאש</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים משוערות:</span> 1450 – 29 במאי 1500 | <span class="text-darkAccent font-bold">שנות המסע לכף התקווה הטובה:</span> 1487 – 1488
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/bartolomeu_dias.jpg" alt="ברתולומיאו דיאש" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Bartolomeu+Dias'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: ברתולומיאו (Bartolomeu)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם "ברתולומיאו" בפורטוגזית הוא גלגול של השם היווני "Bartholomaios" (Βαρθολομαῖος), שמקורו בשפה הארמית-עברית של המזרח התיכון העתיק: <strong>"בר-תלמי"</strong> או "בר-תלמיא".
+                        <br><br>
+                        <strong>פירוש:</strong> הקידומת "בר" פירושה "בן". המילה "תלמי" יכולה להיות קשורה לתלם (חריש באדמה, כלומר בן של חקלאי) או להעיד על שייכות לשושלת תלמי.
+                        <br>
+                        <strong>ההקשר התרבותי-נוצרי:</strong> השם היה נפוץ מאוד באירופה הנוצרית לכבוד ברתולומאוס הקדוש, אחד משנים עשר השליחים של ישו. הענקת שם של שליח נוצרי העידה על מסורת קתולית אדוקה במשפחה.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה: דיאש (Dias)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        "דיאש" הוא אחד משמות המשפחה העתיקים והנפוצים ביותר בפורטוגל (מקביל ל"דיאס" בספרדית).
+                        <br><br>
+                        <strong>פירוש ובלשנות:</strong> זהו שם פטרונימי (שם המבוסס על שם האב). פירושו במקור הוא <strong>"בנו של דיוגו" (Diogo)</strong> או "בנו של דיאגו", שמות פורטוגזיים/ספרדיים המקבילים לשם העברי יעקב (דרך הגרסה הלטינית Iacobus). ייתכן גם קשר אטימולוגי עתיק יותר למילה הלטינית "Dies" (ימים). 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות ורקע מוקדם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                מעט מאוד תיעוד נשאר על שנות ילדותו המוקדמות של ברתולומיאו דיאש. הוא נולד בסביבות שנת 1450 בפורטוגל, ככל הנראה באזור אלגארבה (Algarve) או בליסבון, למשפחה בעלת היסטוריה ימית ענפה. היסטוריונים סבורים שהוא היה צאצא של דיניש דיאש, חוקר פורטוגלי נודע שגילה את קייפ ורדה (כף ורדה) בשנת 1444, וככל הנראה הים והספינות זרמו בדמו מלידה.
+                <br><br>
+                דיאש גדל בחצר המלוכה של ליסבון וקיבל חינוך מתקדם ביותר באסטרונומיה, מתמטיקה וניווט – תחומים שפורטוגל הובילה בהם את העולם באותה תקופה בזכות המורשת של "הנרי הספן". לפני שמונה למפקד המשלחת ההיסטורית שלו, הוא כבר צבר ניסיון ימי עצום כששירת בארסנל הצי המלכותי הפורטוגלי, פיקח על מחסני הכתר בנמל גינאה שבאפריקה, ואף פיקד על ספינת מלחמה (קרוולה) בשם "סאו קריסטובאו".
+            </p>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים ותפיסת עולם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                מסעו של דיאש היה מבצע מדיני צבאי-מדעי מתוכנן היטב במימון הכתר הפורטוגלי. המניעים שלו לא היו רק אישיים, אלא ביצוע מדויק של חזון לאומי תחת פיקודו של המלך ז'ואאו השני ("הנסיך המושלם").
+                <br><br>
+                <strong>המניע הכלכלי (עקיפת המונפול):</strong> פורטוגל שאפה לשבור את המונופול הוונציאני-מוסלמי על סחר התבלינים מהודו ואסיה (שהתנהל דרך היבשה והים התיכון). המטרה המוצהרת של דיאש הייתה אחת: למצוא את הקצה הדרומי של יבשת אפריקה ולהוכיח שניתן להקיף אותה בים כדי להגיע ישירות להודו.
+                <br><br>
+                <strong>המניע הפוליטי-דתי (החיפוש אחר פרסטר ג'ון):</strong> מניע חזק לא פחות היה המיתוס על <strong>"פרסטר ג'ון" (Prester John)</strong> – מלך נוצרי אגדי, אדיר ועשיר, שעל פי השמועות שלט בממלכה עצומה אי שם במזרח או באפריקה (ככל הנראה הדיווחים התבססו בחלקם על האימפריה הנוצרית של אתיופיה). המלך ז'ואאו השני הורה לדיאש לחפש את הממלכה הזו, מתוך חזון ליצור ברית נוצרית צבאית אדירה (אירופית-אפריקאית) שתכפר על נפילת קונסטנטינופול ותכה את האימפריה המוסלמית משתי חזיתות.
+            </p>
+        </section>
+
+        <!-- נסיבות היסטוריות למסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">נסיבות היסטוריות למסע (פרויקט המאה הפורטוגלי)</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                המסע של דיאש ב-1487 לא צמח בחלל הריק; הוא היה שיאה של עבודת נמלים פורטוגלית שנמשכה כשבעים שנה. החל מתקופתו של הנרי הספן בתחילת המאה ה-15, הצי הפורטוגלי שלח קרוולות לזחול דרומה לאורך חופי מערב אפריקה, מסע אחר מסע. הם מיפו את החופים, למדו את משטרי הרוחות, והקימו תחנות סחר (פייטוריות). 
+                <br><br>
+                עד למסעו של דיאש, האירופאים (בהתבסס על הגיאוגרף היווני העתיק תלמי) האמינו ברובם שהאוקיינוס ההודי הוא "ים סגור", מוקף ביבשה מדרום, ושאי אפשר כלל להקיף את אפריקה. דיאש יצא לדרך כשהציפייה בפורטוגל הייתה בשיאה – הקפטן הקודם, דיוגו קאו, הגיע ב-1484 עד לחופי נמיביה של ימינו, אך מת או נאלץ לחזור. על דיאש הוטלה המשימה לסיים סוף סוף את פרויקט הדורות ולהוכיח שהאוקיינוסים מחוברים.
+            </p>
+        </section>
+
+        <!-- פירוט המסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסע לפריצת הדרך (1487-1488)</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                באוגוסט 1487 הפליג דיאש מליסבון עם צי קטן וזריז של שלוש ספינות בלבד: שתי קרוולות חמושות (אחת בפיקודו והשנייה בפיקודו של ז'ואאו אינפנטה) וספינת אספקה (תחת פיקודו של אחיו, פרו דיאש). ספינת האספקה הייתה חידוש קריטי שאפשר להם להפליג רחוק יותר מבלי לעצור להצטייד בחוף עוין.
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">תפנית הגורל – הסערה בת 13 הימים:</strong>
+                בתחילת 1488, כשעברו את נמיביה, הצי נתקל בסערה אימתנית במיוחד שדחפה אותם הרחק דרומה אל האוקיינוס הפתוח (ככל הנראה רוחות ה"ווסטרליס" החזקות של האוקיינוס הדרומי). במשך 13 ימים הם היטלטלו בים הפתוח ללא ראיית יבשה, הרחק מחוץ למפות הידועות. כשהסערה שככה, דיאש פקד לשוט מזרחה כדי לחזור לחוף האפריקאי – אך דבר לא נראה באופק. 
+                <br><br>
+                בתגלית מבריקה של ניווט, הוא הבין שאם הם שטו מזרחה מספיק זמן ולא פגעו בחוף, סימן שהם <strong>עברו את קצה היבשת</strong>. הוא הורה לשוט צפונה, וב-3 בפברואר 1488 נחתו בחופי מפרץ מוסל (Mossel Bay) שבדרום אפריקה. הם הבינו שהמים סביבם הם כבר האוקיינוס ההודי.
+            </div>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                <strong>המרד והחזרה ("כף הסערות"):</strong>
+                דיאש רצה להמשיך צפונה להודו, אך הצוות המותש והמפוחד, שסבל ממחלות ואספקתו אזלה (ספינת האספקה הושארה מאחור לפני הסערה), איים במרד גלוי. דיאש נאלץ להסכים לחזור. בדרכם חזרה צפונה, הם ראו לראשונה את ה"כף" שאותו עקפו מבלי לדעת בסערה. דיאש כינה אותו <strong>"כף הסערות" (Cabo das Tormentas)</strong>. כשהגיע לליסבון בסוף 1488 ודיווח למלך, החליט המלך ז'ואאו השני לשנות את השם המפחיד לשם אופטימי וקרא לו <strong>"כף התקווה הטובה" (Cabo da Boa Esperança)</strong> – התקווה להגשמת החלום להגיע להודו.
+            </p>
+        </section>
+
+        <!-- הגילוי וחשיבותו -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">הגילוי וחשיבותו ההיסטורית</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    <strong>מהות הגילוי:</strong>
+                    הגילוי של דיאש לא היה גילוי של יבשת לא-נודעת, אלא <strong>פתרון של אחת החידות הגיאוגרפיות והמדעיות הגדולות בהיסטוריה</strong>. הוא ניפץ לרסיסים את התפיסה של תלמי (ששלטה באקדמיה למעלה מאלף שנים) שהאוקיינוס ההודי הוא ימה סגורה. הוא הוכיח באופן סופי ומוחלט שהאוקיינוס האטלנטי והאוקיינוס ההודי מחוברים זה לזה.
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">השפעות ארוכות טווח והסוף הטרגי:</strong>
+                    מסעו של דיאש היה המפתח שפתח את דלתות העולם למערב. ההוכחה שלו אפשרה, כעשור לאחר מכן ב-1497, לואסקו דה גאמה להשלים את המשימה, להפליג ישירות מסביב לכף ולהגיע להודו, מה שסימן את תחילת ההגמוניה הכלכלית האירופאית הגלובלית.
+                    <br><br>
+                    דיאש עצמו מעולם לא קיבל את התהילה הראויה לו כמפקד על מסע להודו. בשנת 1500, הוא צורף כקפטן בארמדה העצומה של פדרו קבראל (שגילתה את ברזיל בדרכה להודו). במהלך הפלגתם חזרה במזרח האוקיינוס האטלנטי, ציפור האירוניה ההיסטורית הכתה בו: סערה נוראית החריבה ארבע מאוניות הצי – אחת מהן הייתה זו של דיאש. הוא טבע למוות באותו אזור של הים שהוא עצמו גילה וכינה "כף הסערות".
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>"דקאדות של אסיה" (Décadas da Ásia):</strong> החיבור ההיסטורי המונומנטלי של ז'ואאו דה בארוס (João de Barros) בן המאה ה-16, המהווה את המקור הכתוב המרכזי למסעות הפורטוגליים ולסיפורו של דיאש בפרט.
+                </li>
+                <li>
+                    <strong>Esmeraldo de Situ Orbis:</strong> כתב יד של חוקר וקרטוגרף פורטוגלי בן התקופה, דוארטה פאצ'קו פריירה (Duarte Pacheco Pereira), הכולל מידע גיאוגרפי ממקור ראשון על תגליות החוף האפריקאי.
+                </li>
+                <li>
+                    <strong>מחקר היסטורי מודרני:</strong> Russell-Wood, Peter E. (1998). <span class="italic text-gray-300">The Portuguese Empire, 1415–1808: A World on the Move.</span> (מחקר המנתח לעומק את המדיניות הכלכלית וההישגים הניווטיים של הכתר הפורטוגלי).
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> ברתולומיאו דיאש | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/bartolomeu_dias.jpg" alt="ברתולומיאו דיאש" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Bartolomeu+Dias'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
