@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ג'נג חה | אדמירל צי האוצר | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">ג'נג חה</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1371 – 1433/1435 | <span class="text-darkAccent font-bold">שנות מסעות צי האוצר:</span> 1405 – 1433
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/zheng_he.jpg" alt="ג'נג חה" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Zheng+He'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם הלידה המקורי: מא חה (Ma He / 马和)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        ג'נג חה נולד עם השם "מא חה". הוא השתייך לקבוצת המיעוט האתני "חוּי" (Hui) – מוסלמים שחיו בדרום-מערב סין.
+                        <br><br>
+                        <strong>פירוש "מא" (Ma):</strong> זהו שם משפחה סיני נפוץ בקרב מוסלמים בסין, המהווה לרוב קיצור או תעתיק סיני לשם "מוחמד".
+                        <br>
+                        <strong>פירוש "חה" (He):</strong> משמעות המילה בסינית היא "שלום", "הרמוניה" או "פיוס". שם זה משקף תקוות הורים אוניברסליות באזור שידע לא מעט סכסוכים.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">השם המלכותי: ג'נג חה (Zheng He / 郑和)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם בו הוא מוכר בהיסטוריה אינו שם משפחתו המקורי, אלא <strong>שם תואר וכבוד שהוענק לו</strong>.
+                        <br><br>
+                        <strong>הסיבה לשינוי:</strong> בשנת 1404, בעקבות תרומתו הצבאית המכרעת של מא חה לניצחונו של הקיסר יוּנְגְלֶה (בקרב על הגנת מאגר המים של העיר 'ג'נְגְלוּנְבָּה'), החליט הקיסר להעניק לו חסות מלכותית.
+                        <br>
+                        <strong>פירוש:</strong> הקיסר העניק לו את שם המשפחה האימפריאלי <strong>ג'נג (Zheng)</strong>. מאותו רגע ואילך, הוא נודע בשם "ג'נג חה" כאות להשתייכותו לאליטה המקורבת ביותר לקיסרות מינג.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800/50 p-6 rounded-xl border border-blue-900 shadow-md">
+                    <h3 class="text-xl font-semibold text-blue-300 mb-2">כינויים היסטוריים נוספים: סאן-באו טאי-ג'יין</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        הוא נודע בסין גם בתואר "סאן-באו טאי-ג'יין" (Sanbao Taijian). "סאן באו" פירושו "שלושת התכשיטים" (מונח בודהיסטי שהעיד על כבודו, או רמז להגייתו הסינית של שמו הערבי), ו"טאי-ג'יין" פירושו סריס ראשי בחצר הקיסרות.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות, טרגדיה ועלייה לגדולה</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                ילדותו של ג'נג חה רצופה בטרגדיה אלימה. הוא נולד בשנת 1371 במחוז יונאן (Yunnan) שבדרום-מערב סין, למשפחה מוסלמית בעלת מסורת ענפה. אביו וסבו קיימו שניהם את מצוות החג' (העלייה לרגל למכה), מה שהעשיר את ידעו של הילד הצעיר על הגיאוגרפיה ועל העולם שמחוץ לסין מסיפורי משפחתו.
+                <br><br>
+                בשנת 1381, כשהיה רק בן 10, פלש צבא שושלת מינג למחוז יונאן כדי לדכא את שרידי השלטון המונגולי. אביו נהרג בקרב, והילד "מא חה" נשבה על ידי צבא מינג. כנהוג בשושלות הסיניות לגבי שבויי מלחמה צעירים, הוא <strong>עבר סירוס</strong> (כדי שלא יוכל להקים שושלת מתחרה) ונשלח לשרת כעבד-סריס באחוזתו של הנסיך ג'ו די (Zhu Di), בנו של קיסר מינג. 
+                <br><br>
+                למרות הטראומה, מא חה התגלה כנער חסון בצורה יוצאת דופן (הוא מתואר לעיתים כמתנשא לגובה של כשני מטרים), מבריק, ובעל חושים צבאיים חדים. הוא הפך מחייל צעיר למפקד, ולחברו ואיש אמונו הקרוב ביותר של הנסיך. כאשר הנסיך ג'ו די מרד באחיינו ותפס את כס השלטון והפך ל"קיסר יונגלה", מא חה – כעת ג'נג חה – זכה לעמדת כוח חסרת תקדים כסריס הראשי והמפקד הצבאי העליון של הקיסרות.
+            </p>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים ותפיסת עולם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                המסעות של ג'נג חה אינם מסעות גילוי במובן המערבי; הם היו <strong>מבצעים צבאיים-דיפלומטיים ענקיים להקרנת עוצמה (Power Projection)</strong>.
+                <br><br>
+                <strong>המניע הפוליטי והדיפלומטי:</strong> הקיסר יונגלה, שתפס את השלטון בהפיכה עקובה מדם, היה זקוק ללגיטימציה. הוא שאף להוכיח לעולם שהוא שליט כדור הארץ (בן השמיים), ולהרחיב את "מערכת המנחות" הסינית. המטרה של ג'נג חה לא הייתה לכבוש ארצות רחוקות בנשק, אלא "לשכנע" את שליטי הים הסיני הדרומי והאוקיינוס ההודי להכיר בעליונותה של סין ולשלוח שגרירים ומנחות לקיסר מינג. הצי העצום נועד לייצר הלם ויראה (Shock and Awe) בקרב המלכים המקומיים.
+                <br><br>
+                <strong>המניע הכלכלי:</strong> במקביל, המסעות שימשו למסחר ממלכתי מסיבי. סין ייצאה משי משובח, חרסינה (פורצלן) ותה, ויבאה בתמורה תבלינים, שנהב, פנינים ותרופות אקזוטיות.
+                <br><br>
+                <strong>תפיסת העולם של ג'נג חה:</strong> כאדם מוסלמי שמוביל צי באוקיינוס ההודי (שבו האסלאם היה דומיננטי במסחר), היה לו יתרון עצום. הוא יכול היה לתקשר ולהתפלל עם סוחרים ערבים, פרסים והודים. הוא אימץ גישה של "דיפלומטיה חמושה" – הוא נקט באלימות רק נגד שודדי ים או שליטים שסירבו להראות כבוד לקיסרות הסינית, אך ברוב המקרים פעל בדרכי שלום וחילופי סחר מתוך עוצמה.
+            </p>
+        </section>
+
+        <!-- נסיבות היסטוריות למסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">נסיבות היסטוריות למסע (עידן צי האוצר)</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                הופעתו של "צי האוצר" מתרחשת בתקופת עוצמה חסרת תקדים של שושלת מינג (Ming Dynasty) בראשית המאה ה-15. סין הייתה באותה עת האימפריה העשירה, המאוכלסת והמתקדמת ביותר טכנולוגית בעולם. מספנות ענק נבנו סביב הבירה נאנג'ינג (Nanjing). פיתוח טכנולוגיות ימיות כגון המצפן המגנטי, כותלי שדר המונעים חדירת מים (Watertight compartments), ומפרשיות מתקדמות הגיעו לשיא של אלפי שנות התפתחות סינית. במקביל, באירופה רק החלו להתפתח הקרוולות הראשונות, שהיו קטנות לאין שיעור מהספינות הסיניות. זהו חלון זמן היסטורי צר שבו סין, בדרך כלל אימפריה יבשתית המסתגרת כלפי פנים, בחרה להשקיע את העודף הכלכלי האדיר שלה בשליטה ימית גלובלית.
+            </p>
+        </section>
+
+        <!-- פירוט המסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסעות: שבע הפלגותיו של צי האוצר (1405-1433)</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                בשנת 1405 יצא ג'נג חה למסעו הראשון כמפקד עליון של צי שאין לו תקדים בהיסטוריה. בסך הכל ביצע שבעה מסעות גדולים לאורך 28 שנים.
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">עוצמת הצי (ארמדה שאין לה מתחרים):</strong>
+                במסע הראשון השתתפו מעל <strong>300 ספינות</strong> ונשאו צוות של כ-<strong>27,000 איש</strong> (לוחמים, נווטים, רופאים, מתורגמנים, פקידים וסופרים). 
+                במרכז הצי עמדו <strong>"ספינות האוצר" (Baochuan)</strong>. לפי תיעודים סיניים, ספינות העץ הללו הגיעו לאורך של עד 120 מטרים (לשם השוואה, ספינת ה"סנטה מריה" של קולומבוס, עשרות שנים מאוחר יותר, הייתה באורך של כ-18 מטרים בלבד). ספינות אלו כללו עד תשעה תרנים וגינות לגידול צמחים טריים נגד צפדינה.
+            </div>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                <strong>מסלולי ההפלגות:</strong>
+                <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-400">
+                    <li><strong>בים הסיני הדרומי:</strong> הצי ביקר בוייטנאם, סיאם (תאילנד), סומטרה, וג'אווה (אינדונזיה). הם חיסלו אימפריית שודדי ים במצר מלאקה וביססו שם סדר שיגן על המסחר הסיני.</li>
+                    <li><strong>באוקיינוס ההודי:</strong> הם הגיעו לציילון (סרי לנקה), שם התערבו במלחמת אזרחים, ולעיר הנמל העשירה קליקוט (Calicut) שבהודו.</li>
+                    <li><strong>במפרץ הפרסי ובים האדום:</strong> במסעות המאוחרים, הצי הגיע להורמוז, לעדן, ומשלחות משנה אפילו הגיעו לנמל ג'דה (משם חלק מצוותו המוסלמי של ג'נג חה ערך חג' במכה).</li>
+                    <li><strong>בחוף המזרחי של אפריקה:</strong> הצי המשיך דרומה עד חופי סומליה וקניה של ימינו (מוגדישו, מלינדי). משם הם הביאו לקיסר סין מתנות אקזוטיות, כולל הג'ירפה המפורסמת, שהסינים זיהו בטעות כ"צִ'ילִין" (Qilin) - חיה מיתולוגית המסמלת שלטון קיסרי צודק ומבורך משמיים.</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- הגילוי וחשיבותו -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">גילויים מרכזיים, השפעות, ותעלומת הסיום</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    <strong>ההשפעה הגיאופוליטית:</strong>
+                    מסעותיו של ג'נג חה לא נועדו לגלות ארצות לא-מיושבות. השפעתם העצומה הייתה <strong>ביסוס הגמוניה ויציבות גלובלית בניהול סיני</strong>. הוא יצר רשת מסחר ודיפלומטיה חסרת תקדים מהאוקיינוס השקט ועד מזרח אפריקה. קהילות סיניות (פזורה) החלו לשגשג בדרום מזרח אסיה (תהליך שנמשך עד היום), ושליטים מעשרות מדינות שלחו שגרירים לבירה הסינית לאות הכנעה וכבוד.
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">הסוף הפתאומי והמסתורי:</strong>
+                    ג'נג חה מת, ככל הנראה, בים במהלך מסעו השביעי (סביב 1433) ונקבר בים. לאחר מותו, ומות פטרוניו הקיסריים, השתנתה הפוליטיקה הסינית מהקצה אל הקצה. פקידים קונפוציאניים שמרנים, שתיעבו את הסריסים (כמו ג'נג חה) והתנגדו להוצאות העצומות של הצי, תפסו את השלטון.
+                    <br><br>
+                    <strong>התוצאה:</strong> סין השמידה את צי האוצר שלה. תוכניות בניית הספינות נשרפו, ונאסר בחוק להפליג מעבר לים באוניות מרובות תרנים. התיעוד על מסעותיו של ג'נג חה כמעט ונמחק כליל מהארכיונים הרשמיים.
+                </div>
+
+                <p>
+                    <strong>החשיבות ההיסטורית הטרגית (ההזדמנות המוחמצת):</strong>
+                    חשיבותו של ג'נג חה בהיסטוריה של עידן התגליות היא מרתקת במיוחד בשל "מה שלא קרה". כשסין פנתה פנימה והשמידה את הצי שלה בשנות ה-1430, היא הותירה ואקום עצום באוקיינוס ההודי. עשרות שנים ספורות לאחר מכן (1498), הגיע ואסקו דה גאמה הפורטוגלי להודו עם כמה ספינות קטנות וחמושות, ומצא אוקיינוס פתוח ללא מעצמה שמגנה עליו. הוויתור הסיני על הים אפשר את תחילת הקולוניאליזם האירופאי, וכיוון את מסלול ההיסטוריה העולמית לטובת המערב.
+                </p>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>"הרישומים האמיתיים של שושלת מינג" (Ming Shilu):</strong> התיעוד ההיסטורי הרשמי של החצר הסינית. למרות שפקידים מאוחרים ניסו להשמיד את רישומי ג'נג חה, מידע על המסעות נותר במסמכים בירוקרטיים אלו.
+                </li>
+                <li>
+                    <strong>כתובת גאלה בשלוש שפות (Galle Trilingual Inscription):</strong> לוח אבן היסטורי שג'נג חה הותיר בסרי לנקה בשנת 1409. הכתובת כתובה בסינית, טמילית ופרסית, ומשקפת את האופי הדיפלומטי והרב-תרבותי של צי האוצר.
+                </li>
+                <li>
+                    <strong>מחקר היסטורי מודרני מקיף:</strong> Dreyer, Edward L. (2007). <span class="italic text-gray-300">Zheng He: China and the Oceans in the Early Ming Dynasty, 1405–1433.</span> Pearson Longman.
+                </li>
+                <li>
+                    <strong>מחקר פופולרי ומעמיק:</strong> Levathes, Louise (1994). <span class="italic text-gray-300">When China Ruled the Seas: The Treasure Fleet of the Dragon Throne, 1405-1433.</span>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> ג'נג חה (אדמירל צי האוצר) | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/zheng_he.jpg" alt="ג'נג חה" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Zheng+He'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
