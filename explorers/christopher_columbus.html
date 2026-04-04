@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>כריסטופר קולומבוס | חוקר | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">כריסטופר קולומבוס</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1451 – 20 במאי 1506 | <span class="text-darkAccent font-bold">שנות מסעות מרכזיים:</span> 1492 – 1504
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/christopher_columbus.jpg" alt="כריסטופר קולומבוס" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Christopher+Columbus'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: כריסטופר (Christopher / Cristoforo)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם "כריסטופר" נובע מהשם היווני העתיק "Christophoros" (Χριστόφορος). השם מורכב משני חלקים ברורים:
+                        <br><br>
+                        <strong>חלק ראשון - Christos (Χριστός):</strong> פירושו "משיח" או "המשוח בשמן", אשר מתייחס לישו בנצרות (מקור המילה מיוונית עתיקה שתרגמה את המילה העברית "משיח").<br>
+                        <strong>חלק שני - Phoros (φόρος) מן הפועל pherein:</strong> פירושו "לשאת" או "להחזיק".<br><br>
+                        <strong>משמעות כוללת:</strong> "נושא המשיח". בנצרות, משמעות זו נקשרה לאגדה על קדוש נוצרי (סט. כריסטופר) שנשא את ישו הילד על כתפיו מעבר לנהר. קולומבוס ראה בשמו נבואה: הוא האמין שייעודו הוא "לשאת את המשיח" (כלומר, את האמונה הנוצרית) אל מעבר לאוקיינוס, אל עמים שטרם שמעו את הבשורה.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה: קולומבוס (Columbus / Colombo / Colón)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        שם המשפחה מקורו ישירות מהשפה הלטינית. באיטלקית שמו היה קריסטופורו קולומבו, ובספרדית קריסטובל קולון.
+                        <br><br>
+                        <strong>משמעות המילה "Columbus":</strong> יונה. היונה מסמלת היסטורית שלום, ואת רוח הקודש במסורת הנוצרית הקתולית. אירוני למדי, בהתחשב בהשלכות האלימות של מסעותיו על העמים הילידיים, שמו סימל שלום והבאת רוח הקודש.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות ורקע מוקדם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                כריסטופר קולומבוס נולד בשנת 1451 ברפובליקה של גנואה (כיום צפון-מערב איטליה), אחת המעצמות הימיות והמסחריות הבולטות של הים התיכון. הוא נולד למשפחה ממעמד הביניים של אומנים וסוחרים; אביו, דומניקו קולומבו, היה אורג צמר וסוחר גבינות, ואימו הייתה סוזנה פונטנרוסה.
+                <br><br>
+                הים התיכון היה מגרש המשחקים שלו. כבר בגיל 10 או 14 החל לעבוד כנער סיפון על ספינות סוחר שיצאו מנמל גנואה. ילדותו בסביבה קוסמופוליטית סוחרת נטעה בו את התשוקה לים ולמסחר. במהלך מסעותיו המוקדמים הוא למד לנווט, להכיר את משטרי הרוחות, והגיע לחופי אפריקה ואף לצפון אירופה, שם ייתכן ושמע סיפורים מפי ספנים נורדים על ארצות במערב הרחוק (כמו וינלנד של לייף אייריקסון).
+            </p>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים ותפיסת עולם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                תפיסת עולמו של קולומבוס הייתה שילוב מורכב, ולעיתים סותר, של אופורטוניזם מסחרי ולהט דתי כמעט משיחי.
+                <br><br>
+                <strong>המניע הכלכלי-מדעי:</strong> קולומבוס ידע (כמו רוב המלומדים בתקופתו) שכדור הארץ עגול, אך הוא טעה משמעותית בחישוביו. הוא האמין שהיקף כדור הארץ קטן בהרבה ממה שחישבו היוונים, ושאירופה ואסיה משתרעות על פני שטח רחב בהרבה. לכן, הוא סבר שהפלגה מערבה דרך האוקיינוס האטלנטי היא "קיצור דרך" מהיר ורווחי להגיע לאיי התבלינים, לסין (קתי) וליפן (שיפנגו) – אזורים שתוארו בעושר אגדי בספרו של מרקו פולו.
+                <br><br>
+                <strong>המניע הדתי-משיחי:</strong> קולומבוס תפס עצמו כשליח ההשגחה העליונה. בכתביו (כמו "ספר הנבואות" שחיבר מאוחר יותר) הוא טען שמטרת העושר שיימצא במזרח היא לממן מסע צלב אירופאי ענק לשחרור ירושלים מידי המוסלמים. בנוסף, הוא ראה חשיבות עליונה בניצור המוני של עובדי אלילים שטרם נחשפו לדת הקתולית.
+            </p>
+        </section>
+
+        <!-- נסיבות היסטוריות למסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">נסיבות היסטוריות למסע</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                בשנת 1453 נפלה קונסטנטינופול (איסטנבול) לידי האימפריה העות'מאנית, מה שחסם וייקר משמעותית את נתיבי הסחר היבשתיים ("דרך המשי") למזרח. אירופה נזקקה נואשות לנתיב חלופי. הפורטוגלים כבר החלו למפות את חופי אפריקה כדי להקיף אותה מדרום. 
+                <br><br>
+                לעומתם, ספרד הייתה עסוקה במלחמות פנימיות. רק בשנת 1492, המלכים הקתוליים פרדיננד מלך אראגון ואיזבלה מלכת קסטיליה השלימו את "הרקונקיסטה" (כיבוש מחדש) עם נפילת גרנדה מידי המוסלמים. כעת, ספרד המאוחדת והנוצרית חיפשה דרך להדביק את הפער מול פורטוגל, וחיפשה מקורות הכנסה חדשים לממלכתה המרוששת מלחמות. הייאוש הכלכלי של ספרד הוא שהוביל אותם, לאחר שנים של סירובים, לממן לבסוף את תוכניתו הנועזת והמסוכנת של קולומבוס להפליג מערבה.
+            </p>
+        </section>
+
+        <!-- פירוט המסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסע ההיסטורי של 1492 והפלגות ההמשך</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                ב-3 באוגוסט 1492, יצא קולומבוס מנמל פאלוס דה לה פרונטרה שבספרד עם שלוש ספינות קטנות: הניניה, הפינטה והסנטה מריה, וצוות של כ-90 איש.
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">הגילוי (12 באוקטובר 1492):</strong>
+                לאחר למעלה מחודשיים של הפלגה בים הפתוח (ובעיות משמעת ומרד כמעט גלוי מצד הצוות המפוחד), נשמעה הצעקה "אדמה!". הם נחתו באי בארכיפלג איי בהאמה, שקולומבוס כינה בשם <strong>"סן סלבדור" (המושיע הקדוש)</strong>. הילידים שפגשו היו מבני הטאינו. מכיוון שקולומבוס היה משוכנע שהגיע לפאתי הודו או אסיה, הוא כינה אותם <strong>"אינדיאנים" (Indians)</strong> – טעות היסטורית שהשתרשה עד ימינו.
+            </div>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                <strong>מסעות ההמשך:</strong>
+                במהלך מסעו הראשון הוא גילה ומיפה גם חלקים מקובה והיספניולה (האיטי והרפובליקה הדומיניקנית של ימינו), שם הקימו את יישוב הקבע האירופאי הראשון. קולומבוס ערך עוד שלושה מסעות נוספים למערב (ב-1493, 1498 ו-1502), במהלכם חקר את חופי מרכז אמריקה, ג'מייקה, פוארטו ריקו ואף את חופי ונצואלה שבדרום אמריקה. למרות כל הראיות הגיאוגרפיות ההולכות ומצטברות, קולומבוס שמר על אמונתו העקשנית עד יומו האחרון כי הוא הגיע למזרח אסיה.
+            </p>
+        </section>
+
+        <!-- הגילויים והשפעותיהם -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">גילויים מרכזיים והשפעותיהם (ההחלפה הקולומביאנית)</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    <strong>מהות הגילוי:</strong>
+                    קולומבוס "גילה" את האמריקות עבור המעצמות האירופאיות, ופתח את הדלת לקשר רציף וקבוע בין ההמיספרה המזרחית (העולם הישן) להמיספרה המערבית (העולם החדש), קשר שלא נותק מאז.
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">"ההחלפה הקולומביאנית" (The Columbian Exchange):</strong>
+                    זהו המונח המתאר את ההעברה חסרת התקדים של צמחים, בעלי חיים, תרבויות ואוכלוסיות בין העולמות כתוצאה ממסעו.
+                    <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-400">
+                        <li><strong>מהעולם החדש לישן:</strong> תפוחי אדמה, תירס, עגבניות, קקאו (שוקולד), טבק, ווניל, שהצילו את אירופה מרעב ושינו את המטבח העולמי.</li>
+                        <li><strong>מהעולם הישן לחדש:</strong> סוסים, בקר, חזירים, חיטה, סוכר וקפה, ששינו את האקולוגיה של אמריקה לחלוטין.</li>
+                    </ul>
+                </div>
+
+                <p>
+                    <strong>המחיר האנושי וההשפעות ההרסניות:</strong>
+                    לצד ההישג הניווטי, מורשתו של קולומבוס מורכבת ואפלה. הגילוי שלו הוביל לאסון דמוגרפי מהגרועים בהיסטוריה. האירופאים הביאו עמם מחלות (כמו אבעבועות שחורות, חצבת ושפעת) שלהן לילידי אמריקה לא הייתה כל חסינות. כתוצאה ממחלות, שעבוד ברוטלי במכרות (אנקומיינדה), רעב ומלחמה, נכחדו מיליוני ילידים בתוך עשרות שנים ספורות. בנוסף, חיסול האוכלוסייה המקומית הוביל את המעצמות האירופאיות לייבא עבדים מאפריקה כדי לעבוד במטעים, מה שהתניע את סחר העבדים הטרנס-אטלנטי. מסעו של קולומבוס התחיל את עידן הקולוניאליזם האירופאי שעיצב את העולם המודרני, על כל הישגיו וזוועותיו.
+                </p>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>יומני קולומבוס (Diario of Christopher Columbus):</strong> היומן המקורי אבד, אך סיכומו על ידי הנזיר ההיסטוריון ברטולומה דה לאס קאסאס (Bartolomé de las Casas) שרד ומהווה את המקור הראשוני החשוב ביותר למסע של 1492.
+                </li>
+                <li>
+                    <strong>חיי האדמירל קריסטופר קולומבוס:</strong> ביוגרפיה שנכתבה על ידי בנו, פרדיננד קולומבוס, המספקת הצצה ייחודית, אם כי מעט מוטה, למניעיו וחייו של אביו.
+                </li>
+                <li>
+                    <strong>מחקר היסטורי קלאסי:</strong> Morison, Samuel Eliot (1942). <span class="italic text-gray-300">Admiral of the Ocean Sea: A Life of Christopher Columbus.</span> (זכה בפרס פוליצר, נחשב למחקר מקיף מאוד על יכולות הניווט של קולומבוס).
+                </li>
+                <li>
+                    <strong>אקולוגיה וההשפעה הגלובלית:</strong> Crosby, Alfred W. (1972). <span class="italic text-gray-300">The Columbian Exchange: Biological and Cultural Consequences of 1492.</span> (הספר שטבע את המונח והגדיר מחדש את השפעת הגילוי).
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> כריסטופר קולומבוס | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/christopher_columbus.jpg" alt="כריסטופר קולומבוס" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Christopher+Columbus'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() { imageModal.classList.remove('hidden'); imageModal.classList.add('flex'); }
+        function hideImageModal() { imageModal.classList.add('hidden'); imageModal.classList.remove('flex'); }
+        window.addEventListener('click', (e) => { if (e.target === imageModal) { hideImageModal(); } });
+    </script>
+</body>
+</html>
