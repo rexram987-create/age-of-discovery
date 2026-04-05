@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>פרדיננד מגלן | מקיף העולם | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">פרדיננד מגלן</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1480 (משוער) – 27 באפריל 1521 | <span class="text-darkAccent font-bold">שנות מסע הקפת העולם:</span> 1519 – 1522
+            </div>
+        </header>
+
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/ferdinand_magellan.jpg" alt="פרדיננד מגלן" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Ferdinand+Magellan'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: פרנאו / פרדיננד (Fernão / Ferdinand)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        מגלן נולד בפורטוגל בשם <strong>פרנאו (Fernão)</strong>. כשהציע את שירותיו לספרד, הוא התאים את שמו לגרסה הספרדית <strong>ארננדו או פרדיננד (Hernando / Fernando)</strong>.
+                        <br><br>
+                        <strong>פירוש מילולי:</strong> כמו אצל הרנאן קורטס, השם הוא ממקור גרמאני ויזיגותי (Fardi + Nand), ופירושו <strong>"נועז במסע" או "זה שמעז לנסוע"</strong>. אין שם שהולם בצורה מדויקת כל כך אדם שיצא למסע הארוך והמסוכן ביותר בהיסטוריה האנושית.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה: מגליאייש / מגלן (Magalhães / Magellan)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        שמו המקורי היה <strong>דה מגליאייש (de Magalhães)</strong>, אשר אונגלז והוספרד ברחבי העולם ל"מגלן". 
+                        <br><br>
+                        <strong>פירוש:</strong> זהו שם משפחה טופונימי (גיאוגרפי) פורטוגלי, ששורשיו ככל הנראה בשפה הקלטית העתיקה (Magal) או במילה הלטינית "Magnus" (גדול / אדיר). הוא מתייחס לבעלות על אחוזות עתיקות בצפון פורטוגל. משפחתו השתייכה למעמד אצולה זוטר (Fidalgo).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות, שירות צבאי באסיה והצלקת ממרוקו</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                פרנאו נולד בסביבות 1480 בעיירה סברוזה שבצפון פורטוגל. כבן לאצולה, הוא התייתם בגיל עשר ונשלח לשמש כנושא כלים (Page) בחצרה של המלכה לאונור מפורטוגל. שם הוא זכה לחינוך עילאי בקרטוגרפיה, אסטרונומיה וניווט.
+                <br><br>
+                <strong>החייל המצולק:</strong> בניגוד לקולומבוס שהיה בעיקר סוחר, מגלן החל את דרכו כחייל פורטוגלי קשוח. בשנת 1505, בגיל 25, הוא נשלח להודו. במשך 8 שנים הוא נלחם בקרבות עקובים מדם באוקיינוס ההודי (תחת פיקודו של פרנסיסקו דה אלמיידה) והשתתף בכיבוש העיר מלאקה (במלזיה של היום). 
+                <br>
+                לאחר שחזר מן המזרח, הוא נשלח להילחם במרוקו, שם נפצע קשה בברכו מחנית מוסלמית. הפציעה השאירה אותו <strong>צולע לכל ימי חייו</strong>. למרות שירותו המסור, כאשר ביקש מהמלך העלאה זעומה במשכורתו, המלך סירב בבוז.
+            </p>
+        </section>
+
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים והבגידה בפורטוגל</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                המסע של מגלן לא נולד מתוך רצון "להקיף את העולם", אלא מתוך זעם אישי וחישוב גיאופוליטי קר.
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">העלבון והעריקה לספרד:</strong>
+                המלך הפורטוגלי מנואל הראשון (אותו מלך ששלח את קבראל ודה גאמה) סלד ממגלן וסירב לתמוך בתוכניותיו. מגלן, שהרגיש נבגד על ידי מולדתו לה הקדיש את מיטב שנותיו ודמו, החליט לערוק. בשנת 1517 הוא עבר לספרד, שינה את שמו ל"פרננדו", והציע את שירותיו לקרל החמישי (מלך ספרד הצעיר ולימים קיסר האימפריה הרומית הקדושה). בפורטוגל הוא הוכרז מיד כבוגד שדינו מוות.
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">האובססיה הגיאוגרפית (איי התבלינים):</strong>
+                המטרה של מגלן הייתה פשוטה אך מהפכנית. איי מולוקה (האינדונזיה של היום), שהיו המקור הבלעדי בעולם לתבלינים יקרי ערך כמו ציפורן ואגוז מוסקט, נשלטו על ידי הפורטוגלים. מגלן טען שעל פי "חוזה טורדסיאס", קו הגבול החוצה את כדור הארץ מצידו השני מציב את איי התבלינים בחצי הכדור הספרדי. מכיוון שהפורטוגלים שלטו בנתיב המזרחי (דרך אפריקה), מגלן התחייב <strong>למצוא מצר ימי (Strait) שיחצה את יבשת אמריקה</strong>, ויאפשר לספרד להגיע לאיי התבלינים ממערב. הוא יצא למסע מסחרי, לא למסע הקפה.
+            </div>
+        </section>
+
+        <!-- נסיבות היסטוריות: אישור המסע (תוספת חדשה) -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">נסיבות היסטוריות: כיצד שכנע מגלן את מלך ספרד?</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                עריקתו של קצין פורטוגלי לספרד לא הספיקה כדי לקבל פיקוד על צי ספינות מלכותי. מגלן היה צריך להוכיח למלך ספרד הצעיר (קרל החמישי, שהיה אז בן 18 בלבד) שהסיכון העצום משתלם. הוא עשה זאת בעזרת מערכת קשרים מבריקה וטיעונים לוגיים, אשר התחלקו למספר שלבים:
+            </p>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">1. בניית הרשת בסביליה (המודיעין והגיבוי):</strong>
+                כשמגלן הגיע לעיר סביליה בשנת 1517, הוא חבר לאסטרונום וקרטוגרף פורטוגלי גולה נוסף בשם <strong>רוי פליירו (Rui Faleiro)</strong>. פליירו סיפק את הבסיס התיאורטי והמתמטי למסע. יחד, הם הצליחו ליצור קשר עם חואן דה אראנדה (Juan de Aranda), מנהל בכיר בלשכת הסחר הספרדית. אראנדה זיהה את הפוטנציאל העצום, הפך לפטרון שלהם, והוא זה שסידר להם את קהל הפנים ההיסטורי מול המלך בעיר ואיאדוליד.
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">2. הטיעון המשפטי ("איי התבלינים שייכים חוקית לספרד"):</strong>
+                בפגישה הגורלית עם המלך, מגלן הציג גלובוס מצויר ומכתבים מחברים ששירתו באסיה. הוא השתמש ב"חוזה טורדסיאס" (ההסכם שחילק את העולם בין ספרד לפורטוגל) והציג טיעון גיאוגרפי-משפטי מבריק (גם אם שגוי בדיעבד): לטענתו, קו הגבול החוצה את כדור הארץ מצידו השני מציב את איי המולוקה (מקור התבלינים העולמי) <strong>בחצי הכדור הספרדי</strong>, ולא בזה הפורטוגלי. משמעות הדבר הייתה שספרד זכאית חוקית לעושר הגדול ביותר בעולם.
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">3. אסטרטגיית העקיפה המערבית:</strong>
+                מכיוון שהפורטוגלים שלטו ללא עוררין בנתיב המזרחי (סביב כף התקווה הטובה באפריקה), ספרד לא יכלה לשלוח לשם ספינות מבלי לפתוח במלחמה כוללת עקובה מדם. הפתרון שהציע מגלן היה אלגנטי ושקט: למצוא "מצר" (מעבר מים צר) המוסתר בדרום אמריקה, שיאפשר גישה ישירה וחשאית לאסיה ממערב. טיעון זה קסם מאוד למלך הצעיר, שרצה לשבור את המונופול הפורטוגלי מבלי להפר הסכמי שלום גלויים.
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">4. צמצום הסיכון הכלכלי של הכתר:</strong>
+                כדי להקל על קבלת ההחלטה של המלך הצעיר, מגלן ופטרונו אראנדה גייסו תמיכה כלכלית מסוחרים ובנקאים פרטיים עשירים (כמו משפחת הבנקאים פוגר מגרמניה והסוחר כריסטובל דה הארו). המשקיעים הללו היו מוכנים לסכן את כספם הפרטי העצום תמורת אחוזים מהרווחים העתידיים. עובדה זו הפחיתה משמעותית את ה"הימור" הפיננסי הישיר מקופת הכתר הספרדי, והפכה את המבצע ממשוגע לכדאי.
+            </div>
+        </section>
+
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">יציאה לדרך, מרד קטלני וגילוי המצר</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                בספטמבר 1519 יצא מגלן מסביליה עם צי של חמש ספינות רעועות ו-270 אנשי צוות ממגוון אומות. המסע החל ברגל שמאל: הקפטנים הספרדים שתחתיו שנאו אותו מעצם היותו פורטוגלי, והמרגלים של מלך פורטוגל ניסו לחבל בספינותיו.
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">חורף בפטגוניה והמרד (1520):</strong>
+                מגלן שט דרומה לאורך חופי דרום אמריקה בחיפוש נואש אחר מעבר לים המערבי. כל מפרץ התגלה כנהר אטום. כשהחורף האנטארקטי הקשה הכה בהם, הם נאלצו לחנות במפרץ סן חוליאן (בארגנטינה של היום). הקפטנים הספרדים פתחו ב<strong>מרד חמוש גלוי</strong>. 
+                מגלן, שהיה לוחם קר-רוח, דיכא את המרד באכזריות: הוא הוציא להורג קפטן אחד, ביתר את גופתו של אחר (כדי להטיל אימה), והשאיר שני מורדים נטושים למותם על החוף הקפוא כשהצי המשיך בדרכו.
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">גילוי "מצר מגלן" (נובמבר 1520):</strong>
+                לאחר שאיבד ספינה אחת בסערה ואחת נוספת ערקה וחזרה לספרד, נכנסו שלוש הספינות הנותרות למבוך הצר, הקפוא והסוער שבדרום היבשת. הם קראו לארץ מדרום להם "טיירה דל פואגו" (ארץ האש) בגלל מדורות הילידים שראו בלילה. לאחר 38 ימי ניווט מותחים בתוך תעלות של צוקים שחורים וקרחונים, הם יצאו אל הים הפתוח מצידה השני של היבשת. המעבר הזה נקרא על שמו עד היום – <strong>מצר מגלן</strong>.
+            </div>
+        </section>
+
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">חציית האוקיינוס, רעב והמוות בפיליפינים</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    כשיצאו מהמצר, הם פגשו אוקיינוס שקט ורגוע, ולכן מגלן קרא לו <strong>"מר פסיפיקו" (האוקיינוס השקט)</strong>. אך השלווה הזו הייתה מלכודת מוות.
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">חציית התהום (האוקיינוס השקט):</strong>
+                    מגלן היה משוכנע שאסיה נמצאת במרחק של ימים ספורים. הוא לא ידע שהאוקיינוס השקט מכסה שליש משטח כדור הארץ. במשך <strong>98 ימים</strong> הם לא ראו יבשה. האוכל אזל. המים הרקיבו. המלחים אכלו נסורת, עכברים, ולבסוף חתכו את עורות הפרה שעטפו את התרנים, בישלו אותם ואכלו אותם. עשרות מתו ממחלת הצפדינה (חוסר בויטמין C), כששיניהם נופלות וחניכיהם מדממים.
+                </div>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">המוות המיותר: קרב מקטאן (אפריל 1521):</strong>
+                    במרץ 1521 הגיעו הניצולים לארכיפלג הפיליפינים. מגלן מצא אוכל ומים, ואף הצליח לנצר כמה מהמלכים המקומיים. אולם, שיכור מהצלחתו ומהלהט הדתי שלו, הוא התערב בסכסוך פוליטי מקומי. הוא הבטיח למלך אחד להביס מלך יריב מהאי מקטאן, צ'יף בשם <strong>לַפּוּ-לַפּוּ (Lapulapu)</strong>.
+                    <br><br>
+                    מגלן, ביהירותו, סירב לקחת כוח אדם גדול, ויצא עם 49 חיילים בלבד נגד 1,500 לוחמים ילידים. עקב מים רדודים, ספינותיו לא יכלו לתת חיפוי אש. הספרדים הוקפו. מגלן (הצולע) נלחם בחירוף נפש במים הרדודים כדי לאפשר לאנשיו לסגת, עד שנפגע בחץ רעל ברגלו ולבסוף חוסל בחניתות. מגלן מת במקטאן ולא זכה להשלים את הקפת העולם בעצמו.
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">השלמת המסע, קו התאריך והשפעות היסטוריות</h2>
+            <div class="space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    לאחר מות מגלן, המשלחת המשיכה אל איי התבלינים, העמיסה ציפורן, אך רק ספינה אחת שרדה כדי לחזור לספרד.
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">חואן סבסטיאן אלקנו (Juan Sebastián Elcano):</strong>
+                    נווט באסקי בשם אלקנו לקח את הפיקוד על ספינת ה"ויקטוריה" הרעועה. כדי להימנע מספינות הקרב הפורטוגליות, הוא שט רצוף חצי עולם דרומה מנקודת גילוי, הקיף את אפריקה, והגיע לספרד בספטמבר 1522. רק <strong>18 מלחים</strong> כחושים מתוך 270 שרדו את המסע העצום, יחד עם מטען תבלינים שכיסה את עלות המשלחת כולה. הם היו האנשים הראשונים שהקיפו את כדור הארץ.
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-gray-800 p-5 rounded-lg">
+                        <strong class="text-darkAccent block mb-2 text-xl">מידותיו של כדור הארץ</strong>
+                        המסע ריסק סופית את התיאוריות הגיאוגרפיות של ימי הביניים. הוא הוכיח באופן מעשי שהעולם לא רק עגול, אלא שהוא <strong>הרבה יותר גדול</strong> ממה שקולומבוס שיער, ושרובו מורכב ממים (האוקיינוס השקט).
+                    </div>
+                    <div class="bg-gray-800 p-5 rounded-lg">
+                        <strong class="text-darkAccent block mb-2 text-xl">חידת "קו התאריך הבינלאומי"</strong>
+                        אחת התגליות המוזרות במסע התרחשה כשהמלחים חזרו לספרד. למרות שיומני הספינה נשמרו בקפדנות יומיומית, התאריך בספרד היה קדימה ביום אחד מהתאריך ביומן! המסע הוכיח שכאשר מקיפים את כדור הארץ ממזרח למערב, מאבדים יום. זו הייתה התשתית להבנת אזורי זמן וליצירת "קו התאריך הבינלאומי".
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>יומנו של אנטוניו פיגאפטה (Antonio Pigafetta):</strong> פיגאפטה היה חוקר פולימאת איטלקי שהתלווה למסע מתוך סקרנות ושילם מכיסו. הוא היה בין 18 השורדים היחידים שחזרו, ויומנו המפורט והדרמטי הוא המקור ההיסטורי העיקרי (וכמעט היחיד) שתיעד מיום ליום את הרעב, המרד, והמוות של מגלן.
+                </li>
+                <li>
+                    <strong>מחקר היסטורי מקיף:</strong> Bergreen, Laurence (2003). <span class="italic text-gray-300">Over the Edge of the World: Magellan's Terrifying Circumnavigation of the Globe.</span> (אחד מספרי העיון הטובים ביותר המסכמים את הצדדים הפסיכולוגיים, הפוליטיים והפיזיים של המסע).
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> פרדיננד מגלן | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות והקפת העולם
+            </p>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/ferdinand_magellan.jpg" alt="פרדיננד מגלן" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Ferdinand+Magellan'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
