@@ -1,0 +1,248 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>אנריקה הספן | אבי עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">אנריקה "הספן"</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 4 במרץ 1394 – 13 בנובמבר 1460 | <span class="text-darkAccent font-bold">שנות פעילות מרכזיות:</span> 1415 – 1460
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/henry_the_navigator.jpg" alt="אנריקה הספן" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Henry+the+Navigator'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">תואר אצולה: אינפאנטה (Infante)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        זהו תואר אצולה רשמי וחשוב בחצי האי האיברי, אשר הגדיר למעשה את מסלול חייו של אנריקה.
+                        <br><br>
+                        <strong>פירוש:</strong> המילה נגזרת מהלטינית "Infans" (ילד, צאצא). מבחינה פוליטית וחוקתית, התואר "אינפאנטה" ניתן אך ורק לבני ובנותיו החוקיים של המלך, <strong>מלבד יורש העצר הראשון (נסיך הכתר)</strong>. 
+                        <br>
+                        היותו של אנריקה האינפאנטה השלישי של המלך, שחררה אותו מהכבלים ומהאחריות הבלעדית של הכנה למלוכה (שכן הסיכוי שיירש את הכתר היה קלוש). חופש פוליטי זה הוא שאפשר לו להקדיש את כל זמנו, מרצו והונו לפרויקטים הימיים ולמלחמות הדת בצפון אפריקה, במקום לניהול השוטף של הממלכה.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: אנריקה (Henrique)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם "אנריקה" הוא הגרסה הפורטוגזית לשם המוכר "הנרי" (באנגלית) או "היינריך" (בגרמנית), אשר מגיע משורשים גרמאניים עתיקים.
+                        <br><br>
+                        <strong>פירוש מילולי:</strong> השם מורכב משני שורשים מהשפה הפרנקית: "Heim" (בית, מולדת, אחוזה) ו-"Ric" (שליט, כוח, עוצמה). המשמעות היא <strong>"שליט הבית" או "מנהיג האחוזה"</strong>. 
+                        <br>
+                        הבחירה בשם זה לא הייתה מקרית. הוא נקרא כך על שם סבו מצד אימו, האציל האנגלי ג'ון מגוֹנְט (John of Gaunt), שהיה דוכס לנקסטר ואחד האנשים העשירים והחזקים ביותר באירופה באותה תקופה. הבחירה בשם חיזקה את הברית הפוליטית והמשפחתית החשובה בין פורטוגל לאנגליה.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">הכינוי: "הספן" (The Navigator / O Navegador)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        זהו אחד ה<strong>פרדוקסים והמיתוסים (אירוניה) הגדולים ביותר בהיסטוריוגרפיה של עידן התגליות</strong>.
+                        <br><br>
+                        למרות הכינוי המהדהד המוכר בכל העולם, אנריקה עצמו מעולם לא היה ספן, נווט, או חוקר ימי! למעט שלוש הפלגות קצרות וקרובות לחופי צפון אפריקה (למטרות מלחמה בלבד), הוא מעולם לא חצה אוקיינוס, לא השתתף במסעות גילוי, ולא ניווט ספינה בלב ים. 
+                        <br>
+                        יתרה מכך, <strong>הכינוי "אנריקה הספן" כלל לא היה קיים בימי חייו בפורטוגל.</strong> הוא הומצא רק במאה ה-19 (בשנת 1868) על ידי היסטוריונים בריטיים (בעיקר ר.ה. מיג'ור), וקרם עור וגידים בספרות הרומנטית הבריטית. הם העניקו לו את התואר כמטפורה – הוא היה ה"ספן הראשי" במובן הרעיוני, זה שהגה, ניהל, מימן, וניווט את מפעל התגליות הפורטוגלי ממשרדו הבטוח שביבשה.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות, חינוך ומסדר ישו -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות, שושלת אביש והכוח של "מסדר ישו"</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                האינפאנטה אנריקה נולד בפורטו בשנת 1394, וסיפורו מתחיל בברית פוליטית אסטרטגית שכוננה מחדש את פורטוגל. אביו, המלך ז'ואאו הראשון, היה מייסד "שושלת אביש" (Aviz), אשר ייצבה את עצמאות פורטוגל אל מול האיום המתמיד של שכינתה החזקה, קסטיליה (ספרד). אימו הייתה הנסיכה האנגלית פיליפה מלנקסטר (הדמות שהביאה את המסורת והמשמעת האנגלית לחצר הפורטוגלית).
+                <br><br>
+                אנריקה הצעיר גדל בחצר מלכות תוססת, אך כבן שלישי, הוא גודל וחונך על ברכי אידיאלים של <strong>אבירות נוצרית, סגפנות, ומלחמה למען הדת</strong>. הוא הושפע מאוד מקריאת ספרי חצר על לוחמה במורים (המוסלמים) ועל מעשי גבורה.
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">נגיד מסדר ישו (The Order of Christ):</strong>
+                נקודת המפנה העצומה בחייו התרחשה בשנת 1420, כאשר מונה על ידי האפיפיור לנגיד הגדול (Grand Master) של <strong>"מסדר ישו"</strong>. מסדר זה היה למעשה היורש והגלגול המקומי של מסדר האבירים הטמפלרים בפורטוגל, לאחר שהטמפלרים פורקו בשאר אירופה. 
+                <br><br>
+                המשרה הזו לא הייתה רק תואר כבוד דתי. היא העניקה לאנריקה שליטה ב<strong>משאבים כלכליים אדירים, הכנסות חקלאיות עצומות, ופטור ממיסים</strong>. יתרה מזאת, היא נתנה לו לגיטימציה דתית עליונה. לא בכדי, הצלב האדום והמפורסם של מסדר ישו התנוסס בגאון על מפרשי כל ספינות התגליות (הקרוולות) שלו. העושר העצום הזה הוא שאיפשר לאנריקה להמר ולממן את משלחות החקר היקרות והמסוכנות ששלח לאורך חופי אפריקה במשך עשורים.
+            </div>
+        </section>
+
+        <!-- אידאולוגיה ומניעים -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה ומניעים: הצלבן הכלכלי שמאחורי הקלעים</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                חשוב להבין שאנריקה לא היה "איש רנסנס" מודרני המונע מסקרנות מדעית טהורה, אלא אציל בעל מנטליות ימי-ביניימית מובהקת. חזונו שילב פנאטיות דתית של מסעי צלב עם ראייה כלכלית פורצת דרך, שהתבססה על שני עמודי תווך:
+            </p>
+            <div class="space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    <strong>1. עקיפת המונופול המוסלמי ושליטה בזהב (מסע הצלב הכלכלי):</strong> 
+                    בתחילת המאה ה-15, פורטוגל הייתה מדינה קטנה, ענייה באוכלוסין ובמשאבים, הנדחקת לשולי האוקיינוס. הכלכלה העולמית, ובמיוחד הסחר בזהב, בתבלינים ובעבדים, נשלטה על ידי האימפריות המוסלמיות בצפון אפריקה והמזרח התיכון, ששלטו בשיירות הגמלים שחצו את מדבר הסהרה. החזון הגאוני של אנריקה היה לאלגף אותם: <strong>להפליג *מסביב* למוסלמים דרך הים</strong>, ולהגיע ישירות למקורות הזהב ב"גינאה" (אפריקה שמדרום לסהרה). בכך, הוא ינתק את נתיבי האספקה של אויביו המוסלמים ויעשיר את קופת הממלכה והמסדר שלו.
+                </p>
+                <p>
+                    <strong>2. החיפוש האובססיבי אחר "פרסטר ג'ון" (Prester John):</strong>
+                    כנוצרי אדוק ונגיד מסדר דתי, המניע העליון של אנריקה היה הבסת האסלאם. הוא, כמו רבים בני דורו, האמין בכל ליבו באגדה על "פרסטר ג'ון" – מלך נוצרי מיתולוגי, חזק ועצום, ששולט בממלכה אבודה אי שם בלב אפריקה או בהודו (החוקרים מאמינים היום שהאגדה צמחה על בסיס קיומה של הקיסרות הנוצרית באתיופיה). 
+                    המטרה האסטרטגית של משלחותיו הייתה למצוא את הממלכה הזו, לכרות ברית אסטרטגית עם צבאו העצום של פרסטר ג'ון, וכך ליצור <strong>תנועת מלקחיים (איגוף) על העולם המוסלמי</strong> במטרה הסופית לשחרר את ירושלים מידי הכופרים.
+                </p>
+            </div>
+        </section>
+
+        <!-- סאגרש ופיתוח הקרוולה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">הפרויקט המדעי: סאגרש (Sagres) והמצאת הקרוולה</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                התרומה העצומה של אנריקה לעולם הייתה הפיכת ההרפתקנות הימית מאקט אקראי ונועז של קברניט בודד, ל<strong>תוכנית מחקר, פיתוח ואיסוף מודיעין (R&D) ממוסדת ורציפה בחסות המדינה.</strong>
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">אסכולת סאגרש (The Myth of the Sagres School):</strong>
+                אנריקה העתיק את בסיס הפעילות שלו לקצה הדרום-מערבי והצחיח ביותר של פורטוגל, באזור סאגרש – מקום שכונה אז "קצה העולם". שם הוא ריכז מוחות מבריקים: קרטוגרפים (יצרני מפות) יהודים ואיטלקים, אסטרונומים ערבים, בוני ספינות וימאים מנוסים ממיורקה וגנואה. 
+                <br>
+                למרות שההיסטוריוגרפיה המודרנית טוענת שלא היה זה "בית ספר" אקדמי ממוסד עם כיתות ומורים כפי שנהוג לחשוב במיתוס הרומנטי, זה בהחלט היה מרכז לוגיסטי וחצר פטרונים (Think Tank). בסאגרש נאסף מידע מסווג מכל ספינה שחזרה: נתוני זרמים, מיפוי חופים, מדידות רוחות, ושכלול האצטרולב והמצפן. המידע עובד והועבר הלאה למשלחת הבאה.
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">המצאת הקרוולה (Caravel) – הטכנולוגיה ששינתה הכל:</strong>
+                כלי השיט האירופאיים המסורתיים (הקראק העגולה וכבדת המשקל, או הגליאות בעלות המשוטים מים התיכון) לא התאימו לחקר חופי אפריקה הרדודים ולרוחות הנגדיות התמידיות (Trade Winds). תחת חסותו ועידודו של אנריקה, פותח כלי שיט חדש ומהפכני, ששאב השראה ממפרשיות דיג צפון-אפריקאיות.
+                <br><br>
+                ה<strong>קרוולה</strong> הייתה ספינה קטנה יחסית, ארוכה, מהירה ובעלת שוקע רדוד (המאפשר התקרבות לחוף ולשפכי נהרות). פריצת הדרך הטכנולוגית שלה הייתה ה<strong>מפרש הלטיני (Latten Sail)</strong> – מפרש משולש שאיפשר לספינה לתמרן ו"לשבור" את הרוח, כלומר, <strong>לשוט בזווית נגד כיוון הרוח (Tacking)</strong>. בלעדי הקרוולה, ההקפה של אפריקה, מסעותיו של קולומבוס, וכל עידן התגליות פשוט לא היו יוצאים לפועל טכנית.
+            </div>
+        </section>
+
+        <!-- כיבושים הישגים ומחסום בוזאדור -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">הישגים, גילויים והכיבוש הפסיכולוגי של האוקיינוס</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    הפרויקט המפעל של אנריקה ידע עליות ומורדות לאורך למעלה מארבעים שנה, אך יצר תשתית שלא ניתן היה למחוק:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                    <div class="bg-gray-800 p-5 rounded-lg">
+                        <strong class="text-darkAccent block mb-2 text-xl">הניצוץ הראשון: כיבוש סאוטה (1415)</strong>
+                        כאשר אנריקה היה בן 21, הוא השתתף יחד עם אביו ואחיו במבצע הצבאי לכיבוש העיר המוסלמית האסטרטגית סאוטה שבצפון מרוקו. הכיבוש לא רק זיכה אותו בתהילת אבירים, אלא גם נתן לו הצצה ראשונה וקריטית למחסני העושר (זהב ותבלינים) שהביאו שיירות המדבר, ולתובנה כי מקור העושר נמצא הרחק דרומה.
+                    </div>
+                    <div class="bg-gray-800 p-5 rounded-lg">
+                        <strong class="text-darkAccent block mb-2 text-xl">קולוניזציה בלב ים: מדיירה והאזוריים</strong>
+                        בשנות ה-20 וה-30 של המאה ה-15, הציים שלו גילו מחדש ויישבו את ארכיפלג איי מדיירה ואיי האזוריים הבלתי מיושבים באטלנטי. הפורטוגלים ביצעו בהם שינוי אקולוגי מקיף ונטעו בהם כרמי גפנים ומטעי קנה סוכר ענקיים. איים אלו הפכו למעבדת הניסויים לקולוניאליזם שמעבר לים, ולתחנות הצטיידות אסטרטגיות שבלעדיהן לא ניתן היה לחצות את האוקיינוס בהמשך.
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-6">
+                    <strong class="text-white text-xl block mb-2">שבירת החומה המנטלית: חציית כף בוז'אדור (Cape Bojador, 1434)</strong>
+                    המחסום הגדול ביותר שניצב בפני התפשטות אירופה לא היה טכנולוגי, אלא מנטלי ופסיכולוגי. ספנים פורטוגלים פחדו פחד מוות לחצות את קו הרוחב של "כף בוז'אדור" (בסהרה המערבית של היום). מפות ימי הביניים (ואגדות ערביות עתיקות) קבעו שזהו קצה העולם: הים דרומה משם רותח מהשמש, הזרמים בלתי עבירים, מפלצות ים משמידות ספינות, וספן שידרים מעבר לכף - לעולם לא יוכל לחזור בגלל הרוחות החד-כיווניות.
+                    <br><br>
+                    אנריקה, בעקשנות אובססיבית, שלח 14 משלחות בזו אחר זו שנכשלו וחזרו הביתה בתירוצים שונים מאימת המקום. לבסוף, בשנת 1434, הוא הטיל את המשימה על נווט מבריק מטעמו, <strong>ז'יל איאנש (Gil Eanes)</strong>. איאנש ביצע תמרון של אומץ אדיר: במקום לשוט לאורך החוף המפחיד והשרטונות, הוא התרחק אל הלב הסוער של האוקיינוס האטלנטי הפתוח, עקף את הכף מצד מערב (בקשת רחבה), וחזר צפונה כדי להוכיח שהים נשאר אותו ים, אינו רותח, ושניתן לחזור. 
+                    <br>
+                    מרגע שבירת המחסום הפסיכולוגי הזה, ההתקדמות לאורך חופי אפריקה הואצה דרמטית, והדרך למסעותיהם של דיאש ודה גאמה נסללה סופית. אנריקה נפטר ב-1460, הרבה לפני שספינותיו הגיעו להודו, אך הוא היה האדריכל שהקים את הפיגומים.
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>"כרוניקה של גילוי וכיבוש גינאה" (Gomes Eanes de Zurara, 1453):</strong> זהו המקור הראשוני (הכרוניקן הרשמי) והחשוב ביותר מתקופתו של אנריקה. הספר נכתב בהזמנת החצר כדי לפאר ולרומם את אישיותו של הנסיך ולתעד את השלבים הראשונים של המסעות לאפריקה ואת תחילתו של סחר העבדים באטלנטי.
+                </li>
+                <li>
+                    <strong>ניפוץ מיתוסים וביוגרפיה ביקורתית:</strong> Russell, Peter E. (2000). <span class="italic text-gray-300">Prince Henry "the Navigator": A Life.</span> (ספר מחקר מקיף המפריד בין הדימוי הרומנטי של "מדען הים" כפי שהצטייר במאה ה-19, לבין דמותו המורכבת כאציל אכזר, חייל ונגיד דתי אובססיבי, שניסה לקדם מסעות צלב).
+                </li>
+                <li>
+                    <strong>חקר התפתחות הקרוולה:</strong> Smith, Roger C. (1993). <span class="italic text-gray-300">Vanguard of Empire: Ships of Exploration in the Age of Columbus.</span> (מנתח בפירוט את השפעת הבסיס בסאגרש על המעבר מספינות חופיות קטנות לספינות מפרש אוקייניות מתקדמות המותאמות לסערות ולרוחות נגדיות).
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> אנריקה הספן | <strong>אופטימיזציה:</strong> עיצוב מותאם ל-Samsung S25 Ultra
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/henry_the_navigator.jpg" alt="אנריקה הספן" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Henry+the+Navigator'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+```
