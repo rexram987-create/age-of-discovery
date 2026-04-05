@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>אלונסו דה אוחדה | קונקיסטאדור | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">אלונסו דה אוחדה</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1468 (משוער) – 1515 | <span class="text-darkAccent font-bold">שנת המסע לוונצואלה:</span> 1499
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/alonso_de_ojeda.jpg" alt="אלונסו דה אוחדה" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Alonso+de+Ojeda'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: אלונסו (Alonso)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם "אלונסו" הוא גרסה ספרדית קסטיליינית עתיקה לשם הפופולרי "אלפונסו" (Alfonso), שמקורו בשפות הגרמאניות של השבטים הוויזיגותים ששלטו בספרד בימי הביניים המוקדמים.
+                        <br><br>
+                        <strong>פירוש מילולי:</strong> השם נגזר מהמילים הגרמאניות "Adal" (אציל) ו-"Funs" (מוכן, נכון לקרב, אמיץ). המשמעות הכוללת היא <strong>"אציל ונכון לקרב"</strong> או "האציל האמיץ". שם זה התאים בצורה מושלמת לחייו של אוחדה – לוחם שהיה תמיד הראשון לשלוף את חרבו.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה: דה אוחדה (de Ojeda)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        שם המשפחה הוא שם טופונימי מובהק – שם שמעיד על מקום המוצא הגיאוגרפי של משפחתו.
+                        <br><br>
+                        <strong>פירוש המקום:</strong> השם מתייחס לעמק ולנהר אוחדה (Ojeda) הממוקם בצפון ספרד (מחוז פלנסיה). השורש הבלשני של המילה "אוחדה" נובע מהמילה הלטינית "Folia" (עלים) או מהמילה הערבית "Oja", ומתייחס לאזור של נהר עטור בעלווה עבותה או מוקף בצמחייה ירוקה. הקידומת "דה" (de - מן) מעידה על כך שמשפחתו השתייכה למעמד אצולת הקרקע המקומית.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות, אצולה ענייה ובית ספר ללחימה</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                אלונסו דה אוחדה נולד בעיר קואנקה (Cuenca) שבמרכז ספרד. הוא נולד אל תוך משפחת אצולה שירדה מנכסיה (Hidalgo) – מעמד שתסכל אותו עמוקות ודחף אותו לחפש תהילה ועושר בדרכים אחרות.
+                <br><br>
+                בילדותו הוא נשלח לשמש כנושא כלים ומשרת בחצרו של הדוכס ממדינצ'לי (Duke of Medinaceli), אחד האצילים החזקים בספרד (שאגב, תמך גם בקולומבוס בתחילת דרכו). החצר שימשה עבורו כבית ספר אקדמי וצבאי. אוחדה התגלה כנער חריג: למרות שהיה נמוך קומה באופן בולט, הוא ניחן בזריזות יוצאת דופן, בכוח פיזי אדיר, וביכולת סיוף (לחימה בחרב) חסרת תקדים. 
+                <br><br>
+                עוד בטרם חצה את האוקיינוס, הוא השתתף במלחמת ה"רקונקיסטה" לכיבוש גרנדה (המעוז המוסלמי האחרון בספרד) בשנת 1492. במלחמה זו הוא הוכיח את עצמו כלוחם אמיץ, פזיז וכמעט חסר פחד מהמוות – תכונות שיהפכו אותו לאב-הטיפוס של הקונקיסטאדור הספרדי באמריקה.
+            </p>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים (ה"קונקיסטאדור" הראשון)</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                אלונסו דה אוחדה הוא ההתגלמות המדויקת של מושג ה"קונקיסטאדור" – כובש ספרדי המונע על ידי השילוש ההיסטורי המפורסם: <strong>זהב, תהילה, ואלוהים (Gold, Glory, God)</strong>.
+                <br><br>
+                <strong>המניע הכלכלי והאישי:</strong> כאציל עני, אוחדה ראה בעולם החדש הזדמנות פז להתעשרות מהירה (באמצעות ביזת זהב וסחר עבדים) וצבירת קרקעות. הוא חיפש תהילה אישית שלא היה יכול להשיג בספרד עצמה. הוא היה יהיר, מהיר חימה, ולא היסס לפתוח באלימות נגד הילידים, ולעיתים גם נגד פקודיו הספרדים.
+                <br><br>
+                <strong>הפנאטיות הדתית:</strong> למרות אכזריותו בקרב, אוחדה היה קתולי פנאטי. הוא פיתח הערצה כמעט עיוורת לבתולה מרים. הוא סחב עמו לכל מקום ציור קטן ושמן של הבתולה (שניתן לו על ידי בישוף), והיה משוכנע שכל עוד הציור איתו, הוא בלתי מנוצח ושום נשק לא יוכל לפגוע בו. ואכן, ברוב קרבותיו המוקדמים הוא מעולם לא נשרט, מה שחיזק את המיתוס האישי שלו כמשיח-קרב.
+            </p>
+        </section>
+
+        <!-- נסיבות היסטוריות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">נסיבות היסטוריות: שבירת המונופול של קולומבוס</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                אוחדה כבר חצה את האוקיינוס במסעו השני של קולומבוס (1493), שם פיקד על חיל מצב והתפרסם באכזריותו כשדיכא באלימות התקוממויות של שבטי הטאינו. 
+                <br><br>
+                אך שעת הכושר האמיתית שלו הגיעה בשנת 1499. המלכים הקתוליים, פרדיננד ואיזבלה, החלו לאבד סבלנות כלפי הניהול הכושל והעריצי של קולומבוס במושבה היספניולה. במקביל, הם שמעו על התגליות של ג'ון קבוט באנגליה ושל הפורטוגלים, והבינו שאם ישאירו את המונופול לחקר המערב בידיו הבלעדיות של קולומבוס – ספרד תפסיד את המרוץ.
+                <br><br>
+                לכן, בחסותו של בישוף חזק בשם חואן רודריגז דה פונסקה, הכתר הספרדי <strong>הפר את החוזה עם קולומבוס</strong> והחל לחלק רישיונות חקר לספנים אחרים (מה שנקרא "המסעות האנדלוסיים"). אלונסו דה אוחדה היה הראשון לקבל רישיון כזה, בזכות קשריו הפוליטיים והמוניטין הצבאי שלו.
+            </p>
+        </section>
+
+        <!-- פירוט המסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסע של 1499: גילוי ונצואלה ("ונציה הקטנה")</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                במאי 1499 יצא אוחדה בראש משלחת של שלוש ספינות מנמל קאדיס. לצידו היו שניים מהמוחות הגדולים של התקופה: הקרטוגרף המבריק חואן דה לה קוסה (Juan de la Cosa), והבנקאי/נווט האיטלקי <strong>אמריגו וספוצ'י</strong>.
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">מסלול המסע וחיפוש פנינים:</strong>
+                המשלחת חצתה את האוקיינוס בעזרת מפה שגנב אוחדה מקולומבוס, ונחתה בחופים הצפוניים של דרום אמריקה (אזור גיאנה וסורינאם של ימינו). הם שטו מערבה לאורך החוף. בדרכם, הם התעמתו עם ילידים, חטפו עבדים, וחיפשו זהב ופנינים. באזור אי מרגריטה הם אכן מצאו כמויות גדולות של פנינים, שהעשירו אותם.
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">מתן השם לוונצואלה:</strong>
+                האירוע ההיסטורי המפורסם ביותר במסע התרחש כשהם נכנסו ללגונה ענקית (אגם מראקאיבו, כיום בקולומביה/ונצואלה). הם ראו כפרים של אינדיאנים (משבט הואיו) שבנו את בתיהם על כלונסאות עץ בתוך המים הצרים, והתניידו ביניהם בעזרת קאנו. 
+                <br>
+                המראה הזה הזכיר מיד לוספוצ'י האיטלקי ולאוחדה את התעלות של העיר ונציה באיטליה. אוחדה קרא לאזור <strong>"ונצואלה" (Venezuela)</strong> – שפירושו המילולי בספרדית הוא "ונציה הקטנה" (Little Venice). שם זה דבק באזור והפך לשמה של המדינה המודרנית.
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">המפה הראשונה של אמריקה (1500):</strong>
+                הישג מדעי עצום של מסע זה שייך לקרטוגרף המשלחת, חואן דה לה קוסה. במהלך ההפלגה, הוא עמד על הסיפון, מדד, ושרטט בסקיצות את קווי החוף החדשים שהתגלו בצפון דרום-אמריקה. מיד עם חזרתם לספרד בשנת 1500, הוא סינתז את הנתונים הללו (יחד עם תגליות קולומבוס וקבוט) למפת עולם גדולה ומפורטת. "מפת חואן דה לה קוסה" (Mapa de Juan de la Cosa) היא <strong>המפה האירופאית העתיקה ביותר ששרדה המציגה את יבשת אמריקה</strong>, והיא סיפקה לכתר הספרדי הוכחה מוחשית לממדי התגלית של אוחדה.
+            </div>
+        </section>
+
+        <!-- הקרב בהודו והשפעות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">מסעות מאוחרים, חצים מורעלים והסוף הטרגי</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    לאחר שחזר לספרד עם שלל רב של עבדים ופנינים, אוחדה הפך לגיבור. הכתר מינה אותו ב-1502 למושל "קוקיבקואה" (בצפון דרום אמריקה), אך מושבה זו קרסה עקב רעב, מחלות, והתנהגותו הרודנית שהובילה את פקודיו למרוד בו ולכלוא אותו.
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">המסע האחרון וכישלון אוראבה (1509):</strong>
+                    ב-1509 הוא קיבל הזדמנות אחרונה כמושל "אנדלוסיה החדשה" (חוף קולומביה). הוא הקים שם מבצר בשם "סן סבסטיאן דה אוראבה". זה היה אסון. הילידים במקום השתמשו בנשק שהספרדים לא הכירו: <strong>חצים מורעלים</strong>. שריטה קטנה מחץ כזה גרמה למוות בייסורים איומים.
+                    <br><br>
+                    בקרב נוראי אחד, הקרטוגרף המהולל חואן דה לה קוסה נהרג ממאות חצים מורעלים. גם אוחדה, הלוחם ה"בלתי מנוצח", נורה בירכו. כדי להציל את חייו, אוחדה הפגין קשיחות פסיכוטית: הוא ציווה על רופאו (תחת איום מוות) לחמם שתי צלחות ברזל עד לליבון, והצמיד אותן ישירות לתוך הפצע הפתוח שלו כדי לשרוף את הרעל. הוא שרד את הכווייה ואת הרעל, אך המושבה נכשלה, והוא נאלץ להימלט לסנטו דומינגו.
+                </div>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">המוות והצוואה המצמררת:</strong>
+                    אוחדה העביר את שנותיו האחרונות בעוני מחפיר בסנטו דומינגו. שבור, מדוכא ומלא חרטה על שפיכות הדמים ויהירותו, הוא הפך לנזיר פרנציסקני. הוא מת בשנת 1515. 
+                    <br>
+                    בקשתו האחרונה (וצוואתו) הייתה אחת הדרמטיות בהיסטוריה: הוא סירב להיקבר בקבר מכובד. הוא ביקש להיקבר ממש <strong>מתחת למפתן הדלת של מנזר סן פרנסיסקו</strong>, כך שכל אדם שייכנס להתפלל ייאלץ לדרוך על קברו, ככפרה ניצחית על גאוותו, אכזריותו וחטאיו הרבים.
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>"היסטוריה של האינדים" (Historia de las Indias):</strong> נכתב על ידי ההיסטוריון והנזיר ברטולומה דה לאס קאסאס בן התקופה. לאס קאסאס מתאר את אוחדה בפירוט כדמות אכזרית במיוחד כלפי האינדיאנים, אך מודה באומץ ליבו יוצא הדופן. מתעד את סיפור החצים המורעלים ואת מותו.
+                </li>
+                <li>
+                    <strong>מחקר ביוגרפי והיסטורי:</strong> Irving, Washington (1831). <span class="italic text-gray-300">Voyages and Discoveries of the Companions of Columbus.</span> (ספר קלאסי המתמקד בסגניו של קולומבוס ומעניק תיאור דרמטי מאוד לחייו הקרביים של אוחדה).
+                </li>
+                <li>
+                    <strong>מחקר אקדמי על ה"קונקיסטה":</strong> Thomas, Hugh (2003). <span class="italic text-gray-300">Rivers of Gold: The Rise of the Spanish Empire, from Columbus to Magellan.</span> (מנתח את משמעות "המסעות האנדלוסיים" ותחילת סיום המונופול של קולומבוס).
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> אלונסו דה אוחדה | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/alonso_de_ojeda.jpg" alt="אלונסו דה אוחדה" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Alonso+de+Ojeda'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
