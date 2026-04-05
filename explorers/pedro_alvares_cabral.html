@@ -1,0 +1,241 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>פדרו אלברס קבראל | מגלה ברזיל | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">פדרו אלברס קבראל</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1467 (משוער) – סביב 1520 | <span class="text-darkAccent font-bold">שנת גילוי ברזיל:</span> 1500
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/pedro_alvares_cabral.jpg" alt="פדרו אלברס קבראל" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Pedro+Alvares+Cabral'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: פדרו (Pedro)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם "פדרו" הוא הגרסה הפורטוגזית/ספרדית לשם היווני והלטיני "פטרוס" (Petrus).
+                        <br><br>
+                        <strong>פירוש מילולי:</strong> מקור המילה ביוונית עתיקה "פֶּטְרוֹס" (Πέτρος), שמשמעותה <strong>אבן או סלע</strong>. השם קיבל משמעות דתית עמוקה בנצרות בעקבות שמעון פטרוס (השליח), שהוכתר על ידי ישו כ"סלע עליו אבנה את כנסייתי". השם משדר יציבות, כוח ואמונה איתנה.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם אב/משפחה אמצעי: אלברס (Álvares)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        "אלברס" הוא שם פטרונימי (המעיד על שם האב), סיומת נפוצה מאוד בחצי האי האיברי.
+                        <br><br>
+                        <strong>פירוש:</strong> הסיומת "es" (בפורטוגזית) משמעותה "הבן של". השם אומר בפשטות: <strong>"בנו של אלברו" (Álvaro)</strong>. השם אלברו עצמו הוא ממוצא ויזיגותי/גרמאני ומשמעותו "שומר כל" או "לוחם פיות" (Elf warrior).
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה: קבראל (Cabral)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        שם המשפחה הקלאסי של אצולתו הוא שם טופונימי (מתייחס למקום או מאפיין גיאוגרפי).
+                        <br><br>
+                        <strong>פירוש וסמל:</strong> השם נגזר מהמילה הלטינית "Capra", שפירושה <strong>עז</strong>, ו"Cabral" משמעותו <strong>מקום מרעה לעיזים</strong> או עדר עיזים. משפחת קבראל הייתה משפחת אצולה ותיקה, וסמל האצולה (שלט האצילים) שלהם, שניתן להם לטענתם עוד בימי מלך פורטוגל הראשון, הציג בגאווה שתי עיזים סגולות.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות, אצולת החצר ומסדר ישו</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                פדרו אלברס קבראל נולד בסביבות 1467 במחוז ביירה באזור הררי בפורטוגל. הוא לא נולד ימאי אלא <strong>אריסטוקרט טהור (Fidalgo)</strong>. הוא היה בנו השני של פשטאו קבראל, אציל בחצרו של המלך אפונסו החמישי. 
+                <br><br>
+                בגיל 12 בלבד, קבראל נשלח לליסבון לחצר המלך (תחילה אצל המלך ז'ואאו השני ולאחר מכן מנואל הראשון) כדי לקבל חינוך של בן-חצר. שם הוא למד ספרות, מתמטיקה, היסטוריה, אסטרונומיה, וכמובן, אמנויות לחימה. הוא הוכשר כקצין והתקבל ל<strong>"מסדר ישו" (Order of Christ)</strong> – מסדר האבירים הצבאי-דתי העוצמתי ביותר בפורטוגל (יורשיהם של הטמפלרים), שהכתר הפורטוגלי השתמש בו כדי לממן ולנהל את כל מסעות התגליות והכיבוש. במובן זה, הוא היה חייל-דיפלומט של החצר הרבה יותר משהיה קפטן ימי.
+            </p>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים ותפיסת עולם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                המניע של קבראל לא היה יצר הרפתקנות של "גילוי הלא נודע", אלא ביצוע משימה פוליטית-כלכלית מוגדרת היטב עבור מדינתו.
+                <br><br>
+                <strong>המניע המסחרי-צבאי (ביסוס מונופול):</strong> קבראל נשלח שנה אחת בלבד לאחר שואסקו דה גאמה חזר מהודו (ב-1499). המשימה שקיבל מהמלך מנואל הראשון הייתה ברורה: "להציב עובדות בשטח". הוא היה צריך להפליג להודו, לחתום על חוזי סחר עם ה"זמורין" (שליט קליקוט), ולהקים תחנת סחר פורטוגלית (פייטוריה) קבועה. במקרה של התנגדות מצד הסוחרים הערבים, האידאולוגיה שלו הייתה להפעיל כוח אש מוחץ.
+                <br><br>
+                <strong>המניע הדיפלומטי-דתי:</strong> קבראל הביא עמו נזירים פרנציסקנים כדי לנצר את האוכלוסיות במזרח. תפיסת עולמו הייתה שלא רק שהפורטוגלים מביאים עמם טכנולוגיה, אלא גם את האמת הדתית היחידה, ולכן יש להם "זכות" לכבוש ולהשתלט על עורקי המסחר העולמיים מידי המוסלמים.
+            </p>
+        </section>
+
+        <!-- נסיבות היסטוריות למסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">נסיבות היסטוריות (הארמדה של 1500)</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                כאשר ואסקו דה גאמה חזר מהודו ב-1499 עם מעט תבלינים אך עם הוכחה שהנתיב פתוח, המלך מנואל הראשון לא ביזבז רגע. בחודשים ספורים הוא ארגן את צי המלחמה הגדול והיקר ביותר שנבנה אי פעם בפורטוגל: <strong>הארמדה השנייה להודו</strong>. 
+                <br><br>
+                הצי כלל 13 ספינות חמושות בכבדות וקרוב ל-1,500 לוחמים, נווטים וכלי ירייה (כדיאש היה אחד הקפטנים בצי זה!). המלך בחר בקבראל בן ה-32 – אציל מקושר שמעולם לא פיקד על ספינה לפני כן – להיות "קפיטן-מור" (המפקד העליון). מדוע אציל חסר ניסיון? כי המשימה דרשה דיפלומט של חצר, לא מלח פשוט. קבראל קיבל סוללה של הנווטים הטובים בעולם כדי שישיטו עבורו את הספינות, בזמן שהוא ינהל את הפוליטיקה והמלחמה.
+            </p>
+        </section>
+
+        <!-- המסע וגילוי ברזיל -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסע: גילוי ברזיל (אפריל 1500) - טעות או תכנון?</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                הצי האדיר הפליג מליסבון במרץ 1500 לכיוון אפריקה. קבראל קיבל הוראות ניווט מדויקות מואסקו דה גאמה: כדי להימנע מהזרמים הנגדיים בחופי אפריקה, עליו לבצע את ה-"Volta do mar" – לשוט עמוק מערבה אל תוך האוקיינוס האטלנטי הדרומי, ואז "לחתוך" מזרחה לכף התקווה הטובה.
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">הנחיתה בברזיל (22 באפריל 1500):</strong>
+                קבראל סטה מערבה כל כך הרבה, שביום רביעי, 22 באפריל, מלחיו ראו הר גדול מבצבץ באופק. למחרת הם נחתו בחופי דרום אמריקה (במדינת באהיה של ימינו). קבראל קרא למקום <strong>"ארץ הצלב האמיתי" (Terra da Vera Cruz)</strong>, הציב צלב עץ ענק, ערך מיסה קתולית, ותבע בעלות רשמית על האדמה עבור הכתר הפורטוגלי. המקומיים (אינדיאנים משבט הטופינמבה) קיבלו אותם בסקרנות רגועה.
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">חידת הגילוי – המזל מול הקונספירציה:</strong>
+                האם הגילוי היה טעות ניווט או מהלך מתוכנן מראש? עד היום היסטוריונים חלוקים:
+                <br>
+                1. <strong>התיאוריה המקובלת (מזל):</strong> קבראל פשוט נסחף יותר מדי מערבה עם הרוחות ו"נתקע" בברזיל במקרה, תוך כדי שניסה לעשות את העיקוף לאפריקה.
+                <br>
+                2. <strong>תיאוריית הקונספירציה הפורטוגלית:</strong> לפי תיאוריה זו, הפורטוגלים ידעו בחשאי על קיומה של יבשת שם עוד לפני 1494 (ולכן מלך פורטוגל התעקש ב"חוזה טורדסיאס" להזיז את קו הגבול מערבה). לפי סברה זו, למלך מנואל היו פקודות סודיות לקבראל: "בדרך להודו, קפוץ שנייה מערבה, שים דגל ותבטיח שהאדמה הזו רשומה בטאבו שלנו".
+            </div>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                לאחר כשבוע בברזיל, קבראל שלח ספינה אחת חזרה לליסבון עם איגרת סודית למלך על הגילוי החדש (הספינה שהובילה בהמשך לשליחת אמריגו וספוצ'י!), והוא עצמו המשיך במשימתו האמיתית: להפליג להודו.
+            </p>
+        </section>
+
+        <!-- הקרב בהודו והשפעות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">אסון, מלחמה בקליקוט וההשפעה ההיסטורית</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    <strong>האסון בכף התקווה הטובה:</strong>
+                    ההמשך היה קטלני. בדרך לכף התקווה הטובה, סופה נוראית הטביעה 4 ספינות באופן מיידי. אחת מהן הייתה ספינתו של <strong>ברתולומיאו דיאש</strong> (הראשון שהקיף את הכף), שטבע במים שהוא עצמו גילה.
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">הדם בקליקוט (Calicut Massacre):</strong>
+                    כאשר קבראל הגיע לבסוף להודו (ספטמבר 1500), הוא פגש את שליט קליקוט והקים שם נציגות מסחרית (פייטוריה). אולם, הסוחרים הערבים וההודים המקומיים התנגדו למונופול שקבראל דרש. הם תקפו את הנציגות הפורטוגלית ורצחו למעלה מ-50 פורטוגלים.
+                    <br><br>
+                    התגובה של קבראל הייתה ברוטלית ומיידית. כאציל גאה וכחייל במסדר הצבאי, הוא לכד עשר ספינות סוחר ערביות בנמל, רצח את הצוותים שלהן (כ-600 איש), החזירו את הסחורות, ולבסוף – הורה לספינותיו <strong>להפגיז ללא הפסקה את עיר הנמל קליקוט במשך יממה שלמה</strong>, מחריב בניינים והורג אזרחים. זו הייתה תחילתה הרשמית של המלחמה על השליטה באוקיינוס ההודי.
+                </div>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">השפעות ארוכות טווח:</strong>
+                    קבראל חזר לליסבון ב-1501 עם 6 ספינות בלבד, אך עם מטען תבלינים שכיסה את כל עלות המסע (ויותר). הוא השיג שני דברים ששינו את העולם:
+                    <br>
+                    1. <strong>ברזיל:</strong> הוא הניח את היסוד לאימפריה הפורטוגלית בדרום אמריקה (ברזיל תהפוך למושבה הגדולה והמכניסה ביותר של פורטוגל).
+                    <br>
+                    2. <strong>קביעת מדיניות הכוח:</strong> ההפגזה שלו על קליקוט הוכיחה לכל אירופה ולאסיה שהאירופאים לא הגיעו רק כדי "לסחור", אלא כדי לשלוט בכוח הזרוע. לאחר קבראל, הדיפלומטיה מתה, ותותחי הספינות הפכו לשליטי האוקיינוס ההודי.
+                </div>
+                <p>
+                    למרות הצלחתו המסחרית, בעקבות תככים של פוליטיקת חצר המלוכה, קבראל הסתכסך עם המלך מנואל, לא זכה לפקד שוב על צי, ופרש לחיי נוחות באחוזתו בפורטוגל עד יום מותו.
+                </p>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>איגרתו של פֶּרוֹ ואס דה קמיניה (Carta de Pêro Vaz de Caminha):</strong> המסמך ההיסטורי החשוב ביותר הקשור לקבראל. זהו המכתב הרשמי (סוג של "תעודת הלידה של ברזיל") שנכתב על ידי סופר המשלחת למלך מנואל, המדווח בזמן אמת על גילוי ארץ "הצלב האמיתי" והמפגש עם הילידים.
+                </li>
+                <li>
+                    <strong>"העולם האסיאתי" ומחקר קליקוט:</strong> Subrahmanyam, Sanjay (1997). מתעד בפירוט את האירועים האלימים של קבראל בקליקוט וכיצד פעולתו קבעה את ה"דוקטרינה" הצבאית של הפורטוגלים.
+                </li>
+                <li>
+                    <strong>מחקר היסטורי כללי:</strong> Greenlee, William Brooks (1938). <span class="italic text-gray-300">The Voyage of Pedro Álvares Cabral to Brazil and India</span> (אוסף של מסמכים ויומנים מתורגמים ממסע הארמדה של 1500).
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> פדרו אלברס קבראל | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/pedro_alvares_cabral.jpg" alt="פדרו אלברס קבראל" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Pedro+Alvares+Cabral'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
+
+```
