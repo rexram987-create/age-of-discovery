@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>הרנאן קורטס | קונקיסטאדור | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">הרנאן קורטס</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1485 – 2 בדצמבר 1547 | <span class="text-darkAccent font-bold">שנות כיבוש מקסיקו:</span> 1519 – 1521
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/hernan_cortes.jpg" alt="הרנאן קורטס" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Hernan+Cortes'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: הרנאן (Hernán / Hernando)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם "הרנאן" הוא קיצור בספרדית קסטיליינית לשם "הרננדו" (Hernando), שהוא עצמו גרסה ספרדית לשם הגרמאני הוויזיגותי <strong>Ferdinando</strong> (פרדיננד).
+                        <br><br>
+                        <strong>פירוש מילולי:</strong> השם מורכב מהשורשים "Fardi" (מסע, מסע סכנה) ו-"Nand" (אמיץ, נועז, מוכן). המשמעות היא <strong>"נועז במסע"</strong> או "מוכן לצאת לדרך סכנה". שם זה קלע בדיוק לאופיו של אדם שהימר על חייו במסע הרפתקני ששום אירופאי לפניו לא העז לבצע.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה: קורטס (Cortés)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        שם המשפחה "קורטס" נפוץ מאוד בספרד ונושא משמעות כפולה של אופי ומעמד.
+                        <br><br>
+                        <strong>פירוש ובלשנות:</strong> המילה נגזרת מהמילה הצרפתית/לטינית העתיקה <em>Corteis</em> או <em>Cortés</em>, שפירושה המילולי הוא <strong>"אדיב", "מנומס" או "איש חצר"</strong> (Courtier – אדם המורגל בנימוסי חצר המלוכה). 
+                        <br>
+                        <strong>האירוניה:</strong> למרות שקורטס השמיד ציביליזציה שלמה באכזריות מחרידה, הפירוש ה"אדיב" של שמו בא לידי ביטוי ביכולתו הדיפלומטית והמניפולטיבית. הוא היה נואם כריזמטי, משפטן חלקלק, ואשף דיפלומטי שהצליח לשכנע אינדיאנים להילחם לצידו נגד האצטקים תוך שימוש בחנופה והבטחות שווא.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800/50 p-6 rounded-xl border border-blue-900 shadow-md">
+                    <h3 class="text-xl font-semibold text-blue-300 mb-2">תואר אצולה מאוחר: המרקיז של עמק ואחאקה</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        לאחר כיבוש מקסיקו, הקיסר קרל החמישי העניק לו את התואר <em>"Marqués del Valle de Oaxaca"</em>. תואר זה הפך אותו לאחד האנשים העשירים ובעלי הקרקעות הגדולים ביותר באימפריה הספרדית.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות באקסטרמדורה והנשירה מאוניברסיטת סלמנקה</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                הרנאן קורטס נולד ב-1485 בעיר מדיין (Medellín) שבחבל <strong>אקסטרמדורה (Extremadura)</strong> במערב ספרד. זהו חבל ארץ צחיח, עני וקשה, שהצמיח את רוב הקונקיסטאדורים האכזריים ביותר של ספרד (כולל פרנסיסקו פיסארו). קורטס נולד למשפחת אצולה זוטרה וענייה (Hidalgo).
+                <br><br>
+                בניגוד לרוב הקונקיסטאדורים שהיו בורים גמורים (כמו פיסארו שלא ידע קרוא וכתוב), קורטס היה אדם משכיל מאוד. בגיל 14 הוריו שלחו אותו ללמוד משפטים ולטינית ב<strong>אוניברסיטת סלמנקה</strong> (Salamanca) היוקרתית, בתקווה שיהפוך לעורך דין או נוטריון מצליח. אולם, קורטס היה צעיר חסר מנוחה, חובב הימורים, נשים והרפתקאות. לאחר כשנתיים של לימודים, להוריו למגינת ליבם, הוא נשר מהאוניברסיטה וחזר הביתה.
+                <br><br>
+                <strong>היתרון הקריטי:</strong> למרות שנשר, ההשכלה המשפטית של קורטס בסלמנקה הייתה הנשק החזק ביותר שלו – יותר מהחרב או הרובה. הוא ידע בדיוק איך לנסח מכתבים משפטיים למלך, איך להשתמש בפרצות חוק, ואיך לתת "הכשר חוקי" לכל מעשי המרד, הבגידה והכיבוש שעשה בעולם החדש.
+            </p>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מקיאווליזם ופנאטיות דתית</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                קורטס הונע משילוב קטלני של אידאולוגיות שונות שיצרו את "המכונה" המושלמת לכיבוש מקיאווליסטי:
+            </p>
+            <div class="space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    <strong>1. אופורטוניזם וגאונות פוליטית (הפרד ומשול):</strong> בניגוד לפונסה דה ליאון שחיפש אדמות ריקות או אוחדה שחיפש שוד פנינים פשוט, לקורטס היה חזון של אימפריה. הוא הבין ש-500 ספרדים לא יכולים לנצח מיליוני אינדיאנים בכוח הזרוע בלבד. האידאולוגיה הצבאית שלו הייתה זיהוי נקודות תורפה פוליטיות. כשהגיע למקסיקו, הוא גילה שהאצטקים שולטים בעשרות שבטים אחרים בכוח טרור ודורשים מהם מנחות קורבנות אדם. קורטס הפך ל"משחרר" מדומה – הוא כרת בריתות עם השבטים המדוכאים (כמו בני הטלאקסקאלה) והשתמש בהם כצבא בשר תותחים של עשרות אלפים כדי להשמיד את הבירה האצטקית.
+                </p>
+                <p>
+                    <strong>2. זהב וכבוד אישי (La Honra):</strong> כבן אקסטרמדורה עני, קורטס רצה לבסס את מעמדו כאציל עליון בספרד. הוא רדף אחר זהב באובססיביות חולנית (הוא צוטט כאומר לילידים: <em>"אני וחברי הספרדים סובלים ממחלה בלב, שהתרופה היחידה לה היא זהב"</em>).
+                </p>
+                <p>
+                    <strong>3. מסע צלב פנאטי נגד עבודת האלילים:</strong> לצד הציניות הפוליטית שלו, קורטס היה קתולי פנאטי אמיתי. כשהוא נחשף למקדשים האצטקיים ספוגי הדם שבהם נערכו קורבנות אדם ועקירת לבבות (לאלים כמו וויצילופוצ'טלי), הוא חווה זעזוע דתי עמוק. הוא ראה בכיבוש אימפריית האצטקים <strong>"מלחמת קודש" (Guerra Santa)</strong>, ומשימתו האישית מהאל הייתה לנתץ את הפסלים המפלצתיים ולהביא את האור הנוצרי לאמריקה.
+                </p>
+            </div>
+        </section>
+
+        <!-- נסיבות היסטוריות למסע והמרד -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">נסיבות היסטוריות: המרד בקובה וההברחה (1519)</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                הסיפור הדרמטי של קורטס מתחיל דווקא <strong>במרד נגד הממונים עליו</strong> בספרד.
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-4">
+                <strong class="text-white text-xl block mb-2">בריחה ממעצר במעטה החשכה:</strong>
+                בשנת 1504 הגיע קורטס לאיים הקריביים. הוא הפך לחוואי מצליח בקובה ולפקיד בכיר תחת מושל קובה, <strong>דייגו ולאסקס</strong>. בעקבות שמועות על יבשת עשירה ממערב למפרץ מקסיקו, ולאסקס מינה את קורטס להוביל משלחת חקר קטנה למטרות סחר בלבד.
+                <br><br>
+                אולם, קורטס החל לבזבז הון עתק על ציוד צבאי כבד, תותחים וסוסים. ולאסקס המבועת הבין שקורטס מתכנן כיבוש פרטי והחליט לבטל את המינוי שלו ולאסור אותו. קורטס קיבל הדלפה מחבר על מעצרו הקרב. באמצע הלילה של ה-18 בפברואר 1519, קורטס <strong>הבריח את הצי שלו</em> (11 ספינות, 500 חיילים, 13 תותחים ו-16 סוסים) מנמל סנטיאגו דה קובה אל הים הפתוח, בעודו מכריז למעשה על מרד גלוי נגד מושל קובה.
+            </div>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                קורטס ידע שברגע שעזב ללא רשות, הוא נחשב למורד בכתר. הדרך היחידה שבה הקיסר קרל החמישי (המלך הספרדי) יסלח לו, הייתה רק אם הוא יביא לו אימפריה שלמה במתנה וזהב בלתי נתפס.
+            </p>
+        </section>
+
+        <!-- פירוט הכיבוש המרכזי -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">הפלישה למקסיקו והשמדת האימפריה האצטקית (1519-1521)</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                המהלך של קורטס במקסיקו הוא רצף של טקטיקות מזהירות, הימורים מטורפים ואכזריות צרופה.
+            </p>
+            
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">1. המלינצ'ה (La Malinche) - קלף המודיעין:</strong>
+                בתחילת הדרך, בחופי טבסקו, קיבל קורטס מתנה של 20 נשים שפחות. אחת מהן, אישה מבריקה בשם "מלינאלי" (שקורטס קרא לה דוניה מרינה, וזכתה לכינוי <strong>"לה מלינצ'ה"</strong>). מלינצ'ה ידעה לדבר הן את שפת המאיה והן את שפת הנהואטל של האצטקים. היא הפכה למתורגמנית, ליועצת האסטרטגית, ובסופו של דבר לאם בנו של קורטס. היא הייתה ה"אוזניים" שלו, וללא המודיעין הפוליטי שסיפקה לו לגבי הפיצול בשבטים, קורטס לא היה שורד שבוע במקסיקו.
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">2. המיתוס: "שריפת הספינות" (הטבעה מחושבת):</strong>
+                כאשר הקימו את העיר "וראקרוס" בחופי מקסיקו, חייליו של קורטס (שפחדו להילחם וחששו ממשפט על מרד) רצו לגנוב את הספינות ולחזור לקובה. בתגובה, באקט מנהיגותי קיצוני של "אין דרך חזרה", קורטס פקד לחסל את צי הספינות. 
+                <br>
+                <em>תיקון היסטורי:</em> בניגוד לאגדה הרווחת שבה "קורטס שרף את ספינותיו", הוא למעשה <strong>הטביע ופירק אותן בחשאי</strong>, כדי לשמור על החבלים, הברזל, והמפרשים שישמשו אותו מאוחר יותר בבניית ספינות לקרב על האגם.
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">3. שבירת מוקטסומה והכניסה לטנוצ'טיטלאן:</strong>
+                בנובמבר 1519, קורטס צעד עם 500 ספרדים ואלפי בעלי ברית אינדיאנים (בעיקר מטלאקסקאלה) אל עבר הבירה האצטקית האדירה והצפה, <strong>טנוצ'טיטלאן (Tenochtitlan - כיום מקסיקו סיטי)</strong>. הקיסר האצטקי, מוקטסומה השני, היה מנהיג מהוסס. הוא לא תקף את הספרדים מיד (ייתכן מסיבות אמוניות, או בגלל הפחד מסוסיהם ומתותחיהם שלא נראו כמותם). 
+                קורטס הוזמן לארמון. תוך ימים ספורים, במהלך עזות מצח פסיכוטית, <strong>קורטס לקח את הקיסר מוקטסומה כבן ערובה בתוך הארמון שלו עצמו</strong>, ושלט למעשה באימפריה דרכו.
+            </div>
+
+            <p class="text-gray-300 leading-relaxed text-lg">
+                <strong>4. הלילה העצוב (La Noche Triste) והמצור הסופי:</strong>
+                השליטה התנפצה לאחר שסגנו של קורטס ביצע טבח פומבי באצילים האצטקים במהלך פסטיבל דתי. האצטקים פתחו במרד אדיר. מוקטסומה נהרג (על ידי הספרדים או מאבנים שזרק עליו עמו). ב-30 ביוני 1520, קורטס ואנשיו ניסו להימלט מהעיר הצפה בחסות החשכה, אך התגלו ונטבחו. מאות ספרדים מתו שטבעו באגם בגלל שהיו עמוסים בזהב שלא רצו לזרוק. לילה זה מכונה ההיסטוריה הספרדית "הלילה העצוב".
+                <br><br>
+                אך קורטס לא ויתר. במשך שנה הוא התארגן מחדש, בנה ספינות מלחמה קטנות, גייס רבבות אינדיאנים, ויצר מצור הרמטי על הבירה טנוצ'טיטלאן. לאחר 93 ימי מצור אכזרי, רעב, והתפרצות מגפת האבעבועות השחורות (שהביאו הספרדים וחיסלה כ-40% מתושבי העיר), העיר נפלה סופית ב-13 באוגוסט 1521. האימפריה האצטקית חדלה מלהתקיים.
+            </p>
+        </section>
+
+        <!-- הגילויים והשפעותיהם -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">השפעות היסטוריות ארוכות טווח (לידת מקסיקו)</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    <strong>הריסת ציביליזציה ובניית "ספרד החדשה":</strong>
+                    הכיבוש של קורטס היה אחד האירועים המחרידים והמשמעותיים ביותר בהיסטוריה של יבשת אמריקה. קורטס הרס עד היסוד את המקדשים והמבנים האצטקים של טנוצ'טיטלאן, ובנה על חורבותיהם (באמצעות עבודת כפייה אינדיאנית) את הבירה החדשה של אמריקה הלטינית – עיר מקסיקו (Mexico City). הוא יצר את הישות הפוליטית "מלכות המשנה של ספרד החדשה" (Nueva España).
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">לידת ה"מסטיסו" (Mestizo):</strong>
+                    הקשר של קורטס עם מלינצ'ה והולדת בנם מרטין, מסמל מבחינה היסטורית ותרבותית את לידת "הגזע המקסיקני" החדש – ה<strong>מסטיסו</strong> (עירוב של דם אירופאי ספרדי ודם אינדיאני מקומי). בעוד שהאנגלים בצפון אמריקה דחקו ורצחו את הילידים מחוץ לגבולותיהם, הספרדים במקסיקו הרסו את התרבות העליונה אך נטמעו באוכלוסייה המקומית, מה שיצר את הזהות של מקסיקו ואמריקה הלטינית המודרנית.
+                </div>
+                
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">אחרית ימיו: תהילה, פרנויה והתרסקות פוליטית</strong>
+                    <p class="mb-4">
+                        <strong>התגמול והבנייה מחדש (1521-1528):</strong> מיד לאחר הניצחון, הקיסר קרל החמישי אישר בדיעבד את מרדו של קורטס (בזכות אוצרות הזהב שנשלחו לספרד). קורטס מונה למושל, קפטן-גנרל ושופט עליון של "ספרד החדשה". הוא קיבל את התואר היוקרתי "מרקיז עמק ואחאקה" והפך לאחד האנשים העשירים באימפריה, כשהוא שולט על עשרות אלפי ילידים כאריסים.
+                    </p>
+                    <p class="mb-4">
+                        <strong>הפרנויה של הכתר ושלילת הסמכויות:</strong> למרות עושרו, הקיסר מעולם לא סמך על קורטס. הכתר הספרדי פחד שקורטס ינצל את הפופולריות שלו כדי להכריז על עצמו כמלך עצמאי של מקסיקו. כדי לנטרל אותו, המלך שלח פקידים מלכותיים ו"משנה למלך" (Viceroy) ששללו מקורטס כל סמכות פוליטית ואזרחית, והשאירו לו רק תארים צבאיים טקסיים. קורטס מצא עצמו שקוע בבירוקרטיה ותביעות משפטיות בלתי פוסקות.
+                    </p>
+                    <p class="mb-4">
+                        <strong>מסעות כושלים והרפתקאות אחרונות:</strong> קורטס לא יכול היה לשבת בשקט בחווה. ב-1524 יצא למסע הרסני בג'ונגלים של הונדורס כדי להעניש קצין שמרד בו – מסע שכמעט ועלה לו בחייו ורושש אותו. בשנות ה-30 של המאה ה-16, הוא מימן משלחות לחקר חופי האוקיינוס השקט וגילה את חצי האי <strong>באחה קליפורניה</strong> (מפרץ קליפורניה נקרא עד היום לעיתים "ים קורטס"), אך מסעות אלו הניבו חובות כבדים ללא כל זהב.
+                    </p>
+                    <p>
+                        <strong>המוות הטרגי בספרד (1547):</strong> ב-1540 קורטס חזר לספרד, ממורמר וזועם. הוא התחנן לפגישה עם הקיסר כדי לטהר את שמו. אגדה מפורסמת מספרת שנדחף לכרכרת הקיסר, וכשזה שאל "מי אתה?", ענה קורטס: <em>"אני האדם שנתן לך יותר מחוזות ממה שאבותיך השאירו לך ערים!"</em>. קורטס השתתף במסע קרב כושל באלג'יר (1541), ולבסוף פרש לאחוזה קטנה באנדלוסיה. הוא מת מדיזנטריה בדצמבר 1547, בגיל 62 – עשיר מאוד, אך מתוסכל עמוקות מתחושת הבגידה של האימפריה אותה בנה במו ידיו.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>"המכתבים של קורטס" (Cartas de relación):</strong> מקור ראשוני מובהק. סדרה של חמישה מכתבים (דוחות מפורטים להפליא) שקורטס שלח אישית לקיסר קרל החמישי בין 1519 ל-1526, במטרה להצדיק חוקית את מרדו במושל קובה ולתאר את פלאי מקסיקו.
+                </li>
+                <li>
+                    <strong>"ההיסטוריה האמיתית של כיבוש ספרד החדשה" (Bernal Díaz del Castillo):</strong> זיכרונותיו של חייל פשוט (ברנאל דיאס) שלחם כתף אל כתף עם קורטס, אשר נכתבו עשרות שנים מאוחר יותר כדי לתת את ה"קרדיט" גם לחיילים הפשוטים ולא רק למפקד.
+                </li>
+                <li>
+                    <strong>מחקר אקדמי קלאסי ומודרני:</strong> Thomas, Hugh (1993). <span class="italic text-gray-300">Conquest: Montezuma, Cortés, and the Fall of Old Mexico.</span> (אחד מספרי המחקר המקיפים והעמוקים ביותר שקיימים על הכיבוש).
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> הרנאן קורטס | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות וכיבושן
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/hernan_cortes.jpg" alt="הרנאן קורטס" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Hernan+Cortes'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
