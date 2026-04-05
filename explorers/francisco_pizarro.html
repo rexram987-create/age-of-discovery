@@ -1,0 +1,256 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>פרנסיסקו פיסארו | קונקיסטאדור | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">פרנסיסקו פיסארו</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1478 (משוער) – 26 ביוני 1541 | <span class="text-darkAccent font-bold">שנות כיבוש פרו:</span> 1532 – 1533
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/francisco_pizarro.jpg" alt="פרנסיסקו פיסארו" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Francisco+Pizarro'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: פרנסיסקו (Francisco)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם "פרנסיסקו" מגיע מהשם הלטיני המאוחר <strong>Franciscus</strong>, שפירושו המקורי היה "איש פרנקי" (צרפתי) או "איש חופשי".
+                        <br><br>
+                        <strong>הקשר תרבותי:</strong> השם הפך לפופולרי מאוד ברחבי אירופה הקתולית בעקבות פרנציסקוס מאסיזי (St. Francis of Assisi), הקדוש הנוצרי שדגל בעוני, בצניעות ובאהבת החי. באופן אירוני ומצמרר, פרנסיסקו פיסארו ייצג בדיוק את ההפך הגמור: תאוות בצע קיצונית, רצח ואכזריות נטולת רסן.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה: פיסארו (Pizarro)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        זהו שם משפחה ספרדי שמקורו כנראה בשפה הבאסקית או הקסטיליינית העתיקה.
+                        <br><br>
+                        <strong>פירוש ובלשנות:</strong> השם נגזר מהמילה הספרדית <strong>"Pizarra"</strong>, שפירושה <strong>צפחה (Slate)</strong> – סוג של סלע. השם ניתן במקור לאנשים שגרו ליד מחצבות צפחה או שעסקו בכרייה וחציבה של אבן זו. השם מעיד על מוצא פשוט ומעמד פועלים, בניגוד לשמות אריסטוקרטיים של קונקיסטאדורים אחרים.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות קשה: הממזר, רועה החזירים והאנאלפבית</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                פרנסיסקו פיסארו נולד בעיר טרוחיו (Trujillo) שבחבל אקסטרמדורה בספרד (אותו חבל צחיח ועני שממנו יצא גם הרנאן קורטס). אולם, בניגוד לקורטס שהיה אציל משכיל, נקודת הפתיחה של פיסארו הייתה נמוכה וקשה בהרבה.
+                <br><br>
+                <strong>הסטיגמה של הממזרות:</strong> הוא נולד כבן מחוץ לנישואין (ממזר) לקולונל חיל רגלים ספרדי בשם גונסאלו פיסארו רודריגז דה אגילאר, ולאישה ענייה ממעמד נמוך בשם פרנסיסקה גונסאלס. כילד לא חוקי, הוא לא זכה לשום חינוך או תמיכה מבית אביו. 
+                <br><br>
+                <strong>הבורות:</strong> פיסארו <strong>מעולם לא למד קרוא וכתוב</strong>. הוא נשאר אנאלפבית עד יומו האחרון, ונאלץ להיעזר תמיד בסופרים ופקידים כדי לחתום על חוזים. בילדותו הוא עבד למחייתו כ<strong>רועה חזירים</strong> בשדות הצחיחים של אקסטרמדורה. הדרך היחידה שלו להימלט מחיי עוני והשפלה חברתית הייתה להצטרף לצבא הספרדי, ומאוחר יותר להפליג לעולם החדש (הוא הגיע לאי היספניולה כבר ב-1502).
+            </p>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים ותפיסת עולם</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                אם קולומבוס הונע מלהט משיחי, וקורטס מגאונות פוליטית ואסטרטגית, המניע של פיסארו היה פשוט וישיר הרבה יותר:
+            </p>
+            <div class="space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    <strong>1. תאוות בצע ומוביליות חברתית:</strong> האידאולוגיה העיקרית של פיסארו הייתה למחוק את חרפת ילדותו. הוא רצה להוכיח לעולם, ולמשפחת אביו, שהוא מסוגל להפוך לאיש העשיר והחזק ביותר באימפריה. הוא חיפש זהב, והרבה ממנו. האכזריות שלו כלפי הילידים לא נבעה מ"מלחמת קודש" דתית (כמו אצל קורטס), אלא מפרגמטיזם קר וציני של שודד.
+                </p>
+                <p>
+                    <strong>2. השותפות האסטרטגית (חברת הלבנט):</strong> פיסארו לא פעל לבד. בפנמה הוא הקים שותפות חוזית עם קונקיסטאדור נוסף, <strong>דייגו דה אלמגרו (Diego de Almagro)</strong>, ועם הכומר הרננדו דה לוקה. הם קראו לעצמם "חברת הלבנט" (Empresa del Levante). ההסכם ביניהם היה פשוט: פיסארו יפקד על הצבא, אלמגרו ידאג ללוגיסטיקה, אספקה ותגבורת, והכומר יגייס את המימון והקשרים הפוליטיים. הבטחתם הייתה לחלק כל שלל שיימצא שווה בשווה – הבטחה שהפרתה תוביל מאוחר יותר למרחץ דמים ביניהם.
+                </p>
+            </div>
+        </section>
+
+        <!-- נסיבות היסטוריות למסע (המורחב) -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">נסיבות היסטוריות: כיצד מרד במושל הפך למינוי מלכותי?</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                ההשראה הגדולה של פיסארו הייתה ההצלחה הפנומנלית של קרוב משפחתו הרחוק, הרנאן קורטס, במקסיקו. פיסארו שמע בפנמה שמועות מהילידים על אימפריה עשירה בהרים מדרום שנקראה "בירו" (Birú - לימים פרו). אולם, הדרך לכיבוש עברה קודם כל במרד פוליטי.
+            </p>
+            
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-4">
+                <strong class="text-white text-xl block mb-2">1. כישלונות, מרד ו"שלושה עשר של התהילה":</strong>
+                פיסארו ואלמגרו יצאו לשתי משלחות חקר (1524 ו-1526) שהיו כישלונות קולוסאליים. הם סבלו מרעב, מחלות ואבדות כבדות מבלי למצוא זהב. כשהגיעו לאי "איסלה דל גאיו" (Isla del Gallo) ב-1527, מושל פנמה (פדרו דה לוס ריוס), שראה בכך בזבוז חיי אדם ומשאבים, שלח ספינה עם פקודה חד-משמעית: "חיזרו מיד". 
+                <br><br>
+                זהו הרגע שבו <strong>פיסארו המרה פקודה באופן גלוי.</strong> באקט ציורי, הוא שרטט קו בחול עם חרבו ואמר: <em>"שם דרומה מחכה פרו עם העושר שלה; כאן פנמה עם העוני שלה. יבחר כל איש את מה שהולם קסטיליאני אמיץ"</em>. רק 13 אנשים (המוכרים כ"לוס טרסה דה לה פאמה") חצו את הקו ונשארו איתו, בעוד השאר חזרו. מבחינת המושל, פיסארו היה כעת עריק מורד.
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-4">
+                <strong class="text-white text-xl block mb-2">2. הנס של טומבס (כרטיס היציאה מהכלא):</strong>
+                פיסארו וה-13 נשארו לבד, עד שאלמגרו חילץ אותם חודשים מאוחר יותר. במקום לחזור מיד לפנמה כדי להישפט, פיסארו שכנע את אלמגרו להמשיך עוד קצת דרומה. ההימור השתלם בענק: הם גילו את העיר האינקית <strong>טומבס (Tumbes)</strong>. הם ראו שם חומות אבן אדירות, אנשים לבושים באריגי יוקרה, "כבשים מוזרות" (לאמות), ובעיקר – כלי זהב. זו הייתה ההוכחה החותכת שהוא לא חיפש רוחות רפאים.
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-4">
+                <strong class="text-white text-xl block mb-2">3. המסע לספרד והמפגש עם הקיסר:</strong>
+                כשהם חזרו לפנמה, המושל עדיין סירב לאשר ולממן משלחת צבאית מלאה. במקום להתייאש או להיכנע, השותפים החליטו להשתמש ב"פרצה" הידועה ביותר של עידן התגליות: <strong>אם מושל מקומי עוצר אותך, סע ישירות למלך עם זהב.</strong> 
+                <br><br>
+                פיסארו נסע פיזית לספרד. הוא לא הגיע בידיים ריקות, אלא הביא איתו לאמות חיות, ילידים פרואנים בבגדי צמר, ותכשיטי זהב נוצצים מהעיר טומבס. למזלו, בקיץ 1528 בעיר טולדו, הוא זכה להציג את השלל בפני הקיסר קרל החמישי. הקיסר התרשם עמוקות, במיוחד משום שבאותו זמן בדיוק ביקר בחצר הרנאן קורטס, שהביא אוצרות ממקסיקו. הקיסר הבין שפיסארו עשוי להיות "קורטס השני" שלו.
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">4. מחיקת הפשעים וטרגדיית האינקה:</strong>
+                ההוכחות הפיזיות וההבטחה לזהב מחקו את כל "פשעי ההמרדה" של פיסארו. ביולי 1529, המלכה (בשם הקיסר) חתמה על <strong>"הסכם טולדו" (Capitulación de Toledo)</strong>. ההסכם עקף לחלוטין את מושל פנמה, והעניק לפיסארו את התואר מושל כללי ושופט עליון של פרו, בגיבוי כוח צבאי. 
+                <br><br>
+                בזמן שפיסארו התארגן, <strong>אימפריית האינקה הייתה בשעתה הקשה ביותר</strong>. מגפת האבעבועות השחורות (שהקדימה את בואם של הספרדים) הרגה את הקיסר הקודם, מה שהוביל למלחמת אזרחים אכזרית בין שני בניו, הואסקר ואטאוואלפה (Atahualpa). כלימודי קורטס, פיסארו ידע שזו שעת הכושר להכות באימפריה מפולגת.
+            </div>
+        </section>
+
+        <!-- פירוט הכיבוש המרכזי -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">הכיבוש: המלכודת בקחאמרקה וחדר הכופר (1532-1533)</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                בשנת 1532, פיסארו נחת בפרו והחל לטפס אל הרי האנדים הגבוהים. הכוח שלו היה זעיר ומגוחך: <strong>168 חיילים בלבד, מתוכם 62 פרשים עם סוסים, ו-27 רובי ארקבוז</strong>. מולם עמדה אימפריית האינקה המנצחת בראשות הקיסר אטאוואלפה, שהקים מחנה בעיר קחאמרקה עם צבא של כ-80,000 לוחמים.
+            </p>
+            
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">טבח קחאמרקה (16 בנובמבר 1532):</strong>
+                פיסארו הזמין את אטאוואלפה לפגישה בכיכר העיר. הקיסר, שזלזל בכוחם של הזרים המעטים, הגיע ללא נשק בליווי פמליית כבוד של כ-6,000 איש. כומר ספרדי ניגש לאטאוואלפה, הגיש לו ספר תפילה ודרש ממנו לקבל את הנצרות ואת עולו של מלך ספרד. אטאוואלפה, שמעולם לא ראה ספר, הניח אותו על אוזנו, אמר שהוא אינו שומע דבר, והשליך אותו בזלזול על הרצפה. 
+                <br><br>
+                זו הייתה העילה שפיסארו חיכה לה. בהינתן האות, הספרדים פתחו באש תותחים ורובים אל תוך ההמון הצפוף מטווח אפס, והפרשים הסתערו. החרדה מפני הסוסים ורעש אבק השריפה יצרו פאניקה המונית. אלפי אינדיאנים נטבחו מבלי שהספרדים איבדו איש. <strong>פיסארו עצמו תפס את אטאוואלפה במו ידיו ולקח אותו בשבי.</strong>
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">חדר הכופר והרצח (El Cuarto del Rescate):</strong>
+                אטאוואלפה שהה בשבי והבין שהספרדים סוגדים לזהב באופן אובססיבי. הוא הציע עסקה מדהימה: תמורת חייו, הוא ימלא חדר באורך 7 מטרים וברוחב 5 מטרים בזהב עד לגובה שאליו מגיעה ידו, ופעמיים נוספות ימלא אותו בכסף. פיסארו הסכים בכתב. 
+                <br><br>
+                במשך חודשים, שליחי האינקה הפשיטו מקדשים ברחבי האימפריה והביאו טונות של יצירות אמנות מזהב (אותן התיכו הספרדים למטילים). זה היה <strong>הכופר הגדול ביותר בהיסטוריה האנושית</strong> (מוערך כיום במאות מיליוני דולרים).
+                <br><br>
+                אולם, ברגע שהזהב נאסף, פיסארו הפר את הבטחתו. מתוך חשש שאטאוואלפה מארגן מרד, הוא ערך לו משפט ראווה מהיר, הרשיע אותו בעבודת אלילים ופוליגמיה, ודן אותו לשריפה על המוקד. מכיוון שהאינקה האמינו ששריפת הגופה מונעת חיי נצח, אטאוואלפה הסכים ברגע האחרון להתנצר בתמורה להוצאה להורג בחניקה. <strong>הוא נחנק למוות (בגרדוט - Garrote) ב-26 ביולי 1533.</strong> עם מותו, האימפריה קרסה, ופיסארו צעד כמנצח לבירה קוסקו (Cuzco).
+            </div>
+        </section>
+
+        <!-- ההשפעות ואחרית ימיו -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">השפעות היסטוריות והמוות העקוב מדם (1541)</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    פיסארו הקים בשנת 1535 את עיר הבירה החדשה על החוף, <strong>לימה (Ciudad de los Reyes - עיר המלכים)</strong>, מכיוון שקוסקו הייתה גבוהה ומבודדת מדי בהרי האנדים. אבל העושר האדיר שזרם לספרד רק זרע את זרעי הפורענות בין הקונקיסטאדורים עצמם.
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">מלחמת האזרחים של הספרדים:</strong>
+                    שותפו של פיסארו, דייגו דה אלמגרו, הרגיש מרומה. פיסארו לקח לעצמו את רוב הזהב, התארים והאדמות, והותיר לאלמגרו את הדרום העני יותר (צ'ילה של ימינו). המתיחות התפתחה למלחמת אזרחים ספרדית על אדמת פרו. ב-1538, כוחותיו של פיסארו (בפיקוד אחיו, ארננדו) הביסו את אלמגרו, לקחו אותו בשבי, והוציאו אותו להורג בחניקה, כפי שעשו לאטאוואלפה.
+                </div>
+                
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">ההתנקשות בפיסארו:</strong>
+                    נקמתם של נאמני אלמגרו (שהונהגו על ידי בנו, דייגו אלמגרו "הצעיר") לא איחרה לבוא. ביום ראשון, 26 ביוני 1541, קבוצה של כ-20 לוחמים "אלמגריסטים" חמושים פרצה לפתע לארמונו של פיסארו בלימה בזמן שאכל את ארוחת הצהריים. 
+                    <br><br>
+                    פיסארו, שהיה כבר בשנות ה-60 לחייו, שלף את חרבו ונלחם באומץ מול המתנקשים, אך ספג דקירות רבות בצווארו ובגופו. אגדה מפורסמת מספרת שברגעיו האחרונים, בעודו גוסס על הרצפה, הוא טבל את אצבעותיו בדם של עצמו, צייר צלב על אבני הרצפה, נישק אותו, ומת. בנו של אלמגרו נתלה גם הוא זמן קצר לאחר מכן על ידי נציגי הכתר הספרדי.
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>"היסטוריה של גילוי וכיבוש פרו" (Agustín de Zárate):</strong> היסטוריון ספרדי בן המאה ה-16 שתיעד את המבצע הצבאי, חדר הכופר, ואת מלחמת האזרחים המדממת בין פיסארו לאלמגרו.
+                </li>
+                <li>
+                    <strong>מחקר היסטורי אקדמי:</strong> Hemming, John (1970). <span class="italic text-gray-300">The Conquest of the Incas.</span> (הספר הנחשב למקיף והמדויק ביותר שנכתב במאה ה-20 על הכיבוש, המשלב גם את נקודת המבט האנדית של האינקה).
+                </li>
+                <li>
+                    <strong>תיעוד דרמטי היסטורי:</strong> MacQuarrie, Kim (2007). <span class="italic text-gray-300">The Last Days of the Incas.</span> (מתאר לפרטי פרטים את הפגישה הגורלית והטבח בקחאמרקה, ואת חוסר ההבנה התרבותי של אטאוואלפה מול חמדנותם של הספרדים).
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> פרנסיסקו פיסארו | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/francisco_pizarro.jpg" alt="פרנסיסקו פיסארו" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Francisco+Pizarro'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+```
