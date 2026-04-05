@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>חואן פונסה דה ליאון | קונקיסטאדור | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">חואן פונסה דה ליאון</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1474 – יולי 1521 | <span class="text-darkAccent font-bold">שנת גילוי פלורידה:</span> 1513
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/juan_ponce_de_leon.jpg" alt="חואן פונסה דה ליאון" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Juan+Ponce+de+Leon'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: חואן (Juan)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        "חואן" הוא הגרסה הספרדית לשם העברי <strong>"יוחנן"</strong> (Yohanan), דרך הלטינית "Iohannes".
+                        <br><br>
+                        <strong>פירוש מילולי:</strong> השם מורכב מהצירוף "יהוה חנן", כלומר "האל חנן" או "האל גמל חסד". זהו אחד השמות הנפוצים ביותר בעולם הנוצרי (מקביל לג'ון, ז'אן, ג'ובאני או איוואן), בהשפעת יוחנן המטביל ויוחנן השליח מהברית החדשה.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה ראשון: פונסה (Ponce)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם "פונסה" מקורו בשם הלטיני <strong>Pontius</strong> (פונטיוס).
+                        <br><br>
+                        <strong>פירוש היסטורי:</strong> השם הלטיני קשור ככל הנראה למילה "Pontus" (ים) או "Pons" (גשר). משפחתו השתייכה לשושלת אצולה עתיקה וענפה בספרד (משפחת פונסה דה מינרווה), שהתגאתה בשורשיה הרומיים העתיקים.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה שני (טופונימי): דה ליאון (de León)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        שם טופונימי המעיד על שיוך גיאוגרפי ואריסטוקרטי.
+                        <br><br>
+                        <strong>פירוש:</strong> הקידומת "דה" משמעותה "מ-". "ליאון" (León) משמעותו בספרדית <strong>אריה</strong>. השם מתייחס היסטורית ל<strong>ממלכת ליאון</strong> – אחת הממלכות הנוצריות החשובות והחזקות ביותר בצפון-מערב חצי האי האיברי בימי הביניים, שסמלה היה אריה זקוף (Rampant lion). נשיאת השם העידה על מעמד אצולה ושייכות לאליטה הישנה של ספרד, עוד לפני האיחוד עם ממלכת קסטיליה.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות, אצולה צבאית ושדות הקרב של גרנדה</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                חואן פונסה דה ליאון נולד בסביבות שנת 1474 בעיירה סַנְטֶרְבָאס דֶה קַמְפּוֹס (Santervás de Campos), בלב ממלכת קסטיליה וליאון שבספרד. הוא נולד למשפחת אצולה ידועה, אך היה בן למשפחה מרובת ילדים, מה שאמר שכבן צעיר לא ציפתה לו ירושה קרקעית גדולה, והוא נאלץ לחצוב את דרכו בכוח החרב.
+                <br><br>
+                בילדותו הוא נשלח לשמש כנושא כלים (Page) ומשרת אישי בחצרו של אחד האבירים החזקים בספרד, פדרו נונייז דה גוזמן. שם קיבל פונסה דה ליאון חינוך צבאי קפדני: הוא למד לרכוב על סוסים, לסייף, לירות ברובה-קשת ולנהל טקטיקות צבאיות. 
+                <br><br>
+                הניסיון הקרבי האמיתי הראשון שלו היה כנער, כאשר השתתף לצידו של פטרונו ב<strong>כיבוש גרנדה (1492)</strong> – נפילתה של הממלכה המוסלמית האחרונה בספרד. המלחמה הזו חישלה אותו ועיצבה את אופיו כלוחם נוקשה, אכזר ושאפתן, המוכן לסכן הכל למען הכתר והדת.
+            </p>
+        </section>
+
+        <!-- אידאולוגיה ומניעים -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים והמיתוס של מעיין הנעורים</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                פונסה דה ליאון הוא מקרה קלאסי שבו המיתוס ההיסטורי בלע לחלוטין את המניעים הפוליטיים והכלכליים האמיתיים של האיש.
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">המניע האמיתי: כבוד, נקמה פוליטית והימלטות מדייגו קולומבוס:</strong>
+                האידאולוגיה האמיתית שלו הייתה של קונקיסטאדור המחפש זהב ועוצמה. ב-1508 הוא כבש באכזריות את האי פוארטו ריקו והפך למושל עשיר ומבוסס. אולם, בעקבות מאבקים משפטיים, <strong>דייגו קולומבוס (בנו של כריסטופר קולומבוס) ניצח בבית המשפט בספרד ושלל מפונסה דה ליאון את תפקיד המושל</strong>. 
+                <br>
+                פונסה, אציל גאה, לוחם פגוע ומושפל, סירב בתוקף להפוך לפקוד זוטר של דייגו קולומבוס. כדי לחזור לגדולה ולהבטיח לעצמו שטח שיהיה כפוף ישירות למלך ספרד (ולא למשפחת קולומבוס), הוא היה מוכן לסכן את כל הונו וחייו במסע הרפתקני מסוכן אל הלא-נודע. הוא פנה ישירות למלך וביקש רישיון לגלות אדמות חדשות, רק כדי להוכיח את עצמאותו ועליונותו.
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">האמת מאחורי אגדת "מעיין הנעורים":</strong>
+                האגדה הפופולרית גורסת שהוא הפליג לפלורידה כדי למצוא את "מעיין הנעורים" (Fuente de la Juventud) שיחזיר לו את כוח גברותו. <strong>זהו מיתוס מוחלט.</strong> בשום מכתב או יומן רשמי של פונסה דה ליאון (או בחוזה שלו מול המלך) לא מוזכר מעיין כזה. הוא חיפש אך ורק איים חדשים, זהב, ואולי צמחי מרפא. 
+                <br>
+                האגדה הודבקה לו רק שנים לאחר מותו על ידי היסטוריונים בספרד (כמו גונסאלו פרננדס דה אוביידו), ככל הנראה כדי ללעוג לו ולהציג אותו כזקן טיפש ופתי שהאמין באגדות אינדיאניות, במסגרת מלחמות הכפשה בחצר המלוכה.
+            </div>
+        </section>
+
+        <!-- נסיבות היסטוריות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">נסיבות היסטוריות: איך ידע לאן להפליג?</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                בתחילת המאה ה-16, האזור הקריבי כבר היה מיושב בספרדים שחיסלו כמעט לחלוטין את אוכלוסיית הילידים בהיספניולה (האיטי) ובפוארטו ריקו עקב מחלות ועבודת כפייה. המלך פרדיננד שמח לעודד יזמות פרטית, והעניק לפונסה דה ליאון פטנט (חוזה מלכותי) בשנת 1512 להתיישב באי "בימיני".
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">המודיעין הימי (שמועות ילידים וציידי עבדים):</strong>
+                פונסה דה ליאון ממש לא הפליג באקראי אל האוקיינוס. היה לו מודיעין מדויק שנאסף משני מקורות עיקריים שפעלו בשטח:
+                <br><br>
+                1. <strong>עדויות ילידים:</strong> במהלך שנותיו כמושל פוארטו ריקו, פונסה חקר את הילידים (בני הטאינו) שסיפרו לו בעקביות על מסת אדמה עצומה או אי גדול בשם "בימיני" הנמצא צפונית-מערבית לאיי הבהאמה.
+                <br>
+                2. <strong>ספינות ציידי עבדים:</strong> עקב המחסור הנואש בכוח אדם במטעים, ספינות פיראטיות וציידי עבדים ספרדיים החלו לשוט צפונה לאיי הבהאמה כדי לחטוף ילידים. המבצעים הללו היו לרוב מחוץ לחוק ולרדאר הרשמי, אך הספנים הללו ככל הנראה כבר הגיעו למים של פלורידה והביאו איתם בחזרה שרטוטים גסים ושמועות על היבשת שמעבר. פונסה פשוט חיבר את המודיעין האינדיאני עם תצפיות העבדים, שכר את הנווטים הטובים ביותר, והפליג בדיוק לכיוון הנכון.
+            </div>
+        </section>
+
+        <!-- פירוט המסע -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסע של 1513: גילוי פלורידה וזרם הגולף</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                ב-4 במרץ 1513 יצא פונסה דה ליאון מפוארטו ריקו עם שלוש ספינות במימונו האישי. הם שטו צפונה-מערבה דרך איי הבהאמה. 
+            </p>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">הנחיתה ומתן השם "פלורידה" (La Florida):</strong>
+                ב-2 באפריל 1513 הם הבחינו בקו חוף מיוער ושופע צמחייה ירוקה. מכיוון שהגילוי התרחש במהלך חג הפסחא, שנקרא בספרדית "Pascua Florida" (חג הפסחא הפרחוני), ומכיוון שהנוף היה מלא בפרחים ועצים, החליט פונסה לקרוא לארץ החדשה <strong>"לה פלורידה" (הפרחונית)</strong>. הם נחתו ככל הנראה באזור העיר סיינט אוגוסטין (St. Augustine) של ימינו, ותבעו בעלות על האדמה (שהאמינו כי היא אי ענק) עבור כתר ספרד. זהו התיעוד הרשמי הראשון של אירופאי באמריקה הצפונית.
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-6">
+                <strong class="text-white text-xl block mb-2">התגלית המדעית-הימית (זרם הגולף):</strong>
+                ההישג החשוב ביותר של המסע לא היה פלורידה עצמה, אלא תגלית של הנווט הראשי שלו, אנטון דה אלאמינוס. כשהפליגו דרומה לאורך חופי פלורידה, הם נתקלו בזרם ים כה עוצמתי (אף שהייתה רוח טובה בגבם), שהספינות שלהם פשוט נדחפו אחורה! הם גילו את <strong>זרם הגולף (Gulf Stream)</strong>. תגלית זו שינתה את ההיסטוריה הימית, מכיוון שזרם זה הפך להיות "הכביש המהיר" של כל הספינות והגליאונים הספרדיים בדרכם חזרה מהעולם החדש לאירופה.
+            </div>
+        </section>
+
+        <!-- הקרב בהודו והשפעות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">המסע האחרון והמוות הטרגי (1521)</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    לאחר ביקור בספרד (שבו אושר לו רשמית התואר מושל פלורידה ואביר), ולאחר ששמע על הצלחותיו העצומות של הרנאן קורטס במקסיקו, פונסה דה ליאון קינא והחליט לחזור כדי ליישב את פלורידה (שאותה הבין כעת כיבשת ולא כאי). 
+                </p>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">ההתנגשות עם שבט הקלוסה (Calusa):</strong>
+                    בשנת 1521, הוא יצא עם שתי ספינות, 200 מתיישבים, כמרים, סוסים וציוד חקלאי אל החוף הדרום-מערבי של פלורידה. אולם, בניגוד לילידים הפסיביים בקריביים, הילידים בפלורידה – ובמיוחד <strong>שבט הקלוסה הלוחמני</strong> – היו מוכנים לקרב ולא התכוונו לוותר על אדמתם.
+                    <br><br>
+                    זמן קצר לאחר הנחיתה, הספרדים הותקפו באכזריות. במהלך קרב עקוב מדם, פונסה דה ליאון נפגע בירכו מ<strong>חץ מורעל במיץ מעץ מנצ'יניל (Manchineel) רעיל במיוחד</strong>. הפצע הזדהם במהירות, והמשלחת כולה נמלטה בבהלה בחזרה לקובה. שם, בעיר הוואנה, מת חואן פונסה דה ליאון מפצעיו ביולי 1521, והוא בן 47 בלבד. חלומו על יישוב פלורידה נגדע.
+                </div>
+                <p>
+                    מורשתו היא התחלת התביעה הספרדית על ארצות הברית של היום, ומיפוי זרם הגולף – מפתח גיאופוליטי שאיפשר לספרד להעביר אלפי טונות של כסף וזהב בחזרה לאירופה במאות הבאות.
+                </p>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>היסטוריה הכללית של האינדים (Gonzalo Fernández de Oviedo):</strong> גונסאלו פרננדס דה אוביידו היה ההיסטוריון הספרדי הראשון שטבע (והפיץ) את הסיפור לפיו פונסה דה ליאון חיפש את "מעיין הנעורים", ככל הנראה כאמצעי להכפשת שמו ולהצגתו כפתטי ואגואיסטי לאחר מותו.
+                </li>
+                <li>
+                    <strong>"דקאדות" של אנטוניו דה אררה אי טורדסייאס (Antonio de Herrera y Tordesillas):</strong> ההיסטוריוגרף הראשי של מלך ספרד, שכתב (בתחילת המאה ה-17) את התיעוד המפורט ביותר על מסלול הניווט של פונסה דה ליאון ב-1513 ואת גילוי זרם הגולף, בהתבסס על יומני אוניות אבודים.
+                </li>
+                <li>
+                    <strong>מחקר היסטורי מודרני מפריך מיתוסים:</strong> Fuson, Robert H. (2000). <span class="italic text-gray-300">Juan Ponce de León and the Spanish Discovery of Puerto Rico and Florida.</span> (מחקר שמוכיח בצורה חד-משמעית כי מניעיו של פונסה היו פוליטיים וקרקעיים, ושולל את מיתוס המעיין מכל וכל).
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> חואן פונסה דה ליאון | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/juan_ponce_de_leon.jpg" alt="חואן פונסה דה ליאון" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Juan+Ponce+de+Leon'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
