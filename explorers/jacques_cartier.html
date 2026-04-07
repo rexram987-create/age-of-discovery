@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ז'אק קרטייה | חוקר צרפת החדשה | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">ז'אק קרטייה</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 31 בדצמבר 1491 – 1 בספטמבר 1557 | <span class="text-darkAccent font-bold">שנות המסעות המרכזיים:</span> 1534 – 1542
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/jacques_cartier.jpg" alt="ז'אק קרטייה" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Jacques+Cartier'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">לחץ על התמונה להגדלה</p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט על קרטייה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: ז'אק (Jacques)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם "ז'אק" הוא הגרסה הצרפתית לשם המקראי העברי <strong>יעקב</strong>.
+                        <br><br>
+                        <strong>התפתחות השפה:</strong> השם התגלגל מהעברית ליוונית ולטינית (Iacomus / Iacobus), ומשם לצרפתית עתיקה. הפירוש המקורי, כפי שמופיע בתנ"ך, קשור למילה <strong>"עָקֵב"</strong> (יעקב אחז בעקבו של עשיו) או "יעקוב" (במשמעות של עוקב או תופס את המקום). זהו אחד השמות הנוצריים-קתוליים הנפוצים ביותר בצרפת של אותה תקופה, המקושר גם לשליח יעקב בן זבדי (סנטיאגו / ז'אק הקדוש).
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה: קרטייה (Cartier)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        זהו שם משפחה צרפתי מסורתי המעיד על מקצוע או עיסוק.
+                        <br><br>
+                        <strong>פירוש ובלשנות:</strong> השם נגזר מהמילה בצרפתית עתיקה <strong>"Charette"</strong> או מהמילה הלטינית <strong>"Carrus"</strong>, שמשמעותן עגלה או כרכרה להובלת סחורות. לפיכך, משמעות השם "קרטייה" היא <strong>עגלון או מוביל סחורות</strong>. שם זה מצביע על שורשים משפחתיים של אנשי מעמד פועלים או סוחרים אשר עסקו בלוגיסטיקה ושינוע (מעניין בהתחשב בכך שז'אק הפך ל"מוביל" ונווט ברמה הגלובלית).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות והשנים המוקדמות בברטאן</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                ז'אק קרטייה נולד ביומו האחרון של שנת 1491 בעיר הנמל המבוצרת <strong>סן-מלו (Saint-Malo)</strong> שבחבל ברטאן, צפון-מערב צרפת. עיר זו נודעה כביתם של יורדי ים נועזים, פיראטים מורשים (קורסארים) וסוחרים חרוצים. 
+                <br><br>
+                <strong>בניית מוניטין ימי:</strong> בניגוד לקונקיסטאדורים הספרדים שבאו מרקע יבשתי וצבאי, קרטייה גדל כשהוא נושם את אוויר האוקיינוס האטלנטי. כמעט ואין תיעוד רשמי לגבי ילדותו המוקדמת או השכלתו, אך ידוע כי הוא רכש במהירות מיומנויות ניווט מתקדמות. מעריכים כי עוד לפני מסעותיו הרשמיים מטעם הכתר, הוא כבר חצה את האוקיינוס האטלנטי, ככל הנראה כנווט בספינות דיג ששטו לאזור העשיר בדגה של ניופאונדלנד. בנוסף, חוקרים סבורים שהשתתף במסעות חקר אל חופי ברזיל, שכן ביומניו המאוחרים הוא נוהג להשוות מנהגים של ילידי קנדה למנהגי הילידים הברזילאים. 
+            </p>
+        </section>
+
+        <!-- כיצד הגיע לשרת את המלך -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">הדרך לחצר המלכות: מדוע בחר בו המלך?</h2>
+            <div class="space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    כיצד יורד ים ממשפחה ממוצעת מסן-מלו הופך לנציג האישי של הכתר הצרפתי? התשובה טמונה בשילוב של פרוטקציה פוליטית נכונה ותסכול מלכותי עמוק.
+                </p>
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">1. זעמו של המלך פרנסואה הראשון:</strong>
+                    בתחילת המאה ה-16, ספרד ופורטוגל חילקו ביניהן את כל העולם החדש באמצעות "חוזה טורדסיאס" ובאישור האפיפיור. מלך צרפת, פרנסואה הראשון, רתח מזעם על המונופול האיברי. הוא הכריז באמרה מפורסמת: <em>"הייתי רוצה מאוד לראות את הסעיף בצוואתו של אדם הראשון שבו הוא מנשל אותי מחלקי בעולם"</em>. המלך הצרפתי היה נחוש למצוא את "המעבר הצפון-מערבי" – נתיב ימי שיעקוף את היבשת האמריקאית מצפון ויוביל ישירות אל עושר התבלינים של אסיה, וכך ישבור את ההגמוניה הספרדית-פורטוגלית.
+                </div>
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">2. החיבור הגורלי: ז'אן לה ונר (Jean Le Veneur):</strong>
+                    כדי להגשים את החזון הזה, המלך נזקק לרב-חובל מיומן, אמיץ, שמכיר את המים הצפוניים הקפואים. בשנת 1532, בעת שביקר המלך בדוכסות ברטאן, הפגיש אותו הבישוף של סן-מלו ואב המנזר של מון סן-מישל, ז'אן לה ונר, עם קרטייה. הבישוף הבטיח למלך שקרטייה "הוא האדם שיכול להוביל ספינות לגילוי ארצות חדשות בעולם החדש", והעיד על היכרותו המעשית של קרטייה עם נתיבי השיט לברזיל וניופאונדלנד.
+                </div>
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">3. המינוי המלכותי (1534):</strong>
+                    ההמלצה עבדה. בשנת 1534, המלך פרנסואה הראשון העניק לקרטייה מימון וכתב מינוי רשמי. המשימה המוגדרת הייתה כפולה וברורה: <em>"לגלות איים מסוימים וארצות שבהן נאמר כי יש כמות גדולה של זהב ועושר אחר, ולמצוא נתיב לאסיה"</em>. בגיל 42, גיל מבוגר יחסית ליורדי ים באותה תקופה, הפך קרטייה מחובל דיג אלמוני יחסית לחוקר המלכותי הבכיר של צרפת.
+                </div>
+            </div>
+        </section>
+
+        <!-- הישגים ומסעות מפורטים -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">פירוט המסעות: הניווט, החטיפה והכישלון בקולוניזציה</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                קרטייה הוביל שלוש משלחות רשמיות, שהפכו למסעות סוערים, רצופי תגליות, בגידות והישרדות בתנאים אכזריים.
+            </p>
+            
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-4">
+                <strong class="text-white text-xl block mb-2">המסע הראשון: הצלב בגאספה וחטיפת בני הצ'יף (1534)</strong>
+                ב-20 באפריל 1534 הפליג קרטייה מסן-מלו עם שתי ספינות קטנות ו-61 אנשי צוות. הוא חצה את האוקיינוס בכ-20 ימים בלבד והחל לחקור בצורה שיטתית את מפרץ סנט לורנס.
+                <br><br>
+                הדרמה הגדולה התרחשה ב-24 ביולי בחצי האי גאספה (Gaspé): קרטייה הציב במקום צלב עץ אדיר באורך של כ-10 מטרים, שעליו מגן עם פרחי חבצלת (סמל המלוכה הצרפתית) והכיתוב "יחי מלך צרפת". הצ'יף המקומי, דונקונה (Donnacona), הבין מיד את המשמעות הפוליטית של הפעולה ויצא בסירתו למחות.
+                <br><br>
+                קרטייה הגיב בעורמה: הוא פיתה את דונקונה ובניו לעלות לספינתו, שבה חגג להם בסעודה, אך אז הודיע לצ'יף שהוא לוקח עמו את שני בניו, דומגאיה וטאיניואני, חזרה לצרפת כדי שישמשו כמתורגמנים במסע הבא.
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-4">
+                <strong class="text-white text-xl block mb-2">המסע השני: מקור השם "קנדה", הקרח והצפדינה (1535-1536)</strong>
+                קרטייה חזר במאי 1535 עם צי של שלוש ספינות (הגדולה שבהן, ה-<em>Grande Hermine</em>) ו-110 אנשי צוות, יחד עם שני בני הצ'יף שהפכו לדוברי צרפתית. 
+                <br><br>
+                <strong>לידת השם קנדה:</strong> בני הצ'יף כיוונו אותו אל תוך שפך הנהר הגדול. הם השתמשו במילה ההורונית-אירוקווית <strong>"Kanata"</strong> (שפירושה פשוט "כפר" או "יישוב") כדי לכוון את קרטייה לכפר האב שלהם, סטאדקונה (היכן שנמצאת כיום קוויבק סיטי). קרטייה, עקב חוסר הבנה, רשם ביומניו את השם "קנדה" כמתייחס לארץ כולה שמסביב לכפר. כך קיבלה המדינה את שמה.
+                <br><br>
+                <strong>חורף האימים:</strong> כשהצרפתים חזרו לסטאדקונה להעביר את החורף, הנהר קפא לעובי של כמעט שני מטרים, ושלג רב כיסה את האדמה. המחנה הצרפתי הוכה במחלת הצפדינה הנוראה (חוסר בוויטמין C), ו-25 מאנשיו של קרטייה מתו עד שהילידים הצילו אותם עם תרופה טבעית (פירוט בפרק התגליות מטה). באביב, קרטייה חטף את הצ'יף דונקונה עצמו לצרפת, צעד שהרס את יחסי האמון לעד.
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">המסע השלישי: יהלומים מזויפים ובריחה לילית (1541-1542)</strong>
+                המסע השלישי נועד להקמת מושבת קבע תחת פיקודו של האציל רוברוואל, אך קרטייה הפליג לפניו. היחסים עם בני האירוקוי היו כעת עוינים מאוד. הצרפתים הקימו יישוב מבוצר, ובמהלך עבודתם, מילאו חביות באבנים שנראו להם כיהלומים ועפרות זהב.
+                <br><br>
+                עקב התקפות הילידים (בהן נהרגו 35 צרפתים), קרטייה נטש את המושבה. בדרכו חזרה נתקל בספינותיו של רוברוואל שפקד עליו לחזור לקוויבק. קרטייה המרה את פקודתו, ובאמצע הלילה הרים עוגן וברח לצרפת עם ה"אוצרות".
+                <br><br>
+                <strong>המפלה:</strong> בצרפת התברר גודל האסון. ה"זהב" התגלה כפיריט חסר ערך ("זהב שוטים") וה"יהלומים" כגבישי קוורץ פשוטים. משם נולד בצרפת ביטוי הלעג המפורסם: <em>"Faux comme des diamants du Canada"</em> (מזויף כמו יהלומים מקנדה).
+            </div>
+        </section>
+
+        <!-- פרק חדש: תגליות גיאוגרפיות ומדעיות (החלק המפוצל והמורחב) -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">מעבר לקנדה: תגליות גיאוגרפיות, הידרולוגיות ומדעיות</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-6">
+                אמנם קרטייה לא מצא את המעבר לאסיה או את ערי הזהב, אך הרישומים הבוטניים, הגיאוגרפיים, ההידרולוגיים והאנתרופולוגיים שהביא עמו שינו את מפת העולם המוכר:
+            </p>
+
+            <div class="space-y-6">
+                <!-- נהר ומפרץ סנט לורנס (הידרולוגיה ואטימולוגיה) -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-3">1. נהר ומפרץ סנט לורנס (St. Lawrence)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        התגלית הגיאוגרפית העצומה ביותר של קרטייה הייתה מערכת המים שמחברת את הימות הגדולות לאוקיינוס האטלנטי. 
+                        <br><br>
+                        <strong>אטימולוגיה (מקור השם):</strong> במסעו השני, קרטייה הגיע לשפך הנהר בתאריך 10 באוגוסט 1535. מכיוון שזהו יום חגו של הקדוש המעונה הנוצרי <strong>לורנטיוס מרומא (Saint-Laurent בצרפתית)</strong>, קרטייה העניק למפרץ, ולאחר מכן לנהר כולו, את שמו של הקדוש.
+                        <br><br>
+                        <strong>הידרולוגיה ומאפיינים פיזיים:</strong> זהו איננו נהר רגיל, אלא אחד מעורקי המים העוצמתיים בעולם. הספיקה הממוצעת שלו אדירה ועומדת על כ-12,101 מטר מעוקב בשנייה. 
+                        מה שהופך את הנהר לייחודי וחשוב כל כך להיסטוריה של גילוי ארצות הוא <strong>העומק שלו</strong>: במרכז המפרץ והנהר זורמת <em>התעלה הלורנטית (Laurentian Channel)</em> שבה <strong>העומק מגיע עד לכ-350 מטרים</strong> מתחת לפני הים (וזאת במרחק של מאות קילומטרים לתוך היבשת). באזורים אחרים של הנהר העומק הממוצע נע בין 10 ל-30 מטרים. עומק הידרוגרפי חריג זה איפשר לספינות אוקייניות גדולות (כמו הגליאונים והקרוולות) לחדור עמוק מאוד לתוך יבשת צפון אמריקה, מה שהפך אותו ל"כביש המהיר" של האימפריה הצרפתית וסחר הפרוות.
+                    </p>
+                </div>
+
+                <!-- אי הנסיך אדוארד (גיאוגרפיה ואטימולוגיה) -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-3">2. אי הנסיך אדוארד (Prince Edward Island)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        קרטייה היה האירופאי הראשון שחקר ותיעד את האי הקטן והיפהפה הזה הממוקם בתוך מפרץ סנט לורנס, במהלך מסעו הראשון ב-1534.
+                        <br><br>
+                        <strong>גיאוגרפיה:</strong> האי מתאפיין בנוף מישורי וגבעות מתונות, אך בעיקר בולט בזכות <strong>האדמה האדומה שלו</strong> (עשירה בתחמוצת ברזל), דיונות החול הלבנות, צוקי אבן חול אדומה וחופים מרהיבים. כאשר קרטייה דרך עליו, הוא התפעל עמוקות מפוריות האדמה ורשם ביומנו שזוהי <em>"האדמה היפה ביותר שאפשר לראות, מלאה בעצים יפים ואחו"</em>.
+                        <br><br>
+                        <strong>אטימולוגיה (מקור השם):</strong> קרטייה העניק לאי את השם הצרפתי <strong>"איל סן-ז'אן" (Île Saint-Jean - אי יוחנן הקדוש)</strong>. שם זה ליווה את האי במשך למעלה ממאתיים שנה תחת השלטון הצרפתי. רק בשנת 1799, לאחר שהאי עבר לשליטה מלאה של האימפריה הבריטית, הוחלט לשנות את שמו כדי לכבד את <strong>הנסיך אדוארד, דוכס קנט</strong> (שהיה בנו של מלך אנגליה ג'ורג' השלישי, ומאוחר יותר הפך לאביה של המלכה ויקטוריה המפורסמת).
+                    </p>
+                </div>
+
+                <!-- בוטניקה ורפואה -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-3">3. בוטניקה ורפואה: תרופת הפלא לצפדינה</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        במהלך חורף 1535, כאשר הצוות גסס ממחלת הצפדינה, גילה קרטייה דרך בני האירוקוי את סגולותיו של <strong>עץ הארז הלבן המקומי</strong> (Thuja occidentalis), שהילידים כינו "Anneda". תה שרקחו מהמחטים והקליפה של העץ הכיל ריכוז אדיר של ויטמין C, והבריא את המלחים הגוססים תוך ימים ספורים. עץ זה יובא לצרפת והפך לאחד מעצי הנוי הראשונים שהגיעו מצפון אמריקה לאירופה.
+                    </p>
+                </div>
+
+                <!-- זואולוגיה ואנתרופולוגיה -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-3">4. זואולוגיה ואנתרופולוגיה</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        <strong>זואולוגיה:</strong> קרטייה תיעד לראשונה בצורה רשמית את <strong>לווייתני הבלוגה</strong> (הלווייתנים הלבנים) בשפך נהר הסנט לורנס, אותו כינה "נהר הסוסים" בגלל צורת ראשם המבצבצת מהמים. בנוסף תיעד מושבות ענק של ניבתנים (Walruses) וציפורי ים.
+                        <br><br>
+                        <strong>אנתרופולוגיה:</strong> קרטייה סיפק את התיעוד הכתוב הראשון והכמעט יחיד של העם הנקרא <strong>"האירוקוי של עמק סנט לורנס"</strong>. הוא תיעד את ערי הענק שלהם והבתים הארוכים (Longhouses). באורח מצמרר, כאשר סמואל דה שמפלן חזר לאותו אזור 70 שנה מאוחר יותר, העם הזה נעלם לחלוטין (כנראה בשל מלחמות שבטיות או מגפות), ויומניו של קרטייה נותרו העדות הישירה היחידה לקיומם.
+                    </p>
+                </div>
+
+                <!-- מונטריאול -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-3">5. ההר המלכותי (מון רויאל - מונטריאול)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        בסמוך לכפר האירוקוי העצום הוצ'לגה, קרטייה גילה הר מרשים. הוא העניק לו את השם <strong>מון רויאל (Mont Royal - ההר המלכותי)</strong> לכבוד מלך צרפת. עם השנים, השם התגלגל והשתבש לשם העיר השנייה בגודלה בקנדה כיום – <strong>מונטריאול (Montreal)</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- השפעות היסטוריות -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-darkAccent opacity-5 rounded-bl-full z-0"></div>
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4 relative z-10">השפעה היסטורית ומורשת (Impact of Discovery)</h2>
+            <div class="relative z-10 space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    קרטייה פרש לאחר המסע השלישי וחזר לחיות באחוזה שרכש סמוך לסן-מלו. הוא מת בשנת 1557 ממגיפה (כנראה טיפוס). על אף שמת באכזבה מאי מציאת אוצרות, מורשתו ההיסטורית עומדת איתנה:
+                </p>
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">ביסוס "צרפת החדשה" (Nouvelle-France):</strong>
+                    מסעותיו של קרטייה הניחו את התשתית החוקית והגיאוגרפית לתביעת הבעלות של צרפת על צפון אמריקה. המיפוי ההידרוגרפי המדויק שערך לנהר סנט לורנס פתח את עורק התחבורה המרכזי ללב היבשת. בזכות מיפוי זה, יכול היה סמואל דה שמפלן (Samuel de Champlain) לחזור לאותם מקומות בדיוק בשנת 1608 ולהקים בהצלחה את המושבות הצרפתיות, שהפכו לגרעין המייסד של האומה הקנדית של ימינו.
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>"יומני המסע של קרטייה" (Bref récit et succincte narration...):</strong> היומנים המקוריים של קרטייה, המפרטים את הריפוי מצפדינה על ידי עץ ה-Anneda ואת התצפיות הזואולוגיות על לווייתני הבלוגה.
+                </li>
+                <li>
+                    <strong>מחקר הידרולוגי וגיאוגרפי:</strong> נתונים הידרוגרפיים ממשלתיים של משרד הדיג והאוקיינוסים הקנדי (Fisheries and Oceans Canada) אודות התעלה הלורנטית ועומק נהר סנט לורנס (עד 350 מטרים).
+                </li>
+                <li>
+                    <strong>The Canadian Encyclopedia:</strong> ערכים אקדמיים ומקוונים המאמתים את השינוי האטימולוגי של אי הנסיך אדוארד (מ"איל סן-ז'אן" לשמו הבריטי ב-1799), ומקור השם של מפרץ סנט לורנס והר מון רויאל.
+                </li>
+                <li>
+                    <strong>מחקר היסטורי אקדמי:</strong> Trudel, Marcel (1973). <span class="italic text-gray-300">The Beginnings of New France, 1524–1663.</span> (לניתוח השפעות מסעותיו על התהוות קנדה הצרפתית).
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> ז'אק קרטייה | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/jacques_cartier.jpg" alt="ז'אק קרטייה" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Jacques+Cartier'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
