@@ -1,0 +1,281 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>סר פרנסיס דרייק | המחקר המקיף | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* אופטימיזציה למסכי סמסונג S25 Ultra - ריווח וקריאות מקסימלית */
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+        .research-section { margin-bottom: 3rem; border-right: 4px solid #38bdf8; padding-right: 1.5rem; }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold text-white mb-8 tracking-tight">סר פרנסיס דרייק</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-8 py-5 text-gray-300 font-mono text-lg md:text-2xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1540 (משוער) – 28 בינואר 1596 | <span class="text-darkAccent font-bold">שנות הקפת העולם:</span> 1577 – 1580
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/francis_drake.jpg" alt="סר פרנסיס דרייק" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Sir+Francis+Drake'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Portrait of Sir Francis Drake | Source: National Portrait Gallery | License: Public Domain</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מקור ומשמעות השם והכינוי (אטימולוגיה מורחבת)</h2>
+            <div class="space-y-10">
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: פרנסיס (Francis)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "פרנסיס" מגיע מהשם הלטיני המאוחר <strong>Franciscus</strong>. משמעותו המקורית היא "איש מהעם הפרנקי" (העם הגרמאני שעל שמו קרויה צרפת). 
+                        <br><br>
+                        <strong>הקשר פוליטי-דתי:</strong> במהלך ימי הביניים המאוחרים ותקופת הרנסנס, המילה "פרנקי" קיבלה משמעות נוספת של <strong>"חופשי" (Free)</strong>. באנגליה הפרוטסטנטית של המאה ה-16, בחירה בשם פרנסיס עבור הילד הבכור ביטאה הצהרת כוונות משפחתית: השאיפה לחירות אישית, דתית ולאומית אל מול ההגמוניה הקתולית והאימפריה הספרדית. עבור פרנסיס דרייק, שחי כל חייו כמורד בממסד הספרדי וכנווט שאינו נכנע לאיש, השם הלם באופן מדויק את המהות הפנימית שלו כאיש חופשי בלב הים.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה: דרייק (Drake)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        זהו שם משפחה אנגלי עתיק ששורשיו נטועים עמוק במיתולוגיה ובשפה האנגלו-סקסונית.
+                        <br><br>
+                        <strong>מקור בלשני:</strong> השם נגזר מהמילה האנגלית העתיקה <strong>Draca</strong>, אשר התפתחה מהמילה הלטינית <strong>Draco</strong>. הפירוש המילולי הישיר הוא <strong>"דרקון"</strong> או "נחש מים עצום". בתרבות הרנסנס, הדרקון סימל יצור רב-עוצמה המגן על אוצרות, אך גם מסוגל להמיט חורבן מוחלט באש ובמים. 
+                        <br><br>
+                        <strong>סמליות אצילה:</strong> אף על פי שבשפת היומיום המילה Drake יכולה להתייחס גם לברווז זכר, פרנסיס דרייק דחה פירוש זה מכל וכל. כשזכה לתואר האבירות ועיצב את שלט האצולה שלו, הוא בחר להציג עליו את הדרקון המיתולוגי, כאות לגאוותו בשם שמייצג כוח הרסני כנגד אויבי אנגליה.
+                    </p>
+                </div>
+
+                <!-- הכינוי הדרקון -->
+                <div class="bg-blue-900/10 p-8 md:p-12 rounded-2xl border border-blue-500/30 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-blue-400 mb-6 border-b border-gray-700 pb-3">הכינוי ההיסטורי: "הדרקון" (El Draque)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        הכינוי <strong>"אל דראקה"</strong> (הדרקון בספרדית) לא היה סתם תרגום של שם משפחתו. הוא היה פרי פיתוח של לוחמה פסיכולוגית מקיפה שהפעילו הספרדים כנגד עצמם. עבור הכתר הספרדי, דרייק לא היה בן אנוש רגיל אלא דמות שטנית, יישות על-טבעית שמסוגלת לשלוט ברוחות ובגלים. הספרדים האמינו שהוא מחזיק ב"מראה קסומה" (Magic Mirror) בארמונו בלונדון, דרכה הוא רואה את מיקומן המדויק של כל ספינות הזהב שלהם באוקיינוס. 
+                        <br><br>
+                        השם "אל דראקה" הפך לכלי של אימה; שמועות על הגעתו לנמל מסוים גרמו לפינוי ערים שלמות ולנטישת ספינות מטען יקרות. במאה ה-16, אמהות ספרדיות נהגו להזהיר את ילדיהן בסיפורי מעשיות ש"אל דראקה" יבוא לקחת אותם בלילה אם לא יישנו, עדות לכך שהמיתוס שלו חדר עמוק לתוך התרבות של אויביו.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות מורחבת ורקע -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות מוקדמת: הפליט שצמח בבטן האונייה</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    פרנסיס דרייק נולד בטאביסטוק (Tavistock) שבמחוז דבון, אנגליה. אביו, אדמונד דרייק, היה איכר פשוט אך חדור להט דתי שהפך למטיף פרוטסטנטי. פרנסיס היה הילד הבכור במשפחה שכללה 12 בנים – נתון שהטיל עליו אחריות הישרדותית כבדה כבר מינקותו.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md italic">
+                    <strong>"החיים בתוך ההאלק":</strong> בשנת 1548, כאשר היה כבן 8, פרץ "מרד ספר התפילה" – מהומות דתיות אלימות נגד הפרוטסטנטים. משפחתו נאלצה להימלט על נפשה ואיבדה את כל רכושה. הם הגיעו לקנט (Kent), ושם, בהעדר כסף לבית קרקע, הם התגוררו במשך שנים ארוכות בתוך <strong>"האלק" (Hulk)</strong> – גוף של ספינת מלחמה ישנה, ריקה ונטושה שעגנה על גדת נהר המדווי. דרייק גדל כשקירות חדרו הם לוחות עץ ספוגים במי מלח, ורעש הגאות והשפל הוא השעון המעורר שלו. הספינה הנטושה הייתה בית הספר הראשון שלו לניווט ולמבנה הנדסי של כלי שיט.
+                </div>
+                <p>
+                    בגיל 12, עקב העוני המרוד של אביו, נשלח פרנסיס לעבוד כשוליה (Apprentice) לרב-חובל של ספינת סחר קטנה שעסקה בהובלת סחורות לאורך חופי אנגליה, צרפת וארצות השפלה. דרייק הפגין חריצות וכישרון ניווט כה נדיר, שבעל הספינה הערירי ראה בו את בנו. במותו, הוא הוריש לפרנסיס הצעיר את הספינה כולה. כך, עוד בטרם הגיע לגיל 20, הפך דרייק לבעל עסק עצמאי ורב-חובל מנוסה, שהכיר כל סלע וכל זרם במים האירופיים.
+                </p>
+            </div>
+        </section>
+
+        <!-- הפיכה לשודד ים - הרחבה מקסימלית -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">התפנית המכוננת: ההפיכה לשודד ים (Privateer)</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    בתחילת דרכו המקצועית, דרייק שאף להיות סוחר ימי לגיטימי. הוא הצטרף לצי של קרובי משפחתו, משפחת הוקינס, ועסק במסעות סחר מורכבים באוקיינוס האטלנטי. אולם, אירוע אחד של בגידה בינלאומית שינה את מהלך חייו ואת ההיסטוריה הימית של אנגליה לנצח.
+                </p>
+                <div class="bg-gray-800 p-10 rounded-2xl border-r-8 border-red-500 shadow-xl">
+                    <strong class="text-white text-2xl block mb-6 uppercase tracking-widest">הטבח בסן חואן דה אולואה (ספטמבר 1568):</strong>
+                    הצי הקטן של הוקינס ודרייק נאלץ להיכנס לנמל ספרדי במקסיקו עקב סערה קשה כדי לבצע תיקונים. הספרדים והאנגלים הגיעו להסכם הפסקת אש רשמי, אך הספרדים הפרו אותו בבוגדנות ותקפו במפתיע. דרייק ראה את חבריו הקרובים נטבחים לנגד עיניו ואת רוב ספינותיו טובעות. הוא הצליח להימלט בקושי רב בספינתו הקטנה "יהודית" (Judith) וחצה את האוקיינוס לבדו, מוכה ומושפל. 
+                    <br><br>
+                    האירוע הזה הצית בדרייק יצר נקמה בוער. הוא הגיע למסקנה שלא ניתן לסחור עם ספרד בשלום ושממלכתו של פיליפ השני היא ממלכה של רשע ובגידה. הוא נדר נקמה אישית בכתר הספרדי. הוא הפסיק להיות סוחר והפך ל<strong>"פריבטיר"</strong> (Privateer) – שודד ים המצויד בכתב הרשאה מלכותי, המנהל לוחמת גרילה ימית וכלכלית נגד ספרד כחלק ממאמץ המלחמה הלאומי.
+                </div>
+            </div>
+        </section>
+
+        <!-- כיצד שמעה עליו המלכה והפגישה הסודית -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">הדרך לארמון: כיצד שמעה עליו המלכה ופגישתם הראשונה?</h2>
+            <div class="space-y-10 text-gray-300 leading-relaxed text-xl">
+                <div class="bg-gray-800 p-8 rounded-2xl border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-6">המודיעין של וולסינגהם</h3>
+                    שמו של דרייק החל להופיע בדוחות המודיעין שהוגשו למלכה אליזבת הראשונה על ידי <strong>סר פרנסיס וולסינגהם</strong>, ראש רשת הריגול והשר הבכיר שלה. וולסינגהם זיהה בדרייק את השילוב המושלם של פנאטיות דתית, גאונות בניווט וכישרון צבאי. דרייק הגיש למועצת הכתר דוחות מפורטים על חולשת ההגנות הספרדיות באיי הודו המערבית, והמלכה, שהייתה זקוקה נואשות לזהב כדי לממן את הגנת הממלכה, ראתה בדרייק את האיש שיכול למלא את אוצרה מבלי שהיא תצטרך לקחת עליו אחריות רשמית.
+                </div>
+
+                <div class="bg-blue-900/20 p-10 rounded-2xl border-r-8 border-darkAccent shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-6 uppercase tracking-widest">הפגישה הראשונה בארמון (סוף 1576):</h3>
+                    הפגישה נערכה בחשאיות מוחלטת בחדר פרטי בארמון, ללא נוכחותם של שרים רבים כדי למנוע הדלפות לספרדים. דרייק הובא לשם על ידי וולסינגהם. המלכה אליזבת, שנודעה בחושיה החדים וביכולתה לזהות אנשים נועזים, ביקשה לשמוע ממקור ראשון על תוכניתו המטורפת לחדור לאוקיינוס השקט דרך מצר מגלן.
+                    <br><br>
+                    התיעוד ההיסטורי מספר כי המלכה אמרה לו ישירות: <strong>"דרייק, הייתי רוצה מאוד לנקום במלך ספרד על הנזקים שעשה לי"</strong>. היא העניקה לו מימון אישי סודי של 1,000 כתרים מזהב, מה שהפך אותה לשותפה עסקית מלאה בשוד העתידי. באותה פגישה נכרת "חוזה ג'נטלמנים" סמוי: המלכה הבטיחה לדרייק תהילה והגנה אם יצליח להביא עושר, אך הבהירה שאם ייכשל או ייתפס, היא תתכחש לו לחלוטין ותציג אותו כפיראט עצמאי הפועל בניגוד לפקודותיה. דרייק יצא מהחדר לא רק כמלח, אלא כזרוע הסודית והארוכה של המלוכה האנגלית.
+                </div>
+            </div>
+        </section>
+
+        <!-- השוד בפנמה - פירוט מורחב -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">המרדף אחר הזהב: השוד הנועז של שיירת הפרדות (1572-1573)</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    זהו האירוע שהוכיח למלכה ולעולם שדרייק הוא "הדרקון" המיתולוגי בהתגלמותו. כדי להבין את השוד, יש להבין את "צוואר הבקבוק" של הכלכלה העולמית באותה עת: פנמה.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    כל הזהב והכסף שנשדדו מהאינקה בפרו הובלו בספינות לחוף המערבי של פנמה. משם, לא היה נתיב ימי, והספרדים נאלצו להעמיס את האוצרות על גבי <strong>שיירות של מאות פרדות</strong> שחצו את הג'ונגלים הסבוכים והמסוכנים של פנמה אל החוף המזרחי, לעיר הנמל נומברה דה דיוס (Nombre de Dios), שם הועמסו לספינות לכיוון ספרד.
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <strong>המארב והברית עם ה"סימארונס":</strong> דרייק ביצע מהלך מבריק: הוא כרת ברית צבאית עם ה-<strong>Cimarrones</strong> – עבדים אפריקאים שברחו מהספרדים וחיו כלוחמי חופש בג'ונגל. הילידים הללו הכירו כל שביל וכל פינה נסתרת. יחד איתם, דרייק ארב לשיירת פרדות ענקית. המארב היה מהיר וקטלני. הם תפסו כמות בלתי נתפסת של <strong>20 טונות של כסף וזהב</strong>. 
+                    <br><br>
+                    <strong>השלל שנקבר באדמה:</strong> השלל היה כה כבד ואדיר, שדרייק ואנשיו לא יכלו לשאת את כולו בחזרה לספינות דרך הביצות הטובעניות. הם מילאו את כיסיהם בזהב ובאבנים יקרות, ואת טונות הכסף הנותרות הם <strong>קברו באדמה</strong> תחת שורשי עצים וסלעים בג'ונגל (חלק מהכסף הזה לא נמצא מעולם). דרייק חזר לאנגליה כגיבור לאומי וכאיש עשיר להפליא, והוכיח לאליזבת שספרד פגיעה בנקודה הרגישה ביותר שלה – הכיס.
+                </div>
+            </div>
+        </section>
+
+        <!-- נסיבות מסע הקפת העולם - הרחבה מקסימלית -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מסע הקפת העולם (1577-1580): נסיבות ומטרות אסטרטגיות</h2>
+            <div class="space-y-10 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    חשוב להדגיש: המסע ההיסטורי של ה-<strong>Golden Hind</strong> ב-1577 לא תוכנן במקור כ"מסע מדעי להקפת העולם". הוא היה מבצע צבאי-כלכלי במסווה של משלחת חקר.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                        <strong class="text-darkAccent text-2xl block mb-4">1. הנסיבה הכלכלית:</strong>
+                        אנגליה עמדה בפני פשיטת רגל של אוצר המדינה. המלכה וקבוצת משקיעים בכירים (שרים ואנשי עסקים) ראו בדרייק "מניית זהב". המטרה הייתה לחדור לאוקיינוס השקט – שהיה אז "אגם ספרדי" סגור ומוגן – ולשדוד את ספינות האוצר הספרדיות שלא היו חמושות, שכן איש לא דמיין שאויב יכול להגיע לשם.
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                        <strong class="text-darkAccent text-2xl block mb-4">2. הנסיבה הגיאופוליטית:</strong>
+                        אנגליה רצתה לשבור את הבלעדיות העולמית שנקבעה ב"חוזה טורדסיאס". דרייק נשלח למצוא את "המעבר המערבי" (Western Passage) לאסיה ולתבוע בעלות על שטחים חדשים עבור הכתר האנגלי בצפון אמריקה ("אלביון החדשה").
+                    </div>
+                </div>
+                <div class="bg-blue-900/10 p-10 rounded-2xl border-r-8 border-darkAccent shadow-inner">
+                    <strong class="text-white text-2xl block mb-6">מדוע המסע הפך להקפת עולם?</strong>
+                    ההחלטה להקיף את כל כדור הארץ התקבלה רק בלב ים, כמעשה של הישרדות גאונית. לאחר שדרייק שדד את ספינת האוצר <em>Cacafuego</em> וצבר שלל של 26 טונות כסף, הוא הבין שציי המלחמה הספרדיים מחכים לו במארב בדרך חזרה דרך מצר מגלן. כדי להציל את השלל ואת חייו, הוא בחר בהימור נועז: להמשיך מערבה דרך כל האוקיינוס השקט, לעבור את איי התבלינים, לחצות את האוקיינוס ההודי, להקיף את אפריקה ולחזור לאנגליה "מהדלת האחורית". זה היה רגע שבו שוד מתוכנן הפך לאחד ההישגים הגיאוגרפיים הגדולים בהיסטוריה האנושית.
+                </div>
+            </div>
+        </section>
+
+        <!-- מורשת ותגליות -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מורשת: תגליות גיאוגרפיות ומהפכת הלוחמה הימית</h2>
+            <div class="space-y-10">
+                <div class="bg-gray-800 p-10 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-darkAccent mb-6">1. מעבר דרייק (Drake Passage)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        במהלך המסע הגדול, סערה אימתנית דחקה את ספינתו של דרייק דרומה מארץ האש. הוא גילה שקיים מעבר מים פתוח, רחב וסוער באופן קיצוני מדרום ליבשת אמריקה הדרומית. גילוי זה הפריך את התפיסה הגיאוגרפית העתיקה (של תלמי) כאילו אמריקה הדרומית מחוברת ליבשת דרומית דמיונית ענקית. מעבר דרייק, המחבר בין האוקיינוס האטלנטי לשקט, נחשב עד היום למקום המאתגר והסוער ביותר בעולם למעבר ספינות.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-10 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-darkAccent mb-6">2. המצאת הלוחמה הימית המודרנית</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        דרייק המציא מחדש את הדרך שבה נלחמים בים. הוא פיתח את טקטיקת ה-<strong>Broadside</strong>: במקום השיטה הישנה של הסתערות חזיתית ולחימת פנים-מול-פנים על הסיפון, דרייק השתמש בספינות קטנות, מהירות ומתמרנות שיירו מטחי תותחים מדפנות הספינה תוך כדי תנועה מהירה. בניצחון הגדול על הארמדה הספרדית ב-1588, טקטיקה זו הוכיחה את עליונותה המוחלטת ושינתה את האופן שבו ציים נלחמים עד לימינו.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"The World Encompassed by Sir Francis Drake" (1628):</strong> הדיווח הרשמי שפורסם על ידי אחיינו של דרייק, המבוסס על היומנים המקוריים של הכומר פרנסיס פלטשר.</li>
+                <li><strong>"Sir Francis Drake" (John Sugden, 1990):</strong> הביוגרפיה המחקרית המוערכת ביותר, המפרטת את הקשרים הכלכליים עם משפחת הוקינס ואת הדינמיקה עם המלכה אליזבת.</li>
+                <li><strong>British Library Research Archive:</strong> מסמכים מקוריים מהמאה ה-16 המתעדים את המינוי הסודי של דרייק ואת הדיווחים המודיעיניים של סר פרנסיס וולסינגהם.</li>
+                <li><strong>"The Secret Voyage of Sir Francis Drake" (Samuel Bawlf, 2003):</strong> מחקר מעמיק אודות גילוייו בחוף המערבי של צפון אמריקה.</li>
+                <li><strong>National Maritime Museum (Greenwich):</strong> ניתוח טכני של מבנה הספינה Golden Hind והטקטיקות הצבאיות בקרב מול הארמדה.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 2.5 Flash)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> תיעוד מחקרי, אקדמי ומקיף של עידן התגליות עבור ספרייה דיגיטלית.<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/francis_drake.jpg" alt="סר פרנסיס דרייק" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Sir+Francis+Drake'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
+
+```
