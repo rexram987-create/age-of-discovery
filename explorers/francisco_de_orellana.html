@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>פרנסיסקו דה אורייאנה | חוקר האמזונס | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-12 border-b border-gray-700 pb-8">
+            <h1 class="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-6">פרנסיסקו דה אורייאנה</h1>
+            <div class="inline-block bg-gray-800 rounded-xl px-5 py-3 text-gray-300 font-mono text-lg md:text-xl shadow-inner border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1511 (משוער) – נובמבר 1546 | <span class="text-darkAccent font-bold">מסע חציית האמזונס:</span> 1541 – 1542
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 (אנכית/פורטרט) -->
+        <section class="mb-12 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/francisco_de_orellana.jpg" alt="פרנסיסקו דה אורייאנה" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Francisco+de+Orellana'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-8 mb-10 text-sm">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-1 block">אנא הוסף קרדיט ויקימדיה (CC BY-SA 4.0) לאחר מציאת התמונה</span>
+        </p>
+
+        <!-- חלק אטימולוגי מורחב ומפורט -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-8 border-r-4 border-darkAccent pr-4">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם פרטי: פרנסיסקו (Francisco)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        השם "פרנסיסקו" מגיע מהשם הלטיני המאוחר <strong>Franciscus</strong>, שפירושו המקורי היה "איש פרנקי" (משבטי הפרנקים הגרמאניים) או בהשאלה "איש חופשי". 
+                        <br><br>
+                        <strong>הקשר היסטורי ותרבותי:</strong> זה היה אחד השמות הנפוצים ביותר בספרד של המאה ה-16, והוא מזוהה לעד עם עידן התגליות בזכות העובדה ששני קונקיסטאדורים בני אותה העיר (אורייאנה ופיסארו) נשאו את השם הזה, אף על פי שמשמעותו החופשית עמדה בסתירה מוחלטת לאופן בו הם שיעבדו את העמים הילידיים של האמריקות.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-semibold text-darkAccent mb-4 border-b border-gray-700 pb-2">שם משפחה: דה אורייאנה (de Orellana)</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        זהו שם משפחה טופונימי (הנגזר ממקום גיאוגרפי). הקידומת <strong>"דה" (de)</strong> פירושה "מ-" או "של", ומציינת מוצא גיאוגרפי ולעתים קרובות גם ייחוס אצילי.
+                        <br><br>
+                        <strong>פירוש ובלשנות:</strong> השם "אורייאנה" מעיד על כך שמשפחתו או אבותיו הגיעו מהעיירה <strong>Orellana la Vieja</strong> (אורייאנה הישנה) הממוקמת בחבל אקסטרמדורה בספרד. מבחינה אטימולוגית שורשית, השם של העיירה מבוסס על השם הלטיני הרומי <strong>Aurelius</strong> (אורליוס), שמשמעותו <strong>"זהוב"</strong> (מ-Aurum = זהב). באופן אירוני ומדהים, האיש ששמו משמעותו "מן הזהוב", נשלח למעמקי הג'ונגל לחפש את "אל דוראדו" (האיש המוזהב), רק כדי למצוא במקום זאת נהר עצום.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">ילדות, רשת קשרים ואיבוד העין</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                פרנסיסקו דה אורייאנה נולד בשנת 1511 בעיר <strong>טרוחיו (Trujillo)</strong> שבחבל אקסטרמדורה, ספרד – אותו אזור עני, צחיח וקשוח שממנו יצאו גדולי הקונקיסטאדורים. 
+                <br><br>
+                <strong>קשר משפחתי לכיבוש פרו:</strong> אורייאנה היה קרוב משפחה (כנראה בן דוד מדרגה שנייה) של פרנסיסקו פיסארו, כובש אימפריות האינקה, וידיד קרוב של אחיו למחצה, גונסאלו פיסארו. עובדה זו הכתיבה את גורלו.
+                <br><br>
+                <strong>הגירה בגיל צעיר והקרבת הגוף:</strong> אורייאנה לא חיכה לבגרות. הוא הפליג לעולם החדש כנער (בסביבות שנת 1527), ושירת כדיכוי מרידות בניקרגואה. מאוחר יותר הצטרף לכוחותיו של פיסארו בפרו. במהלך אחד הקרבות העקובים מדם נגד האינקה, הוא נפצע קשה ו<strong>איבד אחת מעיניו</strong>. הפציעה לא עצרה אותו, והוא נודע כלוחם עשוי ללא חת שניחן ביכולת מדהימה ללמוד במהירות את שפות הילידים (תכונה שהצילה את חייו במסעו הגדול).
+            </p>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">אידאולוגיה, מניעים והאובססיה לזהב וקינמון</h2>
+            <div class="space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    המניעים של אורייאנה ויציאתו למסע לא נבעו מחקר מדעי טהור או מניסיון למפות את העולם, אלא משתי אגדות שהטריפו את דעתם של הספרדים בפרו של שנות ה-40 של המאה ה-16:
+                </p>
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">1. "ארץ הקינמון" (La Canela):</strong>
+                    הקינמון היה אחד התבלינים היקרים ביותר באירופה, והגיע ברובו מזרח אסיה דרך נתיבים שנשלטו על ידי הפורטוגלים והוונציאנים. לספרדים הגיעו שמועות מילידים כי אי שם במעמקי האמזונס, ממזרח להרי האנדים, צומחים יערות אדירים של עצי קינמון. מציאת יער כזה הייתה שקולה למציאת מכרה יהלומים. 
+                </div>
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">2. אל דוראדו (El Dorado):</strong>
+                    האגדה על מלך אינדיאני שנוהג לכסות את גופו באבקת זהב טהורה ולרחוץ באגם קדוש, הציתה את דמיונם. הם חיפשו עיר שלמה שעשויה כולה מזהב. בשילוב הרצון למצוא את "לה קנלה", אורייאנה הצטרף למשלחת שאורגנה על ידי גונסאלו פיסארו למעמקי הג'ונגל. האידאולוגיה שלו הייתה אקסטרקטיבית לחלוטין – למצוא אוצר טבע, לחלץ אותו, להתעשר ולחזור עטור תהילה למלך ספרד.
+                </div>
+            </div>
+        </section>
+
+        <!-- הכנות למסע: נסיבות, המעורבות המלכותית ובחירת המנהיג -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">הכנות למסע: נסיבות, אינטרסים מלכותיים ובחירת המנהיג</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                היציאה אל הלא-נודע של אגן האמזונס לא התרחשה בחלל ריק. היא הייתה תולדה של שאפתנות פוליטית, חמדנות כלכלית, ורשת קשרים אישיים.
+            </p>
+            
+            <div class="space-y-6 text-gray-300 leading-relaxed text-lg">
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">1. הנסיבות אשר הובילו למשלחת המקורית:</strong>
+                    המשלחת החלה כיוזמה פרטית ומקומית. לאחר שפרנסיסקו פיסארו השלים את כיבוש אימפריית האינקה, הוא מינה את אחיו למחצה, גונסאלו פיסארו, למושל קיטו (באקוודור של ימינו) בשנת 1540. גונסאלו חיפש תהילה ועושר משלו. אגן האמזונס המזרחי היה באותה עת "חור שחור" על המפה. השמועות על "ארץ הקינמון" (La Canela) ועל אימפריות מזהב עברו מפה לאוזן בקרב הילידים, והניעו את גונסאלו לארגן משלחת עצומה ויקרה מאוד (שכללה מאות ספרדים, אלפי סבלים ילידים, סוסים, וכלבי ציד) במטרה לחצות את הרי האנדים מזרחה ולכבוש את האוצרות הללו.
+                </div>
+                
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">2. הסיבות של המלך לשליחת המשלחת (והגיבוי המלכותי):</strong>
+                    בעוד המשלחת הראשונה (1541) אורגנה על ידי פיסארו, <strong>המשלחת השנייה (1545)</strong> – זו שנשלחה לחזור וליישב את האמזונס באופן רשמי – תוכננה וגובתה ישירות על ידי הכתר הספרדי (המלך קרל החמישי / מועצת אינדיאס). למלך היו אינטרסים כבדי משקל: 
+                    <br><br>ראשית, <strong>האיום הפורטוגלי:</strong> על פי חוזה טורדסיאס, חלקה המזרחי של דרום אמריקה (ברזיל) היה שייך לפורטוגל. המלך הספרדי חשש שהפורטוגלים יתקדמו פנימה אל תוך היבשת דרך האמזונס. שליחת משלחת מלכותית נועדה לבסס "עובדות בשטח" ולתבוע בעלות על הנהר האדיר. 
+                    <br><br>שנית, <strong>אינטרס כלכלי וצבאי:</strong> המלך קיווה שמסלול האמזונס ישמש "כביש מהיר" וישיר להעברת זהב וכסף מהרי האנדים (פרו) אל האוקיינוס האטלנטי ומשם לספרד, מבלי להזדקק למסעות יבשתיים ארוכים או להפלגה דרך מצר מגלן המסוכן.
+                </div>
+
+                <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                    <strong class="text-white text-xl block mb-2">3. כיצד ולמה נבחר אורייאנה להוביל את המשלחת?</strong>
+                    מינויו של אורייאנה התרחש בשני שלבים שונים לחלוטין:
+                    <br><br><strong>בשלב הראשון (סגנו של פיסארו):</strong> אורייאנה לא נבחר על ידי המלך, אלא על ידי גונסאלו פיסארו. פיסארו בחר בו כי אורייאנה היה קרוב משפחה נאמן, איש צבא מנוסה, וחשוב מכל – <strong>היה אדם עשיר מאוד</strong>. אורייאנה השקיע כ-40,000 פסו מזהב מהונו האישי (כסף שעשה כמושל פוארטו ויאחו בגואיאקיל) כדי לממן חלק ניכר מהמשלחת. בתמורה לתמיכתו הכלכלית והצבאית, מונה ללוטננט-גנרל (סגנו של פיסארו). 
+                    <br><br><strong>בשלב השני (המינוי המלכותי):</strong> לאחר שאורייאנה נפרד מפיסארו (בשל חוסר היכולת לחתור חזרה נגד הזרם), צלח את האמזונס, וחזר לספרד (1543), הוא הואשם בבגידה על ידי משפחת פיסארו. אורייאנה הופיע בפני מועצת אינדיאס (הגוף המייעץ למלך), הגן על עצמו בכישרון, והוכיח כי פרידתו הייתה כורח הישרדותי ולא בגידה. המועצה והמלך התרשמו מגילוי הנהר האדיר. מאחר שאורייאנה היה האירופאי היחיד שהכיר את הנהר, ידע לתקשר עם הילידים, ושרטט מפות של האזור, <strong>המלך עצמו בחר בו</strong>. אורייאנה קיבל מהכתר את התואר הרשמי "אדלאנטדו" (Adelantado - מושל צבאי ואזרחי) ונשלח להוביל את המשלחת המלכותית השנייה כדי לכבוש וליישב את מחוז "אנדלוסיה החדשה" (אגן האמזונס).
+                </div>
+            </div>
+        </section>
+
+        <!-- המסע לאורך האמזונס -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">המסע המדהים: מהרי האנדים לאוקיינוס האטלנטי (1541-1542)</h2>
+            <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                המשלחת, שהחלה בחיפוש אחר תבלינים, הפכה לאחד מסיפורי ההישרדות והגילוי המטורפים והחשובים בהיסטוריה האנושית.
+            </p>
+            
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-4">
+                <strong class="text-white text-xl block mb-2">האסון בג'ונגל והפיצול בנהר נאפו (דצמבר 1541):</strong>
+                גונסאלו פיסארו ואורייאנה יצאו מקיטו (אקוודור) במשלחת עצומה של כ-300 חיילים ספרדים וכ-4,000 סבלים ילידים. כשהחלו לרדת ממורדות האנדים אל לב יערות הגשם, המשלחת נתקעה. הרעב, המחלות, והלחות הקיצונית החלו להרוג את האנשים כמו זבובים. מאות סבלים מתו. <br><br>
+                בניסיון נואש להשיג מזון, פיסארו הורה לאורייאנה לקחת סירה קטנה שנבנתה בג'ונגל (ה"סן פדרו"), ולרדת עם 50 איש (וביניהם הכומר והמתעד גספאר דה קרווחאל) לאורך נהר הנאפו (Napo River) כדי למצוא כפרים עם אוכל, ולהביאו בחזרה.
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-4">
+                <strong class="text-white text-xl block mb-2">נקודת האל-חזור:</strong>
+                אורייאנה ירד בנהר ימים ארוכים ולא מצא מזון. כשהוא כבר מצא כפרים והשיג אוכל (תוך ניצול כישורי השפות שלו כדי לתקשר עם הילידים), הוא הבין מציאות פיזיקלית אכזרית: <strong>הזרם של הנהר היה כה חזק, שלא היה להם שום סיכוי לחתור חזרה נגד הזרם כדי להציל את פיסארו.</strong> אורייאנה נאלץ לקבל החלטה גורלית – להמשיך להפליג קדימה במורד הזרם אל הלא נודע, בתקווה שהנהר יישפך לאוקיינוס כלשהו.
+                <br><br>
+                (גונסאלו פיסארו, שהמתין לשווא, ראה בכך בגידה וניצל בנס כשחזר ברגל לקיטו עם שרידי המשלחת).
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4 mb-4">
+                <strong class="text-white text-xl block mb-2">גילוי האמזונס ומיתוס הלוחמות:</strong>
+                ב-11 בפברואר 1542, נשפך נהר הנאפו לתוך נהר עצום שרוחבו היה בלתי נתפס. הם גילו את נהר האמזונס. במשך חודשים הם שטו לאורך אלפי קילומטרים. הכומר קרווחאל תיעד כפרים עצומים, תרבויות אינדיאניות מתקדמות עם חקלאות נרחבת, ולחימה בלתי פוסקת מצד הילידים לאורך הנהר.<br><br>
+                האירוע המפורסם ביותר אירע ביוני 1542. קרווחאל כותב ביומנו שסירתם הותקפה על ידי שבט מוזר שהובל על ידי <strong>נשים לוחמות פראיות</strong>, שהיו גבוהות, חזקות, חמושות בחצים וקשתות, ולחמו באומץ לב. הספרדים, שניזונו מהמיתולוגיה היוונית העתיקה, האמינו שנתקלו ב<strong>"אמזונות" (Amazons)</strong>. השם הזה תפס, וזהו מקור שמו של הנהר ויער הגשם כולו עד לימינו (על אף שחוקרים מודרניים סבורים שהם פשוט נלחמו בגברים אינדיאנים עם שיער ארוך שערכו טקסי לחימה משותפים יחד עם נשותיהם).
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-lg border-r-2 border-darkAccent mt-4">
+                <strong class="text-white text-xl block mb-2">ההגעה לאוקיינוס (אוגוסט 1542):</strong>
+                באוגוסט 1542, הגיעו אורייאנה ואנשיו העייפים, הרעבים והפצועים לשפך העצום של האמזונס באוקיינוס האטלנטי. הם חצו את הנהר הארוך בעולם. משם הם הצליחו לנווט את סירותיהם הרעועות צפונה לאורך קו החוף הברזילאי עד שהגיעו למושבה ספרדית בוונצואלה, ומשם חזרו לספרד. זו הייתה אחת מהעלילות הימיות הגדולות ביותר בהיסטוריה.
+            </div>
+        </section>
+
+        <!-- מעבר לג'ונגל: תגליות והשפעה -->
+        <section class="bg-darkCard rounded-2xl p-6 md:p-10 mb-10 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6 border-r-4 border-darkAccent pr-4">השפעות היסטוריות, גיאוגרפיות ואנתרופולוגיות</h2>
+            <div class="space-y-6">
+                <!-- השפעה גיאוגרפית -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-3">1. הגיאוגרפיה של היבשת מתגלה</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        אורייאנה חשף לראשונה מציאות שהייתה בלתי נתפסת עבור הגיאוגרפים האירופאים: יבשת אמריקה הדרומית רחבה באופן מדהים, ויש בה מערכת נהרות פנימית שחוצה את כולה מהרי האנדים ועד האוקיינוס האטלנטי. המסע שלו עשה דה-מיסטיפיקציה לג'ונגל, ושרטט לראשונה על המפה הגיאוגרפית את <strong>אגן האמזונס (Amazon Basin)</strong>.
+                    </p>
+                </div>
+
+                <!-- עדות אנתרופולוגית נדירה -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-3">2. עדות אנתרופולוגית לקיומן של ערים ילידיות אדירות</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        במשך שנים רבות, יומניו של הכומר קרווחאל (שטען שראה כפרים באורך 20 קילומטרים ורשתות דרכים וחקלאות באמזונס) נחשבו להגזמה פרועה ולהמצאות שקריות. מדענים חשבו שהג'ונגל לא יכול לכלכל אוכלוסייה כה גדולה. אולם, בעשורים האחרונים של המאה ה-20 והמאה ה-21, מחקרים ארכיאולוגיים וגילוי "אדמה שחורה" (Terra Preta - אדמה מועשרת על ידי בני אדם) מוכיחים ש<strong>אורייאנה דיבר אמת.</strong> באמזונס אכן שכנו תרבויות מתקדמות ועצומות שאוכלוסייתן מנתה מיליונים, אך הן הושמדו לחלוטין על ידי המחלות שהביאו אורייאנה ואנשיו, כך שכשחוקרים אחרים חזרו לשם מאה שנים מאוחר יותר, יער הגשם כבר בלע את הערים הללו בחזרה והסתיר אותן.
+                    </p>
+                </div>
+
+                <!-- מותו הטרגי והאירוני -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-3">3. הסוף הטרגי של החוקר בעל העין האחת</h3>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        כשחזר לספרד, אורייאנה זכה ליחס של גיבור (והואשם בבגידה על ידי פיסארו, אך זוכה). המלך העניק לו כתב זכויות ומינה אותו כמושל של מחוז חדש שנקרא <strong>"אנדלוסיה החדשה" (Nueva Andalucía)</strong> באזור האמזונס. ב-1545 הוא חזר לאמזונס עם משלחת גדולה במטרה ליישב את האזור, אך המסע היה אסון לוגיסטי. האוניות טבעו, אנשיו גססו, ובנובמבר 1546, פרנסיסקו דה אורייאנה עצמו מת, קרוב לוודאי כתוצאה ממחלה ואולי בעקבות התקפת חצים מורעלים מצד הילידים, ונקבר באדמת יער הגשם אותו הוא עצמו גילה.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-gray-400 mb-6 border-r-4 border-gray-600 pr-4">מקורות וביבליוגרפיה (אימות מחקר)</h2>
+            <ul class="list-disc pr-6 space-y-3 text-gray-400 text-base md:text-lg">
+                <li>
+                    <strong>"The Discovery of the Amazon" (גספאר דה קרווחאל):</strong> היומן המקורי שנכתב על ידי הכומר גספאר דה קרווחאל (Gaspar de Carvajal) ששרד את המסע יחד עם אורייאנה. זהו המסמך העיקרי המספר את עלילות "לוחמות האמזונס" ואת מיתוס העיר אל דוראדו.
+                </li>
+                <li>
+                    <strong>River of Darkness (Buddy Levy):</strong> ספר היסטורי מודרני מקיף (2011) המגולל את פרטי המסע הראשון לאורך האמזונס, ובוחן במבט היסטורי-מדעי את המצבים האתניים והטופוגרפיים שאורייאנה התמודד איתם.
+                </li>
+                <li>
+                    <strong>מחקר היסטורי וארכיאולוגי:</strong> Hemming, John (1978). <span class="italic text-gray-300">The Search for El Dorado.</span> (לניתוח אידאולוגיית האקסטרציה הספרדית) וכן מחקרים עכשוויים אודות ה-Terra Preta, המאמתים את דיווחיו האנתרופולוגיים של אורייאנה על צפיפות האוכלוסין ביערות.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב - משלב את נתוני המחקר -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+            <p class="text-gray-400 text-lg font-bold">
+                האתר נבנה על ידי ג'מיני ורם &copy; 2026
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>נושא מחקר:</strong> פרנסיסקו דה אורייאנה | <strong>סיבת הבנייה:</strong> תיעוד מחקר היסטורי מקיף על גילוי ארצות
+            </p>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="relative h-[90vh] max-h-[900px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-12 right-0 md:-right-12 text-gray-300 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/francisco_de_orellana.jpg" alt="פרנסיסקו דה אורייאנה" class="w-full h-full object-cover rounded-xl shadow-2xl" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Francisco+de+Orellana'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+        }
+        
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+        }
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
