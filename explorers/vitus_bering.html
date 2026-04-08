@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ויטוס ברינג | מגלה הקצה הארקטי | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* אופטימיזציה למסכי סמסונג S25 Ultra - ריווח וקריאות מקסימלית */
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6">ויטוס ברינג</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-6 py-4 text-gray-300 font-mono text-lg md:text-xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 12 באוגוסט 1681 – 19 בדצמבר 1741 | <span class="text-darkAccent font-bold">שנות פעילות מרכזיות (עבור רוסיה):</span> 1725 – 1741
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/vitus_bering.jpg" alt="ויטוס ברינג" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Vitus+Bering'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Vitus Jonassen Bering | Source: Wikimedia Commons | License: Public Domain</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מקור ומשמעות השם המלא (אטימולוגיה מורחבת)</h2>
+            <div class="space-y-10">
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: ויטוס (Vitus)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "ויטוס" נובע מהשפה הלטינית, שורש המילה הוא <strong>Vita</strong>, שפירושו <strong>"חיים"</strong>.
+                        <br><br>
+                        <strong>משמעות היסטורית ודתית:</strong> השם מזוהה קודם כל עם "ויטוס הקדוש" (St. Vitus), קדוש מעונה נוצרי מסיציליה מהמאה ה-4, שנחשב לפטרונם של הרקדנים והבדרנים, וכן למגן מפני סערות בים. באורח אירוני וטרגי, האיש ששמו משמעותו "חיים", ושנקרא על שם פטרון המגן מסערות ימיות, מצא את מותו בייסורים כתוצאה ממחלת הצפדינה ותנאי כפור קיצוניים על אי בודד וחסר חיים בלב סערה ארקטית, הרחק ממולדתו.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה: ברינג (Bering)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        שם המשפחה "ברינג" נושא מקור דני מובהק עם שורשים טופונימיים (גיאוגרפיים).
+                        <br><br>
+                        <strong>מקור בלשני:</strong> השם נגזר ככל הנראה מהעיירה <strong>Bjerring</strong> שבדנמרק. מבחינה אטימולוגית-שורשית, מקור המילה בנורדית עתיקה יכול להתפרש בשני אופנים: האחד, קשר למילה "Bear" או <strong>Bjørn (דוב)</strong>, סמל של כוח ושרידות בתנאים קשים. הפירוש השני מתייחס ל"מתחם מבוצר" או טבעת הגנה.
+                        <br><br>
+                        <strong>סמליות גיאוגרפית מודרנית:</strong> ההיסטוריה הפכה את השם "ברינג" לאחד השמות הגיאוגרפיים המוכרים ביותר בעולם המדע והקרטוגרפיה. מצר ברינג, ים ברינג, האי ברינג ואף המושג הגיאולוגי והארכיאולוגי העצום "ברינגיה" (Beringia - הגשר היבשתי הפרהיסטורי שדרכו היגרו בני אדם מסיא לאמריקה) – כולם מנציחים את הנווט הדני ששרטט את הקצה הקפוא של יבשת אסיה.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות מוקדמת: מדנמרק אל הים הגדול</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    ויטוס יונאסן ברינג (Vitus Jonassen Bering) נולד באוגוסט 1681 בעיר הנמל <strong>הורסנס (Horsens)</strong> שבחצי האי יוטלנד, דנמרק. בניגוד לקונקיסטאדורים או הרפתקנים שחיפשו עושר פתאומי, ברינג נולד לתוך עולם של מסורת ימית ממוסדת. משפחתו, למרות שחוותה קשיים כלכליים שדרדרו אותה לעוני, הייתה בעלת ייחוס מכובד הקשור לאנשי חוק ולאנשי כנסייה, ואחיו החורגים היו יורדי ים בסחר ההולנדי והדני.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <strong>היציאה לים בגיל צעיר:</strong> כשהיה בן 15 בלבד (בשנת 1596 בערך), החליט ברינג שהעתיד שלו נמצא מחוץ לעיר הולדתו וחתם כנער סיפון (Ship's boy) על ספינות סוחר. בין גיל 15 לגיל 22, הוא רכש ניסיון מעשי כביר: הוא חצה את האוקיינוס ההודי, הגיע למושבות ההולנדיות באסיה ("איי התבלינים"), ושירת על ספינות דניות והולנדיות שסחרו לאורך חופי אירופה, ולמד באופן מקצועי את מלאכת הניווט, ניהול צוות בתנאי רעב והתמודדות עם סערות אוקייניות. הניסיון הבינלאומי הזה הפך אותו למועמד מושלם עבור צבאות שחיפשו קצינים.
+                </div>
+            </div>
+        </section>
+
+        <!-- החיבור לכתר הרוסי -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">החיבור לכתר: כיצד הגיע נווט דני לשירות צאר רוסיה?</h2>
+            <div class="space-y-10 text-gray-300 leading-relaxed text-xl">
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border-r-4 border-darkAccent shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">חזונו של פיוטר הגדול והגיוס (1704)</h3>
+                    <p>
+                        בתחילת המאה ה-18, האימפריה הרוסית בראשות <strong>הצאר פיוטר הגדול (Peter the Great)</strong> עברה תהליך מודרניזציה אגרסיבי בניסיון להפוך למעצמה אירופאית. חלק מרכזי בחזון הזה היה הקמת <strong>צי ימי רוסי מודרני</strong> מאפס. מאחר שלרוסיה לא הייתה מסורת ימית מפותחת או קציני-ים מנוסים, פיוטר הורה לסוכניו לגייס קצינים בכירים, בוני ספינות ונווטים מרחבי צפון אירופה (במיוחד מהולנד, אנגליה ודנמרק).
+                        <br><br>
+                        בשנת 1704, במהלך ביקור באמסטרדם, פגש ברינג באדמירל רוסי ממוצא נורווגי (קורנליוס קרויס) שגייס אותו לצי הרוסי החדש בתקן של קצין משנה. ברינג הוכיח את עצמו במהירות כנווט מבריק, ממושמע ונאמן לחלוטין. הוא הצטיין במלחמה הצפונית הגדולה מול שוודיה, וזכה להערכה אישית גבוהה מהצאר. 
+                    </p>
+                </div>
+
+                <div class="bg-blue-900/20 p-8 rounded-2xl border-l-8 border-darkAccent shadow-xl">
+                    <h3 class="text-2xl font-bold text-white mb-4">המשימה הסודית מצד הצאר (1725)</h3>
+                    <p>
+                        זמן קצר לפני מותו בינואר 1725, פיוטר הגדול שרטט פקודה סודית למשלחת חקר ענקית בקצה המזרחי של הקיסרות שלו. השאלה הגיאוגרפית שהטרידה את אירופה הייתה: <strong>האם יבשת אסיה מחוברת ליבשת צפון אמריקה באמצעות גשר יבשתי?</strong> או שקיים מצר ים המפריד ביניהן ומאפשר מעבר צפון-מזרחי פתוח לסין והודו?
+                        <br><br>
+                        כדי לענות על שאלה זו, הצאר פיוטר רצה למנות קצין ימי שלא יהיה נגוע בפוליטיקה פנימית רוסית, שיהיה בעל סיבולת אדירה (המשלחת דרשה חצייה רגלית של סיביר), ושנאמנותו לכתר לא מוטלת בספק. הוא בחר בויטוס ברינג למפקד <strong>משלחת קמצ'טקה הראשונה</strong>. זו הייתה נקודת האל-חזור שהפכה את הנווט הדני לחוקר הרוסי המפורסם בהיסטוריה.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה ומניעים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה: מדע, נאמנות לאימפריה וצייתנות</h2>
+            <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md text-gray-300 leading-relaxed text-xl">
+                <p>
+                    בשונה לחלוטין מהקונקיסטאדורים הספרדים שחיפשו ערי זהב, או מהאנגלים שחיפשו ללכוד ספינות אוצר ופעל ממניעים פרוטסטנטיים פנאטיים, ויטוס ברינג הונע על ידי <strong>אידאולוגיה מדעית ואימפריאלית ממוסדת</strong>.
+                    <br><br>
+                    מניעיו היו:
+                    <br><strong>1. מילוי פקודות:</strong> כקצין צבא זר בשירות רוסיה, ברינג הונע מרגש עמוק של צייתנות, חובה ונאמנות לשלטון שנתן לו בית ומעמד. 
+                    <br><strong>2. חקר מדעי טהור (קרטוגרפיה):</strong> משימותיו כללו אנשי מדע, אסטרונומים ובוטנאים. המטרה לא הייתה לשדוד, אלא למדוד קווי אורך ורוחב, לגלות נתיבי סחר צפוניים (המעבר הצפון-מזרחי), ולבסס את השליטה של רוסיה בצפון הפסיפי לקראת מונופול עתידי על סחר בפרוות (במיוחד לוטרות ים). ברינג היה פקיד אימפריאלי ומדען-בשטח, אדם סבלני שמוכן לצעוד אלפי קילומטרים בשלג רק כדי להוכיח נקודה על המפה.
+                </p>
+            </div>
+        </section>
+
+        <!-- פירוט המסעות -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">המסעות: דרך הייסורים בסיביר והים הפתוח</h2>
+            <div class="space-y-10 text-gray-300 leading-relaxed text-xl">
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">משלחת קמצ'טקה הראשונה (1725-1730): המצעד הארוך בעולם</h3>
+                    <p>
+                        האתגר הגדול ביותר של משלחת זו לא היה הים, אלא ההגעה אליו. מכיוון שלא היה נתיב ימי מהים הבלטי לחופי האוקיינוס השקט של רוסיה, ברינג וצוותו (שמנה עשרות אנשים, סוסים וציוד בניית ספינות) נאלצו לחצות את יבשת אפרסיה ברגל, בסירות נהר ובמזחלות כלבים מסנט פטרבורג לחוף הפסיפי – <strong>מסע יבשתי בלתי נתפס של כ-10,000 קילומטרים דרך הטייגה הקפואה של סיביר!</strong> המסע ארך יותר משנתיים, ואנשים רבים מתו מרעב ומקור בדרך.
+                        <br><br>
+                        כשהגיעו לחצי האי קמצ'טקה ב-1728, הם בנו בעצמם ספינה בשם <em>"גבריאל הקדוש"</em>. ברינג הפליג צפונה דרך המצר שמפריד בין אסיה לאמריקה. מכיוון שלא ראה יבשה מצפון (ולא הצליח לראות את אלסקה ממזרח בשל הערפל), הוא הגיע למסקנה שהיבשות אכן מופרדות לחלוטין. הוא חזר לסנט פטרבורג עם מפות מדויקות של חופי קמצ'טקה, אך רבים באקדמיה הרוסית למדעים פקפקו בתגליתו משום שלא דרך בפועל על אדמת אמריקה.
+                    </p>
+                </div>
+
+                <div class="bg-blue-900/20 p-8 rounded-2xl border-l-8 border-darkAccent shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">המשלחת הצפונית הגדולה (1733-1743): הפרויקט המדעי העצום</h3>
+                    <p>
+                        כדי להסיר כל ספק, ארגנה הקיסרית אנה (יורשתו של פיוטר) את "משלחת קמצ'טקה השנייה", הידועה יותר כ<strong>המשלחת הצפונית הגדולה</strong>. ברינג הועמד שוב בראשה. זו הייתה המשלחת המדעית הגדולה והיקרה ביותר בהיסטוריה עד אז, וכללה כ-3,000 איש: נגרים, מלחים, קרטוגרפים, ביולוגים, רופאים, ואף את משפחותיהם.
+                        <br><br>
+                        שוב הם נאלצו לחצות את סיביר (תהליך שגזל שמונה שנות ייסורים!). לבסוף, ב-1741, יצא ברינג לים עם שתי ספינות: <em>הקדוש פטר</em> (בפיקודו) ו<em>הקדוש פאולוס</em> (בפיקוד סגנו צ'יריקוב). סערה הפרידה בין הספינות, אך ב-16 ביולי 1741, ברינג ראה בעיניו יבשה אדירה והרים עטורי קרחונים. הוא גילה את <strong>הר סנט אליאס (Mount St. Elias)</strong> והניח סוף סוף את כף רגלו על חופי <strong>אלסקה (אמריקה הצפונית)</strong>, מה שביסס את הבעלות הרוסית באזור.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border-r-8 border-red-500 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">התרסקות, צפדינה ומוות על האי הבודד (דצמבר 1741)</h3>
+                    <p>
+                        הדרך חזרה הייתה סיוט. סערות הסתיו של האוקיינוס השקט היכו בספינתו של ברינג ללא רחם. המים אזלו, ומחלת הצפדינה (Scurvy - חוסר חמור בוויטמין C שגורם לדימומים פנימיים ולקריסת מערכות) פגעה כמעט בכל אנשי הצוות. ברינג בן ה-60 עצמו היה כה חלש עד שלא יכול היה לעמוד על רגליו.
+                        <br><br>
+                        בנובמבר 1741, הספינה נטרפה על אי בודד וחסר עצים (שייקרא לימים "אי ברינג", חלק מאיי הקומנדור). הצוות הגוסס נאלץ לחפור בורות בחול כדי להתחבא מהכפור ולהינצל מלהקות שועלי שלג כחולים שתקפו אותם. ב-19 בדצמבר 1741, ויטוס ברינג מת במחנה הארעי מאי-ספיקת לב וסיבוכי צפדינה. שרידי הצוות שהצליחו לשרוד את החורף (בעזרת בשר לוטרות ים וכלב-ים סטלאר), פירקו את שאריות הספינה הטרופה, בנו סירת חילוץ, ובנס הצליחו לחזור לקמצ'טקה בקיץ הבא, כשהם נושאים עימם את יומני התגליות של מפקדם המת ואת פרוות לוטרות הים ששינו את הכלכלה הרוסית.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- תגליות גיאוגרפיות -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מורשת והשפעה היסטורית וגיאוגרפית</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">1. חקר והוכחת ההפרדה היבשתית (מצר ברינג)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        מחקריו הוכיחו באופן חד משמעי שיבשת אסיה ויבשת אמריקה אינן מחוברות יבשתית (לפחות לא מאז תום עידן הקרח), ושיש ביניהן מצר מים – <strong>מצר ברינג (Bering Strait)</strong>. תגלית זו השלימה נתח עצום וחסר במפת העולם וסיימה ויכוחים קרטוגרפיים של מאות שנים.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">2. "אמריקה הרוסית" וסחר לוטרות הים</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        הגעתו לאלסקה ביססה את הנוכחות של האימפריה הרוסית בצפון אמריקה (מושבה שהתקיימה עד שרוסיה מכרה את אלסקה לארצות הברית ב-1867). הניצולים מהספינה הטרופה של ברינג הביאו עמם פרוות של לוטרות ים (Sea Otters), שעוררו התלהבות כלכלית אדירה בסין וברוסיה, והובילו לייסוד החברה הרוסית-אמריקאית (Russian-American Company) ולמירוץ משאבים באוקיינוס השקט הצפוני.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"Island of the Blue Foxes: Disaster and Triumph on the World's Greatest Scientific Expedition" (Stephen R. Bown, 2017):</strong> מחקר מודרני מקיף ביותר המתאר בפרוטרוט את הזוועות, הצפדינה וההישרדות באי ברינג במהלך המשלחת הצפונית הגדולה. המקור מתאר היטב את הדינמיקה הלוגיסטית הבלתי אפשרית של חציית סיביר.</li>
+                <li><strong>"Bering: The Russian Discovery of America" (Orcutt Frost, 2003):</strong> הביוגרפיה האקדמית המובילה על ויטוס ברינג. מאמתת את ילדותו בדנמרק, כניסתו לשירות פיוטר הגדול ב-1704, ואת אמונותיו הקרטוגרפיות.</li>
+                <li><strong>היומנים של גיאורג וילהלם שטלר (Georg Wilhelm Steller):</strong> שטלר היה חוקר הטבע (Naturalist) במשלחת האחרונה של ברינג (ועל שמו קרויים חיות רבות כמו עורבני סטלאר ואריה-ים סטלאר). יומניו הם העדות המדעית וההיסטורית הישירה ביותר להתרסקות הספינה ולמותו של המפקד הדני על האי.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 2.5 Flash)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> תיעוד מחקרי, אקדמי ומקיף של עידן התגליות עבור ספרייה דיגיטלית.<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/vitus_bering.jpg" alt="ויטוס ברינג" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Vitus+Bering'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
