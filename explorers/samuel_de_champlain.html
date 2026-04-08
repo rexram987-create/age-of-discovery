@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>סמואל דה שמפלן | המחקר המקיף | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6">סמואל דה שמפלן</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-6 py-4 text-gray-300 font-mono text-lg md:text-xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1567 (משוער) – 25 בדצמבר 1635 | <span class="text-darkAccent font-bold">שנות פעילות מרכזיות:</span> 1603 – 1635
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/samuel_de_champlain.jpg" alt="סמואל דה שמפלן" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Samuel+de+Champlain'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Portrait of Samuel de Champlain | Source: Wikimedia Commons | License: Public Domain</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מקור ומשמעות השמות: האדם והעיר (אטימולוגיה מורחבת)</h2>
+            <div class="space-y-10">
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: סמואל (Samuel)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "סמואל" הוא הגרסה הצרפתית והבינלאומית לשם המקראי העברי <strong>שְׁמוּאֵל</strong>.
+                        <br><br>
+                        <strong>פירוש ומשמעות דתית:</strong> הפירוש המילולי הוא "שמו אל" או "שמע אל". בצרפת של המאה ה-16, שהייתה שסועה במלחמות דת עקובות מדם, השם "סמואל" היה פופולרי במיוחד בקרב משפחות פרוטסטנטיות (הוגנוטים) שהעדיפו שמות תנ"כיים על פני שמות של קדושים קתוליים. עובדה זו מובילה היסטוריונים להניח ששמפלן נולד כפרוטסטנט, והמיר את דתו לקתוליות מאוחר יותר בחייו כדי לזכות בגיבוי מלכותי ובקידום בשירות מלך צרפת.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה: דה שמפלן (de Champlain)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        זהו שם משפחה צרפתי טופונימי (הנגזר משם מקום). הקידומת <strong>"דה" (de)</strong> מציינת "מ-" או ייחוס.
+                        <br><br>
+                        <strong>מקור בלשני:</strong> השם מורכב מהמילים בצרפתית עתיקה: <strong>Champ</strong> (שדה, מהלטינית Campus) ו-<strong>Plain</strong> (שטוח/פתוח). המשמעות היא "מן השדה הפתוח". באופן סמלי, שמפלן בילה את חייו במיפוי שדות, יערות ואגמים עצומים, והפך בעצמו לשם גיאוגרפי כאשר נתן את שמו לאגם ענק בצפון אמריקה (אגם שמפלן).
+                    </p>
+                </div>
+
+                <!-- השם קוויבק -->
+                <div class="bg-blue-900/10 p-8 md:p-12 rounded-2xl border border-blue-500/30 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-blue-400 mb-6 border-b border-gray-700 pb-3">השם הגיאוגרפי: קוויבק (Quebec) ומדוע בחר בו?</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "קוויבק" אינו מילה בצרפתית כלל, אלא אימוץ מבריק של מונח מתוך השפות הילידיות של צפון אמריקה – ספציפית שפת שבטי האלגונקין (Algonquin) והמיקמק (Mi'kmaq).
+                        <br><br>
+                        <strong>מקור בלשני:</strong> המילה המקורית בשפתם היא <strong>Kébec</strong> (קֶבֶּק), ופירושה המילולי הוא <strong>"המקום שבו הנהר נהיה צר"</strong>.
+                        <br><br>
+                        <strong>מדוע בחר שמפלן בשם ובמקום הזה?</strong> בניגוד לספרדים שנהגו לכפות שמות קדושים אירופאים על ערים חדשות, שמפלן שמר על השם הילידי משום שהוא תיאר בדיוק גיאוגרפי מושלם את האסטרטגיה שלו. הוא הבין שמי שישלוט בנהר הסנט לורנס, ישלוט בכל הסחר של פנים היבשת. כשהפליג בנהר העצום (שרוחבו מגיע לעשרות קילומטרים), הוא הגיע לנקודה שבה הנהר לפתע <strong>מוצר לרוחב של קילומטר אחד בלבד</strong> (בין הצוק שעליו יושבת קוויבק לעיר לויס). שמפלן זיהה שזהו "צוואר הבקבוק" האולטימטיבי: מבצר שיוקם על צוק זה יוכל לטווח בתותחים בקלות כל ספינה אנגלית או הולנדית שתנסה לעבור. השם "קוויבק" ייצג את היתרון הצבאי והמסחרי המוחלט של האתר.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות מוקדמת: עיר הנמל ורוחות האוקיינוס</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    סמואל דה שמפלן נולד בעיירת החוף והנמל המבוצרת <strong>ברואז' (Brouage)</strong> שבמחוז סנטונז', על חוף האוקיינוס האטלנטי בצרפת, בסביבות שנת 1567.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <strong>חינוך של יורד ים וקרטוגרף:</strong> בניגוד להרפתקנים שהגיעו מהאצולה היבשתית, שמפלן נולד למשפחה של יורדי ים. אביו, אנטואן, ודודו היו קברניטים בצי הצרפתי. מגיל צעיר, סמואל לא רק למד לנווט, אלא קיבל חינוך יוצא דופן ב<strong>קרטוגרפיה (הכנת מפות) ורישום</strong>. יכולתו לאייר קווי חוף וביצורים הפכה אותו לנכס אסטרטגי.
+                </div>
+                <p>
+                    לפני שיצא לאמריקה, שמפלן שירת כקצין אפסנאות בצבאו של מלך צרפת לעתיד, אנרי הרביעי, שם רכש ניסיון בלוגיסטיקה צבאית. לאחר מכן, יצא למסע חשאי בן שנתיים וחצי תחת דגל ספרד לקריביים ולמקסיקו, שם תיעד בחשאי את נכסי האימפריה הספרדית.
+                </p>
+            </div>
+        </section>
+
+        <!-- החיבור למלך ואופי המשלחות (מורחב במיוחד על המודיעין) -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">החיבור לכתר: הדו"ח הסודי ורישיון המונופול</h2>
+            <div class="space-y-10 text-gray-300 leading-relaxed text-xl">
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border-r-4 border-darkAccent shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">כיצד המלך אנרי הרביעי שמע על יומנו הסודי של דה שמפלן?</h3>
+                    <p>
+                        הגעתו של שמפלן לחצר המלכות לא הייתה מקרית, אלא פרי של רשת קשרים צבאיים עמוקה. במהלך מלחמות הדת בצרפת, שמפלן שירת בצבא תחת פיקודו העליון של מי שלימים הפך למלך אנרי הרביעי. 
+                        <br><br>
+                        כאשר שמפלן חזר ממסעו במקסיקו ובקריביים ב-1601, הוא נשא עמו יומן מאויר וסודי ביותר בשם <em>"Bref Discours"</em>, שהכיל שרטוטים מדויקים של הנמלים הספרדיים וחולשותיהם. שמפלן יצר קשר עם מפקדו הצבאי לשעבר, האדמירל <strong>אֵמָאר דה שאסט (Aymar de Chaste)</strong>, שהפך לאיש חזק בחצר המלכות בפריז. <strong>דה שאסט הוא זה שהציג את שמפלן ואת יומנו בפני המלך.</strong> המלך אנרי הרביעי, שהיה רעב למודיעין צבאי וכלכלי על האימפריה הספרדית, נדהם מאיכות המידע. הוא העניק לשמפלן קצבה שנתית מלכותית ואת התואר הלא-רשמי של "הגיאוגרף המלכותי".
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">האם המשלחות היו פרטיות או בשליחות המלך?</h3>
+                    <p>
+                        המשלחות לקנדה פעלו תחת מודל ייחודי: <strong>מנגנון כלכלי פרטי בגיבוי ורישיון מלכותי.</strong>
+                        אוצר המלוכה הצרפתי היה מרוקן. המלך אנרי הרביעי לא יכול היה לממן ציים ענקיים. לכן, הוא העניק לסוחרים פרטיים (כמו האדמירל דה שאסט) <strong>מונופול מלכותי</strong> על סחר הפרוות הרווחי, ובתמורה דרש מהם לממן את המסעות וליישב את קנדה. 
+                        <br><br>
+                        שמפלן הפליג בספינות בבעלות פרטית שמומנו על ידי סוחרים, אך הוא עצמו הפליג תחת <strong>מינוי ישיר של המלך</strong> כ"צופה" וכקרטוגרף רשמי, במטרה לדווח לכתר על התקדמות ההתיישבות ואפשרויות הסחר.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מסע ראשון ומסע שלישי (ייסוד קוויבק) -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">המסעות: מהמשקיף המלכותי ועד הקמת קוויבק</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">1. המסע הראשון לקנדה כ"משקיף מלכותי" (1603)</h3>
+                    <p>
+                        הרקע והנסיבות למסעו הראשון של שמפלן נרקמו כאשר פטרונו, האדמירל אֵמָאר דה שאסט, קיבל את מונופול סחר הפרוות והתארגן להוציא משלחת מסחרית גדולה. מי שפיקד על הספינות בפועל היה רב-חובל מנוסה בשם פרנסואה גראווה דו פו. 
+                        <br><br>
+                        דה שאסט, בידיעת המלך, הזמין את שמפלן להצטרף. במסע זה, <strong>שמפלן לא היה המפקד</strong>. הוא הצטרף כנוסע נספח, קרטוגרף והיסטוריון. משימתו הייתה לחקור את שפך נהר הסנט לורנס (בעקבות המפות הישנות של ז'אק קרטייה), ליצור קשרים עם הילידים, ולשרטט מפות מעודכנות שיוצגו למלך עם חזרתו כדי להוכיח שהאזור בשל להתיישבות.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">2. המסע השני: הקמת פורט רויאל באקאדיה (1604-1607)</h3>
+                    <p>
+                        במסעו השני, תחת מפקד חדש (פייר דוגואה דה מון), סייע שמפלן להקים את יישוב הקבע הצרפתי הראשון ב"אקאדיה" (היום בנובה סקוטיה) וערך מיפוי מדויק להפליא של חופי האוקיינוס האטלנטי דרומה עד אזור בוסטון וקייפ קוד, הרבה לפני הגעת האנגלים לשם.
+                    </p>
+                </div>
+
+                <div class="bg-blue-900/20 p-8 rounded-2xl border-l-8 border-darkAccent shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">3. המסע השלישי: ייסוד העיר קוויבק (1608)</h3>
+                    <p>
+                        לאחר סיום הפעילות בפורט רויאל, שמפלן הבין שמוקד הכוח האמיתי לסחר בפרוות נמצא בעומק היבשת. בשנת 1608, הוא יצא לקנדה ל<strong>מסעו השלישי</strong>, הפעם כמוביל משלחת בכיר. ב-3 ביולי 1608, הוא עגן ב"צוואר הבקבוק" האסטרטגי שעליו דיווח במסעו הראשון. שם, בנקודה שבה הנהר נהיה צר, הוא הקים את ה"אביטסיון" (Habitation) – מבצר עץ צנוע בעל מספר מבנים. מעשה זה נחשב לתאריך הלידה הרשמי של העיר קוויבק סיטי, ולנקודת המוצא ההיסטורית של "צרפת החדשה".
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה ומניעים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה: בריתות ולא שעבוד</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    בניגוד לספרדים ששיעבדו את האינקה והאצטקים, האידאולוגיה של שמפלן התבססה על <strong>שותפות אסטרטגית וטמיעה</strong>. הוא הבין שצרפתים מעטים לא ישמרו על המונופול ביערות העצומים ללא עזרת המקומיים.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    כדי להבטיח את סחר הפרוות, הוא כרת ברית גורלית עם עמי ההורון (Huron) והאלגונקין. בתמורה, הוא התחייב להילחם לצידם נגד אויביהם המושבעים – קונפדרציית האירוקוי. ב-1609, במסע דרומה, התחולל הקרב ההיסטורי ליד "אגם שמפלן", שבו שמפלן ואנשיו ירו בנשק חם (ארקבוז) והבריחו את האירוקוי שמעולם לא ראו נשק כזה. הברית הצרפתית-הורונית נשמרה, אך יצרה מאה שנות דמים של מלחמות נגד האירוקוי.
+                </div>
+            </div>
+        </section>
+
+        <!-- תגליות גיאוגרפיות -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">תגליות גיאוגרפיות והשפעה היסטורית</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">1. חקר הימות הגדולות (The Great Lakes)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        שמפלן היה האירופאי הראשון שחקר ותיעד חלק מהימות הגדולות. ב-1615 הוא הגיע עד ל<strong>ימת יורון (Lake Huron)</strong> וימת אונטריו. מפות הפנים היבשתיות ששרטט היו המדויקות ביותר בתקופתו, ושימשו את החוקרים שבאו אחריו.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">2. "אב צרפת החדשה"</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השפעתו חורגת מגילוי גיאוגרפי. שמפלן שמר במו ידיו על המושבה הצרפתית, גייס לה מתיישבים וכספים, ובנה את התשתית הדיפלומטית שאפשרה את הישרדותה. הוא נפטר ב-25 בדצמבר 1635 בקוויבק. מורשתו היא <strong>לידתה של קנדה הצרפתית (Francophone Canada)</strong>, המשמרת את ייחודה ותרבותה עד היום.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"Champlain's Dream" (David Hackett Fischer, 2008):</strong> הביוגרפיה המקיפה המאמתת את העברת הדו"ח הסודי למלך אנרי הרביעי על ידי האדמירל דה שאסט, ומתארת את השילוב של מימון פרטי ומינוי מלכותי.</li>
+                <li><strong>"Des Sauvages" ו-"Voyages" (סמואל דה שמפלן):</strong> יומניו המקוריים שפורסמו החל מ-1603, בהם מפורטים תפקידו כמשקיף במסע הראשון והחלטתו הטקטית לייסד את קוויבק במסעו השלישי.</li>
+                <li><strong>The Canadian Encyclopedia:</strong> מאמרים על מקור השם "Kébec" (המקום הצר), המאמתים את השימוש במונח הגיאוגרפי משפת האלגונקין.</li>
+                <li><strong>Dictionary of Canadian Biography:</strong> הערך ההיסטורי והקרטוגרפי של פועלו של שמפלן מטעם אוניברסיטאות קנדה.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 2.5 Flash)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> תיעוד מחקרי, אקדמי ומקיף של עידן התגליות עבור ספרייה דיגיטלית.<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/samuel_de_champlain.jpg" alt="סמואל דה שמפלן" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Samuel+de+Champlain'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
