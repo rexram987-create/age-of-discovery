@@ -1,0 +1,251 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>לואי אנטואן דה בוגנוויל | קפטן הנאורות | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* אופטימיזציה למסכי סמסונג S25 Ultra - ריווח וקריאות מקסימלית */
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6">לואי דה בוגנוויל</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-6 py-4 text-gray-300 font-mono text-lg md:text-xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 12 בנובמבר 1729 – 31 באוגוסט 1811 | <span class="text-darkAccent font-bold">הקפת העולם:</span> 1766 – 1769
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/louis_antoine_de_bougainville.jpg" alt="לואי אנטואן דה בוגנוויל" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Louis+de+Bougainville'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Louis Antoine de Bougainville | Source: Wikimedia Commons | License: Public Domain</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מקור ומשמעות השם המלא (אטימולוגיה מורחבת)</h2>
+            <div class="space-y-10">
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: לואי אנטואן (Louis Antoine)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם מורכב משני שמות צרפתיים קלאסיים בעלי מטען היסטורי. 
+                        <br><br>
+                        <strong>לואי (Louis):</strong> נגזר מהשם הגרמאני העתיק *Chlodovech* (לודוויג/קלוביס), שמשמעותו <strong>"לוחם מהולל"</strong> או "מפורסם בקרב". זהו השם המלכותי ביותר בצרפת (18 מלכים נשאו אותו). בוגנוויל אכן הוכיח עצמו כלוחם מהולל במלחמת שבע השנים, בטרם הפך לחוקר.
+                        <br>
+                        <strong>אנטואן (Antoine):</strong> נגזר מהשם הלטיני *Antonius* (אנטוניוס), שמשמעותו <strong>"יקר מציאות"</strong> או "ראוי לשבח". השילוב של שני השמות העיד על משפחה בורגנית-גבוהה השואפת להשתלב באליטה הצרפתית, ואכן לואי אנטואן הצדיק את שמו והפך לאחד מבניה המהוללים של האומה.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה: דה בוגנוויל (de Bougainville)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        זהו שם טופונימי (גאוגרפי) המציין שיוך לאחוזה או כפר. הקידומת <strong>"דה" (de)</strong> היא תווית אצולה בצרפת.
+                        <br><br>
+                        <strong>מקור בלשני:</strong> השם נגזר משמו של כפר באזור סום שבנורמנדי (צפון צרפת), המורכב ככל הנראה מהמילה "Ville" (עיר או אחוזה) ומשם פרטי גרמאני קדום כגון Bodo או Bogo. 
+                        <br><br>
+                        <strong>סמליות ופרסום עולמי:</strong> שמו של בוגנוויל הונצח בטבע באופן המרהיב ביותר שיש. הבוטנאי של משלחתו, פיליבר קומרסון, גילה צמח מטפס טרופי יפהפה עם עלי כותרת סגולים-ורודים בוהקים בדרום אמריקה. הוא קרא לצמח על שם מפקד המשלחת שלו – <strong>הבוגנוויליה (Bougainvillea)</strong>. כיום, הצמח הזה מקשט גינות ורחובות בכל רחבי העולם (ובמיוחד בישראל), ונושא את שמו של הקפטן הצרפתי מהמאה ה-18. בנוסף, האי הגדול ביותר בארכיפלג איי שלמה קרוי "האי בוגנוויל".
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות ורקע: המתמטיקאי שהפך לחייל</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    לואי אנטואן דה בוגנוויל נולד בפריז בשנת 1729 למשפחה מבוססת ומשכילה. אביו היה נוטריון (עורך דין) מקושר וחבר במועצת העיר, מה שהבטיח ללואי חינוך עילית קלאסי.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <strong>גאונות מתמטית:</strong> בניגוד לרוב מגלי הארצות (שהתחילו כנערי סיפון עניים או חיילים זוטרים), בוגנוויל היה אינטלקטואל מובהק ואדם של "עידן הנאורות" (Age of Reason). בצעירותו הוא גילה כישרון פנומנלי במתמטיקה ולמד תחת הדרכתו של המתמטיקאי הדגול ז'אן לה רון ד'אלמבר. בשנת 1754 (בהיותו בן 25 בלבד!), הוא פרסם ספר חשוב על <strong>חשבון אינטגרלי (Integral Calculus)</strong>, ספר שהקנה לו כבוד עצום והביא לקבלתו היוקרתית כחבר ב"חברה המלכותית" במדעים של לונדון. הוא מעולם לא למד ימאות כילד.
+                </div>
+                <p>
+                    למרות ייעודו לעריכת דין ומדעים, בוגנוויל נמשך לפעילות מבצעית. הוא התגייס לחיל המוסקטרים (המשמר המלכותי) של צרפת. במהלך "מלחמת שבע השנים" (המלחמה הצרפתית-אינדיאנית), הוא נשלח לקנדה בשנת 1756 כעוזרו הראשי (Aide-de-camp) של הגנרל הצרפתי המהולל, המרקיז דה מונקאלם. בוגנוויל לחם בגבורה בקרבות בקנדה, נפצע, ולקח חלק פעיל בניסיונות (שכשלו לבסוף) להגן על העיר קוויבק מפני כיבוש בריטי – אותה עיר בדיוק שייסד סמואל דה שמפלן 150 שנים קודם לכן. עם נפילת צרפת החדשה לידי הבריטים, בוגנוויל חזר לצרפת כגיבור מלחמה, אך עם תחושת השפלה לאומית צורבת.
+                </p>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה ומניעים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה: הנאורות, המדע והשיקום הלאומי</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    המניעים למסעותיו של בוגנוויל מייצגים שינוי מהותי בעידן התגליות: המעבר מ"כיבוש עיוור" למחקר מדעי מסודר ופוליטיקה בינלאומית.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-2xl border-r-4 border-darkAccent shadow-md">
+                        <strong class="text-white text-2xl block mb-4">1. שיקום הכבוד של צרפת:</strong>
+                        התבוסה במלחמת שבע השנים (1763) עלתה לצרפת באימפריה שלה בקנדה ובהודו. המלך לואי ה-15 נזקק נואשות להישג פומבי שיחזיר את הגאווה הלאומית. בוגנוויל, כפטריוט וקצין, הציע לצאת למסע הקפת עולם כדי לתבוע איים חדשים באוקיינוס השקט עבור צרפת, ולמנוע מהבריטים (שהחלו למפות את האזור במרץ) מונופול גלובלי.
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-2xl border-r-4 border-darkAccent shadow-md">
+                        <strong class="text-white text-2xl block mb-4">2. עידן הנאורות והפרא האציל:</strong>
+                        כאיש מדע הקרוב להוגי דעות כמו ז'אן-ז'אק רוסו ודני דידרו, בוגנוויל לא יצא רק כדי לחפש תבלינים, אלא כדי <strong>לחפש ידע</strong>. המשלחת שלו הייתה מהראשונות שכללו באופן רשמי אסטרונום (כדי לחשב במדויק את קווי האורך) ובוטנאי לאיסוף צמחים. אידיאולוגית, הם חיפשו הוכחות חיות לתיאוריית "הפרא האציל" של רוסו – חברות אנושיות החיות בהרמוניה מושלמת עם הטבע, ללא השחיתות של הציביליזציה האירופאית.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- פירוט המסעות (הקפת העולם) -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מסע הקפת העולם (1766-1769): אהבה, מדע והסוד שעל הסיפון</h2>
+            <div class="space-y-10 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    בוגנוויל קיבל מהמלך פיקוד על פריגטה חמושה בשם <strong>"הזועפת" (La Boudeuse)</strong> וספינת אספקה בשם <strong>"הכוכב" (L'Étoile)</strong>. המשלחת יצאה מנאנט בדצמבר 1766, כשמטרתה הרשמית הראשונה הייתה למסור את איי פוקלנד (אותם יישב בוגנוויל בעצמו קודם לכן) חזרה לידי הספרדים, ואז להמשיך אל האוקיינוס השקט הלא-נודע. 
+                </p>
+                
+                <div class="bg-blue-900/20 p-8 rounded-2xl border-l-8 border-pink-500 shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">1. תגלית מסוג אחר: הנוסעת הסמויה ז'אן בארה</h3>
+                    <p>
+                        אחד הסיפורים המדהימים והייחודיים ביותר בתולדות גילוי ארצות התרחש בספינה "הכוכב". הבוטנאי של המשלחת, פיליבר קומרסון, הביא עמו "עוזר אישי" צעיר ושתקן בשם ז'אן בארה. למעשה, זו הייתה <strong>ז'אן בארה (Jeanne Baret)</strong>, מומחית לצמחים ואהובתו של קומרסון, שהתחפשה לגבר (שכן חוקי הצי הצרפתי אסרו בהחלט על עליית נשים לספינות). 
+                        <br><br>
+                        היא ביצעה עבודה פיזית קשה, סחבה ציוד ביערות, וסייעה לאסוף אלפי דגימות בוטניות (כולל גילוי הבוגנוויליה). סודה נחשף רק כשהגיעו לטהיטי, שם הילידים זיהו מיד את מינה. ז'אן בארה עשתה היסטוריה כ<strong>אישה הראשונה אי פעם שהקיפה את כדור הארץ</strong> (היא סיימה את המסע מאוחר יותר בנפרד, לאחר שקומרסון נפטר במאוריציוס).
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border-r-8 border-darkAccent shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">2. גן העדן האבוד: ההגעה לטהיטי (אפריל 1768)</h3>
+                    <p>
+                        נקודת השיא של המסע הייתה ההגעה לאי טהיטי (Tahiti). למרות שהקפטן הבריטי סמואל ווליס גילה את האי חודשים ספורים לפניו, בוגנוויל לא ידע על כך. הוא התקבל על ידי הילידים הפולינזים בסבר פנים יפות, בשירת נשים, בפרחים ובחופש מיני שהדהים את המלחים הצרפתים שהיו בים חודשים ארוכים.
+                        <br><br>
+                        בוגנוויל קרא לאי <strong>"נובל סיתר" (Nouvelle Cythère - קיתרה החדשה)</strong>, על שם האי היווני המיתולוגי שהיה מקום הולדתה של אפרודיטה, אלת האהבה. הוא התרשם עמוקות מאורח החיים נטול הדאגות (לכאורה) של המקומיים, והם נראו לו כהתגלמות המושלמת של "הפרא האציל". כשעזב לאחר פחות משבועיים, הוא לקח עמו צעיר טהיטי בשם אהוטורו (Ahotouru), שהפך לסנסציה חברתית כשהובא לפריז.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">3. מבוך השוניות, סמואה, ושיבה מנצחת</h3>
+                    <p>
+                        לאחר עזיבת טהיטי, המשלחת הפליגה מערבה לחלקים המסוכנים והלא-ממופים של האוקיינוס השקט. בוגנוויל הגיע למרחק קצר מאוד מחופי אוסטרליה (והיה כמעט מגלה אותה לפני ג'יימס קוק), אך מצא את עצמו מוקף בחומת אלמוגים אימתנית – <strong>שונית המחסום הגדולה (Great Barrier Reef)</strong>. בניווט גאוני, הוא הצליח לסובב את הספינות צפונה, לחמוק מהתרסקות ודאית, ולעבור דרך איי שלמה, גינאה החדשה, ומצר בוגנוויל (שנקרא על שמו).
+                        <br><br>
+                        כמו רבים לפניו, הצוות סבל מצפדינה כשהמזון אזל. לאחר שחצו את האוקיינוס ההודי ועצרו במושבות צרפתיות והולנדיות, הם חזרו לסן-מלו שבצרפת במרץ 1769. המשלחת הייתה מופת של תכנון והיגיינה (יחסית לתקופה): מתוך מעל 300 אנשי צוות בשתי הספינות, בוגנוויל איבד רק 7 אנשים לאורך המסע כולו – נתון הצלחה מדהים במונחים של המאה ה-18.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מורשת והשפעה תרבותית -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ההשפעה התרבותית והמדעית: המצאת הרומנטיקה של האוקיינוס השקט</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">1. הספר ששינה את הפילוסופיה האירופאית</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        בשנת 1771 פרסם בוגנוויל את ספרו <strong>"מסע סביב העולם" (Voyage autour du monde)</strong>. הספר הפך לרב-מכר בינלאומי. התיאור האוטופי שלו את טהיטי כגן עדן של אהבה חופשית, שוויון ואושר בחיק הטבע, היכה גלים באירופה של תקופת ההשכלה. הפילוסוף דני דידרו (עורך האנציקלופדיה) אף כתב חיבור שלם ("מוסף למסעו של בוגנוויל") שבו השתמש בתיאורים של בוגנוויל כדי לתקוף בחריפות את הצביעות, הכנסייה, ואת המוסר המיני המדכא של אירופה. בוגנוויל, למעשה, המציא את מיתוס ה"אקזוטיות הפולינזית" שמשפיע על הספרות והתיירות עד עצם היום הזה.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">2. תרומה מדעית בוטנית (הבוגנוויליה)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        המשלחת חזרה עם אוסף עצום וחסר תקדים של אלפי דגימות צמחים ובעלי חיים, שרבים מהם לא נראו מעולם באירופה. הצמח הידוע ביותר שהביאו הוא ה<strong>בוגנוויליה (Bougainvillea)</strong>, שיובא מדרום אמריקה והפך לאחד מצמחי הנוי הפופולריים בעולם. השתתפותה החשאית של הבוטנאית ז'אן בארה פתחה, גם אם בדיעבד, את הדלת לתרומתן של נשים למדע בעלילת התגליות.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"Voyage autour du monde" (לואי אנטואן דה בוגנוויל, 1771):</strong> יומן המסע המקורי. זהו טקסט מכונן המשלב תצפיות ימיות, תיאורים אנתרופולוגיים מפורטים של ילידי טהיטי, ופילוסופיה של עידן הנאורות.</li>
+                <li><strong>"The Discovery of Jeanne Baret" (Glynis Ridley, 2010):</strong> מחקר היסטורי מודרני מקיף המוכיח ומגולל את סיפורה המדהים של הבוטנאית ז'אן בארה, שהתחפשה לגבר במסעו של בוגנוויל והפכה לאישה הראשונה שהקיפה את העולם.</li>
+                <li><strong>"The Fatal Impact: An Account of the Invasion of the South Pacific" (Alan Moorehead, 1966):</strong> ספר המנתח את ההשפעות התרבותיות העמוקות שהיו למסעותיהם של בוגנוויל וג'יימס קוק על הילידים של האוקיינוס השקט מחד, ועל הפילוסופיה והספרות של אירופה מאידך.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 2.5 Flash)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> תיעוד מחקרי, אקדמי ומקיף של עידן התגליות עבור ספרייה דיגיטלית.<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/louis_antoine_de_bougainville.jpg" alt="לואי אנטואן דה בוגנוויל" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Louis+de+Bougainville'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
+
+```
