@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>הנרי הדסון | חוקר המעבר הצפוני | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* אופטימיזציה למסכי סמסונג S25 Ultra - ריווח וקריאות מקסימלית */
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6">הנרי הדסון</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-6 py-4 text-gray-300 font-mono text-lg md:text-xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1565 (משוער) – 1611 (ננטש בים) | <span class="text-darkAccent font-bold">שנות פעילות מרכזיות:</span> 1607 – 1611
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/henry_hudson.jpg" alt="הנרי הדסון" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Henry+Hudson'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Henry Hudson | Source: Wikimedia Commons | License: Public Domain</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מקור ומשמעות השם המלא (אטימולוגיה מורחבת)</h2>
+            <div class="space-y-10">
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: הנרי (Henry)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "הנרי" הוא שם אנגלי קלאסי ששורשיו נטועים בשם הגרמאני העתיק <strong>Haimric</strong> (היימריק).
+                        <br><br>
+                        <strong>מקור בלשני וסמלי:</strong> השם מורכב משתי מילים גרמאניות: <em>Haim</em> (בית, אחוזה או עולם) ו-<em>Ric</em> (שליט או עוצמה). משמעות השם היא אפוא <strong>"שליט הבית"</strong> או "מנהיג האחוזה". באנגליה של ימי הביניים והרנסנס, זה היה אחד השמות המלכותיים והנפוצים ביותר (שמונה מלכי אנגליה נשאו שם זה, כולל הנרי השמיני). באופן אירוני ומכמיר לב, "שליט הבית" בילה את שנותיו האחרונות בחיפוש נואש אחר בית ומקלט בלב הים הקפוא והזר, וסיים את חייו מגורש מהספינה (ביתו היחיד) על ידי אנשיו.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה: הדסון (Hudson)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        זהו שם משפחה אנגלי פטרונימי (הנגזר משמו של אב המשפחה או אב קדמון).
+                        <br><br>
+                        <strong>התפתחות השם:</strong> השם מורכב מהקידומת <strong>"Hudde"</strong> (הוד) והסיומת <strong>"son"</strong> (בנו של). "הוד" היה כינוי חיבה נפוץ בימי הביניים באנגליה לשמות כמו יו (Hugh) או ריצ'רד (Richard). השורש של השם Hugh מגיע מהמילה הגרמאנית <em>Hug</em>, שמשמעותה <strong>"לב", "נשמה", או "רוח"</strong>. לכן, משמעות השם הדסון היא "בנו של בעל הלב/הרוח". 
+                        <br><br>
+                        ההיסטוריה הגיאוגרפית הפכה את השם הזה לאחד המפורסמים בעולם: מפרץ הדסון, נהר ההדסון, מצר הדסון, מחוז הדסון, וחברת מפרץ הדסון העצומה – כולם מנציחים את הנווט האנגלי שהעניק את שמו לחלקים נרחבים ביותר במפת צפון אמריקה.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות ורקע מוקדם: תעלומת השנים האבודות</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    בניגוד לחוקרים אחרים, ילדותו של הנרי הדסון אפופה במסתורין כמעט מוחלט. אין תיעוד מדויק לגבי שנת לידתו (המשוערת סביב 1565) או מקום הולדתו, למרות שסביר להניח שנולד באנגליה או בסביבות לונדון.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <strong>רמזים משפחתיים וחברת מוסקובי:</strong> למרות היעדר התיעוד הרישומי, היסטוריונים מצביעים על קשר חזק בין משפחת הדסון לבין <strong>חברת מוסקובי (Muscovy Company)</strong>. זו הייתה חברת סחר אנגלית עוצמתית שייסדה נתיבי מסחר עם רוסיה. רישומים מראים שדמות בשם הנרי הדסון כיהנה בדירקטוריון החברה שנים קודם לכן – ייתכן שזהו סבו או אביו של הנווט. 
+                    <br><br>
+                    השתייכות למשפחת סוחרים ואנשי ימיה מסבירה כיצד רכש הדסון את כישוריו המתקדמים כנווט וקרטוגרף. הוא לא צמח מתוך עוני כנער סיפון פשוט (כמו פרנסיס דרייק), אלא נכנס לדפי ההיסטוריה בשנת 1607 כשהוא כבר נווט בעל שם עולמי, נשוי, ואב לילדים, שנבחר על ידי "חברת מוסקובי" להוביל משלחת אסטרטגית מורכבת.
+                </div>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה ומניעים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה: האובססיה למעבר אל המזרח</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    האידאולוגיה של הדסון לא התמקדה בכיבוש אימפריות או במלחמות דת, אלא בניסיון לפתור את האתגר המסחרי והגיאוגרפי הגדול ביותר של תקופתו.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border-r-4 border-darkAccent shadow-md">
+                    <strong class="text-white text-2xl block mb-4">עקיפת המונופול הספרדי והפורטוגלי:</strong>
+                    בסוף המאה ה-16 ותחילת המאה ה-17, הדרך למזרח אסיה (העשירה בתבלינים ובמשי) נשלטה על ידי פורטוגל וספרד דרך המסלולים הדרומיים (כף התקווה הטובה ומצר מגלן). אנגליה והולנד, כמעצמות סחר עולות, חיפשו נואשות מסלול חלופי קצר ומהיר יותר דרך הצפון.
+                    <br><br>
+                    <strong>אמונתו של הדסון:</strong> הדסון היה חדור אמונה בתיאוריה גיאוגרפית (שגויה) מאותה תקופה, שגרסה כי קרח יכול להיווצר רק בסמוך לחופי היבשה, וכי מי האוקיינוס המלוחים בקוטב הצפוני אינם קופאים. הוא האמין באמת ובתמים שאם רק יצליח לפרוץ את שכבת הקרח הראשונית, הוא ימצא <strong>ים קוטבי פתוח וחמים</strong> שיאפשר לו להפליג ישירות מעל הקוטב עד לאסיה. אובססיה זו – למצוא את <strong>"המעבר הצפון-מערבי"</strong> או ה"צפון-מזרחי" – דחפה אותו להוביל ארבע משלחות שונות אל תוך הגיהנום הקפוא של האזור הארקטי.
+                </div>
+            </div>
+        </section>
+
+        <!-- פירוט המסעות -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ארבעת המסעות: מהתהילה בסבאלברד למרד בלב קרח</h2>
+            <div class="space-y-10 text-gray-300 leading-relaxed text-xl">
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">המסעות הראשונים והתהילה: תעשיית הלווייתנים (1607-1608)</h3>
+                    <p>
+                        בשנת 1607, נשלח הדסון על ידי "חברת מוסקובי" האנגלית למצוא נתיב דרך הקוטב הצפוני לסין. הוא הרחיק צפונה יותר מכל חוקר אירופאי לפניו, עד לארכיפלג <strong>סבאלברד (Svalbard)</strong> שמצפון לנורווגיה. אף שנחסם על ידי חומות קרח עצומות, מה שהקנה להדסון את <strong>פרסומו העולמי הראשון</strong> לא היה גילוי של מעבר ימי, אלא תגלית זואולוגית-כלכלית:
+                        <br><br>
+                        הוא חזר לאנגליה עם דיווחים סנסציוניים על כך שהמים באזור שורצים במספרים בלתי נתפסים של <strong>לווייתנים וניבתנים (Walruses)</strong>. דיווחים אלו הציתו באופן מיידי "בהלה לזהב" מסוג חדש: תעשיית ציד הלווייתנים הארקטית של אנגליה והולנד (שמן הלווייתנים היה מצרך יקר ערך לתאורה ולתעשייה). תגלית זו הפכה את הדסון לנווט בעל שם עולמי. ב-1608 הוא ניסה שוב, הפעם לכיוון ארכיפלג נוביה זמליה שמצפון לרוסיה, אך שוב נהדף על ידי הקרח. הציבור האנגלי התאכזב מאי-מציאת המעבר לאסיה, ו"חברת מוסקובי" הפסיקה את מימונו.
+                    </p>
+                </div>
+
+                <div class="bg-blue-900/20 p-8 rounded-2xl border-r-8 border-orange-500 shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">המסע השלישי: העריקה להולנד וגילוי הנהר (1609)</h3>
+                    <p>
+                        לאחר שהאנגלים נטשו אותו, הדסון היה אובססיבי ונואש להמשיך. בצעד שנחשב למפתיע וכמעט בגדר "עריקה", הוא פנה ליריבה המסחרית החזקה ביותר של מולדתו: <strong>חברת הודו המזרחית ההולנדית (VOC)</strong>. ההולנדים קפצו על ההזדמנות להעסיק נווט כה מפורסם. הם ציידו אותו בספינה בשם <em>Halve Maen</em> (חצי ירח) ופקדו עליו לנסות שוב את המעבר הצפון-מזרחי דרך רוסיה. 
+                        <br><br>
+                        <strong>המראת הפקודה:</strong> כשהגיע לרוסיה ופגש שוב בקרחונים, פרץ מרד זוטא בצוותו המעורב (הולנדים ואנגלים) עקב הקור הקיצוני. במקום לחזור להולנד כפי שנפקד עליו, הדסון קיבל החלטה ששינתה את פני ההיסטוריה: הוא סובב את הספינה לכיוון מערב, חצה את האוקיינוס האטלנטי, והחליט לחפש את המעבר דרך יבשת צפון אמריקה.
+                        <br><br>
+                        בספטמבר 1609, הוא גילה שפך נהר רחב ונכנס לתוכו, משוכנע שזהו המצר לאוקיינוס השקט. הוא הפליג במעלה הנהר (עד לאזור העיר אלבני של ימינו). כשהמים הפכו לרדודים, הבין שזהו נהר. גילוי <strong>נהר ההדסון</strong> על ידי נווט תחת דגל הולנדי הוא שהקנה להולנדים את הזכות המשפטית וההיסטורית לייסד את המושבה <strong>"ניו אמסטרדם"</strong> (העיר ניו יורק כיום).
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-red-500 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">המסע האחרון, החורף הקפוא והמרד (1610-1611)</h3>
+                    <p>
+                        ב-1610, משקיעים אנגלים (שלא רצו שהולנד תזכה שוב בתגליותיו) שלחו את הדסון במסעו האחרון על סיפון ה-<em>Discovery</em> לחפש את המעבר הצפון-מערבי דרך צפון קנדה. הוא עבר דרך <strong>מצר הדסון</strong> הבוגדני ונכנס לגוף מים עצום, משוכנע שהגיע לאוקיינוס השקט. למעשה, זה היה <strong>מפרץ הדסון</strong>.
+                        <br><br>
+                        <strong>החורף הטראגי:</strong> בחורף, הספינה נלכדה לחלוטין בקרח במפרץ ג'יימס. הצוות העביר חורף קשה מנשוא, בסבל מצפדינה, רעב וכפור.
+                        <br><br>
+                        <strong>המרד (Mutiny):</strong> באביב 1611, כשהקרח הפשיר, הדסון התעקש להמשיך בחקר המפרץ במקום לחזור הביתה. הצוות המורעב מרד בו. ביוני 1611, המורדים הכריחו את הדסון, יחד עם בנו הצעיר ג'ון ושבעה מלחים חולים, להיכנס לסירת משוטים פתוחה. הם ננטשו בלב ים ללא ציוד מתאים, ומעולם לא נראו שוב.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- תגליות גיאוגרפיות ונתונים הידרולוגיים (פרק חדש מורחב) -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">תגליות גיאוגרפיות ונתונים הידרולוגיים</h2>
+            <div class="space-y-10">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-darkAccent mb-4">1. נהר ההדסון (The Hudson River)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        התיעוד המדויק של הדסון יצר את התשתית להקמת העיר ניו יורק (ניו אמסטרדם).
+                        <br><br>
+                        <strong>נתונים הידרולוגיים:</strong> נהר ההדסון אינו נהר רגיל לאורך רוב מסלולו הדרומי, אלא <strong>אסטואר (Estuary)</strong> – שפך נהר הנתון להשפעת גאות ושפל ממי האוקיינוס האטלנטי שחודרים עמוק לתוך היבשת. עומקו הממוצע באזור נמל ניו יורק נע בין 9 ל-15 מטרים, אך באזורים מסוימים, כגון אזור World's End (ליד האקדמיה הצבאית ווסט פוינט), העומק צונח באופן דרמטי לכ-<strong>62 מטרים</strong>. עומק הידרוגרפי יוצא דופן זה הוא שאפשר לספינות אוקייניות גדולות (כמו של הדסון) לחדור עשרות קילומטרים לתוך היבשת ללא חשש לעלייה על שרטון, מה שהפך אותו לעורק התחבורה האולטימטיבי לסחר הפרוות באותה תקופה.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-darkAccent mb-4">2. מפרץ הדסון (Hudson Bay) וקנדה</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        גילוי המפרץ העצום, שגבה מהדסון את חייו, פתח נתיב גישה צפוני אסטרטגי אל פנים יבשת צפון אמריקה. כחמישים שנים לאחר מותו, הגילוי הוביל להקמת <strong>חברת מפרץ הדסון (Hudson's Bay Company)</strong> ב-1670, אשר שלטה בפועל על שטח עצום מהיבשת ועיצבה את גבולותיה של קנדה המודרנית.
+                        <br><br>
+                        <strong>נתונים הידרולוגיים:</strong> מפרץ הדסון איננו מפרץ רגיל, אלא למעשה ים שולי ענק של האוקיינוס הארקטי. שטחו משתרע על פני כ-<strong>1.23 מיליון קילומטרים רבועים</strong> (גדול פי 60 משטח מדינת ישראל). על אף גודלו העצום, הוא נחשב למפרץ רדוד במיוחד מבחינה יחסית: העומק הממוצע שלו הוא כ-<strong>100 מטרים בלבד</strong>, והעומק המרבי מגיע רק לכ-270 מטרים. בגלל מיקומו הצפוני והעומק הרדוד יחסית שלו, גוף המים העצום הזה <strong>קופא כמעט לחלוטין</strong> במהלך החורף הארוך, ומופשר רק בחודשי הקיץ הקצרים. תופעה אקלימית-הידרולוגית ייחודית זו היא המלכודת האכזרית שכלאה את ספינת ה-Discovery של הדסון, שיתקה את המשלחת והובילה לייאוש המוחלט, לרעב ולמרד שחיסל אותו.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>היומנים של רוברט ג'ואט (Robert Juet):</strong> ג'ואט היה קצין בספינת ה"חצי ירח" (1609). יומניו הם המקור ההיסטורי העיקרי למפגשים עם הילידים בשפך ההדסון, וגם העדות לבריחה מהפקודות ההולנדיות לטובת חיפוש באמריקה. באורח אירוני, ג'ואט היה בין מובילי המרד במסע האחרון של 1611.</li>
+                <li><strong>עדותו של חבקוק פריקט (Abacuk Pricket):</strong> הניצול המרכזי מהמרד. למרות שיומנו נכתב כדי להציל אותו מגרדום בעוון מרד (Mutiny), הוא העדות היחידה לנטישתו של הדסון בסירה הפתוחה.</li>
+                <li><strong>"Fatal Journey" מאת Peter C. Mancall (2009):</strong> מחקר היסטורי מודרני המנתח את מעורבותו עם חברת מוסקובי, החוזה עם ה-VOC (החברה ההולנדית), ותעשיית ציד הלווייתנים הארקטית שהדסון עזר לייסד.</li>
+                <li><strong>NOAA (National Oceanic and Atmospheric Administration):</strong> מקור רשמי לנתונים ההידרולוגיים העכשוויים אודות העומק האסטוארי של נהר ההדסון (עד 62 מטרים) והמאפיינים הרדודים והקופאים של מפרץ הדסון.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 2.5 Flash)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> תיעוד מחקרי, אקדמי ומקיף של עידן התגליות עבור ספרייה דיגיטלית.<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/henry_hudson.jpg" alt="הנרי הדסון" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Henry+Hudson'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
