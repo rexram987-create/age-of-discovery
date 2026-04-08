@@ -23,14 +23,15 @@
     <style>
         html { scroll-behavior: smooth; }
         button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; }
     </style>
 </head>
 <body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
 
     <!-- Header & Hero Section -->
-    <header class="bg-darkCard shadow-lg py-10 px-4 mb-8 border-b border-gray-700">
+    <header class="bg-darkCard shadow-lg py-12 px-4 mb-10 border-b border-gray-700">
         <div class="max-w-screen-xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">היסטוריה של גילוי ארצות</h1>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">היסטוריה של גילוי ארצות</h1>
             <p class="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
                 ברוכים הבאים למסע אפי החובק כאלף שנות גילוי וחקר – מהמסעות הימיים הנועזים של הוויקינגים בראשית האלף הקודם, דרך נדודיהם של גדולי נוסעי ימי הביניים, "עידן התגליות" הקלאסי, ועד למשלחות המדעיות לחקר הקטבים הקפואים בראשית המאה ה-20. 
                 <br><br>
@@ -43,7 +44,7 @@
         
         <!-- כפתורים למגלי הארצות (מסודר כרונולוגית) -->
         <section class="mb-16">
-            <h2 class="text-3xl font-semibold text-white mb-6 border-r-4 border-darkAccent pr-4">מגלי ארצות בולטים (לפי סדר כרונולוגי)</h2>
+            <h2 class="text-3xl font-semibold text-white mb-8 border-r-4 border-darkAccent pr-4">מגלי ארצות בולטים (לפי סדר כרונולוגי)</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 
                 <a href="explorers/leif_erikson.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group">
@@ -104,42 +105,47 @@
                 <a href="explorers/pedro_alvares_cabral.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">פדרו אלברס קבראל</span>
                     <span class="block text-gray-400 mt-2 text-sm">גילוי ברזיל ומסע להודו (1500)</span>
+                </a>
+
                 <!-- פונסה דה ליאון (1513) -->
                 <a href="explorers/juan_ponce_de_leon.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">חואן פונסה דה ליאון</span>
                     <span class="block text-gray-400 mt-2 text-sm">גילוי פלורידה וזרם הגולף (1513)</span>
                 </a>
 
-                <!-- הרנאן קורטס (1519) חזר! -->
+                <!-- הרנאן קורטס (1519) -->
                 <a href="explorers/hernan_cortes.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">הרנאן קורטס</span>
                     <span class="block text-gray-400 mt-2 text-sm">כיבוש אימפריית האצטקים (1519)</span>
                 </a>
 
-                <!-- תוספת: מגלן (1519) -->
+                <!-- פרדיננד מגלן (1519) -->
                 <a href="explorers/ferdinand_magellan.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">פרדיננד מגלן</span>
                     <span class="block text-gray-400 mt-2 text-sm">הקפת כדור הארץ (1519)</span>
                 </a>
 
-                <!-- תוספת: פיסארו (1532) -->
+                <!-- פרנסיסקו פיסארו (1532) -->
                 <a href="explorers/francisco_pizarro.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">פרנסיסקו פיסארו</span>
                     <span class="block text-gray-400 mt-2 text-sm">כיבוש אימפריית האינקה (1532)</span>
                 </a>
 
-                <a href="explorers/jacques_cartier.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group">
+                <!-- ז'אק קרטייה (1534) - עודכן עם פס כחול -->
+                <a href="explorers/jacques_cartier.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">ז'אק קרטייה</span>
                     <span class="block text-gray-400 mt-2 text-sm">גילוי מפרץ סנט לורנס (1534)</span>
                 </a>
 
-                <a href="explorers/francisco_de_orellana.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group">
+                <!-- פרנסיסקו דה אורייאנה (1541) - עודכן עם פס כחול -->
+                <a href="explorers/francisco_de_orellana.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">פרנסיסקו דה אורייאנה</span>
                     <span class="block text-gray-400 mt-2 text-sm">חקר נהר האמזונס (1541)</span>
                 </a>
 
-                <a href="explorers/francis_drake.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group">
-                    <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">פרנסיס דרייק</span>
+                <!-- סר פרנסיס דרייק (1577) - עודכן השם ונוסף פס כחול -->
+                <a href="explorers/francis_drake.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                    <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">סר פרנסיס דרייק</span>
                     <span class="block text-gray-400 mt-2 text-sm">הקפת העולם ופיראטיות (1577)</span>
                 </a>
 
@@ -158,7 +164,6 @@
                     <span class="block text-gray-400 mt-2 text-sm">גילוי מצר ברינג ואלסקה (1725)</span>
                 </a>
 
-                <!-- תוספת חדשה לפי סדר כרונולוגי (1766) -->
                 <a href="explorers/louis_antoine_de_bougainville.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">לואי דה בוגנוויל</span>
                     <span class="block text-gray-400 mt-2 text-sm">חקר טהיטי והקפת העולם (1766)</span>
@@ -257,25 +262,32 @@
     </main>
 
     <!-- פוטר מעוצב -->
-    <footer class="bg-darkCard border-t border-gray-800 text-center py-8 mt-auto w-full">
-        <p class="text-gray-400 text-lg">
-            האתר נבנה על ידי ג'מיני ורם &copy; 2026
-        </p>
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-10 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 2.5 Flash)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> בניית אינדקס ראשי למאגר מידע מקיף על עידן התגליות.<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
     </footer>
 
     <!-- חלון צף (Modal) של אודות -->
-    <div id="aboutModal" class="hidden fixed inset-0 bg-black bg-opacity-70 z-50 justify-center items-center p-4 backdrop-blur-sm transition-opacity">
-        <div class="bg-darkCard border border-gray-700 rounded-2xl max-w-sm w-full p-6 shadow-2xl relative">
-            <button id="closeModal" class="absolute top-4 left-4 text-gray-400 hover:text-white transition duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <div id="aboutModal" class="hidden fixed inset-0 bg-black bg-opacity-80 z-50 justify-center items-center p-4 backdrop-blur-md transition-opacity">
+        <div class="bg-darkCard border border-gray-700 rounded-3xl max-w-md w-full p-8 shadow-2xl relative">
+            <button id="closeModal" class="absolute top-5 left-5 text-gray-400 hover:text-white transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
             <div class="text-center">
-                <!-- העדכון התבצע בשורה הבאה: -->
-                <img src="assets/ramprofile.png" alt="רם" class="w-32 h-32 rounded-full mx-auto border-4 border-darkAccent object-cover mb-4" onerror="this.src='https://via.placeholder.com/150/1e293b/38bdf8?text=Ram'">
-                <h3 class="text-2xl font-bold text-white mb-2">רם</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                <img src="assets/ramprofile.png" alt="רם" class="w-32 h-32 rounded-full mx-auto border-4 border-darkAccent object-cover mb-6 shadow-lg" onerror="this.src='https://via.placeholder.com/150/1e293b/38bdf8?text=Ram'">
+                <h3 class="text-3xl font-bold text-white mb-3">רם</h3>
+                <p class="text-gray-400 text-lg leading-relaxed mb-4">
                     חוקר, חובב היסטוריה, גיאוגרפיה וטכנולוגיה. שותף לבניית מאגר המידע על עידן התגליות.
                 </p>
             </div>
@@ -291,11 +303,13 @@
         const showModal = () => {
             aboutModal.classList.remove('hidden');
             aboutModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
         };
 
         const hideModal = () => {
             aboutModal.classList.add('hidden');
             aboutModal.classList.remove('flex');
+            document.body.style.overflow = '';
         };
 
         aboutBtn.addEventListener('click', showModal);
@@ -309,8 +323,5 @@
     </script>
 </body>
 </html>
-
-
-
 
 ```
