@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>וילם יאנסזון | גילוי אוסטרליה (1606) | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-6">וילם יאנסזון</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-8 py-5 text-gray-300 font-mono text-lg md:text-2xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> ~1570 – ~1630 | <span class="text-darkAccent font-bold">שנות פעילות מרכזיות:</span> 1603 – 1628
+            </div>
+            <p class="text-2xl text-darkAccent mt-6 font-bold bg-blue-900/20 inline-block px-6 py-2 rounded-full border border-blue-500/30">
+                האירופאי הראשון שגילה את אוסטרליה (1606)
+            </p>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/willem_janszoon.jpg" alt="ספינת הדוייפקן של וילם יאנסזון" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Willem+Janszoon+(Duyfken)'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">The Duyfken Replica | Source: Public Domain / Historical Archives</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב ומפוצל -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ניתוח אטימולוגי של השם המלא</h2>
+            <div class="space-y-12">
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: וילם (Willem)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        "וילם" הוא הגרסה ההולנדית של השם הגרמאני העתיק <em>Wilhelm</em> (וילהלם), והשם האנגלי <em>William</em> (ויליאם).
+                        <br><br>
+                        <strong>מקור בלשני ומשמעות:</strong> השם מורכב משתי מילים גרמאניות עתיקות: <em>Wil</em> (רצון, תשוקה) ו-<em>Helm</em> (קסדה, הגנה). הפירוש המילולי הוא "מגן נחוש" או "בעל רצון ברזל".
+                        <br><br>
+                        <strong>משמעות סמלית:</strong> עבור יורד ים שעבד עבור חברת סחר קשוחה והפליג למים הלא ממופים של דרום-מזרח אסיה והפסיפיק, נדרש רצון ברזל והגנה מתמדת מפני איתני הטבע, מחלות ושבטים עוינים. השם הולם את המשימה.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה: יאנסזון (Janszoon)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        זהו אינו "שם משפחה" מודרני במשמעות המקובלת כיום, אלא <strong>פַּטְרוֹנִים</strong> (Patronymic) – שם המעיד על שם האב.
+                        <br><br>
+                        <strong>מקור בלשני:</strong> השם מורכב מהשם <em>Jan</em> (יאן - הגרסה ההולנדית ליוחנן) והסיומת <em>szoon</em> (הבן של). כלומר, המשמעות היא פשוט: "וילם, בנו של יאן".
+                        <br><br>
+                        <strong>הקשר היסטורי ובלבול קרטוגרפי:</strong> לעתים קרובות בארכיונים ההולנדיים שמו נכתב בקיצור כ-<strong>Jansz.</strong> (יאנס). הקיצור הגנרי הזה גרם לקרטוגרפים לאורך ההיסטוריה לבלבל אותו עם חוקרים אחרים בעלי שם דומה. יאנסזון מעולם לא זכה לתהילה אישית כמו קוק או מגלן, בין היתר בגלל שמו הנפוץ, שהפך אותו לעוד פקיד אפור במסמכי החברה הכלכלית.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות ורקע מוקדם: גדילה בצלו של מסחר בינלאומי</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    בניגוד למגלים מאוחרים יותר שהשאירו יומנים אישיים, שנותיו הראשונות של וילם יאנסזון לוטות בערפל ההיסטוריה ההולנדית. הוא נולד כנראה סביב שנת 1570.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">ילדות בהולנד המתעוררת</h3>
+                    הוא גדל בתקופה שבה "הרפובליקה ההולנדית" הפכה למעצמת סחר עולמית. ספנים הולנדים החלו לחדור באגרסיביות למונופול הפורטוגלי על נתיבי התבלינים למזרח. יאנסזון התחנך על ברכי ימאות מעשית ומסחרית קשה – המטרה לא הייתה תהילה אישית, אלא הקמת תחנות סחר רווחיות.
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">גיוס ל-VOC (חברת הודו המזרחית ההולנדית)</h3>
+                    בשנת 1603 הצטרף יאנסזון למסע ענק של ספינות מלחמה וסוחר שיצא מהולנד לאיי הודו המזרחית. הוא הוגדר כ-<em>Schipper</em> (רב חובל) ופעל תחת פקודות מנהלי החברה. ה-VOC הייתה תאגיד המניות הראשון בהיסטוריה, והייתה לה סמכות לנהל מלחמות, להחתים בריתות ולהטביע מטבעות. יאנסזון היה, בראש ובראשונה, שכיר צייתן של חברת ענק בינלאומית.
+                </div>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה ומניעים: רק תבלינים וזהב</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    המניעים של יאנסזון והחברה ששלחה אותו (ה-VOC) היו שונים בתכלית מאלו של הקונקיסטאדורים הספרדים או מהמשלחות המדעיות של עידן הנאורות (כמו זו של ג'יימס קוק).
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                        <strong class="text-white text-2xl block mb-4">1. קפיטליזם מוקדם ורווח כאידיאולוגיה:</strong>
+                        המסע לא נערך כדי לגלות יבשות למען המדע, ולא כדי להפיץ את הנצרות. המניע היה אחד: <strong>רווח כלכלי (Profit)</strong>. מנהלי החברה הורו ליאנסזון לחפש איים חדשים שעשויים להיות עשירים בזהב, כסף, אגוז מוסקט, פלפל וציפורן. 
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                        <strong class="text-white text-2xl block mb-4">2. סודיות מסחרית:</strong>
+                        בניגוד לחוקרים לאומיים שפרסמו מפות כדי לזכות בתהילה, ה-VOC שמרה את המפות של יאנסזון כ<strong>סוד מסחרי</strong>. הם לא רצו שספינות של חברות אנגליות ישתמשו בידע שהושג. הסודיות הזו היא אחת הסיבות המרכזיות לכך שתגליתו של יאנסזון נותרה עלומה ומוכחשת במשך שנים רבות.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- המסע של 1606 (גילוי אוסטרליה) -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מסע הגילוי (1605-1606): ה-Duyfken והחוף הלא מוכר</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    בנובמבר 1605, יאנסזון קיבל פקודה מיאן וילמז ורשואור לצאת מבאנטאם (אינדונזיה) דרומה, לחקור את גינאה החדשה בתקווה למצוא שווקים חדשים.
+                </p>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">הספינה: יונה קטנה</h3>
+                    הוא יצא לדרך עם ספינה קטנה מסוג ״Jacht״ (יאכטה, ספינת סיור אסטרטגית) שנקראה <strong>דוּיפְקֶן (*Duyfken*)</strong>, שפירושה ההולנדי הוא "יונה קטנה". 
+                </div>
+
+                <div class="bg-blue-900/20 p-8 rounded-2xl border-l-4 border-darkAccent shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">פברואר 1606: הגילוי ההיסטורי של אוסטרליה</h3>
+                    יאנסזון הפליג דרום-מזרחה, חצה את ים ארפורה (Arafura), והגיע לחוף הדרומי של גינאה החדשה. במקום לשוט מזרחה, הוא החמיץ את המצר המפריד בין האי ליבשת (שייקרא "מצר טורס") ופנה דרומה. ב<strong>פברואר 1606 – 164 שנים לפני ג'יימס קוק</strong> – ספינת הדוייפקן הגיעה לחוף לא מוכר. זו הייתה אדמת אוסטרליה.
+                    <br><br>
+                    <strong>הנחיתה:</strong> יאנסזון נחת בנהר פּנפלדר (Pennefather) שבצידו המערבי של חצי האי <strong>קייפ יורק</strong> (Cape York), בצפון אוסטרליה (במדינת קווינסלנד של ימינו).
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">המפגש האלים עם האבוריג'ינים</h3>
+                    המפגש הראשון בהיסטוריה בין אירופאים לילידי אוסטרליה לא היה שוחר שלום. יאנסזון וצוותו ירדו לחוף כדי לחפש מים ומזון ונתקלו בילידים אבוריג'ינים חמושים בחניתות. התפתח קרב, וכמה מאנשיו של יאנסזון נהרגו במקום, כמו גם מספר ילידים.
+                </div>
+
+                <div class="bg-red-900/20 p-8 rounded-2xl border-l-4 border-red-500 shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">האכזבה והעיוורון הגיאוגרפי</h3>
+                    יאנסזון סקר כ-320 קילומטרים מקו החוף. <strong>מבחינה מסחרית – המסע הוכרז ככישלון חרוץ.</strong> הוא דיווח למנהליו בהולנד שהארץ צחיחה, שוממת, נטולת מים מתוקים ונעדרת כל פוטנציאל לזהב או תבלינים. בנוסף, הוא ביצע <strong>טעות קרטוגרפית עצומה</strong>: הוא לא ידע שגילה יבשת נפרדת, אלא היה בטוח שקו החוף האוסטרלי הוא פשוט המשך רציף דרומה של האי גינאה החדשה.
+                </div>
+            </div>
+        </section>
+
+        <!-- נתונים הידרולוגיים ומדעיים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">נתונים הידרולוגיים ומדעיים: מפרץ קרפנטריה</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">אפיון הידרולוגי במפרץ</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        האזור שיאנסזון מיפה (מזרח מפרץ קרפנטריה) הוא אזור רדוד יחסית וקשה ביותר לניווט עבור ספינות מסחריות כבדות. העומק הממוצע באזור בו שטה הדוייפקן נע בין <strong>15 ל-40 מטרים</strong> בלבד, עם מים עכורים מאוד עקב סחף נהרות בוץ, ביצות מלח ויערות מנגרובים עבותים לאורך החוף.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">התמודדות עם משטר הגאות הייחודי</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        יאנסזון היה האירופאי הראשון שהתמודד עם משטר הגאות במפרץ זה, שהוא משטר "דיורנלי" (Diurnal) – כלומר, בניגוד לרוב חופי העולם שבהם יש פעמיים גאות ופעמיים שפל ביום, במפרץ קרפנטריה יש רק מחזור <strong>גאות אחד ושפל אחד ביום</strong>. הדבר יצר זרמים בלתי צפויים ואילץ את ספינתו לעגון במרחק ניכר מהחוף הבוצי. במסמכיו כינה יאנסזון חלק מהאזורים "ארצות הבוץ" (Modder Eylandt) בשל הקושי לחלץ את סירות ההצלה מהאדמה הדביקה.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"The Discovery of Australia" (G. Arnold Wood, 1922):</strong> התיעוד הקלאסי והחשוב ביותר לתיקון הטעות ההיסטורית סביב קפטן קוק. הספר מאשש את הדו"חות המקוריים של חברת ה-VOC על מסעותיו של יאנסזון.</li>
+                <li><strong>הארכיון הלאומי של הולנד (Nationaal Archief):</strong> מכיל את הרישומים העסקיים, ה-Journals, וה-Logs של פקידי ה-VOC, אשר מאשרים עובדתית את תנועת הספינה *Duyfken* לבאנטאם ומפרץ קרפנטריה.</li>
+                <li><strong>"The Duyfken Voyage of 1606" (T.D. Mutch):</strong> מחקר הידרוגרפי מקיף על מסלול ספינתו של יאנסזון, השולל חד-משמעית את האפשרות שהוא עבר במצר טורס (כמו לואיס ואס דה טורס הספרדי, שעבר שם כמה חודשים אחריו מבלי לזהות את אוסטרליה).</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 3.1 Pro)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> תיעוד מחקרי, אקדמי ומקיף של עידן התגליות עבור ספרייה דיגיטלית.<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/willem_janszoon.jpg" alt="וילם יאנסזון" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Willem+Janszoon+(Duyfken)'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>

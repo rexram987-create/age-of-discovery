@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ג'יימס קוק | חוקר האוקיינוסים הגדול | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* אופטימיזציה למסכי Samsung S25 Ultra וקריאות מקסימלית */
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-6">קפטן ג'יימס קוק</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-8 py-5 text-gray-300 font-mono text-lg md:text-2xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 7 בנובמבר 1728 – 14 בפברואר 1779 | <span class="text-darkAccent font-bold">שנות פעילות מרכזיות:</span> 1768 – 1779
+            </div>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/james_cook.jpg" alt="קפטן ג'יימס קוק" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Captain+James+Cook'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Portrait of Captain James Cook | Source: Wikimedia Commons | License: Public Domain</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב ומפוצל -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ניתוח אטימולוגי של השם המלא</h2>
+            <div class="space-y-12">
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: ג'יימס (James)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "ג'יימס" הוא הגרסה האנגלית המודרנית לשם המקראי העברי <strong>יַעֲקֹב</strong> (Ya'akov).
+                        <br><br>
+                        <strong>מקור בלשני:</strong> השם עבר גלגולים רבים מהעברית ליוונית (*Iakobos*), ללטינית המאוחרת (*Iacomus*), לצרפתית עתיקה ולבסוף לאנגלית.
+                        <br><br>
+                        <strong>משמעות סמלית ומחקרית:</strong> הפירוש המילולי הוא "עוקב" או "מי שאוחז בעקב". עבור קוק, השם קיבל משמעות היסטורית כמעט נבואית: הוא היה האדם ש"עקב" אחרי כל פינה לא ידועה במפת העולם. הוא היה עקבי בצורה אובססיבית בחיפושו אחר האמת הגיאוגרפית, תוך שהוא "עוקב" אחרי מפות ישנות ומשוערות של קודמיו ומחליף אותן במדידות מדויקות המבוססות על מדע האסטרונומיה.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה: קוק (Cook)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "קוק" הוא שם משפחה אנגלי מקצועי (Occupational name) נפוץ.
+                        <br><br>
+                        <strong>מקור בלשני:</strong> נגזר מהמילה האנגלו-סכסונית *Coc*, שמקורה בלטינית *Coquus*, שמשמעותה <strong>"טבח"</strong> או אדם המכין מזון.
+                        <br><br>
+                        <strong>אירוניה היסטורית ומדעית:</strong> למרות ששמו מרמז על עבודה במטבח, תרומתו הבריאותית הגדולה ביותר של קוק לעולם הימאות הייתה <strong>מהפכה תזונתית</strong>. קוק היה הראשון שהוכיח מדעית כי תזונה נכונה ומבוקרת – עשירה בוויטמין C (דרך שימוש בכמויות אדירות של כרוב כבוש, תמציות מאלט ופירות הדר) – מונעת לחלוטין את מחלת הצפדינה הקטלנית. במידה רבה, "הטבח" המדעי הזה הציל את חייהם של אלפי מלחים ואיפשר הפלגות רצופות של שנים, דבר שנחשב לבלתי אפשרי לפניו.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות ורקע מוקדם: מהחווה ביוֹרְקְשַׁייר אל הים</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    ג'יימס קוק נולד בשנת 1728 בכפר מרטון שביורקשייר, אנגליה. הוא נולד למשפחה ענייה מאוד; אביו היה פועל חקלאי סקוטי קשה יום. עובדה זו הופכת את סיפורו למדהים במיוחד, שכן הוא היה מאלו הבודדים בצי המלכותי הבריטי שהצליחו להגיע לדרגות פיקוד בכירות בזכות כישרון טהור ולא בזכות ייחוס משפחתי, כסף או אצולה.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">ספינות הפחם מוויטבי (Whitby)</h3>
+                    בגיל 16 עבר קוק לעיר הנמל וויטבי והחל כמתלמד על ספינות "Colliers" – ספינות משא כבדות שהובילו פחם לאורך החופים הסלעיים והמסוכנים של אנגליה. שם הוא רכש את הניסיון המעשי הקריטי ביותר שלו: הוא למד לנווט במים רדודים, להתמודד עם גאות ושפל קיצוניים, ולפתח יכולת יוצאת דופן לקרוא ולשרטט קווי חוף מורכבים.
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">הגיוס המפתיע לצי המלכותי</h3>
+                    בשנת 1755, כשהוא כבר רב-חובל מנוסה בצי הסוחר שסירב לקבל פיקוד על ספינה משלו כדי להתקדם בסולם הדרגות הממוסד, החליט קוק להתגייס לצי המלכותי (Royal Navy) כמלח פשוט (Able Seaman). כישרונו בקרטוגרפיה (הכנת מפות) התגלה במהרה במהלך מלחמת שבע השנים, כאשר מיפה את נהר הסנט לורנס הבוגדני תחת אש. המפות שלו היו כה מדויקות שהן אפשרו לבריטים לנווט את ספינות המלחמה שלהם, להפתיע את הצרפתים ולכבוש את קוויבק.
+                </div>
+            </div>
+        </section>
+
+        <!-- תגלית 1766 וההגעה למלך -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">התגלית של 1766: הזינוק לתודעת המלך והאקדמיה</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    זהו הרגע המכונן שבו הפך קוק מ"נווט אמיץ ומוכשר" ל"מדען-על" בעיני הכתר הבריטי.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">הרקע: המשימה בניופאונדלנד</h3>
+                    לאחר סיום מלחמת שבע השנים (1763), בריטניה שלטה בשטחים נרחבים בצפון אמריקה. מושל ניופאונדלנד, **יו פאליסר (Hugh Palliser)**, זיהה את הצורך במיפוי קפדני. הוא בחר בקוק, שקיבל פיקוד על הספינה "גרנוויל" (Grenville). במשך חמש שנים עסק קוק במיפוי חופי קנדה הקפואים.
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">תצפית ליקוי החמה (5 באוגוסט 1766)</h3>
+                    בזמן ששהה באיי בורג'או (Burgeo Islands) מול ניופאונדלנד, צפה קוק ב**ליקוי חמה**. הוא הבין שתצפית מדויקת של רגע תחילת וסיום הליקוי תאפשר לחשב את קו האורך המדויק של המקום. קוק ביצע את המדידות והחישובים ושלח אותם ללונדון. הנתונים נבדקו ב"חברה המלכותית" (The Royal Society) על ידי האסטרונום ג'ון בוויס, שהדהים את חבריו כשהכריז שקצין ימי ללא השכלה אקדמית ביצע חישובים אסטרונומיים ברמה עולמית.
+                </div>
+                <div class="bg-blue-900/20 p-8 rounded-2xl border border-blue-500/30 shadow-xl">
+                    <h3 class="text-2xl font-bold text-white mb-4">שמו מגיע למלך ג'ורג' השלישי</h3>
+                    הישג זה פורסם בכתב העת המדעי היוקרתי *Philosophical Transactions*. המלך ג'ורג' השלישי, שהיה חובב אסטרונומיה, התוודע ל"מלח המלומד". התצפית של 1766 שימשה למעשה כ"מבחן הקבלה" של קוק, והוכיחה למלוכה שהוא האדם היחיד שמסוגל להוביל משלחת משולבת – צבאית ומדעית – אל הלא נודע. ללא ליקוי החמה בניופאונדלנד, קוק לעולם לא היה מקבל את הפיקוד על מסעותיו הגדולים.
+                </div>
+            </div>
+        </section>
+
+        <!-- החיבור לכתר והמשימה הסודית -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">החיבור לכתר: ה"כיסוי" המדעי והמשימה החשאית</h2>
+            <div class="bg-gray-800 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-md text-gray-300 leading-relaxed text-xl">
+                <p>
+                    בעקבות המוניטין שצבר ב-1766, קוק מונה למפקד ספינת ה-*Endeavour* בשנת 1768. 
+                    <br><br>
+                    <strong>ההסוואה המדעית:</strong> כלפי חוץ (ומול המרגלים של צרפת וספרד), המשלחת הוצגה כיוזמה מדעית תמימה של "החברה המלכותית". מטרתה הרשמית הייתה להגיע לטהיטי כדי לצפות באירוע האסטרונומי של <strong>מעבר נוגה על פני השמש</strong> (Transit of Venus) בקיץ 1769.
+                    <br><br>
+                    <strong>המעטפה החתומה והזהות הכפולה:</strong> קוק לא נשלח רק כ"אסטרונום". הוא הועלה לדרגת לוטננט (סגן) כדי שתהיה לו סמכות צבאית מוחלטת. המלך ג'ורג' השלישי נתן לו <strong>מעטפה חתומה בסילי</strong> ובה "הוראות סודיות". 
+                    <br>
+                    ביוני 1769, ברגע שהסתיימו התצפיות האסטרונומיות בטהיטי, תפקידו כ"מדען מטעם האקדמיה" הסתיים. קוק פתח את המעטפה ומצא פקודה צבאית-אימפריאלית ברורה: הפלג דרומה אל האזורים הלא-ממופים, חפש את היבשת הדרומית האגדית (*Terra Australis*), ואם תמצא אותה – תבע עליה בעלות בשם כתר בריטניה. המדע שימש אפוא ככיסוי למשימת התרחבות גיאופוליטית.
+                </p>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה: רציונליזם של הנאורות</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    ג'יימס קוק היה התגלמות תפיסת העולם הרציונלית של ה"נאורות":
+                </p>
+                <ul class="list-disc pr-8 space-y-4">
+                    <li><strong>מדע לפני דת וכיבוש:</strong> בניגוד לקונקיסטאדורים, קוק לא חיפש להמיר את דתם של הילידים בכוח החרב ולא חיפש להחריב ערים בשביל זהב. המניע העיקרי שלו היה <strong>איסוף ידע מדויק</strong>. האמין שאין מקום במפה שאסור למדוד ולתעד.</li>
+                    <li><strong>קרטוגרפיה אובססיבית וספקנות:</strong> קוק סירב "לנחש" יבשות. הכלל שלו היה פשוט: אם לא הפלגתי שם, לא מדדתי עומק, ולא ראיתי את קו החוף בעיניי – זה לא קיים. </li>
+                    <li><strong>הומניזם ומשמעת:</strong> הוא ראה בשמירה על חיי אנשיו חובה מוסרית ומקצועית עליונה. הוא הפעיל עונשי מלקות נגד מלחים שסירבו לאכול ירקות טריים או כרוב כבוש, ודאג לאוורור ושריפת אבק שריפה בבטן הספינה כדי למנוע מחלות.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- המסעות הגדולים - הרחבה מאסיבית -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">פירוט שלושת המסעות: האמת מאחורי הגילויים</h2>
+            <div class="space-y-12 text-gray-300 leading-relaxed text-xl">
+                
+                <!-- המסע הראשון -->
+                <div class="bg-gray-800 p-8 md:p-10 rounded-2xl border-r-4 border-darkAccent shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-6 border-b border-gray-700 pb-4">המסע הראשון (1768-1771): האמת על אוסטרליה וניו זילנד</h3>
+                    <p class="mb-6">
+                        על סיפון ה-*Endeavour*, לאחר שסיים את התצפיות בטהיטי, קוק הפליג לחפש יבשות. <strong>ניפוץ מיתוסים היסטוריים:</strong> בניגוד לאמונה הרווחת, קוק **לא** היה האירופאי הראשון שגילה את אוסטרליה או את ניו זילנד. הוא הגיע לשם יותר ממאה שנים לאחר ההולנדים.
+                    </p>
+                    
+                    <div class="bg-gray-900 p-6 rounded-xl mb-6">
+                        <strong class="text-darkAccent text-2xl block mb-2">ניו זילנד (New Zealand)</strong>
+                        <ul class="list-disc pr-6 space-y-2 mt-2">
+                            <li><strong>מי גילה?</strong> החוקר ההולנדי <strong>אבל טסמן (Abel Tasman)</strong> גילה אותה ב-1642. טסמן חשב שזהו קצה של יבשת וקרא לה <em>Staten Landt</em>. קרטוגרפים הולנדים שינו את השם מאוחר יותר ל-<em>Nieuw Zeeland</em> (על שם מחוז זילנד בהולנד). </li>
+                            <li><strong>מה קוק עשה?</strong> קוק (ב-1769) לא גילה, אלא <strong>הקיף, הוכיח ומיפה</strong>. הוא שייט סביב ניו זילנד במשך חודשים, הוכיח סופית שמדובר בשני איים נפרדים ולא ביבשת ענקית, ושירטט מפה מדויקת להפליא שאימצה את השם ההולנדי בגרסתו האנגלית.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 p-6 rounded-xl">
+                        <strong class="text-darkAccent text-2xl block mb-2">אוסטרליה (Australia)</strong>
+                        <ul class="list-disc pr-6 space-y-2 mt-2">
+                            <li><strong>מי גילה?</strong> האירופאי הראשון היה הנווט ההולנדי <strong>וילם יאנסזון (Willem Janszoon)</strong> ב-1606. ההולנדים מיפו את החוף המערבי והדרומי (שהיה צחיח ומדברי) וקראו ליבשת <em>"הולנד החדשה" (New Holland)</em>. השם "אוסטרליה" ניתן רק בתחילת המאה ה-19 על ידי החוקר הבריטי מתיו פלינדרס.</li>
+                            <li><strong>מה קוק עשה?</strong> קוק (ב-1770) גילה לראשונה את <strong>החוף המזרחי</strong> של היבשת. מכיוון שהחוף המזרחי היה פורה וירוק, הוא תבע אותו מיד עבור הכתר הבריטי, קרא לו "ניו סאות' ויילס" (New South Wales), ועגן ב<strong>מפרץ בוטאני (Botany Bay)</strong>, שם הבוטנאי ג'וזף בנקס אסף אלפי צמחים. כך הפכה אוסטרליה למושבה בריטית במקום הולנדית.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- המסע השני -->
+                <div class="bg-gray-800 p-8 md:p-10 rounded-2xl border-r-4 border-darkAccent shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-6 border-b border-gray-700 pb-4">המסע השני (1772-1775): אנטארקטיקה והטעות לגבי טסמניה</h3>
+                    <p class="mb-4">
+                        במסע זה, על סיפון ה-*Resolution*, קוק הפליג רחוק יותר דרומה מכל אדם אחר לפניו, וחצה את החוג האנטארקטי. אף שלא ראה את היבשת עצמה (בשל הקרח העצום), הוא הוכיח שאין "יבשת דרומית פורייה", וחיסל את המיתוס הגיאוגרפי. אולם, מסע זה זכור גם בגלל <strong>טעות גיאוגרפית</strong> בולטת של קוק.
+                    </p>
+                    <div class="bg-gray-900 p-6 rounded-xl">
+                        <strong class="text-darkAccent text-2xl block mb-2">הטעות לגבי טסמניה (Tasmania)</strong>
+                        <ul class="list-disc pr-6 space-y-2 mt-2">
+                            <li><strong>מי גילה את השם המקורי?</strong> אבל טסמן ההולנדי גילה את האי ב-1642 וקרא לו "ארץ ואן דימן" (על שם פטרונו). השם שונה ל"טסמניה" רק ב-1856 כדי לנקות את תדמית המקום כמושבת עונשין פלילית אכזרית.</li>
+                            <li><strong>הטעות של קוק:</strong> קוק (וקצינו פורנו) חקרו את האזור במסע השני, אך קוק, שבדרך כלל סירב לנחש, <strong>הניח בטעות ש"ארץ ואן דימן" מחוברת לאוסטרליה</strong> ושהיא רק חצי אי. הוא שרטט זאת כך במפותיו. רק ב-1798 הוכיחו החוקרים באס ופלינדרס (Bass & Flinders) שזהו אי נפרד כשעברו במצר המפריד (מצר באס).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- המסע השלישי -->
+                <div class="bg-red-900/20 p-8 md:p-10 rounded-2xl border-r-4 border-red-600 shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-6 border-b border-red-800/50 pb-4">המסע השלישי (1776-1779): הוואי והמוות הטראגי</h3>
+                    <p>
+                        קוק יצא לחפש את המעבר הצפון-מערבי (בין מזרח למערב קנדה) דרך מצר ברינג בצד הפסיפי. בדרכו, הוא גילה את <strong>איי הוואי</strong>, שלהם קרא "איי הסנדוויץ'". לאחר שנכשל במעבר מצר ברינג בשל חומות קרח, חזר להוואי כדי להעביר את החורף. 
+                        <br><br>
+                        הביקור השני בהוואי הסתיים באסון. מלחים מקומיים גנבו סירת הצלה מספינתו. קוק, שסבל מהתקפי זעם בעקבות עייפות מצטברת (ואולי מחלה), החליט לרדת לחוף עם נחתים חמושים ולנסות לחטוף את המלך המקומי (Kalaniʻōpuʻu) כדי לשמש כבן ערובה עד להחזרת הסירה. המקומיים התקוממו, התפתחה תגרה על החוף במפרץ קילאקקואה (Kealakekua Bay), וב-14 בפברואר 1779 נדקר קוק בגבו ומת במים הרדודים. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- נתונים הידרולוגיים ומדעיים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">נתונים הידרולוגיים והמהפכה המדעית</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">הידרולוגיה: מפרץ בוטאני (Botany Bay)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        כאשר קוק עגן במפרץ בוטאני ב-1770 (אוסטרליה), הוא ביצע מדידות עומק קפדניות. הוא מצא שהעומק הממוצע של המפרץ נע בין <strong>5 ל-10 מטרים</strong>. למרות שהמפרץ נראה מבטיח, הנתונים ההידרוגרפיים שתיעד – במיוחד העובדה שהכניסה למפרץ רדודה ומסוכנת עקב שרטונות חול – הם שגרמו לבריטים, 18 שנים מאוחר יותר (ב-1788), להחליט להזיז את ההתיישבות הראשונה צפונה יותר ל"פורט ג'קסון" (סידני), שהיה עמוק ובטוח יותר לעגינה ארוכת טווח.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">דיוק קווי האורך (הכרונומטר הימי K1)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        ההישג הטכנולוגי הגדול ביותר של קוק התרחש במסעו השני, כאשר לקח עמו את ה<strong>כרונומטר הימי K1</strong> (העתק של שעון ג'ון הריסון). עד אז, ניווט התבסס על ניחוש חלקי של קו האורך. קוק הצליח למדוד את מיקומו בסטייה של קילומטרים בודדים, מה שאיפשר לו למקם איים קטנים באוקיינוס השקט שחוקרים קודמים גילו אך "איבדו" את מיקומם (שכן רשמו את קו האורך בסטייה של מאות קילומטרים).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"The Journals of Captain James Cook" (בעריכת J.C. Beaglehole):</strong> המקור הראשוני הכולל את נתוני העומק, האסטרונומיה וההוראות הסודיות. מהיומנים עולה בבירור שקוק הכיר את תגליותיו של אבל טסמן.</li>
+                <li><strong>"Abel Tasman: In Search of the Great South Land" (Gordon McLauchlan):</strong> מאמת את גילוי ניו זילנד ו"ארץ ואן דימן" (טסמניה) בשנת 1642.</li>
+                <li><strong>"The Life of Matthew Flinders" (Miriam Estensen):</strong> מאמת כיצד מתיו פלינדרס היה הראשון שהקיף את אוסטרליה, הוכיח שטסמניה היא אי (יחד עם באס ב-1798), והציע את השם "אוסטרליה".</li>
+                <li><strong>"Captain Cook: Obsession and Betrayal" (John Gascoigne, 2007):</strong> ניתוח הקשר לחברה המלכותית, תצפית הליקוי בניופאונדלנד (1766), ולמלך ג'ורג' השלישי.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 3.1 Pro)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> תיעוד מחקרי, אקדמי ומקיף של עידן התגליות עבור ספרייה דיגיטלית.<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/james_cook.jpg" alt="קפטן ג'יימס קוק" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Captain+James+Cook'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
