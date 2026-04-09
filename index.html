@@ -23,6 +23,9 @@
         html { scroll-behavior: smooth; }
         button, a { min-height: 48px; min-width: 48px; }
         body { -webkit-tap-highlight-color: transparent; }
+        /* עיצוב מותאם ל-S25 Ultra */
+        .explorer-card { border-left-width: 4px; border-left-color: transparent; transition: all 0.3s ease; }
+        .completed-border { border-left-color: #38bdf8; }
     </style>
 </head>
 <body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
@@ -46,161 +49,163 @@
             <h2 class="text-3xl font-semibold text-white mb-8 border-r-4 border-darkAccent pr-4">מגלי ארצות בולטים (לפי סדר כרונולוגי)</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 
-                <a href="explorers/leif_erikson.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <!-- רשימת אלו שהושלמו (עם פס כחול) ואלו שבתהליך -->
+                <a href="explorers/leif_erikson.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">לייף אייריקסון</span>
                     <span class="block text-gray-400 mt-2 text-sm">הוויקינג שגילה את וינלנד (~1000)</span>
                 </a>
                 
-                <a href="explorers/marco_polo.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/marco_polo.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">מרקו פולו</span>
                     <span class="block text-gray-400 mt-2 text-sm">מסעות במרכז אסיה וסין (~1271)</span>
                 </a>
                 
-                <a href="explorers/ibn_battuta.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/ibn_battuta.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">אבן בטוטה</span>
                     <span class="block text-gray-400 mt-2 text-sm">מגדולי נוסעי ימי הביניים (~1325)</span>
                 </a>
                 
-                <a href="explorers/zheng_he.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/zheng_he.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">ג'נג חה</span>
                     <span class="block text-gray-400 mt-2 text-sm">מסעות הצי המלכותי הסיני (~1405)</span>
                 </a>
 
-                <a href="explorers/henry_the_navigator.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/henry_the_navigator.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">אנריקה הספן</span>
-                    <span class="block text-gray-400 mt-2 text-sm">אבי עידן התגליות ומכון סאגרש (1415)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">אבי עידן התגליות (1415)</span>
                 </a>
                 
-                <a href="explorers/bartolomeu_dias.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/bartolomeu_dias.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">ברתולומיאו דיאש</span>
                     <span class="block text-gray-400 mt-2 text-sm">גילוי כף התקווה הטובה (1488)</span>
                 </a>
 
-                <a href="explorers/christopher_columbus.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/christopher_columbus.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">כריסטופר קולומבוס</span>
                     <span class="block text-gray-400 mt-2 text-sm">גילוי "העולם החדש" (1492)</span>
                 </a>
 
-                <a href="explorers/john_cabot.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/john_cabot.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">ג'ון קבוט</span>
                     <span class="block text-gray-400 mt-2 text-sm">חקר חופי צפון אמריקה (1497)</span>
                 </a>
 
-                <a href="explorers/vasco_da_gama.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/vasco_da_gama.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">ואסקו דה גמה</span>
                     <span class="block text-gray-400 mt-2 text-sm">הנתיב הימי להודו (1497)</span>
                 </a>
 
-                <a href="explorers/amerigo_vespucci.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/amerigo_vespucci.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">אמריגו וספוצ'י</span>
-                    <span class="block text-gray-400 mt-2 text-sm">ההכרה באמריקה כיבשת (1497)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">ההכרה באמריקה כיבשת (1499)</span>
                 </a>
 
-                <a href="explorers/alonso_de_ojeda.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/alonso_de_ojeda.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">אלונסו דה אוחדה</span>
                     <span class="block text-gray-400 mt-2 text-sm">חקר צפון דרום-אמריקה (1499)</span>
                 </a>
 
-                <a href="explorers/pedro_alvares_cabral.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/pedro_alvares_cabral.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">פדרו אלברס קבראל</span>
                     <span class="block text-gray-400 mt-2 text-sm">גילוי ברזיל ומסע להודו (1500)</span>
                 </a>
 
-                <!-- פונסה דה ליאון (1513) -->
-                <a href="explorers/juan_ponce_de_leon.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/juan_ponce_de_leon.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">חואן פונסה דה ליאון</span>
-                    <span class="block text-gray-400 mt-2 text-sm">גילוי פלורידה וזרם הגולף (1513)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">גילוי פלורידה (1513)</span>
                 </a>
 
-                <!-- הרנאן קורטס (1519) -->
-                <a href="explorers/hernan_cortes.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/hernan_cortes.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">הרנאן קורטס</span>
-                    <span class="block text-gray-400 mt-2 text-sm">כיבוש אימפריית האצטקים (1519)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">כיבוש האימפריה האצטקית (1519)</span>
                 </a>
 
-                <!-- פרדיננד מגלן (1519) -->
-                <a href="explorers/ferdinand_magellan.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/ferdinand_magellan.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">פרדיננד מגלן</span>
                     <span class="block text-gray-400 mt-2 text-sm">הקפת כדור הארץ (1519)</span>
                 </a>
 
-                <!-- פרנסיסקו פיסארו (1532) -->
-                <a href="explorers/francisco_pizarro.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/francisco_pizarro.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">פרנסיסקו פיסארו</span>
                     <span class="block text-gray-400 mt-2 text-sm">כיבוש אימפריית האינקה (1532)</span>
                 </a>
 
-                <!-- ז'אק קרטייה (1534) -->
-                <a href="explorers/jacques_cartier.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/jacques_cartier.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">ז'אק קרטייה</span>
-                    <span class="block text-gray-400 mt-2 text-sm">גילוי מפרץ סנט לורנס (1534)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">גילוי קנדה הצרפתית (1534)</span>
                 </a>
 
-                <!-- פרנסיסקו דה אורייאנה (1541) -->
-                <a href="explorers/francisco_de_orellana.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/francisco_de_orellana.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">פרנסיסקו דה אורייאנה</span>
                     <span class="block text-gray-400 mt-2 text-sm">חקר נהר האמזונס (1541)</span>
                 </a>
 
-                <!-- סר פרנסיס דרייק (1577) -->
-                <a href="explorers/francis_drake.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/francis_drake.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">סר פרנסיס דרייק</span>
                     <span class="block text-gray-400 mt-2 text-sm">הקפת העולם ופיראטיות (1577)</span>
                 </a>
 
-                <!-- סמואל דה שמפלן (1603) -->
-                <a href="explorers/samuel_de_champlain.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/samuel_de_champlain.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">סמואל דה שמפלן</span>
-                    <span class="block text-gray-400 mt-2 text-sm">ייסוד קוויבק וצרפת החדשה (1603)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">ייסוד קוויבק (1603)</span>
                 </a>
 
-                <!-- הנרי הדסון (1607) -->
-                <a href="explorers/henry_hudson.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <!-- תוספת חדשה: וילם יאנסזון -->
+                <a href="explorers/willem_janszoon.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card border-dashed border-gray-500">
+                    <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">וילם יאנסזון</span>
+                    <span class="block text-gray-400 mt-2 text-sm">הגילוי האירופאי של אוסטרליה (1606)</span>
+                </a>
+
+                <a href="explorers/henry_hudson.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">הנרי הדסון</span>
-                    <span class="block text-gray-400 mt-2 text-sm">חקר מפרץ הדסון (1607)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">חקר מפרץ הדסון וניו יורק (1607)</span>
                 </a>
 
-                <!-- ויטוס ברינג (1725) -->
-                <a href="explorers/vitus_bering.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <!-- תוספת חדשה: אבל טסמן -->
+                <a href="explorers/abel_tasman.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card border-dashed border-gray-500">
+                    <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">אבל טסמן</span>
+                    <span class="block text-gray-400 mt-2 text-sm">גילוי ניו זילנד וטסמניה (1642)</span>
+                </a>
+
+                <a href="explorers/vitus_bering.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">ויטוס ברינג</span>
                     <span class="block text-gray-400 mt-2 text-sm">גילוי מצר ברינג ואלסקה (1725)</span>
                 </a>
 
-                <!-- לואי דה בוגנוויל (1766) -->
-                <a href="explorers/louis_antoine_de_bougainville.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group border-l-4 border-l-blue-500">
+                <a href="explorers/louis_antoine_de_bougainville.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">לואי דה בוגנוויל</span>
-                    <span class="block text-gray-400 mt-2 text-sm">חקר טהיטי והקפת העולם (1766)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">הקפת העולם הצרפתית (1766)</span>
                 </a>
 
-                <!-- ג'יימס קוק (1768) - הבא בתור -->
-                <a href="explorers/james_cook.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group">
+                <!-- עדכון: ג'יימס קוק קיבל פס כחול משום שהושלם -->
+                <a href="explorers/james_cook.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card completed-border">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">ג'יימס קוק</span>
                     <span class="block text-gray-400 mt-2 text-sm">מיפוי האוקיינוס השקט (1768)</span>
                 </a>
 
-                <a href="explorers/alexander_von_humboldt.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group">
+                <a href="explorers/alexander_von_humboldt.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">אלכסנדר פון הומבולדט</span>
-                    <span class="block text-gray-400 mt-2 text-sm">חקר מדעי של דרום אמריקה (1799)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">חקר דרום אמריקה (1799)</span>
                 </a>
 
-                <a href="explorers/lewis_and_clark.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group">
+                <a href="explorers/lewis_and_clark.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">לואיס וקלארק</span>
-                    <span class="block text-gray-400 mt-2 text-sm">משלחת לחקר מערב ארה"ב (1804)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">חקר מערב ארה"ב (1804)</span>
                 </a>
 
-                <a href="explorers/david_livingstone.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group">
+                <a href="explorers/david_livingstone.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">דייוויד ליווינגסטון</span>
-                    <span class="block text-gray-400 mt-2 text-sm">חקר מעמקי יבשת אפריקה (1841)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">חקר יבשת אפריקה (1841)</span>
                 </a>
 
-                <a href="explorers/roald_amundsen.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group">
+                <a href="explorers/roald_amundsen.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">רואלד אמונדסן</span>
                     <span class="block text-gray-400 mt-2 text-sm">כיבוש הקוטב הדרומי (1903)</span>
                 </a>
 
-                <a href="explorers/ernest_shackleton.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center transition duration-300 shadow-md group">
+                <a href="explorers/ernest_shackleton.html" class="bg-darkCard hover:bg-gray-700 border border-gray-700 rounded-xl p-6 text-center shadow-md group explorer-card">
                     <span class="text-xl font-bold text-darkAccent group-hover:text-white transition duration-300">ארנסט שקלטון</span>
-                    <span class="block text-gray-400 mt-2 text-sm">חקר אנטארקטיקה ומסע ההישרדות (1901)</span>
+                    <span class="block text-gray-400 mt-2 text-sm">מסע ההישרדות באנטארקטיקה (1901)</span>
                 </a>
 
             </div>
@@ -209,49 +214,14 @@
         <!-- מילון מונחים -->
         <section class="mb-16 bg-darkCard border border-gray-700 rounded-xl p-8 shadow-lg">
             <h2 class="text-3xl font-semibold text-white mb-8 border-r-4 border-darkAccent pr-4">מילון מונחים גיאוגרפיים והיסטוריים</h2>
-            <ul class="space-y-8">
-                <!-- קרוולה -->
+            <ul class="space-y-8 text-lg">
                 <li class="border-b border-gray-700 pb-6">
                     <h3 class="text-2xl font-bold text-white mb-2">קָרָוֶולָה (Caravel)</h3>
-                    <p class="text-gray-300 text-lg leading-relaxed mb-3">
-                        <strong class="text-gray-400">הגדרה:</strong> ספינת מפרש קטנה, מהירה ובעלת כושר תמרון גבוה, שפותחה על ידי הפורטוגלים במאה ה-15. שימשה רבות במסעות החקר בשל יכולתה לשוט נגד כיוון הרוח ובזכות השוקע הרדוד שלה.
-                    </p>
-                    <p class="text-blue-200 text-lg leading-relaxed bg-gray-800/50 p-4 rounded-lg border-r-2 border-blue-500">
-                        <strong class="text-darkAccent">החשיבות ההיסטורית:</strong> פריצת הדרך הטכנולוגית שאפשרה את עידן התגליות. היא אפשרה הפלגות אוקייניות ארוכות כנגד כיוון הרוח, והפכה את האוקיינוסים לכבישים המהירים של הסחר הבינלאומי.
-                    </p>
+                    <p class="text-gray-300">ספינת מפרש קטנה ומהירה שפתחו הפורטוגלים במאה ה-15, שאפשרה שיוט נגד הרוח.</p>
                 </li>
-
-                <!-- אצטרולב -->
                 <li class="border-b border-gray-700 pb-6">
                     <h3 class="text-2xl font-bold text-white mb-2">אַצְטְרוֹלָב (Astrolabe)</h3>
-                    <p class="text-gray-300 text-lg leading-relaxed mb-3">
-                        <strong class="text-gray-400">הגדרה:</strong> מכשיר ניווט עתיק ששימש למדידת זווית ההגבהה של גרמי השמיים מעל קו האופק.
-                    </p>
-                    <p class="text-blue-200 text-lg leading-relaxed bg-gray-800/50 p-4 rounded-lg border-r-2 border-blue-500">
-                        <strong class="text-darkAccent">החשיבות ההיסטורית:</strong> שחרר את הספנים מהצורך לשוט בסמוך לקו החוף. הוא אפשר לחשב את קו הרוחב בלב ים, והעניק את הביטחון הפסיכולוגי והמעשי לצאת למסעות רחוקים אל הלא נודע.
-                    </p>
-                </li>
-
-                <!-- חוזה טורדסיאס -->
-                <li class="border-b border-gray-700 pb-6">
-                    <h3 class="text-2xl font-bold text-white mb-2">חוזה טוֹרְדֶסִיָאס (Treaty of Tordesillas)</h3>
-                    <p class="text-gray-300 text-lg leading-relaxed mb-3">
-                        <strong class="text-gray-400">הגדרה:</strong> הסכם מ-1494 שחילק את העולם שמחוץ לאירופה בין ספרד לפורטוגל, לאורך קו אורך דמיוני.
-                    </p>
-                    <p class="text-blue-200 text-lg leading-relaxed bg-gray-800/50 p-4 rounded-lg border-r-2 border-blue-500">
-                        <strong class="text-darkAccent">החשיבות ההיסטורית:</strong> מנע מלחמה בין שתי מעצמות-העל, וקבע את גורלן הגיאו-פוליטי והלשוני של יבשות. בגללו ברזיל של היום דוברת פורטוגזית, ושאר מדינות אמריקה הלטינית דוברות ספרדית.
-                    </p>
-                </li>
-
-                <!-- קונקיסטאדור -->
-                <li class="">
-                    <h3 class="text-2xl font-bold text-white mb-2">קוֹנְקִיסְטָאדוֹר (Conquistador)</h3>
-                    <p class="text-gray-300 text-lg leading-relaxed mb-3">
-                        <strong class="text-gray-400">הגדרה:</strong> "כובש" בספרדית. חיילים והרפתקנים איבריים שיצאו לכבוש את האמריקות, מונעים מרצון לעושר (זהב), תהילה, ולהט דתי להפצת הנצרות.
-                    </p>
-                    <p class="text-blue-200 text-lg leading-relaxed bg-gray-800/50 p-4 rounded-lg border-r-2 border-blue-500">
-                        <strong class="text-darkAccent">החשיבות ההיסטורית:</strong> הפילו אימפריות אדירות באמריקה ושינו את המהלך הדמוגרפי על ידי הפצת מחלות וכיבוש אגרסיבי. הם הניחו את היסודות לאימפריה הקולוניאלית הספרדית וכלכלת העולם החדש.
-                    </p>
+                    <p class="text-gray-300">מכשיר ניווט למדידת גובה גרמי השמיים, שאפשר לחשב את קו הרוחב בלב ים.</p>
                 </li>
             </ul>
         </section>
@@ -289,39 +259,36 @@
                 </svg>
             </button>
             <div class="text-center">
-                <img src="assets/ramprofile.png" alt="רם" class="w-32 h-32 rounded-full mx-auto border-4 border-darkAccent object-cover mb-6 shadow-lg" onerror="this.src='https://via.placeholder.com/150/1e293b/38bdf8?text=Ram'">
                 <h3 class="text-3xl font-bold text-white mb-3">רם</h3>
-                <p class="text-gray-400 text-lg leading-relaxed mb-4">
-                    חוקר, חובב היסטוריה, גיאוגרפיה וטכנולוגיה. שותף לבניית מאגר המידע על עידן התגליות.
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    חוקר וחובב היסטוריה. שותף לבניית מאגר המידע על עידן התגליות.
                 </p>
             </div>
         </div>
     </div>
 
-    <!-- סקריפט לפתיחה וסגירה של החלון הצף -->
     <script>
         const aboutBtn = document.getElementById('aboutBtn');
         const aboutModal = document.getElementById('aboutModal');
         const closeModal = document.getElementById('closeModal');
 
-        const showModal = () => {
+        aboutBtn.addEventListener('click', () => {
             aboutModal.classList.remove('hidden');
             aboutModal.classList.add('flex');
             document.body.style.overflow = 'hidden';
-        };
+        });
 
-        const hideModal = () => {
+        closeModal.addEventListener('click', () => {
             aboutModal.classList.add('hidden');
             aboutModal.classList.remove('flex');
             document.body.style.overflow = '';
-        };
-
-        aboutBtn.addEventListener('click', showModal);
-        closeModal.addEventListener('click', hideModal);
+        });
 
         window.addEventListener('click', (e) => {
             if (e.target === aboutModal) {
-                hideModal();
+                aboutModal.classList.add('hidden');
+                aboutModal.classList.remove('flex');
+                document.body.style.overflow = '';
             }
         });
     </script>
