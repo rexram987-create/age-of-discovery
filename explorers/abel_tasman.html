@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>אבל טסמן | מגלה ניו זילנד וטסמניה | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* אופטימיזציה למסכי סמסונג S25 Ultra ולמחשב - ריווח וקריאות מקסימלית */
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-6">אבל טסמן</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-8 py-5 text-gray-300 font-mono text-lg md:text-2xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 1603 – 10 באוקטובר 1659 | <span class="text-darkAccent font-bold">שנות מסעות הגילוי:</span> 1642 – 1644
+            </div>
+            <p class="text-2xl text-darkAccent mt-6 font-bold bg-blue-900/20 inline-block px-6 py-2 rounded-full border border-blue-500/30">
+                המגלה של ניו זילנד וטסמניה | אימפריית הסחר ההולנדית (VOC)
+            </p>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/abel_tasman.jpg" alt="אבל טסמן" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Abel+Tasman'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Portrait of Abel Tasman | Source: Wikimedia Commons / National Archives NL</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב ומפוצל -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ניתוח אטימולוגי של השם המלא</h2>
+            <div class="space-y-12">
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: אבל (Abel)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "אבל" מקורו בשם העברי המקראי <strong>הֶבֶל</strong> (בנו השני של אדם וחוה).
+                        <br><br>
+                        <strong>מקור בלשני ומשמעות:</strong> משמעות המילה בעברית היא "נשימה", "אד", או דבר חולף וזמני (כמו בביטוי "הבל הבלים"). השם אומץ באירופה הנוצרית והפך לנפוץ במיוחד בארצות השפלה (הולנד) במהלך הרפורמציה הפרוטסטנטית שחיפשה שמות תנ"כיים אותנטיים.
+                        <br><br>
+                        <strong>משמעות סמלית:</strong> עבור יורד ים באוקיינוסים המסוכנים ביותר בעולם, השם נושא משמעות מצמררת על ארעיות החיים. כמו הבל המקראי שחייו נגדעו באלימות, גם טסמן איבד רבים מאנשיו באלימות פתאומית במסעותיו, וחיי המלחים שלו היו תלויים על בלימה – כנשימה חולפת בסערה.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה: טסמן (Tasman)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        זהו שם משפחה פריזי/הולנדי אזורי.
+                        <br><br>
+                        <strong>מקור בלשני:</strong> השם מורכב מהמילה <em>Tas</em> (תיק, שק או ארנק) והמילה <em>man</em> (איש). המשמעות ההיסטורית המקובלת היא שמדובר בשם מקצועי המעיד על אב-קדמון שהיה יצרן תיקים, נושא כספים, או גובה מס ("איש הארנק").
+                        <br><br>
+                        <strong>אירוניה היסטורית:</strong> "איש הארנק" (Tasman) נשלח על ידי תאגיד כלכלי ענק (ה-VOC) כדי למלא את "הארנק" הלאומי בזהב ותבלינים. למרבה האירוניה, טסמן גילה שטחי אדמה עצומים (טסמניה וניו זילנד), אך מכיוון שלא מצא בהם סחורות רווחיות, החברה ששלחה אותו ראתה במסעותיו כישלון כלכלי צורב, והארנק נותר ריק.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות ורקע מוקדם: מהכפר הפריזי ללב האוקיינוס</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    אבל יאנסזון טסמן נולד בשנת 1603 בכפר הקטן <strong>לוטיחסט (Lutjegast)</strong> שבמחוז חרונינגן, בצפון הולנד. 
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">רקע מעמדי</h3>
+                    כמו וילם יאנסזון לפניו, טסמן לא הגיע ממשפחת אצולה. הוא נולד למעמד העובד הפריזי. באותן שנים, "תור הזהב ההולנדי" היה בתחילתו, והים היה הדרך היחידה של אדם עני לטפס בסולם החברתי והכלכלי.
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">ההצטרפות ל-VOC</h3>
+                    בגיל צעיר עבר לאמסטרדם, ובשנת 1633 הצטרף ל<strong>חברת הודו המזרחית ההולנדית (VOC)</strong>, שהייתה תאגיד הסחר הגדול והחזק בעולם. הוא החל את דרכו כמלח פשוט וטיפס במהירות בסולם הדרגות בזכות כישורי הניווט שלו, עד שהפך לקברניט (Schipper). הוא הוכיח את עצמו במשימות קשות נגד מבריחים ופיראטים באזור אינדונזיה ויפן.
+                </div>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה ומניעים: התאגיד לפני הכל</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    המסעות של טסמן לא היו יוזמה אישית שלו, אלא משימות קבלניות מוגדרות מראש שנועדו לשרת את בעלי המניות של תאגיד ה-VOC.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                        <strong class="text-white text-2xl block mb-4">1. החזון של אנטוני ואן דימן:</strong>
+                        המושל הכללי של ה-VOC בבטאוויה (ג'קרטה של היום), אנטוני ואן דימן, היה איש חזון אגרסיבי. המניע שלו היה למצוא את <em>Terra Australis</em> (היבשת הדרומית) כדי לנצל את משאביה (זהב, כסף וסחר נחושת) ולמצוא נתיב ימי מהיר יותר לצ'ילה. טסמן נבחר להוציא את החזון האקסטרטיבי הזה לפועל.
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                        <strong class="text-white text-2xl block mb-4">2. סודיות ורווח (האידיאולוגיה של ה-VOC):</strong>
+                        טסמן לא הונע מסקרנות מדעית טהורה ולא משאיפה לנצר ילידים. מטרתו הייתה למצוא שותפי סחר פוטנציאליים או ארצות עשירות במחצבים. כל מפה ששרטט הייתה רכוש סודי של החברה, כדי למנוע ממתחרים אנגלים וספרדים לעשות בה שימוש.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- המסע הראשון (כולל ההרחבה המלאה) -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">המסע הראשון (1642-1643): 10 חודשים של אימה, קור וגילויים</h2>
+            <div class="space-y-10 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    המסע הראשון של טסמן הוא אחד ממסעות הניווט הנועזים והמפחידים ביותר בהיסטוריה של עידן התגליות. הוא נמשך <strong>10 חודשים רצופים</strong> (מאוגוסט 1642 עד יוני 1643), שבהם הצוות גמא אלפי קילומטרים במים שלא מופו מעולם. טסמן יצא מבטאוויה (ג'קרטה) עם שתי ספינות קטנות בלבד: <em>Heemskerck</em> (ספינת הדגל) ו-<em>Zeehaen</em> (ספינת משא קטנה). הצוות מנה כ-110 איש בסך הכל.
+                </p>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">השלב הראשון: צלילה ל"ארבעים השואגים" (אוגוסט-נובמבר 1642)</h3>
+                    <p>
+                        לאחר תחנת ביניים באי מאוריציוס, טסמן קיבל החלטה נועזת: הוא הפליג עמוק דרומה, אל קווי הרוחב 40-50 דרום, כדי לתפוס את הרוחות המערביות העזות. 
+                        <br><br>
+                        <strong>החוויה הפיזית והנפשית:</strong> המלחים ההולנדים, שהיו רגילים לאקלים הטרופי של אינדונזיה, מצאו את עצמם בתוך גיהנום קפוא. גלים בגובה של בניינים טלטלו את הספינות הקטנות. ערפל כבד, גשם קפוא וברד היכו בהם ללא רחם. הצוות סבל מקור עז, תשישות, והפחד הפסיכולוגי החמור ביותר: הפחד שהם שטים אל קצה העולם או אל חומת קרח שתשבור את הספינות. טסמן נאלץ לסטות מעט צפונה כדי שהספינות לא יתרסקו מהסערות.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">טסמניה - אשליית ה"ענקים" (24 בנובמבר 1642)</h3>
+                    <p>
+                        ההימור של טסמן השתלם כשהוא הבחין ביבשה. הוא קרא לה <strong>"ארץ אנטוני ואן דימן"</strong> (טסמניה של היום). 
+                        <br><br>
+                        <strong>החוויה על החוף:</strong> הים היה כה סוער שלקח להם ימים להצליח להוריד סירה לחוף. כשהנגר של הספינה שחה לחוף כדי לנעוץ את הדגל ההולנדי, החוויה הייתה מצמררת. הצוות שמע קולות עמומים מהיער, אך לא ראה איש (האבוריג'ינים המקומיים התחבאו). המלחים מצאו עצים שעליהם נחרתו חריצים לטיפוס, אך החריצים היו במרחק של מטר וחצי זה מזה. המסקנה המבועתת של הצוות (שתועדה ביומן הספינה) הייתה ש<strong>המקום מיושב על ידי ענקים פראיים</strong>. הפחד מנע מהם להעמיק לתוך האי, והם מיהרו לחזור לספינות.
+                    </p>
+                </div>
+
+                <div class="bg-red-900/20 p-8 rounded-2xl border-l-8 border-red-500 shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">ניו זילנד ו"מפרץ הרוצחים" (דצמבר 1642)</h3>
+                    <p>
+                        טסמן המשיך מזרחה, וב-13 בדצמבר נתקל בהרים עצומים מושלגים עולים מן הים – האלפים הדרומיים של האי הדרומי של ניו זילנד. הוא קרא לארץ <em>Staten Landt</em>.
+                        <br><br>
+                        <strong>ההיתקלות המדממת בערפל:</strong> ב-18 בדצמבר עגנו הספינות במפרץ. בבוקר, מבעד לערפל, התקרבו אליהם סירות קאנו (Waka) כפולות וגדולות, עמוסות בלוחמים מאורים (Māori). המאורים החלו לנשוף ברוחות קונכייה (פוקאאֶה) בצורה מאיימת. טסמן הורה למלחיו לנגן בחצוצרות בחזרה, מה שהמאורים פירשו כקריאת תיגר ואישור לקרב.
+                        <br><br>
+                        <strong>הטבח:</strong> סירת משוטים הולנדית קטנה שהעבירה מסרים בין שתי הספינות הותקפה לפתע באלימות אדירה על ידי אחת מסירות הקאנו. המאורים נגחו בסירה ההולנדית והיכו במלחים באלות קורו (Patu). ארבעה מלחים הולנדים נהרגו במקום, וגופתו של אחד מהם נגררה לחוף. טסמן ואנשיו, מזועזעים מהמהירות והאכזריות של ההתקפה, פתחו באש תותחים אך החטיאו. הם נמלטו על נפשם וקראו למקום <strong>"מפרץ הרוצחים" (Moordenaers Bay)</strong> (כיום מפרץ גולדן). טסמן מעולם לא הניח את כף רגלו על אדמת ניו זילנד בשל טראומה זו.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">הדרך הביתה: מחסור, צפדינה והצלה בפולינזיה (1643)</h3>
+                    <p>
+                        לאחר שברח מניו זילנד, טסמן הפליג צפונה. המסע ארך עוד חודשים ארוכים. הצוות החל לסבול ממחלת הצפדינה (חוסר בוויטמין C), והמים המתוקים בספינות החלו להירקב. למזלם, בינואר 1643 הם גילו את איי טונגה ופיג'י. שם, הם פגשו ילידים ידידותיים שסחרו איתם במי קוקוס, חזירים ופירות טריים – מה שהציל את חייהם של רוב אנשי הצוות. ב-15 ביוני 1643, לאחר 10 חודשי גיהנום, הספינות חזרו לבטאוויה.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- המסע השני -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">המסע השני (1644): סיוט במימי הצפון הרדודים</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    המושל ואן דימן אולי שמח על הגילויים הגיאוגרפיים, אך רתח מזעם על כך שטסמן לא הביא איתו גרם אחד של זהב או תבלינים, ושהוא נמנע מלחקור לעומק בגלל הפחד מהילידים. ב-1644 נשלח טסמן למסע נוסף, קצר יותר, כדי למפות את החוף הצפוני והמערבי של אוסטרליה (מפרץ קרפנטריה).
+                </p>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">חוויות המסע והאכזבה המסחרית</h3>
+                    אם המסע הראשון אופיין בקור עז וסערות, המסע השני היה סיוט מסוג אחר. הספינות שטו במים רדודים להחריד ובוציים, תחת חום טרופי צורב. המלחים סבלו מעקיצות זבובים, מחסור חמור במים מתוקים (שכן הנהרות שמצאו היו מלוחים), וחוסר יכולת להתקרב לחוף בגלל שרטונות חול ומנגרובים.
+                    <br><br>
+                    טסמן פגש אבוריג'ינים, אותם תיאר בזלזול אירופאי טיפוסי כ"אנשים עירומים, עניים וחסרי כל". מבחינת ה-VOC, ארץ שבה אין ערי מסחר, אין תבלינים ואין מתכות יקרות – היא חסרת תועלת. המסע נמשך מספר חודשים וביסס את ההבנה שאוסטרליה היא יבשת אחת גדולה ו... ענייה (בעיני הכלכלה ההולנדית).
+                </div>
+            </div>
+        </section>
+
+        <!-- הידרולוגיה והישגים מדעיים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">נתונים הידרולוגיים ומדעיים: ניווט מבוסס רוח</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">הידרולוגיה ומפרץ הרוצחים (Golden Bay)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        המפרץ שבו הותקף טסמן בניו זילנד מתאפיין בעומקים רדודים (20-30 מטר) אך חשוף לזרמים חזקים ממצר קוק הסמוך. משטר הזרמים במקום לא אפשר לטסמן לתמרן את ספינות המפרש המסורבלות שלו במהירות כדי להגן על סירת המשוטים הקטנה שהותקפה על ידי המאורים, מה שהכריע את גורל התקרית.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">גילוי נתיב "הארבעים השואגים" (Roaring Forties)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        ההישג המדעי-אוקיינוגרפי הגדול של טסמן היה ההוכחה שניתן לנצל את רצועת הרוחות המערביות הקבועות שנושבות בקווי הרוחב 40-50 דרום, כדי לחצות את האוקיינוס ההודי במהירות עצומה. הוא פתח נתיב שיוט חדש (שלימים נקרא Brouwer Route) ששימש ספינות מפרש מסחריות בדרכן לאוסטרליה ולאוקיינוס השקט מאות שנים אחריו.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מורשת -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מורשת ואכזבה עסקית</h2>
+            <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md text-gray-300 leading-relaxed text-xl">
+                <p>
+                    טסמן חזר מהמסע השני בידיים ריקות מבחינה כלכלית. ה-VOC החליטה באופן סופי לעצור את משלחות הגילוי לאוסטרליה ולהתמקד בסחר הקיים והרווחי באינדונזיה. טסמן נשאר לעבוד בחברה בג'קרטה, התעשר מסחר פרטי, ומת שם ב-1659 כאדם אמיד אך שכוח-אל מבחינה היסטורית (עד שהבריטים, כמו ג'יימס קוק, החלו לשוט בנתיביו 120 שנים מאוחר יותר ולהשתמש במפותיו).
+                </p>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"The Journal of Abel Jansz Tasman" (1642):</strong> היומן המקורי של טסמן, שתורגם לאנגלית, מתעד בפירוט את האימה מ"הענקים" בטסמניה ואת ההתקפה במפרץ הרוצחים.</li>
+                <li><strong>"Abel Tasman: In Search of the Great South Land" (Gordon McLauchlan):</strong> המחקר הביוגרפי המקיף ביותר על מסעותיו, המסביר את הלחץ של חברת ה-VOC והתפיסה ההולנדית.</li>
+                <li><strong>"The Discovery of New Zealand" (J.C. Beaglehole):</strong> סקירה היסטורית מפורטת של ההיתקלות האלימה של טסמן עם המאורים ואתגרי הניווט בהידרולוגיה המקומית.</li>
+                <li><strong>ארכיוני ה-VOC (Nationaal Archief):</strong> הדו"חות המקוריים של אנטוני ואן דימן המסכמים את מסעותיו של טסמן באכזבה עמוקה מחוסר הרווחיות הכלכלית שלהם.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 3.1 Pro)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> הרחבה כרונולוגית אקדמית של מאגר מגלי הארצות (תיעוד תקופת הגילויים ההולנדית).<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/abel_tasman.jpg" alt="אבל טסמן" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Abel+Tasman'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
