@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>לואיס וקלארק | קורפס אוף דיסקברי | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* אופטימיזציה למסכי סמסונג S25 Ultra - ריווח וקריאות מקסימלית */
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6">לואיס וקלארק</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-6 py-4 text-gray-300 font-mono text-lg md:text-xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">לואיס:</span> 1774 – 1809 | <span class="text-darkAccent font-bold">קלארק:</span> 1770 – 1838
+                <br class="md:hidden">
+                <span class="hidden md:inline"> | </span>
+                <span class="text-darkAccent font-bold">המשלחת (Corps of Discovery):</span> 1804 – 1806
+            </div>
+            <p class="text-2xl text-darkAccent mt-6 font-bold bg-blue-900/20 inline-block px-6 py-2 rounded-full border border-blue-500/30">
+                חוקרי המערב האמריקאי מטעם תומאס ג'פרסון
+            </p>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/lewis_and_clark.jpg" alt="משלחת לואיס וקלארק" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Lewis+and+Clark'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Lewis and Clark with Sacagawea | Source: Wikimedia Commons | License: Public Domain</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מקור ומשמעות השמות (אטימולוגיה מורחבת)</h2>
+            <div class="space-y-10">
+                
+                <!-- מריווד'ר לואיס -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">מריווד'ר לואיס (Meriwether Lewis)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        <strong>מריווד'ר (Meriwether):</strong> זהו שם פרטי חריג שנוצר למעשה משם משפחה אנגלי עתיק. מקורו בביטוי של ימי הביניים <em>Merry weather</em> (מזג אוויר שמח/עליז). במקור, זה היה כינוי לאדם בעל מזג אופטימי. למרות שמו, לואיס סבל רוב חייו מדיכאון קליני עמוק ("מלנכוליה"), שהוביל ככל הנראה להתאבדותו הטרגית זמן קצר לאחר המסע. הוא קיבל שם זה כדי לשמר את שם המשפחה של אמו (לוסי מריווד'ר).
+                        <br><br>
+                        <strong>לואיס (Lewis):</strong> הגרסה האנגלית לשם הצרפתי/גרמאני <em>Louis</em> (לודוויג), שמשמעותו <strong>"לוחם מפורסם"</strong>. שם הולם לקצין צבא אמריקאי שנבחר אישית על ידי הנשיא.
+                    </p>
+                </div>
+                
+                <!-- ויליאם קלארק -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">ויליאם קלארק (William Clark)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        <strong>ויליאם (William):</strong> מקורו בשם הגרמאני <em>Wilhelm</em> (רצון + קסדה/מגן), שמשמעותו <strong>"מגן נחוש"</strong>. קלארק אכן היה ה"מגן" המעשי של המשלחת – שרטט מפות, פיקד על האנשים ודאג להישרדותם.
+                        <br><br>
+                        <strong>קלארק (Clark):</strong> שם משפחה אנגלי שמקורו במילה הלטינית <em>Clericus</em> (איש דת, פקיד). במקור, ניתן לאדם שהיה <strong>רשם או יודע קרוא וכתוב</strong>. באופן סמלי, קלארק היה הרשם הראשי של המשלחת, ויומניו המדויקים להפליא עובדתית (למרות שגיאות כתיב רבות) הם הבסיס לחקר המערב.
+                    </p>
+                </div>
+
+                <!-- סאקאג'וויאה -->
+                <div class="bg-blue-900/10 p-8 md:p-12 rounded-2xl border border-blue-500/30 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-blue-400 mb-6 border-b border-gray-700 pb-3">המדריכה הילידית: סאקאג'וויאה (Sacagawea)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        האטימולוגיה המקובלת ביותר לשמה של הגיבורה המיתולוגית של המשלחת מגיעה משפת שבטה, ה"שושוני" (Shoshone). השם מורכב מהמילים <em>Saca</em> (סירה) ו-<em>Gawea</em> (מושך), או לחלופין מ-<em>Sacaga</em> (ציפור) ו-<em>Wea</em> (אישה). 
+                        <br><br>
+                        המשמעות הרווחת והפואטית ביותר היא <strong>"אשת הציפור" (Bird Woman)</strong>. כאישה צעירה, בת 16 בלבד שנשאה תינוק על גבה, היא אכן "פרשה כנפיים" והובילה את הגברים האירופאים בבטחה דרך ההרים הבלתי עבירים אל חוף האוקיינוס.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות ורקע מוקדם: בני האליטה של וירג'יניה</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    לואיס וקלארק לא היו הרפתקנים מקריים. שניהם נולדו לאותה שכבה חברתית: משפחות פלנטרים (בעלי מטעים ועבדים) אמידות במדינת <strong>וירג'יניה</strong>, מוקד הכוח הפוליטי של ארה"ב הצעירה.
+                </p>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">מריווד'ר לואיס: חניכו של הנשיא</h3>
+                    לואיס היה שכן וידיד משפחה קרוב של הנשיא תומאס ג'פרסון. מגיל צעיר גילה עניין אובססיבי בבוטניקה ובאיסוף צמחים ביערות. לאחר שהתגייס לצבא ולחם ב"מרד הוויסקי", מונה ב-1801 על ידי הנשיא ג'פרסון לעוזרו ולמזכירו האישי בבית הלבן, שם גובשה תוכנית המשלחת.
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">ויליאם קלארק: קצין השטח הקשוח</h3>
+                    קלארק הגיע ממשפחה בעלת היסטוריה צבאית מפוארת (אחיו היה גיבור מלחמת העצמאות). הוא היה איש שטח מעולה, התגייס לצבא בגיל 19, נלחם נגד שבטים אינדיאנים (שם פגש לראשונה את לואיס) ונודע כשרטט מפות מחונן. לואיס גייס אותו למשלחת כמפקד שותף (Co-captain) בזכות הניסיון המעשי שלו בפיקוד חיילים.
+                </div>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה ומניעים (רכישת לואיזיאנה) -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה ומניעים: רכישת לואיזיאנה והחזון של ג'פרסון</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    המשלחת לא נולדה בחלל ריק. היא הייתה פרויקט הדגל של הנשיא תומאס ג'פרסון, שנבע משילוב של אידאולוגיה מדעית ומניעים פוליטיים אגרסיביים.
+                </p>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                    <strong class="text-white text-2xl block mb-4">1. הנסיבה הפוליטית: "רכישת לואיזיאנה" (1803)</strong>
+                    בשנת 1803, ארה"ב ביצעה את עסקת הנדל"ן הגדולה בהיסטוריה. היא קנתה מנפוליאון בונפרטה הצרפתי את "טריטוריית לואיזיאנה" העצומה, והכפילה ביום אחד את שטחה תמורת 15 מיליון דולר.
+                    <br><br>
+                    <strong>מדוע קנו ומדוע מכרו?</strong> הנשיא ג'פרסון רצה להבטיח את שליטת ארה"ב בנהר המיסיסיפי ובנמל ניו אורלינס הקריטי לחקלאים האמריקאים. מנגד, נפוליאון נאלץ למכור לאחר שספג תבוסה במרד העבדים בהאיטי, והיה זקוק למזומנים מהירים כדי לממן את מלחמותיו באירופה. ג'פרסון היה חייב לדעת <strong>מה בדיוק הוא קנה</strong>, ולכן המשלחת נשלחה למפות את השטח ולבסס ריבונות אמריקאית.
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                    <strong class="text-white text-2xl block mb-4">2. האובססיה ל"מעבר הצפון-מערבי"</strong>
+                    ג'פרסון האמין בתיאוריה גיאוגרפית (שגויה) שישנו מעבר מים ישיר החוצה את יבשת אמריקה ומחבר בין נהר המיזורי לאוקיינוס השקט. מציאתו הייתה מבטיחה שליטה בסחר הפרוות והסחר עם אסיה. (הם הוכיחו שמעבר זה אינו קיים).
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                    <strong class="text-white text-2xl block mb-4">3. משימה מדעית ואימפריאלית</strong>
+                    הם קיבלו הוראה לתעד כל צמח, הר וחיה, ובמקביל – לבצע משימה דיפלומטית: ליצור קשר עם השבטים הילידים, להודיע להם ש"אבא חדש" בוושינגטון שולט כעת באדמתם, ולפתוח עמם יחסי מסחר.
+                </div>
+            </div>
+        </section>
+
+        <!-- המסע אל האוקיינוס השקט -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">המסע המפרך אל האוקיינוס השקט (1804-1806)</h2>
+            <div class="space-y-10 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    "קורפס אוף דיסקברי" כללה כ-45 גברים, וכן את כלבו השחור הענק של לואיס ("סימן").
+                </p>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">השלב הראשון: במעלה המיזורי והחורף עם סאקאג'וויאה</h3>
+                    <p>
+                        במאי 1804 יצאה המשלחת מסנט לואיס במעלה <strong>נהר המיזורי</strong> בסירות נהר קשות לתפעול. בחורף, הקור אילץ אותם לעצור ולהקים את "פורט מנדאן" בצפון דקוטה. שם הם שכרו את שירותיו של צייד צרפתי (שארבונו) כמתורגמן, אך הנכס האמיתי הייתה אשתו, סאקאג'וויאה, שהייתה בהריון. הימצאותה במשלחת עם תינוקה שידרה לשבטים העוינים כוונות שלום.
+                    </p>
+                </div>
+
+                <div class="bg-blue-900/20 p-8 rounded-2xl border-l-8 border-darkAccent shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">השלב השני: המפגש הגורלי וחציית הרוקי</h3>
+                    <p>
+                        בקיץ 1805, הם הגיעו למקורות המיזורי וגילו לתדהמתם קיר עצום של הרים מושלגים – <strong>הרי הרוקי (Rocky Mountains)</strong>. ללא סוסים לחצייה, הם היו נידונים למוות. כשהם פגשו בשבט השושוני, התברר בנס שהצ'יף של השבט (קאמייאווייט) הוא אחיה האבוד של סאקאג'וויאה שנחטפה בילדותה! האיחוד המרגש הבטיח להם סוסים ומדריכים שבלעדיהם לא היו שורדים את החצייה הקטלנית של רכס הביטררוט (Bitterroot Range).
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">השלב השלישי: ההגעה לאוקיינוס והשיבה</h3>
+                    <p>
+                        בנובמבר 1805, לאחר מסע ארוך בסירות קאנו במורד נהר הקולומביה, הם הגיעו לחוף המערבי. קלארק כתב ביומנו: <em>"Ocian in view! O! the joy"</em>. הם העבירו חורף אומלל באורגון ובמרץ 1806 החלו לחזור. בספטמבר 1806 חזרו לסנט לואיס כגיבורים לאומיים, לאחר שעברו יותר מ-13,000 קילומטרים.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- תגליות ומתן שמות (מפורט ומופרד) -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">עולם חדש של ידע: גילויים וטופונימיה</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">1. מיפוי גיאוגרפי והידרולוגי</h3>
+                    קלארק שרטט מפה מפורטת ביותר ששינתה את התפיסה הגיאוגרפית של היבשת והראתה את העוצמה של הרי הרוקי. הם מיפו את מקורות נהרות המיזורי והקולומביה, חקרו את זרימת המים ואפשרו את ההתפשטות האמריקאית העתידית אל האזורים הלא מוכרים.
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">2. גילויים אקולוגיים (מעל 300 מינים חדשים)</h3>
+                    לואיס, שהיה בוטנאי מחונן, אסף למעלה מ-300 מינים חדשים של צמחים ובעלי חיים שלא היו מוכרים למדע. בין התגליות הבוטניות היו זרעי אורן פונדרוזה ואשוח דאגלס ששינו את החקלאות האמריקאית.
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-500 shadow-inner">
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-2">3. טופונימיה: מתן הכינויים הגיאוגרפיים והעממיים</h3>
+                    <p>
+                        מכיוון שהיו אנשי שטח, הדרך שבה נתנו שמות לחיות ולמקומות הונעה מצרכים תיאוריים ופוליטיים:
+                    </p>
+                    <ul class="list-disc pr-6 space-y-4 mt-4">
+                        <li><strong>כינויים עממיים לבעלי חיים:</strong> הם המציאו כינויים תיאוריים באנגלית. כמעט נטרפו על ידי דוב עצום ואפור, וקראו לו <strong>"דוב הגריזלי" (Grizzly Bear)</strong> מהמילה <em>Grisley</em> (מחריד). למכרסמים נבחנים שחיו במושבות קראו <strong>"כלבי ערבה" (Prairie Dog)</strong> למרות שהם סנאים.</li>
+                        <li><strong>השמות המדעיים (לטינית):</strong> לואיס וקלארק <strong>לא</strong> קבעו את השמות הלטיניים-מדעיים. הם שלחו את הפוחלצים והזרעים למדענים במזרח ארה"ב, ואלו סיווגו אותם והעניקו להם שם מדעי.</li>
+                        <li><strong>שמות פוליטיים לגיאוגרפיה:</strong> כדי לזכות בתמיכה פוליטית, הם קראו לנהרות על שם מנהיגים. את פיצול המיזורי לשלושה נהרות הם כינו: נהר הנשיא (<strong>ג'פרסון</strong>), שר החוץ (<strong>מדיסון</strong>) ושר האוצר (<strong>גאלאטין</strong>). במקביל, הם לעיתים קרובות התעלמו לחלוטין מהשמות הילידיים המקוריים שנתנו השבטים המקומיים לאותם הרים ונהרות במשך אלפי שנים.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"The Journals of the Lewis and Clark Expedition" (בעריכת Gary E. Moulton):</strong> הכרכים המלאים של היומנים המקוריים. אלו העדויות לחקר המיזורי, למפגש של סאקאג'וויאה עם אחיה, ולכינויים העממיים השונים שטבעו (הגריזלי, כלב הערבה).</li>
+                <li><strong>"Undaunted Courage" (Stephen E. Ambrose, 1996):</strong> הביוגרפיה המוערכת ביותר של לואיס, המנתחת את רכישת לואיזיאנה מנפוליאון, החזון של ג'פרסון, והדיכאון של לואיס.</li>
+                <li><strong>הארכיון הלאומי של ארה"ב (NARA):</strong> מתעד את פרטי רכישת לואיזיאנה ואת המנדט הדיפלומטי שניתן למשלחת מול השבטים הילידים.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 3.1 Pro)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> הרחבה כרונולוגית אקדמית של מאגר מגלי הארצות (חקר היבשת האמריקאית).<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/lewis_and_clark.jpg" alt="לואיס וקלארק" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Lewis+and+Clark'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
