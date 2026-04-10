@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>אלכסנדר פון הומבולדט | אבי האקולוגיה | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* אופטימיזציה למסכי סמסונג S25 Ultra - ריווח וקריאות מקסימלית */
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6">אלכסנדר פון הומבולדט</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-6 py-4 text-gray-300 font-mono text-lg md:text-xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 14 בספטמבר 1769 – 6 במאי 1859
+                <br class="md:hidden">
+                <span class="hidden md:inline"> | </span>
+                <span class="text-darkAccent font-bold">מסעות:</span> אמריקה (1799-1804), רוסיה (1829)
+            </div>
+            <p class="text-2xl text-darkAccent mt-6 font-bold bg-blue-900/20 inline-block px-6 py-2 rounded-full border border-blue-500/30">
+                אבי האקולוגיה וגדול חוקרי דרום אמריקה | עידן התגליות המדעיות
+            </p>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/alexander_von_humboldt.jpg" alt="אלכסנדר פון הומבולדט" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Alexander+von+Humboldt'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Portrait of Alexander von Humboldt | Source: Wikimedia Commons | License: Public Domain</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מקור ומשמעות השם המלא (אטימולוגיה)</h2>
+            <div class="space-y-10">
+                <p class="text-gray-300 text-xl leading-relaxed">
+                    שמו המלא והארוך משקף את המורשת הגרמנית-פרוסית האריסטוקרטית שממנה הגיע. שמו המלא בלידה היה: <em>פרידריך וילהלם היינריך אלכסנדר פון הומבולדט</em>.
+                </p>
+
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: אלכסנדר (Alexander)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "אלכסנדר" מקורו בשם היווני הקדום <em>Alexandros</em> (Ἀλέξανδρος).
+                        <br><br>
+                        <strong>מקור בלשני ומשמעות:</strong> השם מורכב משתי מילים יווניות: <em>Alexein</em> (להגן, להדוף, לשמור) ו-<em>Andros</em> (אדם, גבר). הפירוש המילולי הוא <strong>"מגן האדם"</strong> או "שומר בני האדם".
+                        <br><br>
+                        <strong>סמליות ומשמעות מדעית:</strong> אלכסנדר הגדול המקדוני (מוקדון) חרת את השם הזה בהיסטוריה ככובש צבאי אדיר. אלכסנדר פון הומבולדט "כבש" את העולם בצורה אחרת – בעזרת המדע. הוא ראה בטבע מקור כוח שיש לשמור עליו ולהבינו, והזהיר כבר בתחילת המאה ה-19 מפני ההשפעות ההרסניות של האדם על הסביבה (כריתת יערות שהובילה לשינויי אקלים מקומיים באמריקה הדרומית). במובן זה, הוא באמת היה "מגן האדם" באמצעות הידע והמודעות הסביבתית שהנחיל.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-12 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה ותואר: פון הומבולדט (von Humboldt)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        זהו שם משפחה טופונימי (גיאוגרפי) גרמני, בתוספת קידומת אצולה.
+                        <br><br>
+                        <strong>הקידומת "פון" (von):</strong> בגרמנית, משמעותה "מ-" או "של". קידומת זו מעידה על השתייכות למעמד האצולה (Nobility). משפחת הומבולדט קיבלה את תואר האצולה שלה (Freiherr / ברון) רק דור אחד לפני כן, כהוקרה על שירות צבאי.
+                        <br><br>
+                        <strong>הומבולדט (Humboldt):</strong> השם מורכב כנראה מהשורש הגרמאני הקדום <em>Humb</em> (שקשור למילה Humbel, המעידה על גבעה או תלולית קטנה) ו-<em>Bold</em> או <em>Wald</em> (יער). הפירוש המשוער הוא <strong>"יער על הגבעה"</strong>.
+                        <br><br>
+                        <strong>ההנצחה העולמית:</strong> אירוניה אדירה היא ששם שמקורו ב"גבעה קטנה" בגרמניה הפך לאחד השמות הגיאוגרפיים והמדעיים הנפוצים ביותר בכדור הארץ (ובחלל!). על שמו קרויים: <strong>זרם הומבולדט</strong> מול חופי דרום אמריקה, עשרות מינים של צמחים ובעלי חיים (כמו פינגווין הומבולדט ודיונון הומבולדט), ערים ומחוזות בארה"ב, ואפילו ימה על הירח (<em>Mare Humboldtianum</em>).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות ורקע מוקדם: בין פרוסיה לנאורות הצרפתית</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    אלכסנדר פון הומבולדט נולד בברלין, שהייתה אז בירת ממלכת פרוסיה. משפחתו הייתה אמידה מאוד ומקורבת לחצר המלך הפרוסי פרידריך הגדול.
+                </p>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">חינוך נוקשה תחת הנאורות</h3>
+                    אביו, אלכסנדר גיאורג פון הומבולדט, היה קצין צבא שמונה לשר בחצר המלכות, אך מת כשאלכסנדר היה בן 9. אמו, מריה אליזבת קולומב, הייתה בורגנית עשירה, קרה ונוקשה. היא ייעדה את אלכסנדר ואת אחיו הבכור, וילהלם (שהפך לימים לבלשן ופילוסוף דגול ושר החינוך של פרוסיה), לקריירה בשירות המדינה. האחים זכו לחינוך פרטי ממיטב המוחות של תקופת הנאורות בברלין (Aufklärung).
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">"הילד עם החרקים" והקריירה כגאולוג</h3>
+                    בעוד אחיו וילהלם הצטיין בשפות וספרות, אלכסנדר היה ילד חולני מעט שהעדיף לשוטט ביערות. הוא אסף חרקים, אבנים וצמחים, וזכה לכינוי המשפחתי המזלזל מעט: <strong>"רוקח קטן" (Little Apothecary)</strong>.
+                    <br><br>
+                    למרות חלומו לגלות ארצות, אמו הכריחה אותו ללמוד מקצוע מעשי. הוא הוסמך כמפקח מכרות. בגיל 22 בלבד הוא פרסם מחקרים גאולוגיים מבריקים והמציא מערכות נשימה לחילוץ כורים (ואף ניסה אותן על עצמו במכרה עד שכמעט מת מחנק). רק לאחר שאמו מתה ב-1796, הוא ירש הון עצום שאפשר לו להגשים את חלומו האמיתי: לחקור את העולם במימונו הפרטי.
+                </div>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה ומניעים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה ומניעים: "הטבע הוא רשת חיה" (Naturgemälde)</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    הומבולדט שבר את המסורת ההיסטורית של מגלי הארצות שקדמו לו באמריקה (הקונקיסטאדורים):
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                        <strong class="text-white text-2xl block mb-4">1. ידע טהור ולא כיבוש:</strong>
+                        הוא לא יצא לחפש אוצרות פוליטיים או להמיר את דתם של ילידים, והוא לא חיפש מעברים ימיים כדי לקצר נתיבי סחר למזרח. מטרתו הייתה אך ורק <strong>הבנה מדעית של היקום</strong>.
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-darkAccent shadow-md">
+                        <strong class="text-white text-2xl block mb-4">2. תפיסת הרשת (Ecology):</strong>
+                        לפני הומבולדט, מדענים אירופאים ניסו רק "למיין" את הטבע לקטגוריות. הומבולדט פיתח אידאולוגיה מהפכנית. הוא טען שהטבע אינו אוסף של פריטים בודדים, אלא <strong>רשת עצומה אחת חיה שבה הכל מקושר (Naturgemälde)</strong>. הוא הבין שעצים, אקלים, מזג אוויר ובעלי חיים משפיעים זה על זה, והיה הראשון שהזהיר שפגיעה במקום אחד בטבע (כמו כריתת יער) תשפיע על המערכת האקלימית כולה. הוא, למעשה, <strong>ממציא מדע האקולוגיה</strong>.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- מסע החקר לאמריקות -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מסע החקר לאמריקות (1799-1804): מדידת היבשת</h2>
+            <div class="space-y-10 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    ביוני 1799, יצא הומבולדט יחד עם הבוטנאי הצרפתי <strong>איימה בונפלאן (Aimé Bonpland)</strong> למסע מחקר בן חמש שנים בדרום אמריקה. הוא השיג אישור נדיר ממלך ספרד לחקור את המושבות הסגורות של האימפריה הספרדית, ולקח איתו 42 מכשירי מדידה מתקדמים במימונו האישי.
+                </p>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">1. גילוי נהר הקסיקיארה (Casiquiare) באגן האמזונס (1800)</h3>
+                    <p>
+                        ההישג הגיאוגרפי הראשון הגדול שלו התרחש בג'ונגלים של ונצואלה. במשך עשרות שנים היו שמועות שיש תעלה טבעית שמחברת בין שתי מערכות הנהרות האדירות של היבשת: האורינוקו (Orinoco) ויובלי האמזונס. הומבולדט ובונפלאן שטו במשך 75 ימים, מרחק של 2,250 קילומטרים בסירות קאנו חשופות. הם חלו במלריה, נאכלו על ידי חרקים ונתקלו בתנינים ויגוארים. בסופו של דבר, הם הצליחו למפות במדויק את תעלת הקסיקיארה והוכיחו שהיא אכן מקשרת בין שתי מערכות הנהר העצומות – תופעה הידרולוגית ייחודית בעולם.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-white mb-4">2. הטיפוס על הר צ'ימבורסו (Chimborazo) באקוודור (1802)</h3>
+                    <p>
+                        ביוני 1802 ניסה הומבולדט להעפיל לפסגת הר הגעש צ'ימבורסו בהרי האנדים שבאקוודור (שנחשב אז להר הגבוה בעולם).
+                        <br><br>
+                        <strong>החוויה הפיזית הקיצונית:</strong> כשהם לבושים במעילי פשתן ונועלים מגפיים רגילים, ללא ציוד חמצן, הם טיפסו על צוקים קפואים. בגובה של כ-5,800 מטרים הם החלו לסבול מ"מחלת גבהים": סחרחורות, בחילות ודימום מהעיניים ומהשפתיים בגלל חוסר החמצן והלחץ הנמוך.
+                        <br><br>
+                        <strong>התגלית המדעית:</strong> בגלל תהום עמוקה הם נעצרו בגובה של 5,917 מטרים (שיא טיפוס עולמי שנשבר רק עשרות שנים לאחר מכן). בנקודה זו, הומבולדט הבין את הקשר הישיר בין האקלים לבוטניקה. הוא שרטט את ה-<strong>"נאטורגמאלדה" (Naturgemälde)</strong> המפורסם שלו – איור של הר המראה כיצד אזורי הצמחייה משתנים ככל שעולים בגובה ושהטמפרטורה יורדת. הוא הראה שהצמחייה בפסגת הר באקוודור דומה לצמחייה בהרי האלפים באירופה, ובכך ייסד את תחום ה<strong>ביוגיאוגרפיה</strong>.
+                    </p>
+                </div>
+
+                <div class="bg-blue-900/20 p-8 rounded-2xl border-l-8 border-darkAccent shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">3. חקר הזרם האוקייני והמגנטיות של כדור הארץ (1802-1803)</h3>
+                    <p>
+                        <strong>ההידרולוגיה של הים ("זרם הומבולדט"):</strong> בזמן ששהה בחופי פרו, הומבולדט מדד את הטמפרטורה של מי האוקיינוס השקט והבחין בזרם מים קר מאוד הזורם צפונה מאנטארקטיקה לאורך חוף אמריקה הדרומית. הוא מיפה את מהירותו וטמפרטורת המים, והוכיח כיצד הזרם הזה מקרר את האקלים באזור ומונע גשמים (מה שיוצר את מדבר אטקמה). זרם זה קרוי על שמו עד היום.
+                        <br><br>
+                        <strong>הקו המשווה המגנטי:</strong> הומבולדט גילה במהלך מסעו שהעוצמה המגנטית של כדור הארץ פוחתת ככל שמתקרבים לקו המשווה, תגלית שהניחה את היסודות לגיאופיזיקה המודרנית.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- התגליות הביולוגיות -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">התגליות הביולוגיות: זואולוגיה ובוטניקה של העולם החדש</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    במהלך חמש שנות מסעם, הומבולדט ובונפלאן אספו כ-<strong>60,000 דגימות של צמחים ובעלי חיים</strong>, מתוכן כ-<strong>6,000 מינים שהיו חדשים לחלוטין למדע המערבי</strong>. בעוד חיות גדולות כמו היגואר והקפיבארה כבר היו מוכרות לאירופאים זה מאות שנים (וקיבלו את שמן המדעי מקארולוס ליניאוס), הומבולדט התמקד בגילוי מינים אקזוטיים, בהבנת תפקודם האקולוגי וברישום מדעי של צמחי מרפא.
+                </p>
+
+                <!-- זואולוגיה -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-darkAccent mb-6">תגליות זואולוגיות (בעלי חיים)</h3>
+                    <ul class="space-y-6">
+                        <li>
+                            <strong class="text-white text-2xl block mb-2">הצלופח החשמלי (Electrophorus electricus):</strong> 
+                            <em>זמן ומקום:</em> מרץ 1800, ביצות ונהרות אגן האורינוקו, ונצואלה. <br>
+                            <em>הגילוי:</em> הילידים סיפרו לו על "דגים שיורים ברקים". כדי לתפוס אותם מבלי להתחשמל, הומבולדט השתמש בטקטיקה ילידית מדהימה (ואכזרית): הוא הריץ סוסי פרא לתוך הביצה. הצלופחים (באורך של עד 2 מטרים) תקפו את הסוסים במכות חשמל של מאות וולט עד שהתרוקנו מאנרגיה. רק אז נכנסו למים ותפסו אותם לניסויים על "חשמל ביולוגי".
+                        </li>
+                        <li>
+                            <strong class="text-white text-2xl block mb-2">ציפור השמן / גוּאָשָרוֹ (Steatornis caripensis):</strong> 
+                            <em>זמן ומקום:</em> ספטמבר 1799, מערת קאריפה, ונצואלה. <br>
+                            <em>הגילוי:</em> עוף לילה יוצא דופן ועיוור כמעט לחלוטין שחי במערות אפלות. הומבולדט גילה שהעוף מנווט בחשכה באמצעות <strong>אקולוקציה (הדהוד קול)</strong>. זהו העוף היחיד בעולם הניזון מפירות ומנווט בעזרת סונאר טבעי.
+                        </li>
+                        <li>
+                            <strong class="text-white text-2xl block mb-2">קופי שאגן (Howler Monkeys):</strong> 
+                            במהלך השיט באמזונס, הומבולדט תיעד אנטומית ואקולוגית את המבנה הייחודי של הלשון והגרון המאפשר להם להפיק שאגות אדירות.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- בוטניקה -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-darkAccent mb-6">תגליות בוטניות (צמחים)</h3>
+                    <ul class="space-y-6">
+                        <li>
+                            <strong class="text-white text-2xl block mb-2">עץ הקינכונה (Cinchona) - מקור תרופת הכינין:</strong> 
+                            <em>זמן ומקום:</em> הרי האנדים באקוודור, 1802. <br>
+                            הומבולדט היה המדען הראשון שתיעד שיטתית את העץ שקליפתו מרפאה מלריה, ואת התנאים האקולוגיים הספציפיים בגובה האנדים שבהם הוא גדל. הוא הזהיר כי כריתת-יתר תביא להכחדתו.
+                        </li>
+                        <li>
+                            <strong class="text-white text-2xl block mb-2">"עץ הפרה" (Brosimum utile):</strong> 
+                            <em>זמן ומקום:</em> ונצואלה, תחילת 1800. <br>
+                            הומבולדט נדהם לגלות עץ שמקליפתו הפצועה ניגר מוהל לבן, סמיך ומתוק שנראה ומרגיש ממש כמו <strong>חלב פרה</strong>. הוא תיעד כיצד הילידים שותים את המוהל כתחליף תזונתי, והביא דגימות מה"חלב הצמחי" לאירופה.
+                        </li>
+                        <li>
+                            <strong class="text-white text-2xl block mb-2">עץ אגוז הברזיל (Brazil Nut):</strong> 
+                            תיאור מדעי ראשון ומפורט של העץ העצום, פירותיו הכבדים, ומיקומו הקריטי בתוך המערכת האקולוגית של יער הגשם.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- מסע לרוסיה -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מסע החקר לרוסיה ולסיביר (1829)</h2>
+            <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md text-gray-300 leading-relaxed text-xl">
+                <p>
+                    בגיל 60 (!), ולאחר שאיבד את כל הונו על הדפסת ספריו היוקרתיים (34 כרכים על אמריקה), הוא הוזמן על ידי צאר רוסיה (ניקולאי הראשון) למסע מחקר אל הרי אורל וסיביר, בתקווה למצוא עתודות של זהב ופלטינה. הוא גמא במסע זה כ-15,000 קילומטרים תוך כחצי שנה.
+                    <br><br>
+                    <strong>הגילוי האקלימי:</strong> במסע זה הוא אסף נתוני טמפרטורה עצומים ברחבי האימפריה הרוסית. בהשוואה לנתונים שאסף באמריקה הדרומית ובאירופה, הוא המציא את ה-<strong>איזותרמות (Isotherms)</strong> – אותם קווים עקומים המופיעים במפות מזג האוויר של ימינו, המחברים בין מקומות בעלי טמפרטורה ממוצעת שווה ברחבי העולם. הוא גילה שקרובי רוחב אינם מכתיבים לבדם את האקלים (למשל, מוסקבה ופלימות' נמצאות על אותו קו רוחב, אך יש להן אקלים שונה לחלוטין בשל הריחוק מהאוקיינוס).
+                </p>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"The Invention of Nature: Alexander von Humboldt's New World" (Andrea Wulf, 2015):</strong> הביוגרפיה המודרנית עטורת הפרסים המנתחת את רעיון ה"רשת של הטבע" ואת המצאת האקולוגיה על ידו, כולל פירוט נרחב על גילוי הצלופחים החשמליים.</li>
+                <li><strong>"Cosmos: A Sketch of the Physical Description of the Universe" (אלכסנדר פון הומבולדט, 1845):</strong> יצירת המופת של הומבולדט שבה הוא מתאר את כל הידע המדעי של התקופה תחת הקונספט של עולם מחובר והרמוני.</li>
+                <li><strong>"Plantae Equinoctiales" (הומבולדט ובונפלאן, 1808-1809):</strong> הכרכים הבוטניים המרכזיים שכתבו על המסע, המוקדשים לתיאור וסיווג של אלפי מיני הצמחים החדשים, בהם "עץ הפרה" ועץ הקינכונה.</li>
+                <li><strong>"Personal Narrative of Travels to the Equinoctial Regions of the New Continent" (הומבולדט ובונפלאן, 1814):</strong> היומנים המקוריים שבהם מתואר הטיפוס המסוכן על הר צ'ימבורסו, המסע בתעלת קסיקיארה וגילוי ציפור הגואשרו.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 3.1 Pro)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> תיעוד אקדמי מעמיק עבור הספרייה הדיגיטלית של רם (עידן התגליות המדעיות).<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/alexander_von_humboldt.jpg" alt="אלכסנדר פון הומבולדט" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Alexander+von+Humboldt'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
