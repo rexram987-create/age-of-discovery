@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>רואלד אמונדסן | כיבוש הקוטב הדרומי | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* אופטימיזציה למסכי סמסונג S25 Ultra וקריאות מקסימלית לטקסט ארוך */
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+        .text-glow { text-shadow: 0 0 10px rgba(56, 189, 248, 0.5); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">רואלד אמונדסן</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-8 py-5 text-gray-300 font-mono text-lg md:text-xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 16 ביולי 1872 – 18 ביוני 1928 (משוער)
+                <br class="md:hidden">
+                <span class="hidden md:inline"> | </span>
+                <span class="text-darkAccent font-bold">משלחת הקוטב הדרומי:</span> 1910 – 1912
+            </div>
+            <p class="text-2xl text-darkAccent mt-6 font-bold bg-blue-900/20 inline-block px-6 py-2 rounded-full border border-blue-500/30">
+                הראשון להגיע לשני הקטבים ולחצות את המעבר הצפון-מערבי
+            </p>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/roald_amundsen.jpg" alt="רואלד אמונדסן" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Roald+Amundsen'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Roald Amundsen in polar gear | Source: Wikimedia Commons | License: Public Domain</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב ומפוצל -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ניתוח אטימולוגי של השם המלא</h2>
+            <div class="space-y-12">
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-10 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: רואלד (Roald)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "רואלד" הוא שם סקנדינבי (נורדי) עתיק ומלא הוד.
+                        <br><br>
+                        <strong>מקור בלשני:</strong> השם מורכב משתי מילים בנורדית עתיקה: <em>Hróðr</em> (תהילה, כבוד, או "מפורסם") ו-<em>Valdr</em> (שליט, מנהיג). הפירוש המילולי הוא <strong>"שליט מפורסם"</strong> או "מנהיג עטור תהילה".
+                        <br><br>
+                        <strong>סמליות פואטית:</strong> השם הזה התאים באופן נבואי לאיש שהפך למנהיג משלחות החקר המפורסם והמצליח ביותר בהיסטוריה של סקנדינביה המודרנית. בניגוד לסקוט הבריטי שניסה למשול באנשיו דרך היררכיה צבאית נוקשה, אמונדסן "שלט" באנשיו דרך כבוד מקצועי, היגיון קר, והכנה מדוקדקת (כמו ויקינג אמיתי). תהילתו באה לידי ביטוי בכך שהיה הראשון להגיע לשני הקטבים (צפון ודרום) והראשון לחצות את המעבר הצפון-מערבי.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-10 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה: אמונדסן (Amundsen)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        זהו שם משפחה נורווגי פטרונימי (שם המבוסס על שם האב).
+                        <br><br>
+                        <strong>מקור בלשני:</strong> השם מורכב מהשם <em>Amund</em> בתוספת הסיומת <em>-sen</em> (שפירושה "הבן של"). השם <em>Amund</em> עצמו מגיע מהנורדית העתיקה <em>Agmundr</em>, שמשמעותה <strong>"מגן עם חרב"</strong> או "שומר באמצעות חרב" (Agi = חוד החרב/טרור, Mund = מגן).
+                        <br><br>
+                        <strong>הקשר למורשת:</strong> אמונדסן נולד למשפחה של בעלי ספינות ורבי-חובלים נורווגים קשוחים. המורשת של "מגן החרב" משתקפת היטב באופיו: הוא היה פרגמטי, קר-רוח, ותמיד שם את הישרדות והגנת אנשיו במקום הראשון (הוא סירב לקחת סיכונים מיותרים שלא גובו בתכנון מושלם, בניגוד לרומנטיקה הבריטית שהובילה לאסון של סקוט).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות ורקע מוקדם: חלומות בקור הנורווגי</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    רואלד אמונדסן נולד בבורגה (Borge), נורווגיה, כבן הרביעי במשפחה אמידה של יורדי ים, קפטנים ובעלי ציי ספינות ציד לווייתנים.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-2xl border-r-4 border-blue-500 shadow-md">
+                        <strong class="text-white text-2xl block mb-4">השפעת הים ורצון האם:</strong>
+                        מגיל צעיר, הים והקרח היו חלק טבעי מחייו. הוא גדל על סיפורי מסעות החקר הארקטיים שהציתו בו את חלום כיבוש הקטבים. אולם, אמו רצתה להרחיק אותו מסכנות הים ודרשה שיהפוך לרופא. מתוך כבוד, החל ללמוד רפואה ושמר את חלומו בסוד.
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-2xl border-r-4 border-blue-500 shadow-md">
+                        <strong class="text-white text-2xl block mb-4">התפנית וההכנה האובססיבית:</strong>
+                        כשהיה בן 21 אמו נפטרה במפתיע. הוא פרש מיד מלימודי הרפואה, מכר את ספריו, והקדיש את כולו למטרה אחת: להיות חוקר קטבים. ההכנה שלו הייתה אובססיבית: ישן עם חלונות פתוחים בחורף הנורווגי כדי להקשיח את גופו, והצטרף לספינות ציד כלבי ים ללמוד ניווט בקרח.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה ומניעים (כולל התרמית) -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה ומניעים: מקצוענות קרה מול רומנטיקה והתרמית הגדולה</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    המניע של אמונדסן היה שונה מבעבר: ספורטיבי-מדעי-לאומי. המטרה העליונה הייתה להיות <strong>הראשון</strong>.
+                </p>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">מקצוענות קיצונית והסתמכות ילידית</h3>
+                    <p>
+                        בעוד שהגישה הבריטית של רוברט סקוט ראתה בחקר הקטבים מבחן של אומץ אנושי ורומנטי (גם במחיר סבל), גישתו של אמונדסן הייתה הפוכה. הוא טען ש<strong>"הצלחה תלויה בהכנה"</strong> וש"הרפתקה היא סימן לתכנון לקוי". הוא רצה לבצע את המשימה ביעילות ולחזור בחיים.
+                        <br><br>
+                        ההבדל הגדול ביותר בינו ליריביו היה <strong>ההסתמכות על ידע האינואיטים</strong>. הוא גר עימם חודשים, ולמד לוותר על בגדי צמר אירופאים לטובת פרוות אטומות למים, ולהשתמש באופן בלעדי בכלבי מזחלות.
+                    </p>
+                </div>
+
+                <div class="bg-blue-900/20 p-8 rounded-2xl border border-blue-500/30 shadow-xl mt-8 text-glow">
+                    <h3 class="text-3xl font-bold text-white mb-6 uppercase tracking-wide">שינוי היעד והתרמית הפיננסית הגדולה</h3>
+                    <p>
+                        אחד הסיפורים המרתקים ביותר במסעו הוא אופן השגת המימון. המטרה המקורית שלו הייתה להיות הראשון בקוטב ה<strong>צפוני</strong>. הוא השיג מימון נרחב מהפרלמנט הנורווגי (שחיפש יוקרה עולמית לאחר עצמאותו) ומפריטיוף ננסן שהשאיל לו את הספינה "פראם".
+                        <br><br>
+                        ב-1909, הגיעו ידיעות ששני אמריקאים (פירי וקוק) טוענים שכבר כבשו את הקוטב הצפוני. כיוון שרצה להיות ראשון, החליט בסתר לשנות יעד אל ה<strong>קוטב הדרומי</strong>. הוא שמר זאת בסוד מוחלט כדי שהפרלמנט וננסן לא יבטלו את המימון ויחרימו את ספינתו כדי לא להסתכסך עם הבריטים ששמו עינם על הדרום.
+                        <br><br>
+                        הוא שיקר לכולם: לתורמים, לממשלה ואף לאחיו. רק באיי מדירה, הרחק מהישג ידם של התורמים, כינס את הצוות וחשף את המטרה האמיתית. למרות הזעם בנורווגיה, כולם סלחו לו כשחזר כמנצח ב-1912.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- המרוץ לקוטב הדרומי -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">המרוץ אל הקוטב הדרומי (1910-1912)</h2>
+            <div class="space-y-12 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    המסע לקוטב הדרומי היה תצוגת תכלית של פרגמטיות מול האיתנים הקשים ביותר על כדור הארץ.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                        <h3 class="text-2xl font-bold text-white mb-4">הקמת בסיס האם והמצבורים</h3>
+                        אמונדסן הקים את מחנה <strong>"פראמהיים"</strong> על מדף הקרח רוס, קרוב ב-100 ק"מ לקוטב לעומת המחנה הבריטי. הוא ביסס את התזונה על בשר כלבי ים טרי נגד צפדינה. לפני החורף, הצוות הטמין טונות של אספקה לאורך הנתיב, וסימן כל מצבור בעשרות דגלים שחורים כדי לא לפספס אותם בסופות שלגים.
+                    </div>
+                    
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                        <h3 class="text-2xl font-bold text-white mb-4">המסע והניצחון (14 בדצמבר 1911)</h3>
+                        באוקטובר 1911 יצא עם 4 אנשים, 4 מזחלות ו-52 כלבים. למרות טיפוס מסוכן בגובה 3,000 מטרים על קרחון אקסל הייברג, הם טסו על הקרח במהירות של מעל 30 ק"מ ביום. ב-14 בדצמבר הגיעו לנקודה 90° דרום, הניפו את דגל נורווגיה והשאירו מכתב לסקוט.
+                    </div>
+                </div>
+
+                <div class="bg-red-900/20 p-8 md:p-10 rounded-2xl border border-red-600/30 shadow-xl text-center">
+                    <h3 class="text-3xl font-bold text-white mb-4">החזרה המושלמת והטרגדיה הבריטית</h3>
+                    <p>
+                        אמונדסן ואנשיו חזרו למחנה הבסיס ב-25 בינואר 1912 בריאים ושלמים. לעומתם, סקוט וצוותו הגיעו לקוטב חודש לאחריהם, גילו את הדגל הנורווגי, וקפאו למוות בדרך חזרה (הם סירבו להשתמש בכלבים וגררו את המזחלות בעצמם עד אפיסת כוחות).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- נתונים זואולוגיים ואקולוגיים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אקולוגיה של הישרדות: הכלבים מול האדם</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        ההחלטה האקולוגית והלוגיסטית החשובה ביותר הייתה ההסתמכות המוחלטת על **כלבים נורדיים-ארקטיים (Huskies)**. הוא ידע שהם התפתחו אבולוציונית לקור קיצוני (בניגוד לסוסי הפוני הסיביריים שהביא סקוט, שהזיעו וקפאו). 
+                        <br><br>
+                        <strong class="text-red-400">הקניבליזם המתוכנן:</strong> הצד הקר של אמונדסן התבטא בכך שיצא עם 52 כלבים אך תכנן שרק 11 יחזרו. הוא נהג "לצמצם" את הלהקה כשהמזחלות התרוקנו, והשתמש בבשר הכלבים הטרי כמזון לכלבים האחרים ולאנשים. החלטה אכזרית זו פתרה את בעיית סחיבת המזון ואת מחלת הצפדינה. הוא גם אגר טונות של בשר כלבי ים ופינגווינים בקיץ, מבין שבעלי החיים הם המפתח לחיים באנטארקטיקה.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מסעות נוספים והסוף הטרגי -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">מסעות נוספים והסוף המסתורי</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <ul class="list-disc pr-6 space-y-6">
+                    <li>
+                        <strong class="text-white text-2xl block mb-2">המעבר הצפון-מערבי (1903-1906):</strong>
+                        לפני הקוטב הדרומי, הוא היה לראשון בהיסטוריה שהצליח לנווט ספינה (ה"יואה") דרך "המעבר הצפון-מערבי" שמצפון לקנדה המחבר בין האוקיינוס האטלנטי לשקט (משימה שגבתה חייהם של מאות מלחים בריטים לפניו).
+                    </li>
+                    <li>
+                        <strong class="text-white text-2xl block mb-2">טיסות מעל הקוטב הצפוני:</strong>
+                        בשנות ה-20 החליף לספינות אוויר. ב-1926 חצה את הקוטב הצפוני בספינת האוויר "נורגה", ובכך הפך לאדם הראשון בוודאות שהגיע <strong>לשני הקטבים</strong> (לאחר שהתגלה שהאמריקאי פירי ככל הנראה זייף או שגה בחישוביו בקוטב הצפוני).
+                    </li>
+                    <li class="border-t border-gray-700 pt-6 mt-6">
+                        <strong class="text-red-400 text-2xl block mb-2">הסוף הטרגי והאירוני (1928):</strong>
+                        ביוני 1928, יצא במטוס ימי כדי להציל חוקר איטלקי יריב שספינתו התרסקה בקוטב הצפוני. מטוסו של אמונדסן התרסק לתוך ים הקרח ונעלם. גופתו לא נמצאה מעולם. המנהיג הקפדן ביותר איבד את חייו במשימת הצלה הרואית.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"The South Pole" (Roald Amundsen, 1912):</strong> ספרו המספק את תיאור הגוף הראשון של האסטרטגיה, השימוש בכלבים והניצחון.</li>
+                <li><strong>"The Last Place on Earth" (Roland Huntford, 1979):</strong> הספר שניתח באכזריות את כישלונות סקוט לעומת הגאונות, התרמית הפיננסית להשגת המימון וההסתמכות על ידע ילידי של אמונדסן.</li>
+                <li><strong>ארכיון מכון הקוטב הנורווגי (Norsk Polarinstitutt):</strong> המסמכים הרשמיים המאמתים את יומני הניווט מ-14 בדצמבר 1911.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 3.1 Pro)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> תיעוד מחקרי, אקדמי ומקיף של עידן התגליות (כיבוש הקטבים) עבור ספרייה דיגיטלית.<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/roald_amundsen.jpg" alt="רואלד אמונדסן" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Roald+Amundsen'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
