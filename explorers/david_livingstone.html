@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>דייוויד ליווינגסטון | חוקר לב אפריקה | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* אופטימיזציה למסכי סמסונג S25 Ultra וקריאות מקסימלית לטקסט ארוך */
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+        .text-glow { text-shadow: 0 0 10px rgba(56, 189, 248, 0.5); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">דייוויד ליווינגסטון</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-8 py-5 text-gray-300 font-mono text-lg md:text-xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 19 במרץ 1813 – 1 במאי 1873
+                <br class="md:hidden">
+                <span class="hidden md:inline"> | </span>
+                <span class="text-darkAccent font-bold">שנות פעילות באפריקה:</span> 1841 – 1873
+            </div>
+            <p class="text-2xl text-darkAccent mt-6 font-bold bg-blue-900/20 inline-block px-6 py-2 rounded-full border border-blue-500/30">
+                המיסיונר שחצה את יבשת אפריקה ונלחם בסחר העבדים
+            </p>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/david_livingstone.jpg" alt="דייוויד ליווינגסטון" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=David+Livingstone'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Dr. David Livingstone | Source: Wikimedia Commons | License: Public Domain</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב ומפוצל -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ניתוח אטימולוגי של השם המלא</h2>
+            <div class="space-y-12">
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-10 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: דייוויד (David)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "דייוויד" הוא הגרסה האנגלית לשם המקראי העברי <strong>דָּוִד</strong>.
+                        <br><br>
+                        <strong>מקור בלשני ומשמעות דתית:</strong> הפירוש המקובל ביותר לשם הוא <strong>"אהוב" (Beloved)</strong> או "ידיד". זהו שמו של המלך המפורסם ביותר בתנ"ך (דוד בן ישי). 
+                        <br><br>
+                        <strong>סמליות פואטית בחייו:</strong> עבור ליווינגסטון, שגדל בבית סקוטי-פרוטסטנטי בעל אמונה דתית יוקדת (קלוויניסטית), השם התנ"כי היה בעל משמעות אדירה. כמו דוד המלך שהיה רועה צאן והפך למנהיג לוחם, כך ליווינגסטון התחיל כפועל טוויה עני ופשוט, והפך ל"רועה הרוחני" והגיאוגרפי של יבשת שלמה. הוא יצא לאפריקה במטרה להפיץ את אהבת האל (מיסיון), ונלחם כדוד מול גוליית נגד רשתות סוחרי העבדים הערבים והפורטוגלים העוצמתיות ששלטו באזור וזרעו חורבן.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-10 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה: ליווינגסטון (Livingstone)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם ליווינגסטון הוא שם משפחה סקוטי מובהק ממקור טופונימי (גיאוגרפי).
+                        <br><br>
+                        <strong>מקור בלשני והיסטורי:</strong> השם נגזר משמה של עיירה בסקוטלנד בשם <em>Livingston</em> (במחוז ווסט לות'יאן). העיירה עצמה קרויה על שמו של אדם סקסוני בשם <em>Leving</em> שחי במאה ה-12, בתוספת המילה האנגלית העתיקה <em>tūn</em> (עיירה, יישוב). כלומר, "היישוב של לוינג". 
+                        <br><br>
+                        <strong>מורשת של קשיחות (Highlanders):</strong> משפחתו של דייוויד הגיעה במקור מאזור ההיילנדס (הרמות הגבוהות של סקוטלנד) לאי הצפוני אולבה (Ulva). סבו נאלץ לעזוב את החווה המשפחתית ולעבור לאזור התעשייתי של גלאזגו כדי למצוא עבודה עקב קשיים כלכליים. מעניין לציין שמשפחתו אייתה את שמה במקור <strong>Livingston</strong> (ללא האות "e" בסוף). דייוויד עצמו הוסיף את ה-"e" מאוחר יותר בחייו. השם והמורשת משדרים מוצא סקוטי קשוח של אנשי עבודה שרגילים לתנאי מחיה קיצוניים, תכונה אבולוציונית שהייתה קריטית להישרדותו של דייוויד לבדו במעמקי הג'ונגלים, הביצות והמדבריות של אפריקה במשך עשרות שנים.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות ורקע מוקדם: עבודת פרך במפעל הכותנה</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    דייוויד ליווינגסטון נולד ב-19 במרץ 1813 בעיירה בלנטייר (Blantyre) הממוקמת על גדות נהר הקלייד בסקוטלנד. הוא נולד לעוני קיצוני בשיאה של המהפכה התעשייתית, השני מתוך שבעה ילדים.
+                </p>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">עבודת ילדים אכזרית ותשוקה לידע</h3>
+                    בגיל 10 בלבד, נשלח דייוויד לעבוד ב<strong>מפעל טוויית כותנה</strong> מקומי כדי לעזור בפרנסת המשפחה. שעות העבודה שלו היו מפרכות: <strong>מ-6:00 בבוקר ועד 20:00 בערב (14 שעות רצופות)</strong>, שישה ימים בשבוע, בתוך רעש מחריש אוזניים של מכונות ואוויר סמיך מסיבי כותנה.
+                    <br><br>
+                    למרות העייפות המוחצת שאחרי 14 שעות עבודה, התשוקה שלו לידע הייתה בלתי ניתנת לעצירה. במשכורת הראשונה שקיבל, הוא קנה ספר לימוד של דקדוק לטיני. הוא נהג להעמיד את הספר פתוח על מכונת הטוויה כדי להספיק לקרוא משפטים בודדים בזמן שהמכונה עבדה. לאחר המשמרת היומית, הוא הלך לבית ספר ערב בין השעות 20:00 ל-22:00 כדי ללמוד מתמטיקה, תיאולוגיה ומדעים.
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">הקונפליקט בין מדע לאמונה וההכשרה הרפואית</h3>
+                    אביו של דייוויד, ניל, היה קלוויניסט נוקשה שדרש מילדיו לקרוא רק ספרי תיאולוגיה ואסר על קריאת ספרי מדע (אותם ראה ככפירה). דייוויד הוקסם מספרים על מדעי הטבע. הפריצה הפנימית שלו קרתה כשהבין שמדע ודת אינם אויבים – המדע הוא פשוט הדרך ללמוד את נפלאות היצירה של האלוהים.
+                    <br><br>
+                    בגיל 23, לאחר שחסך מספיק כסף מעבודתו, נרשם ללימודי רפואה באוניברסיטת גלאזגו במקביל ללימודי כהונה. הוא האמין שכדי לעזור לאנשים, חובה לרפא את גופם ממחלות. בשנת 1840 הוסמך כרופא, וב-1841 הפליג לדרום אפריקה.
+                </div>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה ומניעים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה ומניעים: מרופא לחוקר יבשות</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    הסיפור של ליווינגסטון אינו של חוקר שהחליט מראש לגלות ארצות ולתקוע דגלים, אלא של אדם שמניעיו עברו אבולוציה דרמטית מול המציאות האפריקאית.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-blue-500 shadow-md">
+                        <strong class="text-white text-2xl block mb-4">1. ההחלטה על אפריקה (המניע הדתי):</strong>
+                        במקור, ליווינגסטון חלם בכלל להיות מיסיונר ורופא ב<strong>סין</strong>. אך עם פרוץ מלחמת האופיום וסגירת סין לזרים, הוא נאלץ לשנות תוכניות. בלונדון פגש את המיסיונר רוברט מופאט שאמר לו: <em>"בעמקים הצפוניים של אפריקה... ראיתי עשן עולה מאלפי כפרים שבהם מעולם לא היה מיסיונר או רופא"</em>. משפט זה חתם את גורלו.
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-2xl border-l-4 border-blue-500 shadow-md">
+                        <strong class="text-white text-2xl block mb-4">2. מרופא-כפרי ל"פורץ דרך":</strong>
+                        כשהקים תחנת מיסיון קבועה בקורומן, הבין את המגבלות: היו מעט מתנצרים ורוב השבטים חיו עמוק ביבשת. הוא הגיע למסקנה אסטרטגית: ייעודו אינו להיות רופא כפרי, אלא להיות "החלוץ". תפקידו <strong>לשרטט מפות ולמצוא נתיבים בטוחים</strong> כדי שבעתיד יוכלו מאות רופאים לבוא בעקבותיו. חקר הארצות (Exploration) הפך למשימת קודש.
+                    </div>
+                </div>
+
+                <div class="bg-blue-900/20 p-8 rounded-2xl border border-blue-500/30 shadow-xl mt-8">
+                    <h3 class="text-3xl font-bold text-white mb-4 uppercase tracking-wide text-glow">3. חזון "שלושת ה-C" והתפנית ההומניטרית-כלכלית</h3>
+                    <p class="mb-4">ככל שחדר למרכז אפריקה, מניעיו קיבלו תפנית נוקבת שהסתכמה בביטוי: <strong>Christianity, Commerce, Civilization</strong> (נצרות, מסחר, ותרבות).</p>
+                    <ul class="list-disc pr-6 space-y-4">
+                        <li><strong>התפנית ההומניטרית (מלחמה בעבדות):</strong> הוא נחשף לזוועות סחר העבדים הערבי והפורטוגלי. הוא חזה בכפרים שרופים ושיירות של מאות אפריקאים כבולים גוועים ברעב. הוא הבין שאי אפשר להטיף על אהבת האל לאנשים הנשחטים יום-יום. חיסול העבדות, "הפצע המוגלתי הפתוח של העולם", הפך למטרתו העליונה.</li>
+                        <li><strong>התפנית הכלכלית (מסחר כנשק):</strong> הוא הבין שהטפה דתית או איומים לא יפסיקו את העבדות, כי זו הייתה פרנסתם של הצ'יפים המקומיים. גישתו הייתה פרגמטית: <strong>חייבים לייצר חלופה כלכלית</strong>. מטרתו הייתה למצוא "כבישים מהירים של מים" אל לב היבשת כדי לפתוח <strong>מסחר חוקי (Commerce)</strong> בכותנה ושנהב. אם האפריקאים יתעשרו ממסחר חוקי, סחר העבדים יקרוס כי יהפוך ללא משתלם.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- המסעות הגדולים באפריקה -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">המסעות הגדולים באפריקה: פריצת היבשת הנסתרת</h2>
+            <div class="space-y-12 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    מסעותיו לא היו טיולי תגלית קצרים. הם הפכו למסעות הישרדות אפיים שארכו שנים ארוכות, בתנאים הקיצוניים ביותר. הוא סבל מהתקפי מלריה אלימים למעלה מ-30 פעמים במהלך חייו, אך סירב להיכנע למחלות.
+                </p>
+                
+                <div class="bg-gray-800 p-8 md:p-10 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-darkAccent mb-4 border-b border-gray-700 pb-3">1. מדבר קלהארי ואגם נגאמי (1849)</h3>
+                    <p>
+                        במסעו צפונה יחד עם ויליאם אוסוול, הוא חצה את מדבר קלהארי (Kalahari Desert) הצחיח תוך הישענות על מדריכים מהבושמנים. ב-1 באוגוסט 1849, הפך לאירופאי הראשון שהגיע ל<strong>אגם נגאמי (Lake Ngami)</strong> בבוצוואנה. תגלית זו פרסמה אותו בבריטניה וזיכתה אותו במדליית זהב מטעם ה-RGS הבריטית.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 md:p-10 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-3xl font-bold text-darkAccent mb-4 border-b border-gray-700 pb-3">2. חציית יבשת אפריקה ממערב למזרח (1852-1856)</h3>
+                    <p>
+                        ליווינגסטון הפך לאירופאי הראשון שתועד כמי שחצה את מרכז-דרום אפריקה לרוחבה. הוא יצא ללואנדה (Luanda) שבחוף האטלנטי. כשהוא חולה מאד, במקום להפליג חזרה לאנגליה, הוא סירב לנטוש את מלוויו האפריקאים ו<strong>הלך את כל הדרך חזרה מזרחה</strong>, דרך לב היבשת, עד קלימאנה (Quelimane) שבחוף האוקיינוס ההודי.
+                        <br><br>
+                        <strong>פסיכולוגיה של מנהיגות:</strong> ליווינגסטון נחשב למנהיג קשה מאוד מול אירופאים, אך היה גאון אנושי מול האפריקאים. בחצייה הגדולה לווה על ידי כמאה לוחמים משבט המקולולו (Makololo). הוא לא נשא כלי נשק למלחמה, למד את שפות הילידים, התייחס לצ'יפים בשוויון נדיר וריפא אותם. גישה זו פתחה לו דלתות באזורים שבהם משלחות חמושות נטבחו.
+                    </p>
+                </div>
+
+                <div class="bg-blue-900/20 p-8 md:p-10 rounded-2xl border border-blue-500/40 shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-3">3. גילוי מפלי ויקטוריה (1855)</h3>
+                    <p>
+                        במהלך חציית היבשת, הובילו אותו לוחמי המקולולו אל תופעת טבע אדירה שהם כינו <strong>Mosi-oa-Tunya</strong> ("העשן שרועם"). ב-16 בנובמבר 1855, בסירת קאנו ממש על שפת התהום, הוא הביט מטה וראה מפלים עצומים הנופלים לנקיק ברוחב 1,700 מטרים. הוא העניק להם את השם <strong>מפלי ויקטוריה</strong> על שם מלכת בריטניה וכתב: <em>"מראות יפים כל כך, שוודאי זכו למבטם של מלאכים במעופם"</em>.
+                    </p>
+                </div>
+
+                <div class="bg-red-900/20 p-8 md:p-10 rounded-2xl border border-red-600/30 shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4 border-b border-red-800/50 pb-3">4. משלחת הזמבזי, אוניית הפליז והטרגדיה המרה (1858-1864)</h3>
+                    <p>
+                        עם חזרתו לבריטניה כגיבור, קיבל מימון עתק כדי להוכיח שנהר הזמבזי יכול לשמש כנתיב מסחר נוח לספינות. נבנתה עבורו ספינת קיטור מיוחדת מפלדה ופליז בשם <strong>"מא-רוברט"</strong> (כינויה האפריקאי של אשתו מרי).
+                        <br><br>
+                        המשלחת הפכה לכישלון היסטורי. הספינה הייתה כבדה מדי, מנועה דרש עצים טרופיים (שלא בערו היטב), וגוף הפליז דלף בגלל ריאקציה כימית. בנוסף, ליווינגסטון גילה שהנהר חסום לחלוטין לניווט על ידי סדרת אשדים פראיים – <strong>אשדי קהורה באסה (Cahora Bassa)</strong>. המתיחות בצוות הרקיעה שחקים והוא פיטר רבים מעמיתיו.
+                        <br><br>
+                        הטרגדיה הגדולה הכתה בו באפריל 1862. אשתו המסורה <strong>מרי ליווינגסטון</strong> הגיעה להצטרף אליו, חלתה במלריה חריפה ומתה בזרועותיו בשופאנגה. ליווינגסטון, שבור לב ומואשם בכישלון המשלחת, סירב לחזור והמשיך בחקר אגם מלאווי.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- נתונים הידרולוגיים מתוך היומנים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">נתונים הידרולוגיים מהיומנים</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">נהר הזמבזי ומפלי ויקטוריה</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        תיעודו הסביר למערב את מבנה מערכת המים של דרום-מרכז אפריקה. הוא תיעד כיצד <strong>נהר הזמבזי (Zambezi)</strong> זורם לאיטו ברוחב של למעלה מקילומטר וחצי על פני רמת בזלת שטוחה, ולפתע נופל לתוך שבר גיאולוגי, תהום צרה ועמוקה מאד (108 מטרים). נפח המים מתנפץ בקרקעית ויוצר רסס סמיך הנישא למאות מטרים באוויר, שיוצר מיקרו-אקלים של יער גשם מקומי זעיר מסביב למפלים.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">אגמי הבקע הסורי-אפריקאי ונהר שייר</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        הוא גילה את נהר ה<strong>שייר (Shire)</strong> ומיפה שניים מהאגמים הגדולים ביבשת (המרכיבים את בקע השבר הסורי-אפריקאי): <strong>אגם מלאווי (Nyasa)</strong> ו<strong>אגם טנגנייקה (Tanganyika)</strong>. עד סוף חייו הוא נותר באובססיה לגלות האם הנהרות שיוצאים מאגם טנגנייקה הם בעצם <strong>המקורות האבודים של נהר הנילוס</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- תיעוד אקולוגי וזואולוגי -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">תיעוד אקולוגי וזואולוגי: מזווית של נוסע והישרדות</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    בניגוד לחוקרי טבע (כמו הומבולדט) שחיפשו "מינים חדשים" לקטלוג מדעי, התיעוד הזואולוגי של ליווינגסטון היה מעשי, מנקודת מבט של הישרדות וכלכלה:
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- האריה -->
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                        <h3 class="text-2xl font-bold text-darkAccent mb-4">התקפת האריה (מבאבוצה 1844)</h3>
+                        <p>
+                            ליווינגסטון הותקף על ידי אריה פצוע שזינק עליו, תפס את כתפו וניער אותו <em>"כמו שכלב טרייר מנער עכבר"</em>. מלווהו מבלווה הציל אותו ברגע האחרון. האריה ריסק את עצם הזרוע, וליווינגסטון סבל מנכות חלקית עד סוף חייו. מפרק הזרוע המרוסק שמעולם לא התאחה כראוי, היה הסימן שבעזרתו זיהו רופאים את גופתו בלונדון כ-30 שנה מאוחר יותר. למרות זאת, הוא המשיך לחקור את דפוסי הציד של האריות.
+                        </p>
+                    </div>
+
+                    <!-- זבוב הצצה -->
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                        <h3 class="text-2xl font-bold text-darkAccent mb-4">זבוב הצֶצֶה (Tsetse Fly)</h3>
+                        <p>
+                            זהו התיעוד הכלכלי החשוב ביותר שלו. הוא מיפה את התפוצה והסביר שעקיצת הזבוב אינה קטלנית מיידית לאדם, אך <strong>משמידה לחלוטין כל בהמת משא</strong> (סוסים, שוורים, כלבים). הוא הוכיח שזבוב זה מונע הקמת צירי מסחר יבשתיים במרכז אפריקה המבוססים על עגלות, מה שהגדיל את התלות של הסוחרים בעבדים אנושיים ששימשו כסבלים.
+                        </p>
+                    </div>
+
+                    <!-- ציפור הדבש -->
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                        <h3 class="text-2xl font-bold text-darkAccent mb-4">ציפור אוביל הדבש (Honeyguide)</h3>
+                        <p>
+                            הוא תיעד השתאות של סימביוזה שבה ציפור קטנה מצייצת ומובילה את המקומיים במסלול מדויק לכוורות דבורים נסתרות. בני האדם פותחים את הכוורת, לוקחים את הדבש, והציפור בתמורה זוכה לאכול את הדונג והזחלים שנותרו מאחור.
+                        </p>
+                    </div>
+
+                    <!-- טבח ניאנגווה וארבה -->
+                    <div class="bg-red-900/10 p-8 rounded-2xl border border-red-500/30 shadow-md">
+                        <h3 class="text-2xl font-bold text-red-400 mb-4">נחילי ארבה וטבח ניאנגווה (1871)</h3>
+                        <p>
+                            הוא תיעד נחילי ארבה שהשחירו את השמיים, אך שום תופעת טבע לא זעזעה אותו כרוע האנושי. בניאנגווה חזה בסוחרי עבדים ערבים שטבחו בכ-400 נשים וילדים אפריקאים שקפצו לנהר כדי להימלט. דיווחיו על הטבח הציתו זעם ציבורי בבריטניה שהוביל לסגירת שוק העבדים בזנזיבר.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- החיפוש אחר הנילוס והמוות -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">החיפוש אחר הנילוס, "ד"ר ליווינגסטון אני מניח?", והמוות המצמרר</h2>
+            <div class="space-y-10 text-gray-300 leading-relaxed text-xl">
+                
+                <p class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    ב-1866 חזר לאפריקה בפעם האחרונה, אובססיבי לפתור את חידת מקורות נהר הנילוס. הוא נעלם במעמקי אפריקה המרכזית לשש שנים ארוכות, והעולם המערבי חשש שהוא נרצח על ידי סוחרי עבדים שתיעבו אותו.
+                </p>
+
+                <div class="bg-blue-900/10 p-8 rounded-2xl border border-blue-500/30 shadow-inner">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4 uppercase">המפגש עם סטנלי (1871) וסירוב החזרה</h3>
+                    <p>
+                        העיתון "ניו יורק הראלד" שלח את העיתונאי הנחוש, <strong>הנרי מורטון סטנלי (Henry Morton Stanley)</strong>, למצוא אותו. ב-10 בנובמבר 1871, בעיירה אוּגִ'יגִ'י על גדות אגם טנגנייקה, מצא סטנלי את ליווינגסטון חולה ותשוש. הוא הסיר את כובעו ואמר את הציטוט האלמותי: 
+                        <br><br>
+                        <strong>"Dr. Livingstone, I presume?" (ד"ר ליווינגסטון, אני מניח?)</strong>. 
+                        <br><br>
+                        למרות שהביא לו תרופות ומכתבים, ליווינגסטון סירב בתוקף לחזור לאנגליה. הוא רצה להמשיך לחקור את נהר הלואלבה, מאמין שזהו הנילוס (זו הייתה טעות, הוא חקר את מקורות נהר הקונגו).
+                    </p>
+                </div>
+
+                <!-- מוות וקבורה -->
+                <div class="bg-gray-900 p-10 rounded-2xl border-t-8 border-gray-500 shadow-2xl">
+                    <h3 class="text-3xl font-bold text-white mb-6">הלב באפריקה, הגוף באנגליה (1873)</h3>
+                    <p>
+                        דייוויד ליווינגסטון מת ב-1 במאי 1873, כשהוא כורע על ברכיו בתנוחת תפילה באוהלו בכפר של הצ'יף צ'יטמבו. מחלת הדיזנטריה והמלריה הכריעו אותו סופית.
+                        <br><br>
+                        <strong>מעשה הנאמנות המדהים:</strong> צוות מלוויו הנאמנים, צ'ומה וסוסי (Chuma and Susi), ידעו כמה אהב את היבשת. הם קיבלו החלטה היסטורית: הם חתכו את חזהו, <strong>הוציאו את ליבו וקברו אותו עמוק באדמה תחת עץ מְווּלָה (Mvula) באפריקה</strong>.
+                        <br><br>
+                        לאחר מכן, הם מילאו את גופתו במלח, ייבשו אותה בשמש במשך 14 ימים, עטפו אותה בקליפת עץ ובד מפרשים. קבוצת המלווים <strong>נשאה את גופתו החנוטה ברגל, על כתפיהם, במשך תשעה חודשים ולמעלה מ-1,500 קילומטרים</strong> בתוך יערות שורצי סוחרי עבדים, עד שהגיעו לחוף הים. 
+                        ליווינגסטון זוהה בלונדון על פי עצם זרועו המרוסקת (מהאריה), וזכה להלוויה ממלכתית במנזר וסטמינסטר כגיבור לאומי שחיסל את דעת הקהל נגד העבדות.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"Missionary Travels and Researches in South Africa" (David Livingstone, 1857):</strong> ספר זיכרונותיו הראשון ורב המכר המתאר את גילוי מפלי ויקטוריה (1855), תקיפת האריה, הניתוח על זבוב הצצה ופילוסופיית "שלושת ה-C".</li>
+                <li><strong>"Livingstone" (Tim Jeal, 1973/2013):</strong> הביוגרפיה המקיפה ביותר המנתחת את כישלון ספינת ה"מא-רוברט", מות אשתו מרי, תיאור טבח ניאנגווה ומסעו השגוי אחר מקורות הנילוס.</li>
+                <li><strong>"How I Found Livingstone" (Henry Morton Stanley, 1872):</strong> ספרו של הנרי סטנלי, המתעד לפרטי פרטים את המפגש ההיסטורי בשנת 1871.</li>
+                <li><strong>ארכיון החברה הגיאוגרפית המלכותית (RGS):</strong> מסמכים היסטוריים המאשרים את קבלת המדליה על אגם נגאמי (1849) ומתעדים את מסע חניטת הגופה באפריקה.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 3.1 Pro)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> תיעוד מחקרי, אקדמי ומקיף של עידן התגליות עבור ספרייה דיגיטלית.<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) מותאם ל-9:16 -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/david_livingstone.jpg" alt="דייוויד ליווינגסטון" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=David+Livingstone'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
