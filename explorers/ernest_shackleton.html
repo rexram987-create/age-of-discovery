@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ארנסט שקלטון | מסע ההישרדות באנטארקטיקה | עידן התגליות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        darkAccent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* אופטימיזציה למסכי סמסונג S25 Ultra - ריווח וקריאות מקסימלית לטקסט ארוך */
+        button, a { min-height: 48px; min-width: 48px; }
+        body { -webkit-tap-highlight-color: transparent; line-height: 1.8; }
+        .content-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .content-card:hover { transform: translateY(-4px); }
+        .text-glow { text-shadow: 0 0 10px rgba(56, 189, 248, 0.5); }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased flex flex-col min-h-screen">
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 mt-10 mb-10 flex-grow w-full">
+        
+        <!-- כפתור חזרה לדף הבית -->
+        <a href="../index.html" class="inline-flex items-center text-darkAccent hover:text-blue-400 mb-8 transition text-lg font-medium p-2 -ml-2 rounded-lg hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" transform="scale(-1, 1) translate(-24, 0)" />
+            </svg>
+            חזרה לדף הבית (היסטוריה של גילוי ארצות)
+        </a>
+
+        <!-- כותרת ראשית ושנות חיים -->
+        <header class="mb-16 border-b border-gray-700 pb-10 text-center md:text-right">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">סר ארנסט שקלטון</h1>
+            <div class="inline-block bg-gray-800 rounded-2xl px-8 py-5 text-gray-300 font-mono text-lg md:text-xl shadow-2xl border border-gray-600">
+                <span class="text-darkAccent font-bold">שנות חיים:</span> 15 בפברואר 1874 – 5 בינואר 1922
+                <br class="md:hidden">
+                <span class="hidden md:inline"> | </span>
+                <span class="text-darkAccent font-bold">המשלחת הטראנס-אנטארקטית:</span> 1914 – 1917
+            </div>
+            <p class="text-2xl text-darkAccent mt-6 font-bold bg-blue-900/20 inline-block px-6 py-2 rounded-full border border-blue-500/30">
+                מנהיגות בקצה העולם ומסע ההישרדות של ה"אנדיורנס"
+            </p>
+        </header>
+
+        <!-- תמונה ייצוגית 9:16 -->
+        <section class="mb-16 flex justify-center">
+            <div class="relative w-full max-w-sm md:max-w-md aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-gray-700 group cursor-pointer" onclick="showImageModal()">
+                <img src="../assets/ernest_shackleton.jpg" alt="ארנסט שקלטון" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Ernest+Shackleton'">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 -mt-10 mb-16 text-sm italic">
+            לחץ על התמונה להגדלה
+            <br>
+            <span class="text-xs text-gray-500 mt-2 block tracking-widest uppercase">Ernest Shackleton | Source: Wikimedia Commons | License: Public Domain</span>
+        </p>
+
+        <!-- ניתוח אטימולוגי נרחב ומפוצל -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ניתוח אטימולוגי של השם המלא</h2>
+            <div class="space-y-12">
+                <!-- שם פרטי -->
+                <div class="bg-gray-800/80 p-8 md:p-10 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם פרטי: ארנסט (Ernest)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        השם "ארנסט" הוא שם ממוצא גרמאני עתיק שהפך לפופולרי מאוד באנגליה הויקטוריאנית.
+                        <br><br>
+                        <strong>מקור בלשני:</strong> נגזר מהמילה הגרמאנית העתיקה <em>eornost</em> שמשמעותה <strong>"רציני", "נחרץ", או "נמרץ"</strong> (Vigor, Seriousness).
+                        <br><br>
+                        <strong>סמליות בחייו:</strong> השם "ארנסט" קלע בול לאישיותו. שקלטון היה ידוע כאדם נחרץ בצורה יוצאת דופן (Tenacious). כשהספינה שלו נמחצה על ידי הקרח והמטרה הגיאוגרפית אבדה, הרצינות והנחרצות שלו הופנו כלפי מטרה אחת בלבד: להציל את חייהם של 28 פקודיו. הנחישות שלו לא נשברה גם ברגעים האפלים ביותר על הקרחון.
+                    </p>
+                </div>
+                
+                <!-- שם משפחה -->
+                <div class="bg-gray-800/80 p-8 md:p-10 rounded-2xl border border-gray-600 shadow-inner">
+                    <h3 class="text-3xl font-semibold text-darkAccent mb-6 border-b border-gray-700 pb-3">שם משפחה: שקלטון (Shackleton)</h3>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        זהו שם משפחה אנגלי-יורקשיירי (מצפון אנגליה) ממקור טופונימי (גאוגרפי).
+                        <br><br>
+                        <strong>מקור בלשני:</strong> השם מורכב מהמילים באנגלית עתיקה <em>Scacel</em> (שפירושה "לשון יבשה", "פיסת אדמה בולטת" או "כבל/שלשלת") ו-<em>Tūn</em> (עיירה או חווה). הפירוש המשוער הוא <strong>"היישוב על לשון היבשה"</strong>.
+                        <br><br>
+                        <strong>הקשר למורשת:</strong> משפחתו של שקלטון מקורה בצפון אנגליה, אך עברה לאירלנד. הוא ספג את ה"קסם והחלקלקות" האירית שסייעו לו לגייס כספים, אך גם את הקשיחות של הימאים הבריטים. שם המשפחה הזה הפך בסופו של דבר למילה נרדפת עולמית ל<strong>מנהיגות במשבר (Crisis Leadership)</strong>, ונלמד עד היום בבתי ספר למנהל עסקים.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ילדות ורקע מוקדם -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">ילדות ורקע מוקדם: מאירלנד אל הים הפתוח</h2>
+            <div class="text-gray-300 leading-relaxed text-xl space-y-8">
+                <p>
+                    ארנסט שקלטון נולד ב-1874 במחוז קילדייר שבאירלנד למשפחה אנגלו-אירית ממעמד הביניים. הוא היה השני מתוך עשרה ילדים (והבן הבכור).
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                        <strong class="text-white text-2xl block mb-4">הקונפליקט עם האב</strong>
+                        אביו, הנרי, היה חוואי שעבר הסבה מאוחרת ולמד רפואה. המשפחה עברה ללונדון והאב תכנן שארנסט יהפוך לרופא מכובד. אולם ארנסט הצעיר נמשך לספרי הרפתקאות ורומנים ימיים. הוא השתעמם בבית הספר וחלם אך ורק על הים.
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                        <strong class="text-white text-2xl block mb-4">המרד והירידה לים</strong>
+                        בגיל 16 עזב את הלימודים והתגייס ל"צי הסוחר הבריטי" כנער סיפון. זו הייתה החלטה משמעותית: בניגוד לחוקרי הצי המלכותי הנוקשה, שקלטון צמח מלמטה ולמד לעבוד עם מלחים פשוטים. זה עיצב את מנהיגותו – יצירת תחושת אחווה ושוויון עם אנשיו.
+                    </div>
+                </div>
+
+                <div class="bg-red-900/20 p-8 rounded-2xl border-l-4 border-red-500 shadow-xl mt-8">
+                    <strong class="text-white text-2xl block mb-4">הטעימה הראשונה מהקרח וההשפלה</strong>
+                    בשנת 1901, שקלטון התקבל למשלחת לאנטארקטיקה בפיקודו של רוברט פלקון סקוט (יריבו לעתיד). המסע היה קשה, ושקלטון חלה בצפדינה חמורה עד שסקוט שלח אותו חזרה לאנגליה בבושת פנים, תוך רמיזה ששקלטון "נשבר פיזית". ההשפלה הזו הניעה את שקלטון לפתח אובססיה בוערת להוכיח שהוא מנהיג טוב יותר מסקוט.
+                </div>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה, מניעים ומימון -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אידאולוגיה, מניעים ומימון: הפילוסופיה של "סיבולת"</h2>
+            <div class="space-y-8 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    בניגוד לאמונדסן שחיפש יעילות קרה, או לליווינגסטון שחיפש להושיע נפשות, המניע של שקלטון היה מורכב מתערובת של רדיפת תהילה אישית, תחרות פסיכולוגית עמוקה, ורצון עז להחזיר את הגאווה לבריטניה.
+                </p>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">האובססיה לקוטב והבחירה בחיים (1909)</h3>
+                    ב-1907 הוא חזר כמפקד "משלחת נמרוד". ב-1909 הגיע למרחק של <strong>156 ק"מ בלבד</strong> מהקוטב (שיא עולמי דאז), אך הבין שאם ימשיך – אין לו מספיק מזון לחזור בחיים. הוא קיבל החלטה שקבעה את אישיותו: <strong>הוא בחר בחיי אנשיו על פני התהילה</strong>, וחזר. לאשתו אמר: <em>"חשבתי שעדיף לך חמור חי מאשר אריה מת"</em>.
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <h3 class="text-2xl font-bold text-darkAccent mb-4">המצאה מחדש של האתגר: החצייה הטראנס-אנטארקטית</h3>
+                    כשאמונדסן כבש את הקוטב ב-1911, שקלטון הרגיש ש"הפרס" אבד לבריטניה. לכן, הוא המציא אתגר חדש וקשה פי כמה: <strong>לחצות את יבשת אנטארקטיקה כולה ברגל</strong>, מים אל ים, למרחק של כ-2,900 ק"מ.
+                </div>
+
+                <div class="bg-blue-900/20 p-8 rounded-2xl border-r-8 border-darkAccent shadow-xl text-glow">
+                    <h3 class="text-3xl font-bold text-white mb-6 uppercase">מסע גיוס ההון ושלושת התורמים</h3>
+                    כיצד אדם שהיה נתון בחובות תמידיים מימן משלחת של מיליונים? דרך כריזמה, מסחור ומכירות. הוא סחט מענק קטן מהממשלה, מכר מראש את "זכויות היוצרים" וההפקה הקולנועית של המשלחת, ומכר חסויות על כלבים לבתי ספר.
+                    <br><br>
+                    <strong>"שלושת הגדולים":</strong> את עיקר הכסף גייס מ-3 פילנתרופים שאותם הקסים:
+                    <ol class="list-decimal pr-8 mt-4 space-y-2">
+                        <li><strong>סר ג'יימס קיירד:</strong> איל הון מסקוטלנד שרשם צ'ק עצום של 24,000 ליש"ט במקום.</li>
+                        <li><strong>פרנק דאדלי דוקר:</strong> איש עסקים שתרם 10,000 ליש"ט.</li>
+                        <li><strong>ג'אנט סטאנקומב-ווילס:</strong> יורשת אימפריית טבק שסגרה את חובותיו האחרונים.</li>
+                    </ol>
+                    <p class="mt-4 italic text-sm text-gray-400">הערה היסטורית: כאשר האנדיורנס טבעה, שקלטון קרא לשלוש סירות ההצלה הקטנות על שם תורמים אלו.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- המשלחת הטראנס-אנטארקטית -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">המשלחת הטראנס-אנטארקטית: מאסון למיתוס (1914-1917)</h2>
+            <div class="space-y-12 text-gray-300 leading-relaxed text-xl">
+                <p>
+                    אפוס ההישרדות הגדול ביותר של עידן התגליות. אף לא אדם אחד מהצוות המקורי של הספינה נהרג.
+                </p>
+                
+                <div class="bg-gray-800 p-8 md:p-10 rounded-2xl border-r-4 border-blue-500 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">1. הכליאה בקרח (1915)</h3>
+                    <p>
+                        באוגוסט 1914 יצאו 28 אנשי צוות על ה"אנדיורנס". בתחילת 1915 הספינה נתקעה לחלוטין בתוך "ים ודל" (Weddell Sea) בשדה קרח צפוף. הקרח לא נפתח. הספינה נותרה כלואה 10 חודשים. שקלטון, בהבנה פסיכולוגית מזהירה, שמר על שגרת יום: ימי הולדת, כדורגל על הקרח ומרוצי כלבים כדי למנוע דיכאון.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 md:p-10 rounded-2xl border-r-4 border-blue-500 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">2. מותה של ה"אנדיורנס" ומחנה הקרח</h3>
+                    <p>
+                        בסוף אוקטובר 1915, לחץ הקרח בתנועה מעך את הספינה. היא רוסקה וצללה. שקלטון כינס את אנשיו על משטח קרח ואמר ברוגע: <em>"הספינה ואספקתנו אבדו, אז נחזור הביתה"</em>. הם חיו על גושי קרח צפים כ-5 חודשים נוספים, ניזונים מכלבי ים.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 md:p-10 rounded-2xl border-r-4 border-blue-500 shadow-md">
+                    <h3 class="text-2xl font-bold text-white mb-4">3. הבריחה לאי הפיל (Elephant Island)</h3>
+                    <p>
+                        באפריל 1916, הקרח החל להישבר. הם השיקו את 3 סירות ההצלה הפתוחות ושטו בתנאים מחרידים 7 ימים עד שנחתו על <strong>אי הפיל</strong> – חלקת אדמה קפואה מחוץ לנתיבי השייט. היו נידונים למוות מרעב אלמלא הזעיקו עזרה.
+                    </p>
+                </div>
+
+                <div class="bg-red-900/20 p-8 md:p-10 rounded-2xl border border-red-600/30 shadow-xl">
+                    <h3 class="text-3xl font-bold text-white mb-4 border-b border-red-800/50 pb-3">4. מסע ההצלה הבלתי אפשרי בסירת ה"ג'יימס קיירד"</h3>
+                    <p>
+                        שקלטון בחר את סירת ה"ג'יימס קיירד" (6.8 מטרים), לקח 5 אנשים (ביניהם הנווט הגאון וורסלי), ויצא למסע התאבדותי. המטרה: תחנת הלווייתנים ב<strong>ג'ורג'יה הדרומית</strong> – מרחק של <strong>1,300 קילומטרים</strong> בים האלים בעולם. לאחר 16 ימי מאבק בסופות הוריקן וגלי ענק (18 מטר), הם נחתו על האי.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-10 rounded-2xl border-t-8 border-gray-500 shadow-2xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">5. חציית הרי ג'ורג'יה הדרומית וההצלה</h3>
+                    <p>
+                        עקב סערה הם נחתו בצד הלא נכון של האי והסירה נהרסה. בייאוש, שקלטון, וורסלי וקריאן החליטו <strong>לחצות את רכס ההרים הקפוא של ג'ורג'יה הדרומית ברגל</strong> (מעולם לא נחצה קודם לכן). ללא אוהל, עם ברגים בסוליות ומעדר שלפים, הם צעדו 36 שעות ללא שינה עד שהגיעו לתחנת לווייתנים. לאחר 4 חודשים של ניסיונות, שקלטון חזר לאי הפיל עם ספינת חילוץ. <strong>כל 22 האנשים שהשאיר מאחור – שרדו.</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- נתונים זואולוגיים ואקולוגיים -->
+        <section class="bg-darkCard rounded-3xl p-8 md:p-12 mb-16 shadow-xl border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-10 border-r-4 border-darkAccent pr-6">אקולוגיה של הישרדות: לחיות על הקרחון</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-600 shadow-md">
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        שקלטון ואנשיו שרדו בעיקר בזכות הסתגלות אקולוגית חסרת רחמים לסביבה:
+                    </p>
+                    <ul class="list-disc pr-8 mt-6 space-y-6 text-gray-300 text-xl">
+                        <li><strong>דיאטת בשר טרי (צפדינה):</strong> בניגוד לסקוט, שקלטון לא הסתמך על שימורים. הצוות צד ואכל כמויות עצומות של פינגווינים וכלבי ים. הבשר הטרי סיפק להם ויטמין C שמנע לחלוטין את מחלת הצפדינה.</li>
+                        <li><strong>הסקה בשומן כלבי ים (Blubber):</strong> הבעיה הגדולה לא הייתה רק אוכל, אלא כפור. הם השתמשו בשכבת השומן העבה של כלבי הים כדלק למדורות ולתנורי הבישול, שאפשרה להם להמס שלג למי שתייה.</li>
+                        <li><strong class="text-red-400">אובדן כלבי המזחלות:</strong> החלטה קשה מנשוא. בניגוד לאמונדסן שתכנן זאת מראש, צוות האנדיורנס פיתח קשר רגשי עמוק עם 69 כלבי ההאסקי שלהם. כשהמזון אזל והכלבים הפכו לנטל, שקלטון הורה, בלב כבד, על המתת חסד. הכלבים נורו למוות, וחלקם נאכלו בשבועות הרעב האחרונים.</li>
+                        <li><strong>תצפיות זואולוגיות:</strong> ביולוג המשלחת, רוברט קלארק, תיעד את נדידת הפינגווינים הקיסריים בחורף ואת התנהגות הציד האכזרית של הלווייתן הקטלן (אורקה), שלעתים התנגש בקרח מלמטה כדי להפיל כלבי ים למים.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- מקורות וביבליוגרפיה -->
+        <section class="bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-gray-400 mb-8 border-r-4 border-gray-600 pr-6">מקורות וביבליוגרפיה (אימות מחקר אקדמי)</h2>
+            <ul class="list-disc pr-8 space-y-5 text-gray-400 text-lg">
+                <li><strong>"South" (Ernest Shackleton, 1919):</strong> ספרו המקורי של שקלטון. דיווח הגוף-הראשון המפורט ביותר על ריסוק האנדיורנס, מסע גיוס התרומות, הניהול המורלי ומסע הגבורה.</li>
+                <li><strong>"Endurance: Shackleton's Incredible Voyage" (Alfred Lansing, 1959):</strong> התיעוד המקיף והמדויק ביותר של המסע. לנסינג ראיין ניצולים וביסס את הספר על היומנים האישיים של הצוות. ספר חובה ללימוד על מנהיגותו של שקלטון.</li>
+                <li><strong>"Shackleton's Way" (Margot Morrell and Stephanie Capparell, 2001):</strong> ספר המנתח אקדמית את שיטות הניהול, גיוס המימון (תורמים כדוגמת קיירד ודוקר), הפסיכולוגיה הארגונית והאינטליגנציה הרגשית במשבר קיצוני.</li>
+                <li><strong>יומני פרנק וורסלי (Frank Worsley):</strong> יומניו של הקפטן והנווט, המוכיחים את חוסר הסבירות לביצוע מסע הניווט המדויק בסירת ההצלה מהאי הפיל לג'ורג'יה הדרומית תחת סופות וראות אפסית.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- פוטר מעוצב -->
+    <footer class="bg-darkCard border-t border-gray-800 text-center py-12 mt-auto w-full">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
+            <p class="text-gray-400 text-2xl font-bold">האתר נבנה על ידי ג'מיני ורם &copy; 2026</p>
+            <div class="inline-block text-right bg-gray-900/50 p-8 rounded-2xl border border-gray-800 w-full max-w-2xl">
+                <p class="text-gray-300 leading-loose text-lg">
+                    <strong class="text-white ml-2">שם ההוגה:</strong> רם<br />
+                    <strong class="text-white ml-2">שם הבונה/היצרן:</strong> ג'מיני (Gemini 3.1 Pro)<br />
+                    <strong class="text-white ml-2">סיבת הבנייה:</strong> תיעוד מחקרי, אקדמי ומקיף של עידן התגליות (כיבוש הקטבים) עבור ספרייה דיגיטלית.<br />
+                    <strong class="text-white ml-2">שנת היצירה:</strong> 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- חלון צף לתמונה (Modal) -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 justify-center items-center p-4 backdrop-blur-xl transition-opacity">
+        <div class="relative h-[90vh] max-h-[1000px] aspect-[9/16]">
+            <button onclick="hideImageModal()" class="absolute -top-16 right-0 md:-right-16 text-gray-400 hover:text-white transition duration-200 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img src="../assets/ernest_shackleton.jpg" alt="ארנסט שקלטון" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-gray-600" onerror="this.src='https://via.placeholder.com/900x1600/1e293b/38bdf8?text=Ernest+Shackleton'">
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        function showImageModal() {
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function hideImageModal() {
+            imageModal.classList.add('hidden');
+            imageModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                hideImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
